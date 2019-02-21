@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Git](Git/chapter_01.md)
     1. [Git安装和配置](Git/chapter_01.md)
-    1. [Gitbook安装和常用命令](Git/chapter_02.md)
+    1. [GitBook安装和常用命令](Git/chapter_02.md)
 * [JS](JS/chapter_01.md)
 * [Linux](Linux/chapter_01.md)
     1. [解决linux安装xmind缺少依赖报错](Linux/chapter_01.md)
