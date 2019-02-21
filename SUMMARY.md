@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Git](Git/chapter_01.md)
+    1. [Git安装和配置](Git/chapter_01.md)
 * [JS](JS/chapter_01.md)
 * [Linux](Linux/chapter_01.md)
 * [Node](Node/chapter_01.md)
