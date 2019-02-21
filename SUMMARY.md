@@ -7,6 +7,7 @@
 * [Linux](Linux/chapter_01.md)
     1. [解决linux安装xmind缺少依赖报错](Linux/chapter_01.md)
 * [Node](Node/chapter_01.md)
+    1. [安装Node.js和npm配置](Node/chapter_01.md)
 * [Windows](Windows/chapter_01.md)
     1. [解决安装Adobe Air时发生错误](Windows/chapter_01.md)
 * [Css](Css/chapter_01.md)
