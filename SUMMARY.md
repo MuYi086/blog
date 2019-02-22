@@ -9,6 +9,7 @@
 * [Linux](Linux/chapter_01.md)
     1. [解决linux安装xmind缺少依赖报错](Linux/chapter_01.md)
     1. [安装Ubuntu16.04后要做的事](Linux/chapter_02.md)
+    1. [反爬虫一些方案总结和尝试](Linux/chapter_03.md)
 * [Node](Node/chapter_01.md)
     1. [安装Node.js和npm配置](Node/chapter_01.md)
 * [Windows](Windows/chapter_01.md)
