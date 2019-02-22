@@ -1,7 +1,7 @@
 ### SourceTree免登录,跳过初始设置(windows版)
 1. 初次运行安装`SourceTree`弹出如图,然后退出
 
-  ![安装](/images/windows/chapter_02/install.jpg "sourceTree安装")
+ ![安装](/images/windows/chapter_02/install.jpg "sourceTree安装")
 
 1. 在系统盘`C:\Users\你的电脑名字\AppData\Local\Atlassian\SourceTree`,新建一个`accounts.json`文件,粘贴入以下代码
 
