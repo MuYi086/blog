@@ -2,8 +2,8 @@
 ougege的博客
 
 # run
-`gitbook serve`
+~~`gitbook serve`~~
 
 # www
-[https://ougege.gitbook.io/blog](https://ougege.gitbook.io/blog)
+~~[https://ougege.gitbook.io/blog](https://ougege.gitbook.io/blog)~~
 
