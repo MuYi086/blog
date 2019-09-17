@@ -1,7 +1,7 @@
 ### SourceTree免登录,跳过初始设置(windows版)
 1. 初次运行安装`SourceTree`弹出如图,然后退出
 
- ![安装](/images/windows/chapter_02/install.jpg)
+ ![安装](/images/windows/SourceTree免登录,跳过初始设置/install.jpg)
 
 1. 在系统盘`C:\Users\你的电脑名字\AppData\Local\Atlassian\SourceTree`,新建一个`accounts.json`文件,粘贴入以下代码
 
@@ -34,5 +34,5 @@
 
 1. 重新执行安装步骤,然后选择`我不想使用Mercurial`
 
-![不使用Mercurial](/images/windows/chapter_02/choose.jpg)
+![不使用Mercurial](/images/windows/SourceTree免登录,跳过初始设置/choose.jpg)
 
