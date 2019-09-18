@@ -37,7 +37,7 @@ obj.constructor.prototype.reduce = function (b) {
 // 然后可以链式调用obj的方法了
 obj.add(3).reduce(1)
 
-// 俩者的区别在于:前者的方法继承于原型链上,后者是自有属性
+// 俩者的区别在于:前者是自有属性,后者的方法继承于原型链上
 ```
 
 #### 方法链式调用
