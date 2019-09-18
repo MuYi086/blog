@@ -15,21 +15,21 @@
 let obj = {value: 0}
 
 // 方式一:直接给对象属性添加方法
-obj.constructor.prototype.add = function (a) {
-  this.value += a
-  return this
-}
-obj.constructor.prototype.reduce = function (b) {
-  this.value -= b
-  return this
-}
-
-// 方式二: 给对象的构造函数的原型添加方法
 obj.add = function (a) {
   this.value += a
   return this
 }
 obj.reduce = function (b) {
+  this.value -= b
+  return this
+}
+
+// 方式二: 给对象的构造函数的原型添加方法
+obj.constructor.prototype.add = function (a) {
+  this.value += a
+  return this
+}
+obj.constructor.prototype.reduce = function (b) {
   this.value -= b
   return this
 }
