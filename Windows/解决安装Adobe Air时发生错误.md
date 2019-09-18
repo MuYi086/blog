@@ -1,4 +1,4 @@
-### 解决安装Adobe Air时发生错误
+## 解决安装Adobe Air时发生错误
 系统win 10 64位,报错如下:
 
 ![Adobe Air错误](/images/windows/解决安装AdobeAir时发生错误/error.png "adobe air错误")

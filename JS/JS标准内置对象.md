@@ -1,4 +1,4 @@
-### JS标准内置对象
+## JS标准内置对象
 [标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
 #### 值属性
 * Infinity:无穷大,初始值是Number.POSITIVE_INFINITY

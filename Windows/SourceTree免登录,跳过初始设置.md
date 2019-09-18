@@ -1,4 +1,4 @@
-### SourceTree免登录,跳过初始设置(windows版)
+## SourceTree免登录,跳过初始设置(windows版)
 1. 初次运行安装`SourceTree`弹出如图,然后退出
 
  ![安装](/images/windows/SourceTree免登录,跳过初始设置/install.jpg)

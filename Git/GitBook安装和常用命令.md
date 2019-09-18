@@ -1,5 +1,5 @@
-### GitBook安装和常用命令
-##### 安装GitBook
+## GitBook安装和常用命令
+#### 安装GitBook
 ```
 npm install gitbook-cli -g
 ```
@@ -9,24 +9,24 @@ npm install gitbook-cli -g
 gitbook -v
 ```
 
-##### 初始化GitBook
+#### 初始化GitBook
 ```
 gitbook init
 ```
 
-##### 配置文件install
+#### 配置文件install
 ```
 gitbook install ./
 ```
 
-##### 预览
+#### 预览
 ```
 gitbook serve
 ```
 
 预览页面`http://localhost:4000`
 
-##### 编译GitBook
+#### 编译GitBook
 ```
 gitbook build
 ```
