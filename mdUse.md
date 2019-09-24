@@ -60,8 +60,8 @@ Markdown[^1]
 `hello world`
 
 ```
-    function nihao () {
-        console.log('大家好才是真的好')
-    }
+function nihao () {
+    console.log('大家好才是真的好')
+}
 ```
 
