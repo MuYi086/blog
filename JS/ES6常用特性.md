@@ -166,8 +166,72 @@ test(111)
 // arguments对象包含了所有实参
 ```
 
-#### 对象和数组解构
+#### for of遍历
+在ES5 中我们常用for in 或者forEach遍历,但是在最新的ES6，引入了新的for of,用来遍历属性值.
+区别如下：
+```
+let testArr = ['黄金', '白银', '原油', '比特币']
 
+// 用for循环
+for (let i = 0; i < testArr.length; i++) {
+  console.log(testArr[i])
+}
+
+// 用数组的forEach方法：缺点是不能break
+testArr.forEach(item => {
+  console.log(item)
+})
+
+// for in 循环会打印出属性
+testArr.attr = 'ougege 的blog'
+for (let idx in testArr) {
+  console.log(testArr[idx])
+}
+
+// for of 遍历属性
+for (let test of testArr) {
+  console.log(test)
+}
+
+// for of 终止循环
+for (let test of testArr) {
+  if (test == '白银') {
+    break
+  }
+  console.log(test) // 黄金
+}
+```
+
+#### 对象和数组解构
+对象解构
+```
+// 利用对象字面量解构
+let test = {
+  name: 'ougege',
+  age: 26
+}
+let {name, age} = test
+console.log(name, age) // ougege 26
+
+// 解构赋值不存在的属性时,会被赋值为undefined
+let {height} = test
+console.log(height) // undefined
+
+// 嵌套对象解构
+let test = {
+  type: '贵金属',
+  name: ['黄金', '白银'],
+  gold: {
+    price: 353.0
+  },
+  silver {
+    price: 4566.0
+  }
+}
+
+let {gold: {price}} = test
+console.log(price) // 353.0
+```
 
 
 
@@ -179,5 +243,7 @@ test(111)
 1. [ES6 箭头函数](https://www.cnblogs.com/huancheng/p/9447764.html)
 1. [ES6-Rest参数和扩展运算符](https://www.jianshu.com/p/9a2a2d0098d3)
 1. [ES6 函数默认参数与rest参数](https://www.jianshu.com/p/9078fdffd810)
+1. [ES6 for of](https://www.jianshu.com/p/f75c23acd54f)
+1. [《深入理解ES6》——对象解构和数组解构](https://blog.csdn.net/DFF1993/article/details/82951227)
 1. [必须掌握的ES6新特性](https://www.cnblogs.com/Double-Zhang/p/8259662.html)
 1. [ES6中常用的10个新特性讲解](https://www.jianshu.com/p/ac1787f6c50f)
