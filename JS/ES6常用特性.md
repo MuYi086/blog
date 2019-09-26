@@ -224,7 +224,7 @@ let test = {
   gold: {
     price: 353.0
   },
-  silver {
+  silver: {
     price: 4566.0
   }
 }
@@ -233,7 +233,93 @@ let {gold: {price}} = test
 console.log(price) // 353.0
 ```
 
+数组解构
+```
+let product = ['黄金', '白银', '原油']
+let [gold, silver] = product
+console.log(gold, silver)
 
+// 嵌套数组解构
+let product = [['黄金', '白银'], '原油']
+let [preciousMetal, soil] = product
+console.log(preciousMetal, soil)
+
+// rest解构(必须写在最后)
+let product = ['原油', '黄金', '白银', ]
+let [soil, ...preciousMetal] = product
+console.log(preciousMetal, soil)
+```
+
+#### super关键字
+```
+// 在对象上使用super
+let parent = {
+  doPrint () {
+    console.log('我是父亲')
+  }
+}
+let child = {
+  doPrint () {
+    super.doPrint()
+    console.log('我是后代')
+  }
+}
+Object.setPrototypeOf(child, parent)
+child.doPrint()
+
+// 在类上使用super
+class Parent {
+  constructor (x, y) {
+    this.x = x
+    this.y = y
+  }
+  customSplit () {
+    return [...this.y]
+  }
+}
+class Child extends Parent {
+  constructor (x, y) {
+    super(x, y)
+  }
+  customSplit () {
+    return [...this.x]
+  }
+  task1 () {
+    return super.customSplit()
+  }
+  task2 () {
+    return this.customSplit()
+  }
+}
+let test = new Child('hello', 'world')
+test.task1()
+test.task2()
+
+// super在静态方法之中指向父类,在普通方法指向父类的原型对象
+class Parent {
+  static test (msg) {
+    console.log('static', msg)
+  }
+  test (msg) {
+    console.log('instance', msg)
+  }
+}
+class Child extends Parent {
+  static test (msg) {
+    super.test(msg)
+  }
+  test (msg) {
+    super.test(msg)
+  }
+}
+Child.test(1) // static 1
+let child = new Child()
+child.test(2) // instance 2
+```
+
+#### Promise
+专门有总结过一篇关于Promise的使用
+[Promise介绍和使用](./Promise介绍和使用.md)
 
 
 #### 参考
@@ -245,5 +331,6 @@ console.log(price) // 353.0
 1. [ES6 函数默认参数与rest参数](https://www.jianshu.com/p/9078fdffd810)
 1. [ES6 for of](https://www.jianshu.com/p/f75c23acd54f)
 1. [《深入理解ES6》——对象解构和数组解构](https://blog.csdn.net/DFF1993/article/details/82951227)
+1. [js中的super的使用](http://www.fly63.com/article/detial/4207)
 1. [必须掌握的ES6新特性](https://www.cnblogs.com/Double-Zhang/p/8259662.html)
 1. [ES6中常用的10个新特性讲解](https://www.jianshu.com/p/ac1787f6c50f)
