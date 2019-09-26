@@ -321,6 +321,8 @@ child.test(2) // instance 2
 专门有总结过一篇关于Promise的使用
 [Promise介绍和使用](./Promise介绍和使用.md)
 
+#### class类
+
 
 #### 参考
 1. [ES6 - 函数默认参数与rest参数](https://www.jianshu.com/p/9078fdffd810)
