@@ -321,8 +321,203 @@ child.test(2) // instance 2
 专门有总结过一篇关于Promise的使用
 [Promise介绍和使用](./Promise介绍和使用.md)
 
-#### class类
+#### Generator函数
+```
+// 多个返回值状态,调用next()返回
+let test = function* () {
+  yield 1
+  yield 2
+  yield 3
+}
+let k = test()
+console.log(k.next()) // {value: 1, done: false}
+console.log(k.next()) // {value: 2, done: false}
+console.log(k.next()) // {value: 3, done: false}
+console.log(k.next()) // {value: undefined, done: true}
 
+// 遍历普通对象
+let obj = {
+  name: 'ougege',
+  age: 26
+}
+// 拥有Symbol.iterator属性就能使用for...of与...运算符
+obj[Symbol.iterator] = function* () {
+  for (let key in obj) {
+    yield obj[key]
+  }
+}
+for (let value of obj) {
+  console.log(value)
+}
+console.log([...obj])
+
+// 同步赋值操作
+let res = 0
+function ajaxMy (method, url, param, varibal) {
+  setTimeout(function () {
+    let response = res++
+    varibal.next(response)
+  }, 300)
+}
+let k
+let tell = function* () {
+  let a = yield ajaxMy('get', 'www.baidu.com', 10, k)
+  console.log(a) // 0
+  let b = yield ajaxMy('get', 'www.baidu.com', a, k)
+  console.log(b) // 1
+  let c = yield ajaxMy('get', 'www.baidu.com', b, k)
+  console.log(c) // 2
+  let d = yield ajaxMy('get', 'www.baidu.com', c, k)
+  console.log(d) // 3
+}
+let k = tell()
+k.next()
+
+// 实现状态机
+let state = function* () {
+  while (1) {
+    yield 'show'
+    yield 'hide'
+  }
+}
+let displayClass = state()
+console.log(displayClass.next().value) // show
+console.log(displayClass.next().value) // hide
+console.log(displayClass.next().value) // show
+console.log(displayClass.next().value) // hide
+
+// 实现轮询函数
+let requestSingFn = function* () {
+  yield new Promise(function(resolve, reject) {
+    setTimeout(function () {
+      resolve({code: 304, data: {username: 'ougege'}})
+    }, 300)
+  })
+}
+let requestFn = function () {
+  let req = requestSignFn()
+  let stat = req.next()
+  stat.value.then(function (response) {
+    if (response.code != 200) {
+      setTimeout(function () {
+        console.log('重新发送请求')
+        requestFn()
+      }, 1000)
+    } else {
+      console.log(response.data)
+    }
+  })
+}
+requestFn()
+```
+
+#### class类
+```
+// 在ES5中通过构造函数生成实例对象
+function test (x, y) {
+  this.x = x
+  this.y = y
+}
+test.prototype.toString = function () {
+  return this.x + ':' + this.y
+}
+let testObj = new test(name, ougege)
+
+// 在ES6里使用class写法
+class test {
+  constructor (x, y) {
+    this.x = x
+    this.y = y
+  }
+  toString () {
+    return this.x + ':' + this.y
+  }
+}
+
+// class的所有方法都定义在prototype上面
+class B {}
+let b = new B()
+b.constructor === B.prototype.constructor // true
+
+// 立即执行class
+let person = new class {
+  constructor (name) {
+    this.name = name
+  }
+  sayName () {
+    console.log(this.name)
+  }
+}('ougege')
+person.sayName()
+
+// 类里的方法名采用表达式
+let a = 'toString'
+class Test {
+  constructor (x, y) {
+    this.x = x
+    this.y = y
+  }
+  [a]() {
+    return this.x + this.y
+  }
+}
+let b = new Test(10, 20)
+console.log(b.toString())
+
+// 取值函数get和存值函数set
+class MyClassRoom {
+  constructor (number) {
+    this.number = number
+  }
+  get newnumber () {
+    return this.number
+  }
+  set newnumber (value) {
+    this.number += value
+  }
+}
+let classRoom = new MyClassRoom(60)
+classRoom.newnumber = 30
+console.log(classRoom.newnumber)
+classRoom.newnumber = 20
+console.log(classRoom.newnumber)
+
+// class只能在外部定义自身静态属性
+class Test {}
+Test.a = 1
+console.log(Test.a)
+
+// 实例不会继承静态方法
+class Test {
+  constructor (number) {
+    this.number = 60
+  }
+  // 静态方法的this指向类,而不是实例
+  static getVal_01 () {
+    return this.number
+  }
+  static getVal_02 () {
+    return 90
+  }
+}
+console.log(Test.getVal_01())
+Test.number = 60
+console.log(Test.getVal_01())
+
+let test = new Test()
+console.log(test.getVal_01())
+
+// 与上不同，子类可以继承静态方法
+class Parent {
+  static doPrint () {
+    console.log('ougege')
+  }
+}
+class Child extends Parent {}
+Child.doPrint()
+```
+
+#### 
 
 #### 参考
 1. [ES6 - 函数默认参数与rest参数](https://www.jianshu.com/p/9078fdffd810)
@@ -334,5 +529,7 @@ child.test(2) // instance 2
 1. [ES6 for of](https://www.jianshu.com/p/f75c23acd54f)
 1. [《深入理解ES6》——对象解构和数组解构](https://blog.csdn.net/DFF1993/article/details/82951227)
 1. [js中的super的使用](http://www.fly63.com/article/detial/4207)
+1. [ES6中Generator函数的用法](https://www.jianshu.com/p/dc311b566fce)
+1. [ES6原生Class知识介绍](https://www.jianshu.com/p/2255d41d8e8b)
 1. [必须掌握的ES6新特性](https://www.cnblogs.com/Double-Zhang/p/8259662.html)
 1. [ES6中常用的10个新特性讲解](https://www.jianshu.com/p/ac1787f6c50f)
