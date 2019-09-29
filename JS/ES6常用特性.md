@@ -517,7 +517,50 @@ class Child extends Parent {}
 Child.doPrint()
 ```
 
-#### 
+#### export 和 import
+```
+// export 输出模块
+let a = 1
+let b = 'web'
+let c = function (n) { return n }
+export {a, b, c}
+
+// import 引入模块
+import {a, b, c} from './test.js'
+console.log(a, b, c(5)) // 1 web 5
+
+
+// as的用法
+let a = 1
+let b = 'web'
+let c = function (n) { return n }
+export {
+  a as aa,
+  b as bb,
+  c as cc
+}
+
+import {aa, bb, cc} from './test.js'
+console.log(a, b, c(5)) // 1 web 5
+
+// import as 用法
+let a = 1
+let b = 'web'
+let c = function (n) { return n }
+export {a, b, c}
+
+import * as test from './test'
+console.log(test.a, test.b, test.c(5))
+
+// export default 只用一次, import 可以为该匿名函数指定任意名字
+export default function (n) {
+  return n
+}
+
+import test from './test.js'
+console.log(test(10))
+```
+
 
 #### 参考
 1. [ES6 - 函数默认参数与rest参数](https://www.jianshu.com/p/9078fdffd810)
@@ -531,5 +574,6 @@ Child.doPrint()
 1. [js中的super的使用](http://www.fly63.com/article/detial/4207)
 1. [ES6中Generator函数的用法](https://www.jianshu.com/p/dc311b566fce)
 1. [ES6原生Class知识介绍](https://www.jianshu.com/p/2255d41d8e8b)
+1. [ES6模块化操作](https://www.cnblogs.com/model-zachary/p/7230669.html?utm_source=itdadao&utm_medium=referral)
 1. [必须掌握的ES6新特性](https://www.cnblogs.com/Double-Zhang/p/8259662.html)
 1. [ES6中常用的10个新特性讲解](https://www.jianshu.com/p/ac1787f6c50f)
