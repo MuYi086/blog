@@ -67,6 +67,26 @@ let props = {'age': {value: 26, writable: true}, 'weight': {value: 70, writable:
 Object.defineProperties(test, props)
 console.log(test) // {name: "ougege", age: 26, weight: 70}
 
+// 用defineProperty实现双向绑定
+// HTML
+<input type="text" id="content" value="欧哥哥" />
+<div id='t-in'></div>
+
+// JS:新属性，不能是input已有的value
+let input = document.getElementById('content')
+let title = document.getElementById('t-in')
+Object.defineProperty(input, 'val', {
+  get: function () {
+    return this.value
+  },
+  set: function (val) {
+    this.value = val
+    title.innerHTML = val
+  }
+})
+
+input.val = 'ougege, 你好'
+
 // 访问属性
 let res = Object.getOwnPropertyDescriptor(test, 'name')
 console.log(res) // {value: "ougege", writable: true, enumerable: true, configurable: true}
