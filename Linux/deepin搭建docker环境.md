@@ -59,7 +59,8 @@
     // docker的demo项目hello-world
     sudo docker run hello-world
     // 让普通用户也能运行docker:把账号加到docker用户组
-    sudo usermod -aG docker $USER
+    sudo groupadd docker
+    sudo gpasswd -a user_name docker
     // 列出镜像
     docker images
     // 查找镜像
