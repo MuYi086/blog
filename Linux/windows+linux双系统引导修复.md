@@ -21,13 +21,13 @@
         fdisk -l
         ```
 
-        ![找出linux设备](/images/linux/windows+linux双系统引导修复/terminal_01.png "找出linux设备")
+        ![找出linux设备](/images/linux/windows+linux双系统引导修复/terminal_01.gif "找出linux设备")
 
     1. 将设备挂载至`/mnt`
         ```
         mount /dev/sda1 /mnt
         ```
-    1. 安装并更新grub2
+    1. 安装并更新`grub2`
         ```
         sudo grub-install --root-directory=/mnt/dev/sda
         sudo update-grub2
