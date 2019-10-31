@@ -1,7 +1,7 @@
 ## deepin搭建docker环境
 
 #### 前言
-本来我是想搭建gitlab,后来综合网上的教程，在deepin上试了多次，失败.于是转而通过学习docker来一键部署gitlab.
+本来我是想搭建`gitlab`,后来综合网上的教程，在`deepin`上试了多次，失败.于是转而通过学习`docker`来一键部署`gitlab`.
 
 #### 开局暗坑
     ```
@@ -36,7 +36,7 @@
     // 如果成功,会返回pub, uid, sub信息
     ```
 
-1. 添加docker仓库
+1. 添加`docker`仓库
     ```
     // 编辑 /etc/apt/sources.list 添加如下
     deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/debian stretch stable
@@ -44,13 +44,13 @@
     // deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
     ```
 
-1. 更新仓库并安装docker-ce
+1. 更新仓库并安装`docker-ce`
     ```
     sudo apt-get update
     sudo apt-get install docker-ce
     ```
 
-1. 常用docker命令
+1. 常用`docker`命令
     ```
     // 启动docker
     systemctl start docker
