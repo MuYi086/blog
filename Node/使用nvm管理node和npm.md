@@ -55,3 +55,14 @@ npm --version
 // 5.0.0是对应的版本号
 nvm uninstall 5.0.0
 ```
+
+#### 其他错误
+npm在install包,报No package.json found
+```
+// 初始化package.json
+npm init --yes
+// 修复
+npm audit fix
+// 再次安装
+npm install package
+```

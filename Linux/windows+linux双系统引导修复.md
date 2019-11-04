@@ -6,6 +6,7 @@
 #### linux引导修复
 * 一.能进入`linux`系统:
     1. `debian`系可以直接更新`grub2`
+    
         ```
         sudo update-grub2
         ```
