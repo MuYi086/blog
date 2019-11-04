@@ -1,0 +1,39 @@
+## 使用nvm管理node和npm
+
+#### 背景
+为了方便在不同node版本下进行试验和开发,使用nvm可以在同一台设备上进行多个node版本切换
+
+#### nvm安装
+[官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
+```
+// 以下方式二选一
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+```
+如果报错`Failed to connect to raw.githubusercontent.com port 443: 拒绝连接`
+解决方案如下:
+```
+// 直接复制网址在浏览器打开
+// https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh
+// 复制页面内容保存到本地install.sh,用bash执行
+bash ./install.sh
+```
+#### 安装node和npm
+```
+// 安装node
+nvm install node
+// 安装特定版本的node
+nvm install 5.0.0
+// 显示列表
+nvm ls
+// 显示当前版本
+nvm current
+// 切换版本
+nvm use 5.0.0
+// 查看node和npm版本
+node --version
+npm --version
+// 删除版本 5.0.0是对应的版本号
+nvm uninstall 5.0.0
+```
