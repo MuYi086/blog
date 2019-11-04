@@ -7,8 +7,11 @@ git config --global user.email "email@example.com"
 ```
 
 #### 创建SSH Key
-`ssh-keygen -t rsa -C "youremail@example.com"`
-id_rsa和id_rsa.pub 分别是私钥和公钥
+
+```
+ssh-keygen -t rsa -C "youremail@example.com"
+```
+`id_rsa`和`id_rsa.pub`分别是私钥和公钥
 
 #### 添加github的host
 ```
@@ -20,8 +23,10 @@ id_rsa和id_rsa.pub 分别是私钥和公钥
 ```
 
 #### github添加SSH Key
-`Account settings 选择SSH and GPG keys填入你的公钥id_rsa.pub`
+`Account settings` 选择`SSH and GPG keys`填入你的公钥`id_rsa.pub`
 
 验证是否成功，在git bash里面输入下面的命令
 
-`ssh -T git@github.com`
+```
+ssh -T git@github.com
+```
