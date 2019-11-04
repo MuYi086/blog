@@ -1,7 +1,8 @@
-## 使用nvm管理node和npm
+## 使用nvm和nrm
 
 #### 背景
-为了方便在不同node版本下进行试验和开发,使用nvm可以在同一台设备上进行多个node版本切换
+为了方便在不同node版本下进行试验和开发,使用nvm可以在同一台设备上进行多个node版本切换;
+nrm则可以控制切换多个npm源
 
 #### nvm安装
 [官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
@@ -65,4 +66,30 @@ npm init --yes
 npm audit fix
 // 再次安装
 npm install package
+```
+
+#### 安装nrm
+```
+npm install -g nrm
+```
+
+#### 列出可用的源
+```
+nrm ls
+```
+
+#### 切换源
+```
+nrm use taobao
+```
+
+#### 打印当前源
+```
+nrm current
+```
+
+#### 添加源
+```
+// 以下已私有仓库为例
+nrm add sinopia http://127.0.0.1:4783
 ```
