@@ -3,12 +3,12 @@
 
 在windows安装时记得勾选`Add to Path`,如果安装正常,可以在命令行查看输出相应版本号
 ```
-node -v
+node --version
 ```
 
 #### 查看npm版本
 ```
-npm -v
+npm --version
 ```
 
 #### 安装cnpm
