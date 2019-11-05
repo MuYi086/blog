@@ -93,3 +93,8 @@ nrm current
 // 以下已私有仓库为例
 nrm add sinopia http://127.0.0.1:4783
 ```
+
+#### 删除
+```
+nrm del name
+```
