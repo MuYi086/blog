@@ -58,9 +58,12 @@
     docker version
     // docker的demo项目hello-world
     sudo docker run hello-world
-    // 让普通用户也能运行docker:把账号加到docker用户组
+    // 让普通用户也能运行docker:把账号加到docker用户组,重启docker服务,切换身份
     sudo groupadd docker
     sudo gpasswd -a user_name docker
+    sudo service docker restart
+    su root
+    su user_name
     // 列出镜像
     docker images
     // 查找镜像
