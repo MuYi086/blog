@@ -32,6 +32,12 @@ docker restart gitlab
 ```
 
 #### gitlab邮件设置
+```
+# 进入容器
+docker exec -it gitlab bash
+# 退出容器
+exit
+```
 
 #### gitlab切换为中文
 ```
@@ -65,4 +71,7 @@ https://ougege@github.com/ougege/blog.git
 1. [docker下gitlab安装配置使用(完整版)](https://www.jianshu.com/p/080a962c35b6 'docker下gitlab安装配置使用(完整版)')
 1. [deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
 1. [Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
+1. [gitlab代码自动同步到github](https://www.cnblogs.com/sxdcgaq8080/p/10530176.html 'gitlab代码自动同步到github')
+1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332 'docker部署gitlab配置SMTP')
+1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446 'gitlab使用163邮箱向用户发送邮件')
 
