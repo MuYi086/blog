@@ -1,10 +1,10 @@
 ## 使用vscode进行java开发
 
 #### 前言
-在vscode上快速开发java我们需要先搭建环境,比如java,maven等
+在`vscode`上快速开发`java`我们需要先搭建环境,比如`java`,`maven`等
 
 #### 安装java
-1. 注册`oracle`账号用户jdk下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx '注册')
+1. 注册`oracle`账号用户`jdk`下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx '注册')
 
 1. 下载`jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 'java-se')
 
@@ -68,7 +68,7 @@
     ```
 
 #### vscode配置
-1. 安装扩展Java Extension Pack 和 Spring Boot Extension Pack
+1. 安装扩展 `Java Extension Pack` 和 `Spring Boot Extension Pack`
 1. 配置maven
     ```
     # file => Prefernces => settins => 搜索maven
@@ -101,7 +101,69 @@
 View => Command Palette
 ```
 
+#### 连接数据库
+修改 `app.java`
+```
+package com.ougege.myapp;
+import java.sql.*;
+public class App {
+    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    static final String url = "jdbc:mysql://localhost:3306/test";  
+    // 数据库的用户名与密码，需要根据自己的设置
+    static final String user = "ougege";
+    static final String password = "ougege";
+    public static void main( String[] args ) {
+        Connection conn = null;
+        Statement stmt = null;
+        try{
+            // 注册 JDBC 驱动
+            Class.forName(JDBC_DRIVER);
+            // 打开链接
+            System.out.println("连接数据库...");
+            conn = DriverManager.getConnection(url, user, password);
+            // 执行查询
+            System.out.println(" 实例化Statement对象...");
+            stmt = conn.createStatement();
+            String sql;
+            sql = "SELECT * FROM user";
+            ResultSet rs = stmt.executeQuery(sql);
+        
+            // 展开结果集数据库
+            while(rs.next()){
+                // 通过字段检索
+                int height = rs.getInt("height");
+                String name = rs.getString("name");
+                System.out.println(String.format("height=%d, name=%s", height, name));
+            }
+            // 完成后关闭
+            rs.close();
+            stmt.close();
+            conn.close();
+        }catch(SQLException se){
+            // 处理 JDBC 错误
+            se.printStackTrace();
+        }catch(Exception e){
+            // 处理 Class.forName 错误
+            e.printStackTrace();
+        }finally{
+            // 关闭资源
+            try{
+                if(stmt!=null) stmt.close();
+            }catch(SQLException se2){
+            }// 什么都不做
+            try{
+                if(conn!=null) conn.close();
+            }catch(SQLException se){
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Goodbye!");
+    }
+}
+```
+
 #### 参考
 1. [Linux上Java的安装与配置](https://www.cnblogs.com/lamp01/p/8932740.html 'Linux上Java的安装与配置')
 1. [Linux下Java和Maven的安装及配置](https://blog.csdn.net/ula_liu/article/details/80853713 'Linux下Java和Maven的安装及配置')
 1. [VsCode搭建Java开发环境](https://www.cnblogs.com/miskis/p/9816135.html 'VsCode搭建Java开发环境')
+1. [Java mysql连接](https://www.runoob.com/java/java-mysql-connect.html 'Java mysql连接')
