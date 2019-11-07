@@ -27,6 +27,8 @@ vim ./config.yaml
 // vim的操作可自行百度
 // 或者用gedit来编辑
 gedit ./config.yaml
+// 编辑文件在底部加一行以便于局域网内也能访问
+listen: 0.0.0.0:4873
 ```
 
 #### 访问verdaccio
