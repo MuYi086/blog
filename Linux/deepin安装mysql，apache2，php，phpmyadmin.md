@@ -14,7 +14,7 @@ mysql -u root -p
 #### 修改mysql密码
 我们使用`mysql_secure_installation`来修改数据库`Root`用户的密码
 ```
-ougege@ougege-PC:~$ sudo mysql -u root -p
+ougege@ougege-PC:~$sudo mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
 
