@@ -76,6 +76,16 @@ ps -ef | grep verdaccio
 pm2 stop verdaccio
 ```
 
+#### 发布到局域网
+如果`verdaccio`运行在虚拟机,需要让局域网内用户访问
+请将网络模式选择桥接模式：复制物理网络连接状态
+如果虚拟机不能上网,可如下操作
+```
+编辑 => 虚拟网络编辑器 => 更改设置 => 选择桥接模式,选择宿主机网卡
+```
+
+![步骤图](../images/node/使用verdaccio搭建npm仓库/verdaccio_01.png '步骤图')
+
 #### 参考
 1. [使用verdaccio 搭建私有npm 服务器](https://blog.csdn.net/qq_29594393/article/details/81587989 '使用verdaccio 搭建私有npm 服务器')
 1. [npm 私服工具verdaccio 搭建](https://blog.csdn.net/yyzzhc999/article/details/80097073 'npm 私服工具verdaccio 搭建')
