@@ -95,10 +95,28 @@ sudo ln -s /usr/share/phpmyadmin/ /var/www/html/phpmyadmin
 sudo mysql -u root -p
 # 输入密码登录
 # 以下ougege是要填入创建的用户名,password是要填入的密码
-MariaDB [(none)]>CREATE USER 'ougege'@'%' IDENTIFIED BY 'password';
+MariaDB [(none)]>CREATE USER ougege@localhost IDENTIFIED BY 'password';
 # 回车创建
 ```
 再次在`localhost/phpmyadmin`登录
+
+#### 为新用户授权
+注意:以上操作的用户在登录后仍然没有权限新建数据库
+```
+sudo mysql -u root -p
+# 输入密码登录
+# 给用户授权
+grant all on *.* to ougege@localhost;
+# 重新加载权限
+flush privileges;
+
+# 删除用户
+drop user name@host;
+# 查询用户
+select User,Host,Password from mysql.user;
+# 创建一个数据库test
+create database test;
+```
 
 
 
@@ -106,3 +124,4 @@ MariaDB [(none)]>CREATE USER 'ougege'@'%' IDENTIFIED BY 'password';
 1. [使用deepin(linux)系统安装mysql教程](https://blog.csdn.net/weixin_42747717/article/details/83788580 '使用deepin(linux)系统安装mysql教程')
 1. [DeepIn15.11新安装MYSQL改root密码的问题](https://zhuanlan.zhihu.com/p/76483155 'DeepIn15.11新安装MYSQL改root密码的问题')
 1. [安装Apache, PHP, MySQL and phpMyAdmin on deepin](https://bbs.deepin.org/forum.php?mod=viewthread&tid=42668 '安装Apache, PHP, MySQL and phpMyAdmin on deepin')
+1. [MariaDB数据库用户创建/删除及权限授权/撤回](https://www.cnblogs.com/apollo1616/articles/10294490.html 'MariaDB数据库用户创建/删除及权限授权/撤回')
