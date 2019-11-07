@@ -70,30 +70,31 @@
 #### vscode配置
 1. 安装扩展Java Extension Pack 和 Spring Boot Extension Pack
 1. 配置maven
-```
-# file => Prefernces => settins => 搜索maven
-```
-![maven配置](../images/linux/使用vscode进行java开发/java_01.png)
+    ```
+    # file => Prefernces => settins => 搜索maven
+    ```
+
+    ![maven配置](../images/linux/使用vscode进行java开发/java_01.png)
 
 1. 填入配置(java和maven目录及版本自行替换)
-```
-{
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "newUntitledFile",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "workbench.colorTheme": "Atom One Dark",
-    "java.home":"/home/ougege/program/jdk1.8.0_231",
-    "java.configuration.maven.userSettings": "/home/ougege/program/maven-3.6.2/conf/settings.xml",
-    "maven.executable.path": "/home/ougege/program/maven-3.6.2/bin/mvn",
-    "maven.terminal.useJavaHome": true,
-    "maven.terminal.customEnv": [
-        {
-            "environmentVariable": "JAVA_HOME",
-            "value": "/home/ougege/program/jdk1.8.0_231"
-        }
-    ],
-}
-```
+    ```
+    {
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.startupEditor": "newUntitledFile",
+        "java.errors.incompleteClasspath.severity": "ignore",
+        "workbench.colorTheme": "Atom One Dark",
+        "java.home":"/home/ougege/program/jdk1.8.0_231",
+        "java.configuration.maven.userSettings": "/home/ougege/program/maven-3.6.2/conf/settings.xml",
+        "maven.executable.path": "/home/ougege/program/maven-3.6.2/bin/mvn",
+        "maven.terminal.useJavaHome": true,
+        "maven.terminal.customEnv": [
+            {
+                "environmentVariable": "JAVA_HOME",
+                "value": "/home/ougege/program/jdk1.8.0_231"
+            }
+        ],
+    }
+    ```
 
 #### 创建一个maven项目
 ```
