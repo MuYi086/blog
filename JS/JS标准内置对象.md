@@ -1,10 +1,10 @@
 ## JS标准内置对象
 [标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
 #### 值属性
-* Infinity:无穷大,初始值是Number.POSITIVE_INFINITY
-* NaN: 不是一个数字,初始值是NaN,不等于自己
-* undefined: 未被赋值
-* null字面量: 对象值未设置,也可作为尚未创建的对象
+* `Infinity` :无穷大,初始值是 `Number.POSITIVE_INFINITY`
+* `NaN` : 不是一个数字,初始值是 `NaN` ,不等于自己
+* `undefined` : 未被赋值
+* `null` 字面量: 对象值未设置,也可作为尚未创建的对象
 ```JS
   typeof null        // "object" (因为一些以前的原因而不是'null')
   typeof undefined   // "undefined"
@@ -16,11 +16,11 @@
   isNaN(1 + null) // false
   isNaN(1 + undefined) // true
 ```
-* globalThis: [实验功能](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/globalThis)
+* `globalThis` : [实验功能](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/globalThis)
 
 
 #### 函数属性
-* eval(): 会将传入的字符串当做JS代码执行
+* `eval()` : 会将传入的字符串当做 `JS` 代码执行
 ```JS
 console.log(eval('2 + 2'));
 // expected output: 4
@@ -35,9 +35,9 @@ console.log(eval('2 + 2') === eval(new String('2 + 2')));
 // expected output: false
 ```
 
-* uneval(): [非标准](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/uneval)
-* isFinite(): 判断传入值是否有限数值(参数是NaN，正无穷大或负无穷大,返回false,其他返回true)
-* isNaN(): 判断值是否是NaN,0除以0返回NaN
+* `uneval()` : [非标准](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/uneval)
+* `isFinite()` : 判断传入值是否有限数值(参数是 `NaN`，正无穷大或负无穷大,返回 `false` ,其他返回 `true`)
+* `isNaN()` : 判断值是否是 `NaN` ,0除以0返回 `NaN`
 ```JS
 isNaN(NaN);       // true
 isNaN(undefined); // true
@@ -47,18 +47,18 @@ isNaN(null);      // false
 isNaN(37);        // false
 isNaN("");        // false: 空字符串被转换成0
 ```
-* parseFloat(value): 解析一个字符串并返回一个浮点数
-* parseInt(string, radix): 参数(字符串,进制)  
-* decodeURI(encodeURI): 解析编码过的URI
-* decodeURIComponent(encodeURI): 解析编码过的部分URI
-* encodeURI(URI):将提供的字符串编码为统一的资源标识符
-* encodeURIComponent(str): 使用一到四个转义序列来表示字符串中的每个字符的UTF-8编码
-* escape(): 已废弃
-* unescape(): 已废弃
+* `parseFloat(value)`: 解析一个字符串并返回一个浮点数
+* `parseInt(string, radix)` : 参数(字符串,进制)  
+* `decodeURI(encodeURI)` : 解析编码过的 `URI`
+* `decodeURIComponent(encodeURI)` : 解析编码过的部分 `URI`
+* `encodeURI(URI)` :将提供的字符串编码为统一的资源标识符
+* `encodeURIComponent(str)` : 使用一到四个转义序列来表示字符串中的每个字符的 `UTF-8` 编码
+* `escape()` : 已废弃
+* `unescape()` : 已废弃
 
 #### 基本对象
-* Object
-  1. Object.assign(target, source): 将所有可枚举属性的值从一个或多个源对象复制到目标对象
+* `Object`
+  1. `Object.assign(target, source)` : 将所有可枚举属性的值从一个或多个源对象复制到目标对象
   ```JS
     // 复制一个对象
     const obj = {a: 1}
@@ -111,7 +111,7 @@ isNaN("");        // false: 空字符串被转换成0
     const copy = Object.assign({}, obj)
     console.log(copy) // {baz: 3}
   ```
-  2. Object.create(): 一个新对象,带着指定的原型对象和属性
+  2. `Object.create()` : 一个新对象,带着指定的原型对象和属性
   ```JS
     const person = {
       isHuman: false,
@@ -128,10 +128,10 @@ isNaN("");        // false: 空字符串被转换成0
     me.printIntroduction();
     // expected output: "My name is Matthew. Am I human? true"
   ```
-  3. Object.defineProperty(obj, prop, descriptor): 被传递给函数的对象
-  `configurable`:当值为true时，该属性描述符才能够被改变,同时该属性也能从对应的对象上被删除.默认为false
-  `enumerable`:当值为true时,该属性才能够出现在对象的枚举属性中,默认为false
-  `value`: 变量值,默认undefined
-  `writable`: 当值为true时,value才能被赋值运算符改变,默认为false
-  `get`: 给属性提供getter的方法,如果没有getter则为undefined,默认undefined
-  `set`: 给属性提供setter的方法,如果没有setter则为undefined,属性值修改时,触发执行该方法,默认undefined
+  3. `Object.defineProperty(obj, prop, descriptor)` : 被传递给函数的对象
+  `configurable`:当值为 `true` 时，该属性描述符才能够被改变,同时该属性也能从对应的对象上被删除.默认为 `false`
+  `enumerable`:当值为 `true` 时,该属性才能够出现在对象的枚举属性中,默认为 `false`
+  `value`: 变量值,默认 `undefined`
+  `writable`: 当值为 `true` 时, `value` 才能被赋值运算符改变,默认为 `false`
+  `get`: 给属性提供 `getter` 的方法,如果没有 `getter` 则为 `undefined` ,默认 `undefined`
+  `set`: 给属性提供 `setter` 的方法,如果没有 `setter` 则为 `undefined` ,属性值修改时,触发执行该方法,默认 `undefined`

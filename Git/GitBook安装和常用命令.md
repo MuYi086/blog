@@ -10,7 +10,7 @@ gitbook -v
 ```
 
 #### gitbook使用
-编写`README.md`和`SUMMARY.md`
+编写 `README.md` 和 `SUMMARY.md`
 
 #### 初始化GitBook
 ```SHELL
@@ -30,7 +30,7 @@ gitbook serve
 预览页面`http://localhost:4000`
 
 #### 输出pdf
-全局安装`gitbook-pdf`
+全局安装 `gitbook-pdf`
 ```SHELL
 sudo npm install gitbook-pdf -g
 gitbook pdf

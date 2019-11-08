@@ -1,7 +1,7 @@
 ## chrome扩展入门
 
 #### 说明
-一个最简单的插件应该包含几个类型的文件，第一个是 `manifest.json` ，这个是对整个插件的说明，一个 `icon.png` 是插件图标，一个`popup.html`用来显示插件，一般来说还需要一个`popup.js`和一个`popup.css`,这就是最最基本的文件组成了。
+一个最简单的插件应该包含几个类型的文件，第一个是 `manifest.json` ，这个是对整个插件的说明，一个 `icon.png` 是插件图标，一个 `popup.html` 用来显示插件，一般来说还需要一个 `popup.js` 和一个 `popup.css` ,这就是最最基本的文件组成了。
 
 1. 先看看manifest.json文件
     ```JSON
@@ -18,7 +18,7 @@
     }
     ```
 
-    简单说明一下，`”manifest_version“:2`这是说明版本，这是固定格式,`”name”`用来说明插件的名称,`”description”`是对插件的描述，`”version”`是插件的发行版本,`”browser_action”`是对插件具体的说明。
+    简单说明一下，`"manifest_version":2` 这是说明版本，这是固定格式, `"name"` 用来说明插件的名称, `"description"` 是对插件的描述, `"version"` 是插件的发行版本, `"browser_action"` 是对插件具体的说明。
 
 
 1. 接下来是 `popup.html`
@@ -39,7 +39,7 @@
     ```
 
 
-1. 样式表`myClock.css`
+1. 样式表 `myClock.css`
 
     ```CSS
     *{margin: 0; padding: 0;}
@@ -47,7 +47,7 @@
     div{line-height: 100px;font-size:40px;text-align: center;}
     ```
 
-1. 最后是`myClock.js`
+1. 最后是 `myClock.js`
 
     ```JS
     function myClock (e) {

@@ -1,8 +1,8 @@
 ## 使用nvm和nrm
 
 #### 背景
-为了方便在不同node版本下进行试验和开发,使用nvm可以在同一台设备上进行多个node版本切换;
-nrm则可以控制切换多个npm源
+为了方便在不同 `node` 版本下进行试验和开发,使用 `nvm` 可以在同一台设备上进行多个 `node` 版本切换;
+`nrm` 则可以控制切换多个 `npm` 源
 
 #### nvm安装
 [官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
@@ -58,7 +58,7 @@ nvm uninstall 5.0.0
 ```
 
 #### 其他错误
-npm在install包,报No package.json found
+`npm` 在 `install` 包,报 `No package.json found`
 ```SHELL
 // 初始化package.json
 npm init --yes

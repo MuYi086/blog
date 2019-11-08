@@ -12,7 +12,7 @@ mysql -u root -p
 ```
 
 #### 修改mysql密码
-我们使用`mysql_secure_installation`来修改数据库`Root`用户的密码
+我们使用 `mysql_secure_installation` 来修改数据库 `Root` 用户的密码
 ```SHELL
 ougege@ougege-PC:~$sudo mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
@@ -89,8 +89,8 @@ sudo ln -s /usr/share/phpmyadmin/ /var/www/html/phpmyadmin
 ```
 
 #### 登录mysql
-此时在`phpmyadmin`用`root`身份登录还是报错
-原因是普通用户无法使用Mariadb的root用户连接数据库
+此时在 `phpmyadmin` 用 `root` 身份登录还是报错
+原因是普通用户无法使用 `Mariadb` 的 `root` 用户连接数据库
 ```SHELL
 sudo mysql -u root -p
 # 输入密码登录

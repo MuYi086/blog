@@ -1,7 +1,7 @@
 ## 安装Node.js和npm配置
 [Node官网下载](https://nodejs.org/en/)
 
-在windows安装时记得勾选`Add to Path`,如果安装正常,可以在命令行查看输出相应版本号
+在 `windows` 安装时记得勾选 `Add to Path` ,如果安装正常,可以在命令行查看输出相应版本号
 ```SHELL
 node --version
 ```

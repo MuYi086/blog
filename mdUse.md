@@ -59,7 +59,7 @@ Markdown[^1]
 # 代码
 `hello world`
 
-```
+```JS
 function nihao () {
     console.log('大家好才是真的好')
 }

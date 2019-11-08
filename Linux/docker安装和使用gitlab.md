@@ -1,7 +1,7 @@
 ## docker安装和使用gitlab
 
 #### 安装gitlab镜像
-如未安装docker,请先移步搭建环境:[deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
+如未安装 `docker` ,请先移步搭建环境:[deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
 
 ```SHELL
 # 安装gitlab社区版

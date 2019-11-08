@@ -1,10 +1,10 @@
 ## Promise介绍和使用
 
 #### Promise状态
-`Promise`对象代表一个异步操作，不受外界影响，它有三种状态:
-1. pending(进行中)
-1. resolved(完成)
-1. rejected(失败)
+ `Promise` 对象代表一个异步操作，不受外界影响，它有三种状态:
+1. `pending` (进行中)
+1. `resolved` (完成)
+1. `rejected` (失败)
 
 #### Promise的优势
 1. 解决回调地狱
@@ -21,7 +21,7 @@
       })
     })
     ```
-    使用`Promise`:
+    使用 `Promise` :
 
       ```JS
       // setTimeout 多余的参数会作为入参传递给第一个参数方法
@@ -73,7 +73,7 @@
     ```
 
 #### 其他用法
-1. `Promise.all()`: 并行执行,所有异步操作完成后才执行回调
+1. `Promise.all()` : 并行执行,所有异步操作完成后才执行回调
     ```JS
     let p1 = new Promise(function (resolve, reject) {
       setTimeout(resolve, 1000, '异步1')
@@ -85,7 +85,7 @@
       console.log(res)
     })
     ```
-1. `Promise.race()`: 仅获得先返回的结果，其余异步任会执行,但结果丢弃
+1. `Promise.race()` : 仅获得先返回的结果，其余异步任会执行,但结果丢弃
 
     ```JS
     let p1 = new Promise(function (resolve, reject) {

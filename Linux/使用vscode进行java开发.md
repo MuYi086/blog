@@ -1,14 +1,14 @@
 ## 使用vscode进行java开发
 
 #### 前言
-在`vscode`上快速开发`java`我们需要先搭建环境,比如`java`,`maven`等
+在 `vscode` 上快速开发 `java` 我们需要先搭建环境,比如 `java` , `maven` 等
 
 #### 安装java
-1. 注册`oracle`账号用户`jdk`下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx '注册')
+1. 注册 `oracle` 账号用户 `jdk` 下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx '注册')
 
-1. 下载`jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 'java-se')
+1. 下载 `jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 'java-se')
 
-1. 新建一个目录用于安装`jdk`,将`jdk`解压复制到文件夹内
+1. 新建一个目录用于安装 `jdk` ,将 `jdk` 解压复制到文件夹内
     ```SHELL
     # username为当前用户
     mkdir /home/username/java
@@ -37,7 +37,7 @@
 #### 安装maven
 1. 官网 [下载](http://maven.apache.org/download.cgi '下载') 最新版
 
-1. 新建一个目录用户安装maven,将文件解压复制到文件夹内
+1. 新建一个目录用户安装 `maven` ,将文件解压复制到文件夹内
     ```SHELL
     # username 为当前用户
     mkdir /home/ougege/maven
@@ -69,14 +69,14 @@
 
 #### vscode配置
 1. 安装扩展 `Java Extension Pack` 和 `Spring Boot Extension Pack`
-1. 配置maven
+1. 配置 `maven`
     ```SHELL
     # file => Prefernces => settins => 搜索maven
     ```
 
     ![maven配置](../images/linux/使用vscode进行java开发/java_01.png)
 
-1. 填入配置(java和maven目录及版本自行替换)
+1. 填入配置( `java` 和 `maven` 目录及版本自行替换)
     ```JSON
     {
         "workbench.iconTheme": "vscode-icons",
