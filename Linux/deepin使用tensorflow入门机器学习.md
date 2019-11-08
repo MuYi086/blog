@@ -6,7 +6,7 @@
 #### deepin搭建环境
 1. 首先,tensorflow需要python环境,本机使用deepin系统,python3默认3.5.3 然而在使用pip安装时你会发现其中matplotlib需要python3.6以上的环境才能安装.
 1. 没办法,只能撸起袖子加油干.网上搜索一圈deepin升级python3新版本,大多数说法都是编译
-    ```
+    ```SHELL
     // 第一步:https://www.python.org/downloads/source/  下载新python源码
     // 第二步：文件解压并进入目录 * 为对应版本
     tar -xzf python-*.tgz
@@ -19,7 +19,7 @@
     // 终端python3 --version 依然是3.5.3
     ```
 1. 此路不通,只得另寻它法,于是在深度的论坛，见到了网友们提到了anaconda,感觉有了方向,于是乎开始了第二次尝试
-    ```
+    ```SHELL
     // 第一步:进入https://www.anaconda.com/distribution/ 下载最新的软件
     // 第二步:终端执行 (该填yes的就yes)
     bash ./anaconda.sh
@@ -34,7 +34,7 @@
     ```
 
 1. 此时python3已经升级到3.6以上了,可以正常安装tensorflow了
-    ```
+    ```SHELL
     pip install tensorflow
     ```
 #### tensorflow实例使用

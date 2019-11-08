@@ -9,7 +9,7 @@
 #### Promise的优势
 1. 解决回调地狱
 
-    ```
+    ```JS
     // 回调地狱
     async(1, function (value) {
       async(value, function (value) {
@@ -23,7 +23,7 @@
     ```
     使用`Promise`:
 
-      ```
+      ```JS
       // setTimeout 多余的参数会作为入参传递给第一个参数方法
       let firstAsync = function (input) {
         return new Promise(function (resolve, reject) {
@@ -45,7 +45,7 @@
 
 1. 进行错误捕获
 
-    ```
+    ```JS
     // 注意: reject入参需要是一个Error对象，否则报错
     function ajax(method, url, data) {
       let request = new XMLHttpRequest()
@@ -74,7 +74,7 @@
 
 #### 其他用法
 1. `Promise.all()`: 并行执行,所有异步操作完成后才执行回调
-    ```
+    ```JS
     let p1 = new Promise(function (resolve, reject) {
       setTimeout(resolve, 1000, '异步1')
     })
@@ -87,7 +87,7 @@
     ```
 1. `Promise.race()`: 仅获得先返回的结果，其余异步任会执行,但结果丢弃
 
-    ```
+    ```JS
     let p1 = new Promise(function (resolve, reject) {
       setTimeout(resolve, 1000, '异步1')
     })

@@ -1,7 +1,7 @@
 ## JS性能优化
 #### 一、避免全局查找
 优化脚本性能最重要的就是注意`全局查找`.使用全局变量和函数肯定比局部的开销更大,因为涉及到`作用域链`上的查找
-```
+```JS
 function demo1 () {
     var imgs = document.getElementsByTagName('img')
     for (var i = 0, length = imgs.length; i< len; i++) {
@@ -13,7 +13,7 @@ function demo1 () {
 ```
 
 这个函数包含了三个对于全局`document对象`的引用.如果在页面上有多个图片，那么for循环的document引用会被执行很多次,每次都要运行`作用域链`查找.我们创建一个指向`document对象`的局部变量，就可以通过限制一次全局查找来改进这个函数的性能
-```
+```JS
 function demo1 () {
     var doc = document
     var imgs = doc.getElementsByTagName('img')
@@ -30,7 +30,7 @@ function demo1 () {
 
 #### 二、避免使用with语句
 和函数类似,`with`语句会创建自己的作用域,因此会增加其中执行的代码的作用域链的长度
-```
+```JS
 function demo2 () {
     with (document.body) {
         alert(tagName)
@@ -39,7 +39,7 @@ function demo2 () {
 }
 ```
 由于额外的作用域链查找，在`with`语句中执行的代码肯定会比外面执行的代码要慢
-```
+```JS
 function demo2 () {
     var body = document.body
     alert(body.tagName)
@@ -51,11 +51,11 @@ function demo2 () {
 
 #### 三、避免不必要的属性查找
 使用变量和数组要比访问对象上的属性更有效率,对象上的任何属性查找都要比访问变量或者数组花费更长时间,因为必须在原型链中对拥有该名称的属性进行一次搜索.属性查找越多，执行时间就越长
-```
+```JS
 var query = window.location.href.substring(window.location.href.indexOf('?'))
 ```
 在这段代码中，有6次属性查找,数点就可以,`window.location.href.substring`有3次,`window.location.href.indexOf`有3次,因此效率特别不好.一旦多次用到对象属性，应该将其存储在局部变量中
-```
+```JS
 var url = window.location.href
 var query = url.substring(url.indexOf('?'))
 ```
@@ -83,7 +83,7 @@ var query = url.substring(url.indexOf('?'))
 
 如果对于循环中的迭代次数不能事先确定,可以考虑一种叫做`Duff`的技术.这个技术是`Tom Duff`命名的.最早在c语言中使用.基本概念是通过计算迭代的次数是否为8的倍数将一个循环展开为一系列语句
 
-```
+```JS
 // 假设values.length >0
 var times = Math.ceil(values.length / 8)
 var startAt = values.length % 8
@@ -106,7 +106,7 @@ do {
 `Duff`的实现是通过将values数组中元素个数除以8来计算出循环需要多次迭代的.然后向上取整来保证结果是整数.这个数量保存在startAt变量中,手册执行该循环时,会检查startAt变量有需要多少额外调用,例如,如果数组中有10个值,startAt则等于2,那么最开始的`cal()`则只会被调用2次,在接下来的循环中,startAt被重置为0,这样之后的每次循环都会调用8次`cal()`.展开循环可以提升大数据集的处理速度.
 在2003年由`Andrew B.king`提出一个更快的`Duff`技术,将`do-while`循环分成2个单独的循环
 
-```
+```JS
 var times = Math.floor(values.length / 8)
 var leftover = values.length % 8
 var i = 0
@@ -132,7 +132,7 @@ do {
 
 #### 五、避免双重解释
 当使用`eval()`函数或者`Function`构造函数以及使用`setTimeout()`传一个字符串参数时都会发生双重解释
-```
+```JS
 // 某些代码求值
 eval("alert('测试一下')")
 
@@ -145,15 +145,13 @@ setTimeout("alert('测试一下下')", 500)
 
 上面的例子中,都要解析包含了`JS`代码的字符串,这个操作是不能再初始的解析过程中完成的,因为代码是包含在字符串中的,也就是说在`JS`代码运行的同时必须新启动一个解析器来解析新的代码.实例化一个新的解析器有一定开销，所以这种代码要比直接解析慢得多
 改进如下:
-```
+```JS
 alert('测试一下')
 
- 
 var sayHi = function () {
     alert('测试一下下')
 }
 
- 
 setTimeout(function () {
      alert('测试一下下')
 }, 500)
@@ -169,7 +167,7 @@ setTimeout(function () {
 #### 六、最小化语句数
 1. **多个变量声明**
 
-    ```
+    ```JS
     // 4个语句--浪费
     var count = 5
     var color = 'blue'
@@ -182,7 +180,7 @@ setTimeout(function () {
 
 1. **插入迭代值**
 
-    ```
+    ```JS
     var name = values[i]
     i++
 
@@ -194,7 +192,7 @@ setTimeout(function () {
 
 1. **使用数组和对象字面量**
 
-    ```
+    ```JS
     // 用4个语句创建和初始化数组==浪费
     values = new Array()
     values[0] = 123
@@ -212,7 +210,7 @@ setTimeout(function () {
 
     转换成字面量的形式
 
-    ```
+    ```JS
     // 用一条语句创建和初始化数组
     var values = [123, 456, 789]
 

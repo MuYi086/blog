@@ -9,12 +9,12 @@
 1. 下载`jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 'java-se')
 
 1. 新建一个目录用于安装`jdk`,将`jdk`解压复制到文件夹内
-    ```
+    ```SHELL
     # username为当前用户
     mkdir /home/username/java
     ```
 1. 设置环境变量
-    ```
+    ```SHELL
     sudo vim /etc/profile
     # 将以下内容加到最后
     set java environment
@@ -25,12 +25,12 @@
     export JAVA_HOME JRE_HOME CLASS_PATH PATH
     ```
 1. 让环境变量生效
-    ```
+    ```SHELL
     source /etc/profile
     ```
 
 1. 测试
-    ```
+    ```SHELL
     java -version
     ```
 
@@ -38,13 +38,13 @@
 1. 官网 [下载](http://maven.apache.org/download.cgi '下载') 最新版
 
 1. 新建一个目录用户安装maven,将文件解压复制到文件夹内
-    ```
+    ```SHELL
     # username 为当前用户
     mkdir /home/ougege/maven
     ```
 
 1. 设置环境变量
-    ```
+    ```SHELL
     sudo vim /etc/profile
     # 将以下内容加到最后:注意之前java的export调整了
     JAVA_HOME=/home/ougege/program/jdk1.8.0_231      
@@ -58,26 +58,26 @@
     ```
 
 1. 让环境变量生效
-    ```
+    ```SHELL
     source /etc/profile
     ```
 
 1. 测试
-    ```
+    ```SHELL
     mvn -v
     ```
 
 #### vscode配置
 1. 安装扩展 `Java Extension Pack` 和 `Spring Boot Extension Pack`
 1. 配置maven
-    ```
+    ```SHELL
     # file => Prefernces => settins => 搜索maven
     ```
 
     ![maven配置](../images/linux/使用vscode进行java开发/java_01.png)
 
 1. 填入配置(java和maven目录及版本自行替换)
-    ```
+    ```JSON
     {
         "workbench.iconTheme": "vscode-icons",
         "workbench.startupEditor": "newUntitledFile",
@@ -97,13 +97,13 @@
     ```
 
 #### 创建一个maven项目
-```
+```SHELL
 View => Command Palette
 ```
 
 #### 连接数据库
 修改 `app.java`
-```
+```JAVA
 package com.ougege.myapp;
 import java.sql.*;
 public class App {

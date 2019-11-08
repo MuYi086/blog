@@ -3,13 +3,13 @@
 #### 安装gitlab镜像
 如未安装docker,请先移步搭建环境:[deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
 
-```
+```SHELL
 # 安装gitlab社区版
 docker pull gitlab/gitlab-ce
 ```
 
 #### 运行一个gitlab容器
-```
+```SHELL
 # -d: 后台运行
 # -p:将容器内部端口向外映射
 # --name:命名容器名称
@@ -18,7 +18,7 @@ docker run -d -p 443:443 -p 80:80 -p 222:22 --name gitlab --restart always -v /h
 ```
 
 #### 配置gitlab.rb
-```
+```SHELL
 sudo gedit /home/gitlab/config/gitlab.rb
 
 # 配置http协议所用访问地址
@@ -32,7 +32,7 @@ docker restart gitlab
 ```
 
 #### gitlab邮件设置
-```
+```SHELL
 # 进入容器
 docker exec -it gitlab bash
 # 退出容器
@@ -40,7 +40,7 @@ exit
 ```
 
 #### gitlab切换为中文
-```
+```SHELL
 头像 => setttings => 左侧边栏preferences => language
 ```
 
@@ -48,7 +48,7 @@ exit
 可参考[Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
 
 #### 从github导入项目
-```
+```SHELL
 # 保存token
 # github => settings => Developer settings
 # Personal access tokens => Generate new token

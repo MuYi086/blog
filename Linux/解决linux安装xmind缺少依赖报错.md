@@ -7,12 +7,12 @@
 国内的各种办法五花八门,大致有这几种,但是常识之后均以失败告终
 
 1. 安装openjdk
-```
+```SHELL
 sudo apt-get install openjdk-8-jdk
 ```
 
 2. 更新
-```
+```SHELL
 sudo apt-get clean
 sudo apt-get update
 sudo apt-get upgrade

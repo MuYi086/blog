@@ -1,11 +1,11 @@
 ## GitBook安装和常用命令
 #### 安装GitBook
-```
+```SHELL
 npm install gitbook-cli -g
 ```
 
 查看是否安装成功:
-```
+```SHELL
 gitbook -v
 ```
 
@@ -13,17 +13,17 @@ gitbook -v
 编写`README.md`和`SUMMARY.md`
 
 #### 初始化GitBook
-```
+```SHELL
 gitbook init
 ```
 
 #### 配置文件install
-```
+```SHELL
 gitbook install ./
 ```
 
 #### 本地预览
-```
+```SHELL
 gitbook serve
 ```
 
@@ -31,12 +31,12 @@ gitbook serve
 
 #### 输出pdf
 全局安装`gitbook-pdf`
-```
+```SHELL
 sudo npm install gitbook-pdf -g
 gitbook pdf
 ```
 
 #### 编译GitBook
-```
+```SHELL
 gitbook build
 ```

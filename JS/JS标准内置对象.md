@@ -5,7 +5,7 @@
 * NaN: 不是一个数字,初始值是NaN,不等于自己
 * undefined: 未被赋值
 * null字面量: 对象值未设置,也可作为尚未创建的对象
-```
+```JS
   typeof null        // "object" (因为一些以前的原因而不是'null')
   typeof undefined   // "undefined"
   null === undefined // false
@@ -21,7 +21,7 @@
 
 #### 函数属性
 * eval(): 会将传入的字符串当做JS代码执行
-```
+```JS
 console.log(eval('2 + 2'));
 // expected output: 4
 
@@ -38,7 +38,7 @@ console.log(eval('2 + 2') === eval(new String('2 + 2')));
 * uneval(): [非标准](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/uneval)
 * isFinite(): 判断传入值是否有限数值(参数是NaN，正无穷大或负无穷大,返回false,其他返回true)
 * isNaN(): 判断值是否是NaN,0除以0返回NaN
-```
+```JS
 isNaN(NaN);       // true
 isNaN(undefined); // true
 isNaN({});        // true
@@ -59,7 +59,7 @@ isNaN("");        // false: 空字符串被转换成0
 #### 基本对象
 * Object
   1. Object.assign(target, source): 将所有可枚举属性的值从一个或多个源对象复制到目标对象
-  ```
+  ```JS
     // 复制一个对象
     const obj = {a: 1}
     const copy = Object.assign({}, obj)
@@ -112,7 +112,7 @@ isNaN("");        // false: 空字符串被转换成0
     console.log(copy) // {baz: 3}
   ```
   2. Object.create(): 一个新对象,带着指定的原型对象和属性
-  ```
+  ```JS
     const person = {
       isHuman: false,
       printIntroduction: function () {

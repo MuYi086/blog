@@ -9,17 +9,17 @@
 由于sinopia作者停止维护和升级,于是一群人fork了sinopia的一个新分支，还起了个洋气的意大利名。并且更新和维护比较勤快,建议大家使用verdaccio替换sinopia
 
 #### 安装
-```
+```SHELL
 npm install -g verdaccio
 ```
 
 #### 运行
-```
+```SHELL
 verdaccio
 ```
 
 #### 配置文件
-```
+```SHELL
 // 以本机deepin 为例,配置文件位置如下:
 cd /home/ougege/.config/verdaccio
 // 其中ougege是用户名
@@ -32,12 +32,12 @@ listen: 0.0.0.0:4873
 ```
 
 #### 访问verdaccio
-```
+```JSON
 // 浏览器打开 localhost:4873
 ```
 
 #### 添加用户
-```
+```SHELL
 // 域名自行修改
 npm set registry http://127.0.0.1:4873
 npm adduser --registry http://127.0.0.1:4873
@@ -46,20 +46,20 @@ npm adduser --registry http://127.0.0.1:4873
 ```
 
 #### 查看当前用户
-```
+```SHELL
 // 判断是否注册用户
 npm who am i
 ```
 
 #### 发布
-```
+```SHELL
 // 开发一个npm包:可自行百度,这里不展开了;然后发布到本地verdaccio
 npm publish
 // 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
 ```
 
 #### 使用pm2守护进程
-```
+```SHELL
 // 全局安装pm2
 npm install -g pm2 --unsafe-perm
 // 使用pm2启动verdaccio
@@ -80,7 +80,7 @@ pm2 stop verdaccio
 如果`verdaccio`运行在虚拟机,需要让局域网内用户访问
 请将网络模式选择桥接模式：复制物理网络连接状态
 如果虚拟机不能上网,可如下操作
-```
+```JSON
 编辑 => 虚拟网络编辑器 => 更改设置 => 选择桥接模式,选择宿主机网卡
 ```
 

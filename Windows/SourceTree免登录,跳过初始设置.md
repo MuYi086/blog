@@ -4,7 +4,7 @@
 1. 在系统盘`C:\Users\你的电脑名字\AppData\Local\Atlassian\SourceTree`,新建一个`accounts.json`文件,粘贴入以下代码
 
 
-      ```
+      ```JSON
       [
         {
           "$id": "1",

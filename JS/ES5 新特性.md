@@ -1,7 +1,7 @@
 ## ES5新特性
 
 #### 严格模式
-```
+```JS
 // 在JS文件或者函数的顶部添加'use strict' 启用严格模式
 'use strict';
 function do () {
@@ -15,7 +15,7 @@ function test () {
 ```
 
 #### json
-```
+```JS
 // parse:反序列化成json对象
 let str = '{"width": 34, "height": 23}'
 let jsonObj = JSON.parse(str)
@@ -26,7 +26,7 @@ let jsonStr = JSON.stringify(testObj)
 ```
 
 #### Array
-```
+```JS
 // indexOf:返回指定元素的下标,没有返回-1
 let arr = [1, 2, 3, 4]
 console.log(arr.indexOf(3)) // 2
@@ -56,7 +56,7 @@ arr.reduce(function (total, currentVal) {return total + currentVal}) // 10
 ```
 
 #### Object
-```
+```JS
 // 添加或更改对象属性
 let test = {name: 'ougege'}
 Object.defineProperty(test, 'age', {value: 26})
@@ -124,7 +124,7 @@ Object.isFrozen(test)
 ```
 
 #### Function扩展
-```
+```JS
 // Function.prototype.bind
 function aa () {console.log(this.author)}
 function bb (name) {this.author = name}

@@ -11,7 +11,7 @@
 #### 对象链式调用
 
 举例如下:
-```
+```JS
 let obj = {value: 0}
 
 // 方式一:直接给对象属性添加方法
@@ -44,7 +44,7 @@ obj.add(3).reduce(1)
 原理是将函数添加在方法的原型上,然后实例化成对象,通过对象来调用
 
 举例如下:
-```
+```JS
 function FuncTest(num) {
   this.value = num || 0
 }
@@ -64,7 +64,7 @@ obj.add(4).reduce(2)
 
 `add(2)(4)(6)` 这种累加如何实现?
 
-```
+```JS
 // 第一步:针对add(2)，很容易实现
 function add (num) {
   cal = num || 0

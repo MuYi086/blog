@@ -1,19 +1,19 @@
 ## deepin安装mysql,apache2,php,phpmyadmin
 
 #### 安装mysql
-```
+```SHELL
 sudo apt-get install mysql-server mysql-client
 ```
 
 #### 进入mysql
-```
+```SHELL
 mysql -u root -p
 // 因为root的密码应该是空;在Enter password时回车会报错
 ```
 
 #### 修改mysql密码
 我们使用`mysql_secure_installation`来修改数据库`Root`用户的密码
-```
+```SHELL
 ougege@ougege-PC:~$sudo mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
@@ -79,7 +79,7 @@ Thanks for using MariaDB!
 ```
 
 #### 安装phpmyadmin
-```
+```SHELL
 # 安装phpmyadmin会默认安装他的依赖包括php,apache
 sudo apt-get install phpmyadmin
 # 浏览器打开localhost/phpmyadmin  发现打不开
@@ -91,7 +91,7 @@ sudo ln -s /usr/share/phpmyadmin/ /var/www/html/phpmyadmin
 #### 登录mysql
 此时在`phpmyadmin`用`root`身份登录还是报错
 原因是普通用户无法使用Mariadb的root用户连接数据库
-```
+```SHELL
 sudo mysql -u root -p
 # 输入密码登录
 # 以下ougege是要填入创建的用户名,password是要填入的密码
@@ -102,7 +102,7 @@ MariaDB [(none)]>CREATE USER ougege@localhost IDENTIFIED BY 'password';
 
 #### 为新用户授权
 注意:以上操作的用户在登录后仍然没有权限新建数据库
-```
+```SHELL
 sudo mysql -u root -p
 # 输入密码登录
 # 给用户授权
