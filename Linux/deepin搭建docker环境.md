@@ -62,6 +62,7 @@ wget -q0- https://get.docker.com/ | sh
     sudo groupadd docker
     sudo gpasswd -a user_name docker
     sudo service docker restart
+    // 并不是一劳永逸,首次进入需切换身份
     su root
     su user_name
     // 列出镜像
