@@ -22,7 +22,7 @@ docker run -d -p 443:443 -p 8081:80 -p 222:22 --name gitlab --restart always -v 
 sudo gedit /home/gitlab/config/gitlab.rb
 
 # 配置http协议所用访问地址
-external_ul 'http://127.0.0.1:8081'
+external_url 'http://127.0.0.1:8081'
 # 配置ssh协议所访问地址和端口
 # gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1:80'
 # 222端口是run时22端口映射的
@@ -35,6 +35,10 @@ docker restart gitlab
 ```SHELL
 # 进入容器
 docker exec -it gitlab bash
+# 重新配置
+gitlab-ctl reconfigure
+# 重启
+gitlab-ctl restart
 # 退出容器
 exit
 ```
