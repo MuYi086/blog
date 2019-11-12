@@ -34,8 +34,83 @@ npm run dev
 npm i eslint eslint-plugin-import eslint-config-airbnb-base --save-dev
 # 创建eslint配置文件.eslintrc.json,添加如下:
 {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "rules": {
+        "no-console": "off"
+    }
 }
+```
+在package.json的scripts字段里面添加三个脚本
+1. `lint` : 检查所有js文件的代码
+1. `lint-html` : 将检查结果写入一个网页文件./reports/lint-results.html
+1. `lint-fix` : 自动修正某些不规范的代码
+```JSON
+{
+    // ...
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint **/*.js",
+        "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
+        "lint-fix": "eslint --fix **/*.js"
+    },
+    // ...
+}
+```
+运行检查
+```SHELL
+npm run lint
+```
+
+#### 使用Mocha进行单元测试
+```SHELL
+# 安装mocha和断言库chai
+npm i -D mocha chai
+```
+查看add.js文件源码
+```JS
+function add(x, y) {
+    return x + y;
+}
+```
+编写一个测试脚本add.test.js
+```JS
+let add = require('./add.js')
+let expect = require('chai').expect
+// describe称为"测试套件"
+describe('加法函数测试', function() {
+    // it 称为"测试用例"
+    it('1加1应该等于2', function() {
+        // expect是一句断言
+        expect(add(1, 1)).to.be.equal(2)
+    })
+})
+```
+打开package.json文件,改写scripts字段的test脚本
+```JSON
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+// 改成
+"scripts": {
+    "test": "mocha *.test.js"
+}
+```
+运行测试用例
+```SHELL
+npm test
+```
+
+#### 使用Nightmare进行功能测试
+安装依赖
+```SHELL
+# nightmare会先安装electron
+# 为了保证速度，这里使用淘宝的镜像
+# Linux & Mac
+$ env ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install
+
+# Windows
+$ set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+$ npm install
 ```
 
 
