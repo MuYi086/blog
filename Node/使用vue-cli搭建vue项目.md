@@ -77,13 +77,13 @@ module.exports = {
 修改 `package.json` 文件,增加 `Eslint` 校验
 ```JSON
 {
-    // ...
+    ...
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
         "start": "npm run dev",
         "build": "node build/build.js"
     },
-    // ...
+    ...
 }
 ```
 修改 `webpack.base.conf.js`
@@ -141,8 +141,10 @@ devtool: 'cheap-module-eval-source-map',
 
 #### 使用Mocha进行单元测试
 ```SHELL
-# 建议全局安装mocha和断言库chai
-npm i -g mocha chai
+# 建议全局安装mocha
+npm i -g mocha
+# 安装断言库chai
+npm i chai --save-dev
 ```
 查看 `add.js` 文件源码
 ```JS
@@ -216,22 +218,62 @@ npm i electron -g
 # 安装nightmare
 npm i nightmare -g
 ```
-然后新建个demo.js
+然后新建个 `demo.js`
 ```JS
 const Nightmare = require('nightmare')
 const nightmare = Nightmare({ show: true })
 
 nightmare
-  .goto('https://duckduckgo.com')
-  .type('#search_form_input_homepage', 'github nightmare')
-  .click('#search_button_homepage')
-  .wait('#r1-0 a.result__a')
-  .evaluate(() => document.querySelector('#r1-0 a.result__a').href)
+  .goto('http://www.ckcest.cn/default/es/search?page=kgoes&dbtypecode=type_all&dbid=1000&keyword=')
+  .type('#txt_search', '机械')
+  .click('#btn_search')
+  .wait('.search-result-list')
+  .evaluate(getData)
   .end()
-  .then(console.log)
+  .then(function(res) {
+      console.log(res)
+  })
   .catch(error => {
     console.error('Search failed:', error)
   })
+
+function getData () {
+    let contentHtml = document.getElementById('result-content').innerHTML
+    return contentHtml
+}
+```
+运行程序
+```SHELL
+node demo.js
+```
+当然, `nightmare` 也可以和 `macha` 一起使用
+```JS
+const Nightmare = require('nightmare')
+let expect = require('chai').expect
+describe('测试nightmare', function() {
+    it('nightmare使用', function() {
+        nightmare = Nightmare({ show: true })
+        nightmare
+            .goto('http://www.ckcest.cn/default/es/search?page=kgoes&dbtypecode=type_all&dbid=1000&keyword=')
+            .type('#txt_search', '机械')
+            .click('#btn_search')
+            .wait('.search-result-list')
+            .evaluate(getData)
+            .end()
+            .then(res => {
+                // expect是一句断言
+                expect(res).to.be.equal('浪潮集团有限公司')
+            })
+            .catch(error => {
+                console.error('Search failed:', error)
+            })
+    })
+})
+
+function getData () {
+    let contentHtml = document.getElementById('technicalSupport').innerHTML
+    return contentHtml
+}
 ```
 
 
