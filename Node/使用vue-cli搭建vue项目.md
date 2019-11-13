@@ -1,10 +1,10 @@
 ## 使用vue-cli搭建vue项目
 
 #### 前言
-在工作中，我们常常面临要同时创建和开发多个vue项目.于是，产生一个想法，把这些重复的操作流程化,以便于以后CTRL+C和CTRL+V
+在工作中，我们常常面临要同时创建和开发多个 `vue` 项目.于是，产生一个想法，把这些重复的操作流程化,以便于以后 `CTRL+C` 和 `CTRL+V`
 
 #### 全局安装vue-cli
-建议这里使用[nrm](./使用nvm和nrm.md 'nrm'),切换到taobao源会比较快
+建议这里使用 [nrm](./使用nvm和nrm.md 'nrm') ,切换到 `taobao` 源会比较快
 ```SHELL
 npm i -g vue-cli
 ```
@@ -25,7 +25,7 @@ npm i
 # 运行
 npm run dev
 ```
-至此,一个简单的vue项目就创建完成了.
+至此,一个简单的 `vue` 项目就创建完成了.
 接下来我们来锦上添花,增加一些附加功能.
 
 #### 安装使用ESLint
@@ -141,8 +141,8 @@ devtool: 'cheap-module-eval-source-map',
 
 #### 使用Mocha进行单元测试
 ```SHELL
-# 安装mocha和断言库chai
-npm i -D mocha chai --save-dev
+# 建议全局安装mocha和断言库chai
+npm i -g mocha chai
 ```
 查看 `add.js` 文件源码
 ```JS
@@ -163,19 +163,41 @@ describe('加法函数测试', function() {
     })
 })
 ```
+`mocha` 默认运行 `test` 子目录里面的测试脚本
+```SHELL
+mocha test
+```
+当然，你也可以自定义漂亮的报告格式,例如 `mochawesome`
+```SHELL
+npm i -g mochawesome
+```
+
 打开 `package.json` 文件,改写 `scripts` 字段的 `test` 脚本
 ```JSON
-"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-},
 // 改成
 "scripts": {
-    "test": "mocha *.test.js"
+  "test": "mocha --recursive ./test/* --reporter mochawesome"
 }
 ```
 运行测试用例
 ```SHELL
 npm test
+```
+最后在 `mochawesome-report` 子目录查看
+`mocha` 常用钩子函数
+```JS
+before(function() {
+    // 在本区块的所有测试用例之前执行
+})
+after(function() {
+    // 在本区块的所有测试用例之后执行
+})
+beforeEach(function() {
+    // 在本区块的每个测试用例之前执行
+})
+afterEach(function() {
+    // 在本区块的每个测试用例之后执行
+})
 ```
 
 #### 使用Nightmare进行功能测试
@@ -184,16 +206,40 @@ npm test
 # nightmare会先安装electron
 # 为了保证速度，这里使用淘宝的镜像
 # Linux & Mac
-$ env ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install
+$ export  ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
 
 # Windows
 $ set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
-$ npm install
-```
 
+# 安装electron
+npm i electron -g
+# 安装nightmare
+npm i nightmare -g
+```
+然后新建个demo.js
+```JS
+const Nightmare = require('nightmare')
+const nightmare = Nightmare({ show: true })
+
+nightmare
+  .goto('https://duckduckgo.com')
+  .type('#search_form_input_homepage', 'github nightmare')
+  .click('#search_button_homepage')
+  .wait('#r1-0 a.result__a')
+  .evaluate(() => document.querySelector('#r1-0 a.result__a').href)
+  .end()
+  .then(console.log)
+  .catch(error => {
+    console.error('Search failed:', error)
+  })
+```
 
 
 #### 参考
 1. [VUE-CLI使用](https://www.cnblogs.com/samve/p/9095328.html 'VUE-CLI使用')
 1. [jsTraining](https://github.com/ruanyf/jstraining/blob/master/demos/README.md 'jsTraining')
 1. [ESLint](https://eslint.org/ 'ESLint')
+1. [测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html '测试框架 Mocha 实例教程')
+1. [Nightmare](https://github.com/segmentio/nightmare 'Nightmare')
+1. [解决npm安装electron很慢的问题](https://segmentfault.com/a/1190000020932174 '解决npm安装electron很慢的问题')
+1. [前端的UI自动化测试](https://maizsss.github.io/2017/10/28/%E5%89%8D%E7%AB%AF%E7%9A%84UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/ '前端的UI自动化测试')
