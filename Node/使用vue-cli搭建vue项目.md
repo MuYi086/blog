@@ -149,7 +149,7 @@ npm i chai --save-dev
 查看 `add.js` 文件源码
 ```JS
 function add(x, y) {
-    return x + y;
+    return x + y
 }
 ```
 编写一个测试脚本 `add.test.js`
