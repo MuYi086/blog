@@ -17,5 +17,6 @@ kill -s 9 id
 
 #### 内存使用情况
 ```
-top
+top -d sec -u user
+# P排序CPU, M排序内存
 ```
