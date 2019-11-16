@@ -14,21 +14,35 @@ docker pull gitlab/gitlab-ce
 # -p:将容器内部端口向外映射,这里用8081是防止80端口被占用
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -d -p 443:443 -p 8081:80 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+docker run -d -p 8443:443 -p 8081:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
 ```
 
 #### 配置gitlab.rb
 ```SHELL
 sudo gedit /home/gitlab/config/gitlab.rb
 
+# 减少进程数:默认是2,设为1，服务器会卡死
+unicorn['worker_processes'] = 2
+# 减少数据库缓存:默认256
+postgresql['shared_buffers'] = "128MB"
+# 减少数据库并发数:默认8
+postgresql['max_worker_processes'] = 4
+# 减少sidekiq并发数:默认25
+sidekiq['concurrency'] = 15
+# 保存,进入容器
+docker exec -it gitlab bash
+# 重新配置
+gitlab-ctl reconfigure
+# 重启
+gitlab-ctl restart
+
+# 以下配置仅供参考，可不配
 # 配置http协议所用访问地址
-external_url 'http://127.0.0.1:8081'
+# external_url 'http://127.0.0.1:8081'
 # 配置ssh协议所访问地址和端口
 # gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1:80'
 # 222端口是run时22端口映射的
-gitlab_rails['gitlab_shell_ssh_port'] = 222
-# 保存,重启gitlab容器
-docker restart gitlab
+# gitlab_rails['gitlab_shell_ssh_port'] = 222
 ```
 
 #### gitlab邮件设置
@@ -78,4 +92,5 @@ https://ougege@github.com/ougege/blog.git
 1. [gitlab代码自动同步到github](https://www.cnblogs.com/sxdcgaq8080/p/10530176.html 'gitlab代码自动同步到github')
 1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332 'docker部署gitlab配置SMTP')
 1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446 'gitlab使用163邮箱向用户发送邮件')
+1. [gitlab内存占用过大](https://blog.csdn.net/wanchaopeng/article/details/84771195 'gitlab内存占用过大')
 
