@@ -10,17 +10,24 @@ docker pull gitlab/gitlab-ce
 
 #### 运行一个gitlab容器
 ```SHELL
+# -m 最大占用内存 --memory-reservation 内存+swap
 # -d: 后台运行
 # -p:将容器内部端口向外映射,这里用8081是防止80端口被占用
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -d -p 8443:443 -p 8081:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+docker run -m 2048M -d -p 8443:443 -p 8081:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
 ```
 
 #### 配置gitlab.rb
 ```SHELL
 sudo gedit /home/gitlab/config/gitlab.rb
 
+# 配置http协议所用访问地址:这里有个问题(配置端口后无法访问)
+external_url 'http://127.0.0.1'
+# 配置ssh协议所访问地址和端口
+gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1:8081'
+# 222端口是run时22端口映射的
+gitlab_rails['gitlab_shell_ssh_port'] = 2222
 # 减少进程数:默认是2,设为1，服务器会卡死
 unicorn['worker_processes'] = 2
 # 减少数据库缓存:默认256
@@ -35,14 +42,6 @@ docker exec -it gitlab bash
 gitlab-ctl reconfigure
 # 重启
 gitlab-ctl restart
-
-# 以下配置仅供参考，可不配
-# 配置http协议所用访问地址
-# external_url 'http://127.0.0.1:8081'
-# 配置ssh协议所访问地址和端口
-# gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1:80'
-# 222端口是run时22端口映射的
-# gitlab_rails['gitlab_shell_ssh_port'] = 222
 ```
 
 #### gitlab邮件设置
@@ -59,7 +58,7 @@ exit
 
 #### gitlab切换为中文
 ```SHELL
-头像 => setttings => 左侧边栏preferences => language
+# 头像 => setttings => 左侧边栏preferences => language
 ```
 
 #### 添加SSH keys
@@ -77,7 +76,7 @@ exit
 ```
 
 #### 自动同步到github
-```
+```SHELL
 # 选择一个项目 => 左侧设置 => 仓库
 # 填入对应的github项目地址,注意//后插入用户名,例如
 https://ougege@github.com/ougege/blog.git
@@ -93,4 +92,5 @@ https://ougege@github.com/ougege/blog.git
 1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332 'docker部署gitlab配置SMTP')
 1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446 'gitlab使用163邮箱向用户发送邮件')
 1. [gitlab内存占用过大](https://blog.csdn.net/wanchaopeng/article/details/84771195 'gitlab内存占用过大')
+1. [Docker(二十)-Docker容器CPU、memory资源限制](https://www.cnblogs.com/zhuochong/p/9728383.html 'Docker(二十)-Docker容器CPU、memory资源限制')
 
