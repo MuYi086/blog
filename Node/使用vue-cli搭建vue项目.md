@@ -151,6 +151,7 @@ npm i chai --save-dev
 function add(x, y) {
     return x + y
 }
+module.exports = add
 ```
 编写一个测试脚本 `add.test.js`
 ```JS
