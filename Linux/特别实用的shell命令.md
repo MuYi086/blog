@@ -36,14 +36,14 @@ sudo /etc/init.d/apache2 stop
 #### 手动清理内存
 ```SHELL
 # 清理前
-free -m
+free -h
 
 # 清理
 su
 echo N > /proc/sys/vm/drop_caches
 
 # 清理后
-free -m
+free -h
 ```
 
 #### 自动清理内存
