@@ -5,9 +5,9 @@
 ps -ef | grep docker
 ```
 
-#### 进程id查看进程占用端口
+#### 查看端口占用
 ```SHELL
-netstat -nap | grep 8080
+sudo netstat -lnp | grep id
 ```
 
 #### 杀死进程
@@ -21,4 +21,14 @@ kill -s 9 id
 free -h
 # top命令查看所有:P排序CPU, M排序内存
 top -d sec -u user
+```
+
+# apache2服务
+```SHELL
+# 启动
+sudo /etc/init.d/apache2 start
+# 重启
+sudo /etc/init.d/apache2 restart
+# 停止
+sudo /etc/init.d/apache2 stop
 ```
