@@ -93,7 +93,11 @@ stages:
   - update
   - test
   - build
-  - deploy
+# 创建node_modules缓存，不用每次都重新安装依赖了
+cache:
+  key: ${CI_BUILD_REF_NAME}
+  paths:
+    - node_modules/
 
 # 更新代码并安装依赖
 update:
@@ -118,14 +122,6 @@ build:
     - npm run build
   tags:
     - build
-
-# 发布
-deploy:
-  stage: deploy
-  script:
-    - npm run dev
-  tags:
-    - deploy
 ```
 
 
