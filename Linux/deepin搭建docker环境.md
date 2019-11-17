@@ -49,6 +49,23 @@ wget -q0- https://get.docker.com/ | sh
     sudo apt-get update
     sudo apt-get install docker-ce
     ```
+1. 设置国内镜像加速
+```SHELL
+# 配置daemon.json:没有的话自己touch一个
+sudo gedit /etc/docker/daemon.json
+# 填入收集的镜像地址
+{
+  	"registry-mirrors": [
+        "https://hub-mirror.c.163.com",
+        "https://reg-mirror.qiniu.com",
+        "https://registry.docker-cn.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://mirror.ccs.tencentyun.com"
+  	]
+}
+# 重启
+sudo service docker restart
+```
 
 1. 常用 `docker` 命令
     ```SHELL
@@ -91,5 +108,6 @@ wget -q0- https://get.docker.com/ | sh
     docker rmi image_name
     ```
 #### 参考
-1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806)
-1. [Deepin下安装Docker](https://www.diandian100.cn/bce2e291.html)
+1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806 'deepin系统下的docker安装')
+1. [Deepin下安装Docker](https://www.diandian100.cn/bce2e291.html 'Deepin下安装Docker')
+1. [Docker 加速器](http://guide.daocloud.io/dcs/daocloud-9153151.html 'Docker 加速器')
