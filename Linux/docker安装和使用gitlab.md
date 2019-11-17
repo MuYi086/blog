@@ -12,10 +12,11 @@ docker pull gitlab/gitlab-ce
 ```SHELL
 # -m 最大占用内存 --memory-reservation 内存+swap
 # -d: 后台运行
-# -p:将容器内部端口向外映射,这里用8081是防止80端口被占用
+# -p:将容器内部端口向外映射,这里建议使用80端口
+# 上面建议80端口是因为在后续CI使用gitlab-runner时,其他自定义端口均报错(我尝试多种方法，均失败，目前未找到解决方案)
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -m 2048M -d -p 8443:443 -p 8081:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+docker run -m 2048M -d -p 8443:443 -p 80:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
 ```
 
 #### 配置gitlab.rb
@@ -25,7 +26,7 @@ sudo gedit /home/gitlab/config/gitlab.rb
 # 配置http协议所用访问地址:这里有个问题(配置端口后无法访问)
 external_url 'http://127.0.0.1'
 # 配置ssh协议所访问地址和端口
-gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1:8081'
+gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1'
 # 222端口是run时22端口映射的
 gitlab_rails['gitlab_shell_ssh_port'] = 2222
 # 减少进程数:默认是2,设为1，服务器会卡死
