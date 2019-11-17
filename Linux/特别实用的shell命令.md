@@ -79,7 +79,7 @@ currentDrop=$(cat /proc/sys/vm/drop_caches)
 # 限制内存800M触发
 memoryLimit=800
 # -gt：大于; -lt: 小于; -eq:等于; -ge:大于等于; -le:小于等于; -ne:不等于;
-if [ $MemFree -lt $memoryLimit ]
+if [ $MemFree -gt $memoryLimit ]
 then
     echo "内存大于800M,不担心"
     echo $MemFree
