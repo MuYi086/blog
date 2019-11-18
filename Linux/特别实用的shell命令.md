@@ -108,6 +108,13 @@ done
 执行
 ```SHELL
 # 给权限并执行
-sudo chmod -R 777 ./do.sh
+sudo chmod 777 ./do.sh
+sudo chmod 777 ./memoryFree.sh
 sudo ./do.sh
+```
+
+#### 查找文件
+```SHELL
+# 例如查找所有jenkins文件
+find / -name jenkins.*
 ```

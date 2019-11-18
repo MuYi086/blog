@@ -113,7 +113,7 @@ test:
   script:
     - npm run test
   tags:
-    - unitTest
+    - test
 
 # 打包
 build:
@@ -137,6 +137,20 @@ npm install -g http-server
 cd dist && hs
 ```
 
+#### 安装jenkins
+```SHELL
+# 使用docker安装镜像比较方便
+docker pull jenkins/jenkins
+# 运行一个容器
+# -m 最大占用内存 --memory-reservation 内存+swap
+# -d: 后台运行
+# -p:将容器内部端口向外映射,这里建议使用80端口
+# 上面建议80端口是因为在后续CI使用gitlab-runner时,其他自定义端口均报错(我尝试多种方法，均失败，目前未找到解决方案)
+# --name:命名容器名称
+# -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
+docker run -m 800M -d -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins/jenkins
+```
+
 #### 参考
 1. [图文详解k8s自动化持续集成之GitLab CI/CD](https://www.cnblogs.com/sunsky303/p/10775126.html '图文详解k8s自动化持续集成之GitLab')
 1. [Gitlab CI持续集成 - GitLab Runner 安装与注册](https://www.jianshu.com/p/fab407ddfed0 'Gitlab CI持续集成 - GitLab Runner 安装与注册')
@@ -149,5 +163,6 @@ cd dist && hs
 1. [Gitlab自动部署之二：安装GITLAB-RUNNER](https://juejin.im/post/5cb92a3ae51d456e5f76c485 'Gitlab自动部署之二：安装GITLAB-RUNNER')
 1. [gitlab-runner注册](https://docs.gitlab.com/runner/register/index.html#docker 'gitlab-runner注册')
 1. [如何通过文件打开Vue中的index.html](https://www.sail.name/2017/06/10/how-to-open-index-html-of-vue-over-file/ '如何通过文件打开Vue中的index.html')
+1. [安装jenkins](https://jenkins.io/zh/doc/book/installing/ '安装jenkins')
 
 
