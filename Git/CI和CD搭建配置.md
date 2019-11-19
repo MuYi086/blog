@@ -162,7 +162,7 @@ cat /var/jenkins_home/.ssh/id_rsa.pub
 ![创建用户](/images/git/CI和CD搭建配置/jenkins_01.png '创建用户')
 
 实例配置
-![实例配置](/images/git/CI和CD搭建配置/jenkins_01.png '实例配置')
+![实例配置](/images/git/CI和CD搭建配置/jenkins_02.png '实例配置')
 
 在 `jenkins` 中配置 `git` 项目的地址?
 由于我们的 `gitlab-ce` 也是运行在 `docker` 中，无法直接获取项目地址,所以这里需要创建 `Bridge` 网桥方便容器之间互相访问
