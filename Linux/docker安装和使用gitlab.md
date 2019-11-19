@@ -23,10 +23,11 @@ docker run -m 2048M -d -p 8443:443 -p 80:80 -p 2222:22 --name gitlab --restart a
 ```SHELL
 sudo gedit /home/gitlab/config/gitlab.rb
 
-# 配置http协议所用访问地址:这里有个问题(配置端口后无法访问)
-external_url 'http://127.0.0.1'
+# 配置http协议所用访问地址
+# 由于ssh的原因,建议使用域名形式,然后在改host
+external_url 'http://localhost'
 # 配置ssh协议所访问地址和端口
-gitlab_rails['gitlab_ssh_host'] = 'http://127.0.0.1'
+gitlab_rails['gitlab_ssh_host'] = 'localhost'
 # 222端口是run时22端口映射的
 gitlab_rails['gitlab_shell_ssh_port'] = 2222
 # 减少进程数:默认是2,设为1，服务器会卡死
