@@ -137,7 +137,7 @@ npm install -g http-server
 cd dist && hs
 ```
 
-#### 安装jenkins
+#### 安装和使用jenkins
 ```SHELL
 # 使用docker安装镜像比较方便
 docker pull jenkins/jenkins
@@ -148,8 +148,56 @@ docker pull jenkins/jenkins
 # 上面建议80端口是因为在后续CI使用gitlab-runner时,其他自定义端口均报错(我尝试多种方法，均失败，目前未找到解决方案)
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -m 800M -d -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins/jenkins
+docker run -m 800M -d -p 8080:8080 -p 50000:50000 --name jenkins -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins/jenkins
+# 进入容器
+docker exec -it jenkins bash
+# 打印密码,执行安装
+cat /var/lib/jenkins/secrets/initialAdminPassword
+# 生成ssh秘钥,
+ssh-keygen -t rsa
+# 打印公钥,填入gitlab,方便后面拉代码
+cat /var/jenkins_home/.ssh/id_rsa.pub
 ```
+创建用户
+![创建用户](/images/git/CI和CD搭建配置/jenkins_01.png '创建用户')
+
+实例配置
+![实例配置](/images/git/CI和CD搭建配置/jenkins_01.png '实例配置')
+
+在 `jenkins` 中配置 `git` 项目的地址?
+由于我们的 `gitlab-ce` 也是运行在 `docker` 中，无法直接获取项目地址,所以这里需要创建 `Bridge` 网桥方便容器之间互相访问
+```SHELL
+# 创建bridge网络
+docker newwork create testnet
+# 查询新创建的bridge
+docker network ls
+# 重新运行gitlab-ce容器连接到testnet网络
+docker run -m 2048M -d -p 8443:443 -p 80:80 -p 2222:22 --name gitlab --network testnet --network-alias gitlab  --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+# 重新运行jenkins容器连接到testnet网络
+docker run -m 800M -d -p 8080:8080 -p 50000:50000 --name jenkins --network testnet --network-alias jenkins  -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins/jenkins
+# 进入jenkins容器访问gitlab
+docker exec -it jenkins bash
+ping gitlab
+# jenkins的bash没有vi，vim。。。。
+# 把刚才对应的ip追加到hosts
+echo '172.18.0.2 gitlab.com' >> /etc/hosts
+```
+把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](./Git安装和配置 'Git安装和配置')
+新建一个 `nodejs` 项目
+![添加描述](/images/git/CI和CD搭建配置/jenkins_03.png '添加描述')
+
+![参数构建化过程](/images/git/CI和CD搭建配置/jenkins_04.png '参数构建化过程')
+
+![源码管理](/images/git/CI和CD搭建配置/jenkins_05.png '源码管理')
+
+![构建环境](/images/git/CI和CD搭建配置/jenkins_06.png '构建环境')
+
+![构建](/images/git/CI和CD搭建配置/jenkins_07.png '构建')
+
+#### 使用体验
+1. `gitlab-runner` 使用更加方便,和 `gitlab` 集成度高
+1. `jenkins` 相对而言功能和插件更丰富
+1. `gitlab-runner` 图形可视化更友好,集成到 `gitlab` ,可实时显示当前状态
 
 #### 参考
 1. [图文详解k8s自动化持续集成之GitLab CI/CD](https://www.cnblogs.com/sunsky303/p/10775126.html '图文详解k8s自动化持续集成之GitLab')
@@ -164,5 +212,8 @@ docker run -m 800M -d -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_h
 1. [gitlab-runner注册](https://docs.gitlab.com/runner/register/index.html#docker 'gitlab-runner注册')
 1. [如何通过文件打开Vue中的index.html](https://www.sail.name/2017/06/10/how-to-open-index-html-of-vue-over-file/ '如何通过文件打开Vue中的index.html')
 1. [安装jenkins](https://jenkins.io/zh/doc/book/installing/ '安装jenkins')
+1. [jenkins配置git报错returned status code 128](https://blog.csdn.net/oceanyang520/article/details/100583187 'jenkins配置git报错returned status code 128')
+1. [Docker容器互访三种方式](https://www.cnblogs.com/shenh/p/9714547.html 'Docker容器互访三种方式')
+1. [jenkins学习之自动打包构建nodejs应用](https://www.cnblogs.com/vipzhou/p/7890016.html 'jenkins学习之自动打包构建nodejs应用')
 
 
