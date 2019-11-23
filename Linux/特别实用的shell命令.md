@@ -15,6 +15,11 @@ sudo netstat -lnp | grep id
 kill -s 9 id
 ```
 
+#### 磁盘使用情况
+```SHELL
+df -h
+```
+
 #### 内存使用情况
 ```SHELL
 # 直观统计
