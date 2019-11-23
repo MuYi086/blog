@@ -1,4 +1,4 @@
-## Python源收集
+## Python源管理
 
 #### 前言
 `python` 默认的的源的速度真是惨不忍睹，谁用谁知道
@@ -16,7 +16,35 @@
 山东理工大学|http://pypi.sdutlinux.org/|
 中国科学技术大学|http://pypi.mirrors.ustc.edu.cn/|
 
+#### 常用命令
+```SHELL
+# 查找软件
+pip search Package
+# 安装软件
+pip install Package
+# 使用临时地址安装软件
+pip install -i src Package
+# 更新软件
+pip install -U Package
+# 卸载软件
+pip uninstall Package
+# 列出已安装的软件
+pip list
+```
+
+#### 修改源
+```SHELL
+# 没有则新建pip.conf
+mkdir ~/.pip && cd ~/.pip && touch pip.conf
+# 编辑
+gedit pip.conf
+# 填入下面配置
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+trusted-host = mirrors.aliyun.com
+```
 
 #### 参考
 1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017 'python 国内镜像加速')
+1. [pip常用命令](https://www.cnblogs.com/keithtt/p/9393036.html 'pip常用命令')
 
