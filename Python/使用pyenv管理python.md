@@ -25,9 +25,15 @@ pyenv --version
 
 #### 常用命令
 ```SHELL
+# 默认pyenv安装速度很慢,建议下载源码放在./pyenv/cache下（注意是tar.xz的，tgz的不识别）
+# 安装依赖：否则会报错装不上
+sudo apt-get install libc6-dev gcc
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
 # 安装
-pyenv install 3.8.0 -v
-
+pyenv install 3.8.0
+# 设定版本
+pyenv global 3.8.0
+# 其他命令参考 -h
 ```
 
 #### 参考
