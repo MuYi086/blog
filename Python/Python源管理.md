@@ -44,6 +44,22 @@ index-url = https://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
 ```
 
+#### pip3错误修复
+```SHELL
+# 错误提示如下：
+Traceback (most recent call last):
+  File "/usr/bin/pip3", line 9, in <module>
+    from pip import main
+ImportError: cannot import name 'main'
+
+# 进入/usr/bin/pip3，调整为
+
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+```
+
+
 #### 参考
 1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017 'python 国内镜像加速')
 1. [pip常用命令](https://www.cnblogs.com/keithtt/p/9393036.html 'pip常用命令')
