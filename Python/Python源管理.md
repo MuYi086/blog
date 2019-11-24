@@ -32,6 +32,14 @@ pip uninstall Package
 pip list
 ```
 
+#### 下载安装pip
+```SHELL
+# 下载
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# 安装
+python3 get-pip.py
+```
+
 #### 修改源
 ```SHELL
 # 没有则新建pip.conf
@@ -63,4 +71,5 @@ if __name__ == '__main__':
 #### 参考
 1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017 'python 国内镜像加速')
 1. [pip常用命令](https://www.cnblogs.com/keithtt/p/9393036.html 'pip常用命令')
+1. [pip　install](https://pip.pypa.io/en/stable/installing/ 'pip install')
 
