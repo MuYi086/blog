@@ -47,6 +47,10 @@ pyenv rehash
 wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 安装,按提示yes即可
 bash Miniconda3-latest-Linux-x86_64.sh
+#　换源
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
 ```
 
 #### 总结
