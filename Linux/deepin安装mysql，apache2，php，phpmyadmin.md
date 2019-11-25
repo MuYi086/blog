@@ -118,6 +118,19 @@ select User,Host,Password from mysql.user;
 create database test;
 ```
 
+#### 常用MariaDB命令
+```SHELL
+# 查看当前用户：方法一
+select user();
+# 方法二
+select current_user;
+# 方法三
+select current_user();
+# 显示所有用户
+select user from mysql.user;
+# 删除用户
+delete from user where user='ougege';
+```
 
 
 #### 参考
