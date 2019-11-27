@@ -65,3 +65,5 @@ function nihao () {
 }
 ```
 
+# 颜色
+$\color{red}{红色}$
