@@ -11,6 +11,7 @@ docker pull gitlab/gitlab-ce
 #### 运行一个gitlab容器
 ```SHELL
 # -m 最大占用内存 --memory-reservation 内存+swap
+# --rm 停止后自动删除
 # -d: 后台运行
 # -p:将容器内部端口向外映射,这里建议使用80端口
 # 上面建议80端口是因为在后续CI使用gitlab-runner时,其他自定义端口均报错(我尝试多种方法，均失败，目前未找到解决方案)
