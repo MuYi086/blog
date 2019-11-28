@@ -1,5 +1,135 @@
 ## 搭建v2ray
 
+#### 前言
+很早之前，在了解到 `herokuapp` 的时候，就想尝试 `v2ray` 了，但是那时候一方面没有时间，一方面技术不够扎实，所以一直没有动手。终于，最近准备捡起来，搭建心心念念的 `v2ray`
+
+#### 介绍
+一款优秀的代理集成工具。本文使用了 `V2ray + WebSocket + TLS + Nginx + Cloudflare` 搭建
+* 优点 :  高匿,快速, 支持多平台, 多协议
+* 缺点 : 配置较复杂,上手需要结合多种技术
+
+#### Cloudflare + BT(宝塔)
+`Cloudflare` : 这里我们用来解析域名的 `DNS` ,并创建 `SSL` 证书
+`BT` : 创建网站并绑定证书
+1. [注册](https://dash.cloudflare.com '注册') 并解析域名
+    * 添加域名
+
+        ![代理](/images/linux/搭建v2ray/v2ray_01.png '代理')
+
+    * 在域名控制面板将DNS修改指向到Cloudflare
+
+        ```SHELL
+        NS	earl.ns.cloudflare.com
+        NS	vita.ns.cloudflare.com
+        ```
+
+1. 加密和创建证书
+    * 使用SSL/TLS加密
+
+        ![代理](/images/linux/搭建v2ray/v2ray_02.png '代理')
+
+    * 创建证书
+
+        ![证书](/images/linux/搭建v2ray/v2ray_03.png '证书')
+
+        ![证书](/images/linux/搭建v2ray/v2ray_04.png '证书')
+
+    *  记录并保存证书信息
+
+        ![证书](/images/linux/搭建v2ray/v2ray_05.png '证书')
+
+1. `BT` (宝塔设置)
+    * 添加站点
+
+        ![添加网站](/images/linux/搭建v2ray/v2ray_06.gif '添加网站')
+
+    * 绑定证书
+
+        ![绑定证书](/images/linux/搭建v2ray/v2ray_07.gif '绑定证书')
+
+#### 安装v2ray和配置
+```SHELL
+# ssh登录远程vps安装v2ray
+wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/v2ray.fun/master/install.sh && bash install.sh
+```
+
+`BT` (宝塔)--安全--防火墙：放行上面设定的端口号
+
+![放行端口](/images/linux/搭建v2ray/v2ray_08.png '放行端口')
+
+登录 `vpsIp:5000` ，使用 `v2ray.fun` 面板修改配置
+
+![修改配置](/images/linux/搭建v2ray/v2ray_09.png '修改配置')
+
+同时对应修改服务器 `v2ray` 配置
+
+```SHELL
+# ssh登录远程vps
+# 修改/etc/v2ray/config.json部分配置: 注意去掉注释
+"inbound": {
+    "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+        "path": "/ws/", # 路径
+        "headers": {
+            "Host": "ougege.cn" # 伪装域名
+        }
+        }
+    },
+    "protocol": "vmess",
+    "port": 10010, # 服务器开放端口
+    ...
+}
+```
+
+对应修改 `nginx` 配置
+```Nginx
+location /ws {
+  proxy_redirect off;
+  proxy_pass http://127.0.0.1:10010;
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "upgrade";
+  proxy_set_header Host $http_host;
+}
+```
+如图所示：
+
+![修改nginx](/images/linux/搭建v2ray/v2ray_10.png '修改nginx')
+
+```SHELL
+# 1. 服务器重启v2ray
+service v2ray restart
+# 2. BT控制台重启nginx
+```
+
+#### Cloudflare开启代理
+
+![开启代理](/images/linux/搭建v2ray/v2ray_11.png '开启代理')
+
+#### 特别注意
+如果我们的服务器在国外，需要格外注意服务器系统时间与本地时间是否一致。 `v2ray` 验证方式认为误差超过 `90s` 都是不合法的请求。
+
+```SHELL
+# linux查看系统时间
+date -R
+```
+如果不为东八区的时间，我们使用 `tzselect` 重置下
+
+```SHELL
+tzselect
+# 1. 选择Asia
+# 2. 选择China
+# 3. 选择Beijing Time
+# 4. 选1，yes
+
+# 更新环境变量
+echo "TZ='Asia/Shanghai'; export TZ" >>/etc/profile
+source /etc/profile
+```
+
+#### 客户端使用
+详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md 'v2ray使用')
 
 #### 参考
 1. [v2ray-文档](https://toutyrater.github.io/prep/install.html 'v2ray-文档')
