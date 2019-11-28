@@ -168,7 +168,7 @@ cat /var/jenkins_home/.ssh/id_rsa.pub
 由于我们的 `gitlab-ce` 也是运行在 `docker` 中，无法直接获取项目地址,所以这里需要创建 `Bridge` 网桥方便容器之间互相访问
 ```SHELL
 # 创建bridge网络
-docker newwork create testnet
+docker network create testnet
 # 查询新创建的bridge
 docker network ls
 # 重新运行gitlab-ce容器连接到testnet网络
