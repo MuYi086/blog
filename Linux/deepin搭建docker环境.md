@@ -96,13 +96,19 @@ sudo service docker restart
     docker ps
     # 列举所有容器
     docker ps -a
+    # 创建bridge网络
+    docker newwork create netname
+    # 查询新创建的bridge
+    docker network ls
     # 启动容器
     docker run -it ubuntu /bin/bash
     # 停止容器
     docker stop container_name
     # 重启容器
     docker start container_name
-    # 移出容器
+    # 查询容器Ip
+    docker inspect container_name | grep "IPAddress"
+    # 移除容器
     docker rm container_name
     # 删除镜像:该镜像下容器实例必须都已停止
     docker rmi image_name
