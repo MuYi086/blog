@@ -38,7 +38,7 @@ docker pull php:7.1-fpm
 # -p:将容器内部端口向外映射
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php -v /home/ougege/program/nginx/www:/home -d php:7.1-fpm
+docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php -v /home/ougege/program/nginx/www:/home php:7.1-fpm
 ```
 
 对应调整 `nginx` 配置
