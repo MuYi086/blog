@@ -38,6 +38,12 @@
 
 1. 启动中 `Win + F12` 选择 `CD` ，也就是老毛桃启动,进入PE之后就和 `windows` 一样，给系统分区，然后选择 `gho` 安装了.
 
+#### 最后
+进入系统后，最好安装一下增强驱动，效果会好很多.
+```SHELL
+# 顶部菜单 => 设备 => 安装增强驱动
+```
+
 #### 参考
 1. [老毛桃](https://www.laomaotao.net/ '老毛桃')
 1. [Ubuntu与Windows下使得Virtualbox从U盘启动系统](https://blog.csdn.net/SimileciWH/article/details/86750966 'Ubuntu与Windows下使得Virtualbox从U盘启动系统')
