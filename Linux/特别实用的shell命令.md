@@ -15,6 +15,14 @@ sudo netstat -lnp | grep id
 kill -s 9 id
 ```
 
+#### 显示包相关信息
+```SHELL
+# 已安装的包信息
+apt-cache showpkg docker
+# 列出以xx开头的包(来自网络缓存,非本地)
+apt-cache pkgnames docker
+```
+
 #### 磁盘使用情况
 ```SHELL
 df -h
