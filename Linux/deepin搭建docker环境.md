@@ -82,6 +82,8 @@ sudo service docker restart
     # 并不是一劳永逸,首次进入需切换身份
     su root
     su user_name
+    # 如果提示鉴定错误，是由于初次安装未给root设置密码,重新设置即可
+    sudo passwd root
     # 列出镜像
     docker images
     # 查找镜像
