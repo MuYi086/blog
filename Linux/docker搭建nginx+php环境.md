@@ -88,6 +88,21 @@ docker exec -it nginx bash
 service nginx reload
 ```
 
+#### 安装mysql
+```SHELL
+# 拉取mysql镜像
+docker pull mysql
+# 运行一个容器
+# -d: 后台运行
+# --rm：容器停止运行后，自动删除容器文件
+# -p:将容器内部端口向外映射
+# --name:命名容器名称
+docker run -d -it --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=ougege mysql
+# 新版本mysql无法插入中文
+# 临时生效
+docker exec -it mysql env LANG=C.UTF-8 /bin/sh
+# 参考 https://www.jianshu.com/p/6129cef6b45a
+```
 
 #### 参考
 1. [docker-nginx](https://hub.docker.com/_/nginx/ 'docker-nginx')
@@ -95,3 +110,5 @@ service nginx reload
 1. [Nginx容器教程](https://www.ruanyifeng.com/blog/2018/02/nginx-docker.html 'Nginx容器教程')
 1. [Docker中配置Nginx与PHP](https://segmentfault.com/a/1190000011637451 'Docker中配置Nginx与PHP')
 1. [docker部署php+nginx环境](https://juejin.im/post/5b20cf9ef265da6dfd1a7fcb 'docker部署php+nginx环境')
+1. [Docker-Hub-mysql](https://hub.docker.com/_/mysql/ 'Docker-Hub-mysql')
+1. [docker-mysql](https://www.cnblogs.com/xiangzideheiniu/p/11804156.html 'docker-mysql')
