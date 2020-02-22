@@ -71,6 +71,8 @@ sudo service docker restart
     ```SHELL
     # 启动docker
     systemctl start docker
+    # 停止docker
+    systemctl stop docker
     # 查看安装的版本信息
     docker version
     # docker的demo项目hello-world
@@ -114,6 +116,10 @@ sudo service docker restart
     docker rm container_name
     # 删除镜像:该镜像下容器实例必须都已停止
     docker rmi image_name
+    # 卸载docker-ce
+    apt remove docker-ce
+    apt autoremove
+    
     ```
 #### 参考
 1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806 'deepin系统下的docker安装')
