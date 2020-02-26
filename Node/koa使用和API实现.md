@@ -245,6 +245,7 @@
         }
     },
     ```
+    
 1. 使用 `axios` 请求
     ```JS
     axios.get('api/forward/101').then(function (res) {
@@ -252,6 +253,43 @@
     }).catch(function (error) {
         console.log(error)
     })
+    ```
+
+1. 使用 `scss` 预处理器
+    ```SHELL
+    # 安装node-sass、sass-loader、style-loader
+    # 注意这里sass-loader安装是尝试过的可用版本，最新版本会抛错
+    npm i sass-loader@7.3.1 --save-dev
+    npm i node-sass style-loader --save-dev
+    ```
+
+1. 配置 `build` 目录下的 `webpack.base.conf.js` 文件
+    ```JS
+    // 在rules规则加上如下:
+    {
+        test: /\.scss$ /,
+        loaders: ['style', 'css', 'sass']
+    },
+    ```
+
+1. 安装 `sass-resource-loader` 来全局引入
+    ```SHELL
+    npm i sass-resources-loader --save-dev
+    ```
+1. 修改 `build` 中的 `utils.js` 配置
+    ```JS
+    // 将
+    scss: generateLoaders('sass'),
+    // 替换为
+    scss: generateLoaders('sass').concat(
+      {
+        loader: 'sass-resources-loader',
+        options: {
+          // scss全局文件路径
+          resources: path.resolve(__dirname, '../src/assets/css/site.scss')
+        }
+      }
+    ),
     ```
 
 #### 思考
@@ -262,3 +300,4 @@
 1. [koa2从搭建项目到实现API](https://www.jianshu.com/p/3e35db2c8d6c 'koa2从搭建项目到实现API')
 1. [使用koa+mysql实现一个完整的项目](https://www.jianshu.com/p/98801a280b25 '使用koa+mysql实现一个完整的项目')
 1. [前后端合一使用教程](https://molunerfinn.com/Vue+Koa/#%E9%A1%B9%E7%9B%AE%E7%94%A8%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%B3%E9%94%AE%E4%BE%9D%E8%B5%96)
+1. [在vue-cli 2.x中全局使用scss文件，以及相关报错](https://blog.csdn.net/weixin_39385430/article/details/104188264 '在vue-cli 2.x中全局使用scss文件，以及相关报错')
