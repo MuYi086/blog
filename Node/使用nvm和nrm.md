@@ -6,8 +6,9 @@
 
 #### nvm安装
 [官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
+[nvm-windows地址](https://github.com/coreybutler/nvm-windows 'nvm-windows地址')
 ```SHELL
-// 以下方式二选一
+# 以下方式二选一
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
@@ -18,17 +19,30 @@ Failed to connect to raw.githubusercontent.com port 443: 拒绝连接
 ```
 解决方案如下:
 ```SHELL
-// 直接复制网址在浏览器打开
-// https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh
-// 复制页面内容保存到本地install.sh,用bash执行
+# 直接复制网址在浏览器打开
+# https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh
+# 复制页面内容保存到本地install.sh,用bash执行
 bash ./install.sh
 ```
 #### 安装node和npm
 ```SHELL
-// 安装node
+# 安装node
 nvm install node
-// 安装特定版本的node
+# 安装特定版本的node
 nvm install 5.0.0
+```
+
+#### 使用淘宝镜像
+```SHELL
+# 使用淘宝镜像可加快下载速度
+# 经测试官网镜像下载npm会巨慢,建议改用淘宝镜像
+
+# linux和mac 在终端修改配置
+nvm node_mirror https://npm.taobao.org/mirrors/node/
+nvm npm_mirror https://npm.taobao.org/mirrors/npm/
+
+# windows可以通过修改setting.txt配置, 加入上面俩行即可
+// 目录: C:\Users\用户\AppData\Roaming\nvm
 ```
 
 #### 显示列表
