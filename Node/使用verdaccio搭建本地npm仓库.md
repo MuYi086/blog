@@ -20,14 +20,14 @@ verdaccio
 
 #### 配置文件
 ```SHELL
-// 以本机deepin 为例,配置文件位置如下:
+# 以本机deepin 为例,配置文件位置如下:
 cd /home/ougege/.config/verdaccio
-// 其中ougege是用户名
+# 其中ougege是用户名
 vim ./config.yaml
-// vim的操作可自行百度
-// 或者用gedit来编辑
+# vim的操作可自行百度
+# 或者用gedit来编辑
 gedit ./config.yaml
-// 编辑文件在底部加一行以便于局域网内也能访问
+# 编辑文件在底部加一行以便于局域网内也能访问
 listen: 0.0.0.0:4873
 ```
 
@@ -38,41 +38,41 @@ listen: 0.0.0.0:4873
 
 #### 添加用户
 ```SHELL
-// 域名自行修改
+# 域名自行修改
 npm set registry http://127.0.0.1:4873
 npm adduser --registry http://127.0.0.1:4873
-// 按提示输入用户名,密码和邮件地址
-// 然后可以尝试在本地verdaccio的网页登录
+# 按提示输入用户名,密码和邮件地址
+# 然后可以尝试在本地verdaccio的网页登录
 ```
 
 #### 查看当前用户
 ```SHELL
-// 判断是否注册用户
+# 判断是否注册用户
 npm who am i
 ```
 
 #### 发布
 ```SHELL
-// 开发一个npm包:可自行百度,这里不展开了;然后发布到本地verdaccio
+# 开发一个npm包:可自行百度,这里不展开了;然后发布到本地verdaccio
 npm publish
-// 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
+# 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
 ```
 
 #### 使用pm2守护进程
 ```SHELL
-// 全局安装pm2
+# 全局安装pm2
 npm install -g pm2 --unsafe-perm
-// 使用pm2启动verdaccio
+# 使用pm2启动verdaccio
 pm2 start verdaccio
-// 找出verdaccio所在进程id
+# 找出verdaccio所在进程id
 ps -ef | grep verdaccio
-// 杀掉verdaccio
+# 杀掉verdaccio
 kill -s 9 id
-// 重新访问localhost:4873
-// 发现verdaccio照常运行
-// 重新查看verdaccio进程,发现正常运行,但id变了
+# 重新访问localhost:4873
+# 发现verdaccio照常运行
+# 重新查看verdaccio进程,发现正常运行,但id变了
 ps -ef | grep verdaccio
-// 手动停止命令
+# 手动停止命令
 pm2 stop verdaccio
 ```
 
