@@ -4,7 +4,7 @@
 为了方便在不同 `node` 版本下进行试验和开发,使用 `nvm` 可以在同一台设备上进行多个 `node` 版本切换;
 `nrm` 则可以控制切换多个 `npm` 源
 
-#### nvm安装
+## nvm安装
 [官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
 [nvm-windows地址](https://github.com/coreybutler/nvm-windows 'nvm-windows地址')
 ```SHELL
@@ -42,7 +42,7 @@ nvm node_mirror https://npm.taobao.org/mirrors/node/
 nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 
 # windows可以通过修改setting.txt配置, 加入上面俩行即可
-// 目录: C:\Users\用户\AppData\Roaming\nvm
+# 目录: C:\Users\用户\AppData\Roaming\nvm
 ```
 
 #### 显示列表
@@ -67,24 +67,33 @@ npm --version
 ```
 #### 删除版本
 ```SHELL
-// 5.0.0是对应的版本号
+# 5.0.0是对应的版本号
 nvm uninstall 5.0.0
 ```
 
 #### 其他错误
 `npm` 在 `install` 包,报 `No package.json found`
 ```SHELL
-// 初始化package.json
+# 初始化package.json
 npm init --yes
-// 修复
+# 修复
 npm audit fix
-// 再次安装
+# 再次安装
 npm install package
 ```
 
-#### 安装nrm
+## 安装nrm
 ```SHELL
 npm install -g nrm
+```
+#### windows上无法识别nrm命令
+```SHELL
+# 原因是nrm没有添加到path
+# 进入系统设置环境变量
+# 查看node的目录位置
+npm config ls
+# 添加一个系统变量 NRM_PATH, 路径为上面的node bin location
+# 然后在系统变量path里加入 %NRM_PATH%
 ```
 
 #### 列出可用的源
