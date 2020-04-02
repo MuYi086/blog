@@ -30,6 +30,16 @@
         }
       ]
       ```
+1. `3.3.8` 以后版本需要进一步修改 `user.config`
+    ```HTML
+    <!-- 进入上一步SourceTree目录,选择第二项进入,修改uers.config文件 -->
+    <setting name="AgreedToEULA" serializeAs="String">
+     <value>True</value>
+    </setting>
+    <setting name="AgreedToEULAVersion" serializeAs="String">
+      <value>20160201</value>
+    </setting>
+    ```
 
 1. 重新执行安装步骤,然后选择 `我不想使用Mercurial`
 
