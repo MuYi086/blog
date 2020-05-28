@@ -30,3 +30,16 @@ npm config set registry http://registry.npm.taobao.org/
 ```SHELL
 npm config set registry https://registry.npmjs.org/
 ```
+
+#### 快速下载node-sass等
+类似 `node-sass` , `phantomjs` 等会从 `github.com` 上下载一个 `.node` 文件，大部分安装不成功的原因都源自这里，因为 `GitHub Releases` 里的文件都托管在 `s3.amazonaws.com` 上面,而这个地址被墙了
+```Shell
+# 新建一个.npmrc文件
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
+electron_mirror=https://npm.taobao.org/mirrors/electron/
+registry=https://registry.npm.taobao.org
+```
+
+#### 参考
+1. [安装 node-sass 的正确姿势](https://github.com/lmk123/blog/issues/28)
