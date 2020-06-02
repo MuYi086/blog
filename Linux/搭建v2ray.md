@@ -48,6 +48,17 @@
         ![绑定证书](/images/linux/搭建v2ray/v2ray_07.gif '绑定证书')
 
 #### 安装v2ray和配置
+一键安装脚本:包含vmess + ws + tls
+```SHELL
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+```
+
+开启bbr加速
+```SHELL
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+```
+
+普通安装
 ```SHELL
 # ssh登录远程vps安装v2ray
 wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/v2ray.fun/master/install.sh && bash install.sh
@@ -132,6 +143,8 @@ source /etc/profile
 详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md 'v2ray使用')
 
 #### 参考
+1. [V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ 'V2Ray完全使用教程')
+1. [VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh](https://v2raycn.com/96.html 'VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh')
 1. [v2ray-文档](https://toutyrater.github.io/prep/install.html 'v2ray-文档')
 1. [V2Ray-Wiki](https://github.com/233boy/v2ray/wiki 'v2ray-Wiki')
 1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html 'V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS')
