@@ -139,6 +139,27 @@ devtool: 'cheap-module-eval-source-map',
 // 省略内容
 ```
 
+` Eslint `关闭校验
+
+```JS
+// 关闭段落校验
+/* eslint-disable */
+  代码块
+/* eslint-enable */
+
+// 关闭当前行校验
+一行代码 // eslint-disable-line
+
+// 关闭下一行校验
+// eslint-disable-next-line
+下一行的代码
+
+// 关闭对单一文件的校验
+// 在文件头部加上注释,eslint在校验的时候会跳过后续的代码
+/* eslint-disable */
+```
+
+
 #### 使用Mocha进行单元测试
 ```SHELL
 # 建议全局安装mocha
