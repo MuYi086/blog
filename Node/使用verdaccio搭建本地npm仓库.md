@@ -53,7 +53,10 @@ npm who am i
 
 #### 发布
 ```SHELL
-# 开发一个npm包:可自行百度,这里不展开了;然后发布到本地verdaccio
+# 开发一个npm包:可自行百度,这里不展开了;
+npm init
+npm adduser
+# 然后发布到本地verdaccio
 npm publish
 # 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
 ```
