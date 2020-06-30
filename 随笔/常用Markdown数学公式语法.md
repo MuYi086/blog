@@ -97,6 +97,58 @@
 1. 虚数 `$\imath$` => $\imath$
 1. 虚数 `$\jmath$` => $\jmath$
 1. 数学符号 `$\hat{a}$` => $\hat{a}$
+1. 数学符号 `$\check{a}$` => $\check{a}$
+1. 数学符号 `$\breve{a}$` => $\breve{a}$
+1. 数学符号 `$\tilde{a}$` => $\tilde{a}$
+1. 数学符号 `$\bar{a}$` => $\bar{a}$
+1. 矢量符号 `$\vec{a}$` => $\vec{a}$
+1. 数学符号 `$\acute{a}$` => $\acute{a}$
+1. 数学符号 `$\grave{a}$` => $\grave{a}$
+1. 数学符号 `$\mathring{a}$` => $\mathring{a}$
+1. 一阶导数符号 `$\dot{a}$` => $\dot{a}$
+1. 二阶导数符号 `$\ddot{a}$` => $\ddot{a}$
+1. 上箭头 `$\uparrow$` => $\uparrow$
+1. 上箭头 `$\Uparrow$` => $\Uparrow$
+1. 下箭头 `$\downarrow$` => $\downarrow$
+1. 下箭头 `$\Downarrow$` => $\Downarrow$
+1. 左箭头 `$\leftarrow$` => $\leftarrow$
+1. 左箭头 `$\Leftarrow$` => $\Leftarrow$
+1. 右箭头 `$\rightarrow$` => $\rightarrow$
+1. 右箭头 `$\Rightarrow$` => $\Rightarrow$
+1. 底端对齐的省略号 `$1,2,\ldots,n$` => $1,2,\ldots,n$
+1. 中线对齐的省略号 `$x_1^2 + x_2^2 + \cdots + x_n^2$` => $x_1^2 + x_2^2 + \cdots + x_n^2$
+1. 竖直对齐的省略号 `$\vdots$` => $\vdots$
+1. 斜对齐的省略号 `$\ddots$` => $\ddots$
+
+
+#### 希腊字母
+字母|实现|字母|实现
+--|:--:|:--:|--:
+A|A|$\alpha$|`$\alpha$`|
+B|B|$\beta$|`$\beta$`|
+$\Gamma$|`$\Gamma$`|$\gamma$|`$\gamma$`|
+$\Delta$|`$\Delta$`|$\delta$|`$\delta$`|
+E|E|$\epsilon$|`$\epsilon$`|
+Z|Z|$\zeta$|`$\zeta$`|
+H|H|$\eta$|`$\eta$`|
+$\Theta$|`$\Theta$`|$\theta$|`$\theta$`|
+I|I|$\iota$|`$\iota$`|
+K|K|$\kappa$|`$\kappa$`|
+$\Lambda$|`$\Lambda$`|$\lambda$|`$\lambda$`|
+M|M|$\mu$|`$\mu$`|
+N|N|$\nu$|`$\nu$`|
+$\Xi$|`$\Xi$`|$\xi$|`$\xi$`|
+O|O|$\omicron$|`$\omicron$`|
+$\Pi$|`$\Pi$`|$\pi$|`$\pi$`|
+P|P|$\rho$|`$\rho$`|
+$\Sigma$|`$\Sigma$`|$\sigma$|`$\sigma$`|
+T|T|$\tau$|`$\tau$`|
+$\Upsilon$|`$\Upsilon$`|$\upsilon$|`$\upsilon$`|
+$\Phi$|`$\Phi$`|$\phi$|`$\phi$`|
+X|X|$\chi$|`$\chi$`|
+$\Psi$|`$\Psi$`|$\psi$|`$\psi$`|
+$\Omega$|`$\Omega$`|$\omega$|`$\omega$`|
+
 
 #### 参考
 [Markdown数学公式语法](https://www.jianshu.com/p/e74eb43960a1  'Markdown数学公式语法')
