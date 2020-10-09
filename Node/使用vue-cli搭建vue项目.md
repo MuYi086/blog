@@ -18,6 +18,19 @@ vue init webpack vue-project
 
 ![初始化项目](../images/node/使用vue-cli搭建vue项目/vueDemo_01.png '初始化项目')
 
+#### VUE CLI 4.x安装使用
+```SHELL
+npm i -g @vue/cli
+# 升级
+npm update -g @vue/cli
+# 创建
+vue create hello-world
+# help
+vue create --help
+# 使用图形界面
+vue ui
+```
+
 #### 启动程序
 ```SHELL
 # 如果缺少依赖
