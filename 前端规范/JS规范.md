@@ -6,8 +6,8 @@
       * 字符串
       * 数值
       * 布尔类型
-      * null
-      * undefined
+      * `null`
+      * `undefined`
 
         ```JS
         const foo = 1
@@ -18,9 +18,9 @@
         console.log(foo, bar) // 1, 9
         ```
     * 复杂类型
-      * object
-      * array
-      * function
+      * `object`
+      * `array`
+      * `function`
 
         ```JS
         const foo = [1, 2, 3]
@@ -33,7 +33,7 @@
 
 
 1. 引用
-    const 和 let 都是块级作用域，var 是函数级作用域
+    `const` 和 `let` 都是块级作用域，`var` 是函数级作用域
 
     ```JS
     // 对所有引用都使用 const，不要使用 var
@@ -307,10 +307,10 @@
     ```
 
 1. 标准特性
-  为了代码的可移植性和兼容性，我们应该最大化的使用标准方法，例如优先使用 string.charAt(3) 而不是 string[3]
+  为了代码的可移植性和兼容性，我们应该最大化的使用标准方法，例如优先使用 `string.charAt(3)` 而不是 `string[3]`
 
-1. for-in 循环
-  推荐使用 for in 语法，但是在对对象进行操作时，容易忘了检测 hasOwnProperty(key)，所以我们启用了 ESLint 的 guard-for-in 选项
+1. `for-in` 循环
+  推荐使用 `for in` 语法，但是在对对象进行操作时，容易忘了检测 `hasOwnProperty(key)` ，所以我们启用了 `ESLint` 的 `guard-for-in` 选项
   
     > 对数组进行 for in 的时候，顺序是不固定的
 
@@ -325,7 +325,7 @@
     ```
 
 1. 大括号风格
-  在编程过程中，大括号风格与缩进风格紧密联系，用来描述大括号相对代码块位置的方法有很多。在 JavaScript 中，主要有三种风格
+  在编程过程中，大括号风格与缩进风格紧密联系，用来描述大括号相对代码块位置的方法有很多。在 `JavaScript` 中，主要有三种风格
 
     ```JS
     // One True Brace Style: 推荐使用
@@ -355,7 +355,7 @@
     ```
 
 1. 变量命名
-  当命名变量时，主流分为驼峰式命名（variableName）和下划线命名（variable_name）两大阵营
+  当命名变量时，主流分为驼峰式命名（ `variableName` ）和下划线命名（ `variable_name` ）两大阵营
     > 团队约定使用驼峰式命名
 
 1. 逗号空格
@@ -365,7 +365,7 @@
     ```
 
 1. 逗号风格
-  逗号分隔列表时，在 JavaScript 中主要有两种逗号风格：
+  逗号分隔列表时，在 `JavaScript` 中主要有两种逗号风格：
     * 标准风格，逗号放置在当前行的末尾(推荐使用)
     * 逗号前置风格，逗号放置在下一行的开始位置
 

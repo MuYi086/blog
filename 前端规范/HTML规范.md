@@ -5,25 +5,25 @@
 旨在增强团队开发协作,提高代码质量和打造开发基石的编码规范.
 
 #### 代码规范
-1. DOCTYPE 声明
+1. `DOCTYPE` 声明
 
-    HTML文件必须加上 DOCTYPE 声明，并统一使用 HTML5 的文档声明：
+    `HTML` 文件必须加上 `DOCTYPE` 声明，并统一使用 `HTML5` 的文档声明：
 
     ```JS
     <!DOCTYPE html>
     ```
 
-1. 页面语言LANG
+1. 页面语言 `LANG`
 
-    推荐使用属性值 cmn-Hans-CN（简体, 中国大陆），但是考虑浏览器和操作系统的兼容性，目前仍然使用 zh-CN 属性值
+    推荐使用属性值 `cmn-Hans-CN`（简体, 中国大陆），但是考虑浏览器和操作系统的兼容性，目前仍然使用 `zh-CN` 属性值
 
     ```JS
     <html lang="zh-CN">
     ```
 
-1. CHAESET
+1. `CHAESET`
 
-    HTML-5 中默认的字符编码是 UTF-8
+    `HTML-5` 中默认的字符编码是 `UTF-8`
 
     ```JS
     <meta charset="UTF-8">
@@ -32,12 +32,12 @@
 
 1. 元素及标签闭合
 
-    HTML元素有5种:
-    * 空元素:area、base、br、col、command、embed、hr、img、input、keygen、link、meta、param、source、track、wbr
-    * 原始文本元素：script、style
-    * RCDATA元素：textarea、title
-    * 外来元素：来自MathML命名空间和SVG命名空间的元素。
-    * 常规元素：其他HTML允许的元素都称为常规元素。
+    `HTML` 元素有5种:
+    * 空元素: `area` 、`base` 、`br` 、`col` 、`command` 、`embed` 、`hr` 、`img` 、`input` 、`keygen` 、`link` 、`meta` 、`param` 、`source` 、`track` 、`wbr`
+    * 原始文本元素：`script` 、`style`
+    * `RCDATA` 元素：`textarea` 、`title`
+    * 外来元素：来自 `MathML` 命名空间和 `SVG` 命名空间的元素。
+    * 常规元素：其他 `HTML` 允许的元素都称为常规元素。
 
     ```JS
     // 所有具有开始标签和结束标签的元素都要写上起止标签，某些允许省略开始标签或和束标签的元素亦都要写上
@@ -95,7 +95,7 @@
 
 1. 特殊字符引用
 
-    在 HTML 中不能使用小于号 “<” 和大于号 “>”特殊字符，浏览器会将它们作为标签解析，若要正确显示，在 HTML 源代码中使用字符实体
+    在 `HTML` 中不能使用小于号 “<” 和大于号 “>”特殊字符，浏览器会将它们作为标签解析，若要正确显示，在 `HTML` 源代码中使用字符实体
 
     ```JS
     <a href="#">more&gt;&gt;</a>
@@ -183,7 +183,7 @@
 
 
 #### 文件模板
-1. HTML5标准模板
+1. `HTML5` 标准模板
 
     ```HTML
     <!DOCTYPE html>
