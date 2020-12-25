@@ -131,3 +131,8 @@ sudo ./do.sh
 # 例如查找所有jenkins文件
 find / -name jenkins.*
 ```
+
+#### 文件系统只读模式修复
+```SHELL
+sudo mount -o remount rw /media/deepin/新加卷 
+```
