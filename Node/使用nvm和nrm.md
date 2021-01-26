@@ -80,6 +80,8 @@ npm init --yes
 npm audit fix
 # 再次安装
 npm install package
+# vscode安装包报错时
+# 使用bash npm i
 ```
 
 ## 安装nrm
