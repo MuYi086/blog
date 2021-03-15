@@ -534,3 +534,55 @@ File >> Preferences >> User Snippets >> New Snippets
   }
 }
 ```
+
+#### uniUpload
+```JSON
+{
+	"uniUpload": {
+    "prefix": "uniUpload",
+    "body": [
+      "const transHeader = { Authorization: this.loginTokenInfo.token }",
+      "const apiUrl = api.idCardGetInfo",
+      "const imgUrl = subThis.formObj.frontImg",
+      "util.uniUpload((res) => {",
+      "  // do something",
+      "  subThis.deal(res)",
+      "}, (err) => {",
+      "  uni.showToast({ title: err.data.msg, icon: 'none', duration: 1500 })",
+      "}, apiUrl, imgUrl, {}, config.idCardUploadRequestBehindLabel, transHeader)",
+    ]
+  }
+}
+```
+
+#### promise
+```JSON
+{
+	"promise": {
+    "prefix": "promise",
+    "body": [
+      "const p1 = new Promise(function (resolve, reject) {",
+      "  const that = this",
+      "  const url = api.getChatConversation",
+      "  const params = {}",
+      "  const transHeader = { Authorization: that.loginTokenInfo.token }",
+      "  uni.showLoading()",
+      "  util.postData.call(this, url, params, 'POST', function (res) {",
+      "    if (res.data) {",
+      "      const data = res.data.data",
+      "      const tips = '保存成功'",
+      "      uni.showToast({ title: tips, icon: 'none', duration: 1500 })",
+      "    }",
+      "    uni.hideLoading()",
+      "  }, function (err) {",
+      "    uni.hideLoading()",
+      "    uni.showToast({ title: err.data.msg, icon: 'none', duration: 1500 })",
+      "  }, transHeader)",
+      "})",
+      "Promise.all([p1]).then(res => {",
+      "  // do something",
+      "})",
+    ]
+  }
+}
+```
