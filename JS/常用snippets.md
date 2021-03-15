@@ -7,21 +7,21 @@
 File >> Preferences >> User Snippets >> New Snippets
 
 #### vue模板
-```JSON
+```js
 {
-	// Place your snippets for vue here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
+  // Place your snippets for vue here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
   "vue": {
     "prefix": "vue",
     "body": [
@@ -90,24 +90,24 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### uniVue模板
-```JSON
+```js
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
   "uni": {
     "prefix": "uni",
     "body": [
@@ -173,7 +173,7 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### component
-```JSON
+```js
 {
   "component": {
     "prefix": "component",
@@ -231,7 +231,7 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### api.js
-```JSON
+```js
 {
   "api": {
     "prefix": "api",
@@ -247,9 +247,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### request
-```JSON
+```js
 {
-	"request": {
+  "request": {
     "prefix": "request",
     "body": [
       "const that = this",
@@ -274,9 +274,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### initStorage
-```JSON
+```js
 {
-	"initStorage": {
+  "initStorage": {
     "prefix": "initStorage",
     "body": [
       "initStorage () {",
@@ -289,9 +289,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### judgeAll
-```JSON
+```js
 {
-	"judgeAll": {
+  "judgeAll": {
     "prefix": "judgeAll",
     "body": [
       "judgeAll () {",
@@ -314,9 +314,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### setStorage
-```JSON
+```js
 {
-	"setStorage": {
+  "setStorage": {
     "prefix": "setStorage",
     "body": [
       "const info = {}",
@@ -327,9 +327,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### image
-```JSON
+```js
 {
-	"image": {
+  "image": {
     "prefix": "image",
     "body": [
       "<image class=\"tips tip-1\" :mode=\"'scaleToFill'\" :src=\"assets.customer_chat\" @error=\"imageError\"></image>",
@@ -339,9 +339,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### staticHostImg
-```JSON
+```js
 {
-	"staticHostImg": {
+  "staticHostImg": {
     "prefix": "staticHostImg",
     "body": [
       "item.productImg = `${config.staticHost}${item.productImg}`",
@@ -351,9 +351,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### formatDate
-```JSON
+```js
 {
-	"formatDate": {
+  "formatDate": {
     "prefix": "formatDate",
     "body": [
       "item.endTime = util.formatDate(new Date(Number(item.endTime)), 'yyyy-MM-dd hh:mm')",
@@ -363,9 +363,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### initSelections
-```JSON
+```js
 {
-	"initSelections": {
+  "initSelections": {
     "prefix": "initSelections",
     "body": [
       "initSelections () {",
@@ -377,9 +377,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### iconfont
-```JSON
+```js
 {
-	"iconfont": {
+  "iconfont": {
     "prefix": "iconfont",
     "body": [
       "<text class=\"iconfont icon-fanhui1\"></text>",
@@ -390,9 +390,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### initLinkAndTitle
-```JSON
+```js
 {
-	"initLinkAndTitle": {
+  "initLinkAndTitle": {
     "prefix": "initLinkAndTitle",
     "body": [
       "initLinkAndTitle () {",
@@ -410,9 +410,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### onShow
-```JSON
+```js
 {
-	"onShow": {
+  "onShow": {
     "prefix": "onShow",
     "body": [
       "onShow () {",
@@ -427,9 +427,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### getParams
-```JSON
+```js
 {
-	"getParams": {
+  "getParams": {
     "prefix": "getParams",
     "body": [
       "getParams () {",
@@ -442,9 +442,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### goto
-```JSON
+```js
 {
-	"goto": {
+  "goto": {
     "prefix": "goto",
     "body": [
       "// 1:关闭当前页面，跳转到应用内的某个页面",
@@ -459,9 +459,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### getPrePage
-```JSON
+```js
 {
-	"getPrePage": {
+  "getPrePage": {
     "prefix": "getPrePage",
     "body": [
       "const prePage = util.getPrePage()",
@@ -477,9 +477,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### getList
-```JSON
+```js
 {
-	"getList": {
+  "getList": {
     "prefix": "getList",
     "body": [
       "dataList: [],",
@@ -536,9 +536,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### uniUpload
-```JSON
+```js
 {
-	"uniUpload": {
+  "uniUpload": {
     "prefix": "uniUpload",
     "body": [
       "const transHeader = { Authorization: this.loginTokenInfo.token }",
@@ -556,9 +556,9 @@ File >> Preferences >> User Snippets >> New Snippets
 ```
 
 #### promise
-```JSON
+```js
 {
-	"promise": {
+  "promise": {
     "prefix": "promise",
     "body": [
       "const p1 = new Promise(function (resolve, reject) {",
