@@ -245,3 +245,292 @@ File >> Preferences >> User Snippets >> New Snippets
   }
 }
 ```
+
+#### request
+```JSON
+{
+	"request": {
+    "prefix": "request",
+    "body": [
+      "const that = this",
+      "const url = api.getChatConversation",
+      "const params = {}",
+      "const transHeader = { Authorization: this.loginTokenInfo.token }",
+      "uni.showLoading()",
+      "util.postData.call(this, url, params, 'POST', function (res) {",
+      "  if (res.data) {",
+      "    const data = res.data.data",
+      "    const tips = '保存成功'",
+      "    uni.showToast({ title: tips, icon: 'none', duration: 1500 })",
+      "  }",
+      "  uni.hideLoading()",
+      "}, function (err) {",
+      "  uni.hideLoading()",
+      "  uni.showToast({ title: err.data.msg, icon: 'none', duration: 1500 })",
+      "}, transHeader)",
+    ]
+  }
+}
+```
+
+#### initStorage
+```JSON
+{
+	"initStorage": {
+    "prefix": "initStorage",
+    "body": [
+      "initStorage () {",
+      "  const loginUserInfo = xtyStorage.get(xtyStorage.loginUserInfo)",
+      "  this.loginUserInfo = loginUserInfo ? JSON.parse(loginUserInfo) : {}",
+      "}",
+    ]
+  }
+}
+```
+
+#### judgeAll
+```JSON
+{
+	"judgeAll": {
+    "prefix": "judgeAll",
+    "body": [
+      "judgeAll () {",
+      "  let sum = 1",
+      "  let msg = ''",
+      "  if (this.userName) {",
+      "    sum *= 1",
+      "  } else {",
+      "    msg = '昵称不能为空'",
+      "    sum *= 0",
+      "  }",
+      "  if (msg) {",
+      "    uni.showToast({ title: msg, icon: 'none', duration: 1500 })",
+      "  }",
+      "  return sum",
+      "}",
+    ]
+  }
+}
+```
+
+#### setStorage
+```JSON
+{
+	"setStorage": {
+    "prefix": "setStorage",
+    "body": [
+      "const info = {}",
+      "xtyStorage.set(xtyStorage.loginTokenInfo, JSON.stringify(info))",
+    ]
+  }
+}
+```
+
+#### image
+```JSON
+{
+	"image": {
+    "prefix": "image",
+    "body": [
+      "<image class=\"tips tip-1\" :mode=\"'scaleToFill'\" :src=\"assets.customer_chat\" @error=\"imageError\"></image>",
+    ]
+  }
+}
+```
+
+#### staticHostImg
+```JSON
+{
+	"staticHostImg": {
+    "prefix": "staticHostImg",
+    "body": [
+      "item.productImg = `${config.staticHost}${item.productImg}`",
+    ]
+  }
+}
+```
+
+#### formatDate
+```JSON
+{
+	"formatDate": {
+    "prefix": "formatDate",
+    "body": [
+      "item.endTime = util.formatDate(new Date(Number(item.endTime)), 'yyyy-MM-dd hh:mm')",
+    ]
+  }
+}
+```
+
+#### initSelections
+```JSON
+{
+	"initSelections": {
+    "prefix": "initSelections",
+    "body": [
+      "initSelections () {",
+      "  this.operList = selectOptions.exchangeGoodsDetailOptions1",
+      "}",
+    ]
+  }
+}
+```
+
+#### iconfont
+```JSON
+{
+	"iconfont": {
+    "prefix": "iconfont",
+    "body": [
+      "<text class=\"iconfont icon-fanhui1\"></text>",
+      "<text class=\"inline t-icon hxjs-iconxuanzhong\"></text>",
+    ]
+  }
+}
+```
+
+#### initLinkAndTitle
+```JSON
+{
+	"initLinkAndTitle": {
+    "prefix": "initLinkAndTitle",
+    "body": [
+      "initLinkAndTitle () {",
+      "  const { bitmap } = config.InviteMessage",
+      "  const referralLink = `/pages/invite/register?invitationCode=${this.resData.invitationCode}`",
+      "  this.shareObj = {",
+      "    title: this.resData.subTitle,",
+      "    image: bitmap,",
+      "    pageLink: referralLink",
+      "  }",
+      "}",
+    ]
+  }
+}
+```
+
+#### onShow
+```JSON
+{
+	"onShow": {
+    "prefix": "onShow",
+    "body": [
+      "onShow () {",
+      "  const currPage = util.getCurrentPage()",
+      "  if (currPage.data.distributeId) {",
+      "    this.distributeId = currPage.data.distributeId",
+      "  }",
+      "},",
+    ]
+  }
+}
+```
+
+#### getParams
+```JSON
+{
+	"getParams": {
+    "prefix": "getParams",
+    "body": [
+      "getParams () {",
+      "  const params = {}",
+      "  return params",
+      "},",
+    ]
+  }
+}
+```
+
+#### goto
+```JSON
+{
+	"goto": {
+    "prefix": "goto",
+    "body": [
+      "// 1:关闭当前页面，跳转到应用内的某个页面",
+      "// 2:跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面 需在 app.json 的 tabBar 字段定义的页面  路径后不能带参数",
+      "// 3:关闭所有页面，打开到应用内的某个页面",
+      "// 99:关闭当前页面，返回上一页面或多级页面",
+      "// default:保留当前页面，跳转到应用内的某个页面",
+      "util.commonViewTap('/pages/shop/searchResult')",
+    ]
+  }
+}
+```
+
+#### getPrePage
+```JSON
+{
+	"getPrePage": {
+    "prefix": "getPrePage",
+    "body": [
+      "const prePage = util.getPrePage()",
+      "// #ifndef H5",
+      "prePage.setData({",
+      "  isReRender: true",
+      "})",
+      "util.returnPrevPage()",
+      "// #endif",
+    ]
+  }
+}
+```
+
+#### getList
+```JSON
+{
+	"getList": {
+    "prefix": "getList",
+    "body": [
+      "dataList: [],",
+      "hasMore: true,",
+      "page: 1,",
+      "limit: 10,",
+      "getParams () {",
+      "  const params = {}",
+      "  return params",
+      "},",
+      "getList () {",
+      "  const that = this",
+      "  const url = api.getSearchShopList",
+      "  const params = this.getParams()",
+      "  uni.showLoading()",
+      "  util.postData.call(this, url, params, 'POST', function (res) {",
+      "    if (res.data) {",
+      "      const data = res.data.data",
+      "      that.totalPage = data.pages",
+      "      that.hasMore = that.page < data.pages",
+      "      // that.dataList = that.dealDataList(data)",
+      "      uni.hideLoading()",
+      "    }",
+      "  }, function (err) {",
+      "    uni.hideLoading()",
+      "    uni.showToast({ title: err.data.msg, icon: 'none', duration: 1500 })",
+      "  })",
+      "},",
+      "getNextPage () {",
+      "  const that = this",
+      "  const url = api.getSearchShopList",
+      "  if (this.page >= this.totalPage) {",
+      "    return false",
+      "  }",
+      "  this.page += 1",
+      "  const params = this.getParams()",
+      "  uni.showLoading()",
+      "  util.postData.call(this, url, params, 'POST', function (res) {",
+      "    if (res.data) {",
+      "      const data = res.data.data",
+      "      that.totalPage = data.pages",
+      "      that.hasMore = that.page < data.pages",
+      "      // that.dataList = [...that.dataList, ...that.dealDataList(data)]",
+      "      uni.hideLoading()",
+      "    }",
+      "  }, function (err) {",
+      "    uni.hideLoading()",
+      "    uni.showToast({ title: err.errMsg, icon: 'none', duration: 1500 })",
+      "  })",
+      "},",
+    ]
+  }
+}
+```
