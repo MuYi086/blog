@@ -24,22 +24,16 @@ ff02::2 ip6-allrouters
 31.13.78.66    mega.nz
 
 # github
-203.208.39.99  github.com
-140.82.112.4   github.com
-140.82.113.4   github.com
-140.82.114.4   github.com
-140.82.118.4   github.com
-203.208.39.99  gist.github.com
-140.82.114.3   gist.github.com
-140.82.114.4   gist.github.com
-140.82.113.3   gist.github.com
-140.82.118.4   gist.github.com
+13.250.177.223 github.com
+52.74.223.119  github.com
+13.229.188.59  github.com
+13.229.188.59    gist.github.com
+13.250.177.223   gist.github.com
+52.74.223.119    gist.github.com
 151.101.229.194  github.global.ssl.fastly.net
 151.101.1.194    github.global.ssl.fastly.net
 151.101.109.194  github.global.ssl.fastly.net
-151.101.77.194   github.global.ssl.fastly.net
-151.101.89.194   github.global.ssl.fastly.net
-203.208.39.99  codeload.github.com
-140.82.113.10  codeload.github.com
-140.82.114.9   codeload.github.com
+51.251.140.56   codeload.github.com
+13.250.162.133  codeload.github.com
+13.229.189.0    codeload.github.com
 ```
