@@ -123,3 +123,6 @@ nrm add sinopia http://127.0.0.1:4783
 ```SHELL
 nrm del name
 ```
+
+#### 注意
+有时重启电脑后, `terminal` 进入默认的环境,会提示找不到已安装的相应的 `npm` 包, 此时重新 `nvm use` 一下即可
