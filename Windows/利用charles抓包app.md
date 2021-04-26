@@ -44,6 +44,7 @@
     ```shell
     # Help - SSL Proxying - Install Charles Root Certificate on Mobile Device
     # 手机连同一个wifi，访问chls.pro/ssl下载安装
+    # 设计设置-通用-描述文件-安装
     # 手机设置-通用-关于手机-证书信任设置
     ```
 
