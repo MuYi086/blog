@@ -20,6 +20,9 @@ vue init webpack vue-project
 
 #### VUE CLI 4.x安装使用
 ```SHELL
+# 卸载旧
+npm uninstall vue-cli -g
+# 安装新
 npm i -g @vue/cli
 # 升级
 npm update -g @vue/cli
