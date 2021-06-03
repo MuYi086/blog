@@ -53,7 +53,8 @@
 > 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装
 [自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
 
-`v2ray` 安装配置完成后，去 `CloudFlare` 打开 `SSL/TLS` 设置为 `Full` 状态, 打开 `DNS` 并设置代理状态,莫忘记安装 `BBR` 加速
+`v2ray` 安装配置完成后，去 `CloudFlare` 打开 `SSL/TLS` 设置为 `Full` 状态, 打开 `DNS` 并设置代理状态
+不要安装 `BBR` 加速，会导致 `v2ray` 失效,重启后 `putty` 无法连接
 ```SHELL
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
 
