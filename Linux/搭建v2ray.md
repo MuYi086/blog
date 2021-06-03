@@ -9,14 +9,16 @@
 * 缺点 : 配置较复杂,上手需要结合多种技术
 
 #### Cloudflare + BT(宝塔)
+
 `Cloudflare` : 这里我们用来解析域名的 `DNS` ,并创建 `SSL` 证书
 `BT` : 创建网站并绑定证书
+
 1. [注册](https://dash.cloudflare.com '注册') 并解析域名
-    * 添加域名
+    * 添加域名:代理状态设为关闭
 
         ![代理](/images/linux/搭建v2ray/v2ray_01.png '代理')
 
-    * 在域名控制面板将DNS修改指向到Cloudflare
+    * 在域名控制面板将 `DNS` 修改指向到 `Cloudflare`
 
         ```SHELL
         NS	earl.ns.cloudflare.com
@@ -24,7 +26,7 @@
         ```
 
 1. 加密和创建证书
-    * 使用SSL/TLS加密
+    * 使用 `SSL/TLS` 加密
 
         ![代理](/images/linux/搭建v2ray/v2ray_02.png '代理')
 
@@ -48,20 +50,38 @@
         ![绑定证书](/images/linux/搭建v2ray/v2ray_07.gif '绑定证书')
 
 #### 安装v2ray和配置
-一键安装脚本:包含vmess + ws + tls
+> 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装
+[自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
+
+`v2ray` 安装配置完成后，去 `CloudFlare` 打开 `SSL/TLS` 设置为 `Full` 状态, 打开 `DNS` 并设置代理状态,莫忘记安装 `BBR` 加速
+```SHELL
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+
+chmod +x tcp.sh
+
+./tcp.sh
+```
+
+~~一键安装脚本:包含 `vmess + ws + tls`~~
 ```SHELL
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
 ```
 
-开启bbr加速
+开启 `bbr` 加速
 ```SHELL
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 ```
 
-普通安装
+~~普通安装~~
 ```SHELL
 # ssh登录远程vps安装v2ray
 wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/v2ray.fun/master/install.sh && bash install.sh
+```
+
+~~安装 `v2-ui`~~
+```SHELL
+wget https://blog.sprov.xyz/v2-ui.sh
+bash ./v2-ui.sh
 ```
 
 `BT` (宝塔)--安全--防火墙：放行上面设定的端口号
@@ -139,14 +159,21 @@ echo "TZ='Asia/Shanghai'; export TZ" >>/etc/profile
 source /etc/profile
 ```
 
+#### 安装报错:chrony error
+```SHELL
+# 查看是否存在/var/lib/dpkg/info
+# 如果没有
+mkdir /var/lib/dpkg/info
+```
+
 #### 客户端使用
 详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md 'v2ray使用')
 
-#### 参考
+#### 参考(优先第一条)
+1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html 'V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS')
 1. [V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ 'V2Ray完全使用教程')
 1. [VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh](https://v2raycn.com/96.html 'VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh')
 1. [v2ray-文档](https://toutyrater.github.io/prep/install.html 'v2ray-文档')
 1. [V2Ray-Wiki](https://github.com/233boy/v2ray/wiki 'v2ray-Wiki')
-1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html 'V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS')
 1. [国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间](国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间 'http://xiaohost.com/1806.html')
 1. [v2ray下载地址](v2ray下载地址 'https://www.yuque.com/renxinlei/wv98lk/owswbg?language=en-us')
