@@ -17,7 +17,7 @@ docker pull gitlab/gitlab-ce
 # 上面建议80端口是因为在后续CI使用gitlab-runner时,其他自定义端口均报错(我尝试多种方法，均失败，目前未找到解决方案)
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -m 2048M -d -p 8443:443 -p 80:80 -p 2222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+docker run -m 2048M -d -p 8443:443 -p 80:80 -p 8022:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
 ```
 
 #### 配置gitlab.rb
@@ -57,6 +57,26 @@ gitlab-ctl reconfigure
 gitlab-ctl restart
 # 退出容器
 exit
+```
+
+#### 修改gitlab默认root密码
+```SHELL
+# 进入容器
+docker exec -it gitlab bash
+# 进入控制台
+gitlab-rails console -e production
+# 1. 通过id找到用户
+user = User.where(id: 1).first
+# 2. 通过邮件找到用户
+user = User.find_by(email: '1258947325@qq.com')
+# 更改密码: 至少8位
+user.password = '12345678'
+# 二次确认
+user.password_confirmation = '12345678'
+# 保存
+user.save!
+# 重启容器
+docker restart gitlab
 ```
 
 #### gitlab切换为中文
