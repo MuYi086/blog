@@ -51,7 +51,7 @@
 
 #### 安装v2ray和配置
 > 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装
-[自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
+[自建v2ray服务器教程-高阶篇](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
 
 `v2ray` 安装配置完成后，去 `CloudFlare` 打开 `SSL/TLS` 设置为 `Full` 状态, 打开 `DNS` 并设置代理状态
 不要安装 `BBR` 加速，会导致 `v2ray` 失效,重启后 `putty` 无法连接
@@ -178,3 +178,4 @@ mkdir /var/lib/dpkg/info
 1. [V2Ray-Wiki](https://github.com/233boy/v2ray/wiki 'v2ray-Wiki')
 1. [国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间](国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间 'http://xiaohost.com/1806.html')
 1. [v2ray下载地址](v2ray下载地址 'https://www.yuque.com/renxinlei/wv98lk/owswbg?language=en-us')
+1. [ProjectV](ProjectV 'https://www.atzlinux.com/doc/v/v2ray/')
