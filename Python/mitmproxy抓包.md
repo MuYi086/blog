@@ -4,6 +4,8 @@
 
 ```SHELL
 pip3 install mitmproxy
+# 无pip3则安装
+sudo apt-get install python3-pip
 ```
 
 #### 使用

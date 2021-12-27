@@ -87,6 +87,8 @@ npm install package
 ## 安装nrm
 ```SHELL
 npm install -g nrm
+# 安装老版本保证use方法生效
+npm install -g @adams549659584/nrm
 ```
 #### windows上无法识别nrm命令
 ```SHELL
