@@ -54,6 +54,11 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --set show_channel_urls yes
 ```
 
+`conda` 加入到环境变量
+```SHELL
+export PATH=/home/ougege/anaconda3/bin:$PATH
+```
+
 创建新的环境
 
 ```SHELL
