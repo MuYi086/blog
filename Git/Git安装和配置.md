@@ -8,8 +8,12 @@ git config --global user.email "email@example.com"
 
 #### 创建SSH Key
 
+旧命令生成的 `rsa`， `github` 不认
+~~ssh-keygen -t rsa -C "youremail@example.com"~~
 ```SHELL
-ssh-keygen -t rsa -C "youremail@example.com"
+
+# 使用新命令生成rsa
+ssh-keygen -t ed25519 -C "yourEmail@example.com"
 ```
  `id_rsa` 和 `id_rsa.pub` 分别是私钥和公钥
 
