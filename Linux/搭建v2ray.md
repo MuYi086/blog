@@ -39,6 +39,8 @@
     *  记录并保存证书信息
 
         ![证书](/images/linux/搭建v2ray/v2ray_05.png '证书')
+    
+    *  将证书和密钥写到对应 `/etc/ssl/cert.pem` 和 `/etc/ssl/key.pem` 中
 
 1. `BT` (宝塔设置)
     * 添加站点
@@ -50,8 +52,10 @@
         ![绑定证书](/images/linux/搭建v2ray/v2ray_07.gif '绑定证书')
 
 #### 安装v2ray和配置
-> 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装
-[自建v2ray服务器教程-高阶篇](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
+> 方法(1)： 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装 [自建v2ray服务器教程-高阶篇](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
+> 方法(2)： [安装x-ui：支持多协议多用户的 xray 面板](https://github.com/vaxilu/x-ui '安装x-ui') (推荐)
+
+**记得先校正服务器时间，参见下方特别注意**
 
 `v2ray` 安装配置完成后，去 `CloudFlare` 打开 `SSL/TLS` 设置为 `Full` 状态, 打开 `DNS` 并设置代理状态
 不要安装 `BBR` 加速，会导致 `v2ray` 失效,重启后 `putty` 无法连接
@@ -84,6 +88,9 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/v2
 wget https://blog.sprov.xyz/v2-ui.sh
 bash ./v2-ui.sh
 ```
+
+
+
 
 `BT` (宝塔)--安全--防火墙：放行上面设定的端口号
 
@@ -159,7 +166,6 @@ tzselect
 echo "TZ='Asia/Shanghai'; export TZ" >>/etc/profile
 source /etc/profile
 ```
-
 #### 安装报错:chrony error
 ```SHELL
 # 查看是否存在/var/lib/dpkg/info
