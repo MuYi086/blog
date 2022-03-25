@@ -31,6 +31,7 @@
 ```JS
 // 富文本插入
 appendToEditor(item) {
+  // 字数超限
   if (this.inputStatusCheck()) {
     return false
   }
@@ -38,7 +39,7 @@ appendToEditor(item) {
   const unicode = item.unicode
   const doc = document.createElement('img')
   const imgSrc = `${this.Config.emojiHost}${item.Url}`
-  const style = `width: ${this.emojiImgWidth}px;height: ${this.emojiImgWidth}px;vertical-align: top;`
+  const style = `width: ${this.emojiImgWidth}px;height: ${this.emojiImgWidth}px;vertical-align: top;margin-left:2px;margin-right:2px;`
   doc.setAttribute('src', imgSrc)
   doc.setAttribute('data-unicodeurl', item.Url)
   doc.setAttribute('class', 'img-emoji')
@@ -54,10 +55,18 @@ inputStatusCheck() {
 
 // 观察editor触发的回调
 editorChange() {
+  // 浏览器兼容检查
+  this.broswerRichtextHack()
+  this.isInFocus = true
+  this.changeFocusStatus()
   this.getCurrentRange()
   this.updateRange()
+  this.scrollToBottom()
   this.htmlCount = this.wcemojiIns.calVNodeCount(this.editor)
+  this.isAllnbsp = this.wcemojiIns.checkVnodeAllnbsp(this.editor)
   this.$emit('editorChangeCount', { htmlCount: this.htmlCount, limitCount: this.limitCount })
+  this.$emit('editorCheckAllnbsp', this.isAllnbsp)
+  this.cutMoreStrAfterPaste()
 }
 
 // 判断点击emoji表情插入时当前的range是否在输入框内,是使用getRangeAt(0)，否则构造一个以editor最后节点开始的range
@@ -69,7 +78,12 @@ getCurrentRange() {
   // 判断是否是div,如果是div判断是否是emojiInput
   if (range.commonAncestorContainer && range.commonAncestorContainer.nodeName === 'DIV') {
     if (range.commonAncestorContainer.id === 'emojiInput') {
-      this.range = range
+      // 针对firefox 删除后追加<br>的hack
+      if (range.commonAncestorContainer.firstChild && range.commonAncestorContainer.firstChild.nodeName === 'BR') {
+        this.range = this.constructRange()
+      } else {
+        this.range = range
+      }
     } else {
       this.range = this.constructRange()
     }
@@ -89,17 +103,90 @@ constructRange() {
   const range = document.createRange()
   const dom = document.querySelector('#emojiInput')
   const len = dom.childNodes.length
-  const lastNode = dom.childNodes[len - 1]
-  let currentSelectNodeLen = 0
-  if (lastNode.nodeName === 'IMG') {
-    currentSelectNodeLen = 0
+  let idxStart = 0
+  let idxEnd = 0
+  let lastNode = ''
+  let isAllImg = true
+  if (len > 0) {
+    isAllImg = this.checkDomChildIsAllImg(dom.childNodes)
+    lastNode = dom.childNodes[len - 1]
+    if (lastNode.nodeName === 'IMG') {
+      if (isAllImg) {
+        lastNode = dom
+        idxStart = len
+        idxEnd = len
+      } else {
+        idxEnd = 0
+      }
+    }
+    if (lastNode.nodeName === '#text') {
+      idxEnd = lastNode.textContent.length
+    }
+    if (lastNode.nodeName === 'BR') {
+      lastNode = dom
+    }
+  } else {
+    lastNode = dom
   }
-  if (lastNode.nodeName === '#text') {
-    currentSelectNodeLen = lastNode.textContent.length
-  }
-  range.setStart(lastNode, 0)
-  range.setEnd(lastNode, currentSelectNodeLen)
+  range.setStart(lastNode, idxStart)
+  range.setEnd(lastNode, idxEnd)
+  console.log(range)
   return range
+}
+
+// 粘贴后如果超出长度，则删除多余的内容
+cutMoreStrAfterPaste() {
+  const nodeArr = this.editor.childNodes
+  if (this.htmlCount > this.htmlMaxCount) {
+    const len = nodeArr.length
+    let count = 0
+    let str = ''
+    for (let i = 0; i < len; i++) {
+      const item = nodeArr[i]
+      if (count >= this.htmlMaxCount) {
+        break
+      } else {
+        // 要么图片，要么文字
+        if (item.nodeName === 'IMG') {
+          count += 1
+          str += item.outerHTML
+        } else {
+          const chaNum = this.htmlMaxCount - count
+          if (chaNum > item.length) {
+            count += item.length
+            str += item.textContent
+          } else {
+            count += chaNum
+            str += item.textContent.substr(0, chaNum)
+          }
+        }
+      }
+    }
+    this.editor.innerHTML = str
+  }
+}
+
+// 浏览器富文本hack
+broswerRichtextHack() {
+  const kernel = this.UtilFn.checkKernel()
+  // chrome和safari浏览器
+  if (kernel === 'safari') {
+    // 暂不处理
+  }
+  // firefox
+  if (kernel === 'firefox') {
+    const dom = document.querySelector('#emojiInput')
+    if (dom.childNodes.length > 0) {
+      const firstNode = dom.childNodes[0]
+      if (firstNode.nodeName === 'BR' && firstNode.getAttribute('class') !== 'wc-br') {
+        dom.childNodes[0].setAttribute('class', 'wc-br')
+      }
+    }
+  }
+  // edge
+  if (kernel === 'edge') {
+    // 暂不处理
+  }
 }
 ```
 
