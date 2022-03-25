@@ -55,16 +55,34 @@
       const range = document.createRange()
       const dom = document.querySelector('#emojiInput')
       const len = dom.childNodes.length
-      const lastNode = dom.childNodes[len - 1]
-      let currentSelectNodeLen = 0
-      if (lastNode.nodeName === 'IMG') {
-        currentSelectNodeLen = 0
+      let idxStart = 0
+      let idxEnd = 0
+      let lastNode = ''
+      let isAllImg = true
+      if (len > 0) {
+        isAllImg = this.checkDomChildIsAllImg(dom.childNodes)
+        lastNode = dom.childNodes[len - 1]
+        if (lastNode.nodeName === 'IMG') {
+          if (isAllImg) {
+            lastNode = dom
+            idxStart = len
+            idxEnd = len
+          } else {
+            idxEnd = 0
+          }
+        }
+        if (lastNode.nodeName === '#text') {
+          idxEnd = lastNode.textContent.length
+        }
+        if (lastNode.nodeName === 'BR') {
+          lastNode = dom
+        }
+      } else {
+        lastNode = dom
       }
-      if (lastNode.nodeName === '#text') {
-        currentSelectNodeLen = lastNode.textContent.length
-      }
-      range.setStart(lastNode, 0)
-      range.setEnd(lastNode, currentSelectNodeLen)
+      range.setStart(lastNode, idxStart)
+      range.setEnd(lastNode, idxEnd)
+      console.log(range)
       return range
     }
     ```
