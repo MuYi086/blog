@@ -128,7 +128,11 @@ class WcEmoji {
   parseNodeHtmlToMsg(el) {
     let count = 0
     let newStr = ''
-    const nodeStr = el.innerHTML
+    let nodeStr = el.innerHTML
+    // 替换所有的&nbsp;成为空格
+    nodeStr = nodeStr.replace(/&nbsp;(\s*)/g, ' ')
+    // 首尾去空格
+    nodeStr = nodeStr.replace(/(^\s*)|(\s*$)/g, '')
     // 如果聊天中emoji,解析成对应字符串标记
     if (nodeStr.includes('<img')) {
       const matchArr = nodeStr.match(/<img(.*?)>/g)
@@ -157,20 +161,28 @@ class WcEmoji {
   calVNodeCount(el) {
     let count = 0
     // 统一替换html的'<br>'标签
-    const nodeStr = el.innerHTML.replace(/<br>/g, '')
+    const nodeStr = el.innerHTML.replace(/<br(.*?)>/g, '')
     // 如果聊天中emoji,解析成对应字符串标记
     if (nodeStr.includes('<img')) {
       const dealStr1 = nodeStr.replace(/<img(.*?)>/g, this.signCode)
       count = dealStr1.length
     } else {
+      // nodeStr = this.dealBrowserKernelRichtextNull(nodeStr)
       count = nodeStr.length
     }
     // 空格算了6个字符，减去多余的5个计数
-    const nbspLen = nodeStr.match(/&nbsp;/g)
+    const nbspLen = nodeStr.match(/&nbsp;(\s*)/g)
     if (nbspLen && nbspLen.length > 0) {
       count -= nbspLen.length * 5
     }
     return count
+  }
+  // 检查el是否全部是&nbsp;
+  checkVnodeAllnbsp(el) {
+    const nodeStr = el.innerHTML.replace(/<br(.*?)>/g, '')
+    const str = nodeStr.replace(/&nbsp;/g, '')
+    const str2 = str.replace(/\s/g, '')
+    return str2.length === 0
   }
 }
 
