@@ -12,8 +12,11 @@ git config --global user.email "email@example.com"
 ~~ssh-keygen -t rsa -C "youremail@example.com"~~
 ```SHELL
 
-# 使用新命令生成rsa
+# 尝试一:使用新命令生成rsa(gitee没问题了，github提示rsa type invalid)
 ssh-keygen -t ed25519 -C "yourEmail@example.com"
+
+# 尝试二:升级git版本,从当前2.27升级到2.35最新后,发现github可以正常pull和push
+
 ```
  `id_rsa` 和 `id_rsa.pub` 分别是私钥和公钥
 
