@@ -43,12 +43,21 @@
 
     ```shell
     # Help - SSL Proxying - Install Charles Root Certificate on Mobile Device
-    # 手机连同一个wifi，访问chls.pro/ssl下载安装
+    # 手机连同一个wifi，safari访问https://chls.pro/ssl下载安装
+    # 参考官方说明: https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/
     # 设置-通用-描述文件-安装
     # 手机设置-通用-关于手机-证书信任设置
     ```
+
+1. 解决接口名 `unknown` 的问题
+
+    ```shell
+    # Proxy => SSL Proxying Settings => SSL Proxying => include add 
+    ```
+    ![接口名unknown](/images/windows/利用charles抓包app/interface_unknown.png)
 
 #### 参考
 1. [利用Charles抓取数据详细流程](https://www.jianshu.com/p/5c205ae5431b '利用Charles抓取数据详细流程')
 1. [Charles 抓包使用教程 - Windows](https://www.cnblogs.com/peng-lan/p/11242954.html 'Charles 抓包使用教程 - Windows')
 1. [Charles安装和配置HTTPS证书](https://www.jianshu.com/p/6aa52610c11f 'Charles安装和配置HTTPS证书')
+1. [Charles 抓取https unknown](https://www.cnblogs.com/jingmo0319/p/13328191.html 'Charles https unknown')
