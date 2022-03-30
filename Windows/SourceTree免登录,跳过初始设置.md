@@ -1,4 +1,9 @@
 ## SourceTree免登录,跳过初始设置(windows版)
+
+#### 方法一:代理(推荐)
+使用代理即可正常访问 `Atlassian` 的服务
+#### 方法二:无代理
+
 1. 初次运行安装 `SourceTree` 弹出如图,然后退出
   ![安装](/images/windows/SourceTree免登录,跳过初始设置/install.jpg)
 1. 在系统盘 `C:\Users\你的电脑名字\AppData\Local\Atlassian\SourceTree` ,新建一个 `accounts.json` 文件,粘贴入以下代码
@@ -45,3 +50,6 @@
 
     ![不使用Mercurial](/images/windows/SourceTree免登录,跳过初始设置/choose.jpg)
 
+1. 也可以在进入软件主界面中的设置配置 `ssh` 客户端
+
+    ![配置ssh客户端](/images/windows/SourceTree免登录,跳过初始设置/ssh_config.png)
