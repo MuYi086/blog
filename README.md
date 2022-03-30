@@ -1,6 +1,8 @@
 # blog
 ougege的博客
 
+![Powered By](https://img.shields.io/badge/Author-ougege-yellow) ![GitHub](https://img.shields.io/github/license/ougege/blog) ![GitHub Repo stars](https://img.shields.io/github/stars/ougege/blog?style=social)
+
 # run
 ~~`gitbook serve`~~
 
