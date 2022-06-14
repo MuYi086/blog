@@ -58,6 +58,10 @@ npm init
 npm adduser
 # 如果直接修改github里的project，重新登录即可
 npm login
+# 如果登录403报错,查看默认源
+npm get registry 
+npm config set registry https://registry.npmjs.org/
+# 然后关闭重新打开终端
 # 然后发布到本地verdaccio
 npm publish
 # 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
