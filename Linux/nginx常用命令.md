@@ -14,6 +14,18 @@
 nginx -V
 ```
 
+#### 修复刷新404
+```SHELL
+location / {
+ try_files $uri $uri/ @router;
+  index index.html;
+}
+ 
+location @router {
+  rewrite ^.*$ /index.html last;
+}
+```
+
 
 #### 参考
 1. [nginx下载](http://nginx.org/en/download.html 'nginx下载')

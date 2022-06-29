@@ -79,7 +79,7 @@ nginx -V
     gzip_buffers     4 16k;
     gzip_http_version 1.1;
     gzip_comp_level 2;
-    gzip_types     text/plain application/javascript application/x-javascript text/javascript text/css application/xml;
+    gzip_types     text/plain application/javascript application/x-javascript text/javascript text/css text/html application/xml;
     gzip_vary on;
     gzip_proxied   expired no-cache no-store private auth;
     gzip_disable   "MSIE [1-6]\.";
