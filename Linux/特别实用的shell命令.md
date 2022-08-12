@@ -123,6 +123,8 @@ done
 # 给权限并执行
 sudo chmod 777 ./do.sh
 sudo chmod 777 ./memoryFree.sh
+# 或者简单点 -R 递归
+sudo chmod 777 -R ./currentDir
 sudo ./do.sh
 ```
 
