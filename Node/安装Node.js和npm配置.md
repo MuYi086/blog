@@ -39,6 +39,13 @@ sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
 electron_mirror=https://npm.taobao.org/mirrors/electron/
 registry=https://registry.npm.taobao.org
+puppeteer_download_host=https://npm.taobao.org/mirrors/
+python_mirror=https://npm.taobao.org/mirrors/python/
+sentrycli_cdnurl=https://npm.taobao.org/mirrors/sentry-cli/
+sharp_binary_host=https://npm.taobao.org/mirrors/sharp/
+sharp_dist_base_url=https://npm.taobao.org/mirrors/sharp-libvips/
+sharp_libvips_binary_host=https://npm.taobao.org/mirrors/sharp-libvips/
+sqlite3_binary_site=https://npm.taobao.org/mirrors/sqlite3/
 ```
 
 #### 参考
