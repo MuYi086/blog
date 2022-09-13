@@ -87,36 +87,34 @@ echo "memory free: $MemFree""M"
 # echo "process: $process"
 # echo "software num: $soft_num"
 # echo "ip: $ip"
-# 当前丢弃的数字
-currentDrop=$(cat /proc/sys/vm/drop_caches)
 # 限制内存800M触发
 memoryLimit=800
 # -gt：大于; -lt: 小于; -eq:等于; -ge:大于等于; -le:小于等于; -ne:不等于;
 if [ $MemFree -gt $memoryLimit ]
 then
-    echo "内存大于800M,不担心"
-    echo $MemFree
+  echo "内存大于800M,不担心"
+  echo $MemFree
 else
-    echo "我要清理内存了"
-    if [ $currentDrop -eq 2 ]
-    then
-        # echo "我要丢到1里"
-        echo 1 > /proc/sys/vm/drop_caches
-    else
-        # echo "我要丢到2里"
-        echo 2 > /proc/sys/vm/drop_caches
-    fi
+  echo "我要清理内存了"
+  # echo 1 > /proc/sys/vm/drop_caches
+  # 1:清空pagecache;
+  # 2:清空dentries和inodes
+  # 3:清空给所有缓存(pagecache,dentries和inodes)
+  echo 3 > /proc/sys/vm/drop_caches
+  # sudo bash -c "echo 3 > /proc/sys/vm/drop_caches"
 fi
+
 ```
 创建一个定时控制脚本 `do.sh`
 ```SHELL
 #!/bin/bash
 while [ true ]
 do
-    echo "执行啊啊"
-    ./memoryFree.sh
-    sleep 5s
+  echo "执行内存释放脚本"
+  ./memoryFree.sh
+  sleep 5s
 done
+
 ```
 执行
 ```SHELL
