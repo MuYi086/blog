@@ -35,6 +35,7 @@
 1. 发布脚本
 
     ```JS
+    // deploy.config.js
     module.exports = {
       projectName: 'test', // 项目名称
       test: {
@@ -55,7 +56,7 @@
     ```
 
     ```JS
-    // package.json配置
+    // package.json
     "scripts": {
       "deployTest": "zx ./start.mjs test",
       "deploy": "zx ./start.mjs prod"
@@ -64,6 +65,7 @@
 
     ```shell
     #!/usr/bin/env zx
+    # start.mjs
     /**
     * @Author: yanglu
     * @Email: 1258947325@qq.com
