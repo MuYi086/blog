@@ -24,6 +24,9 @@
 1. 测试
 
     ```SHELL
+    # 将客户端公钥复制粘贴到服务端
+    # 客户端: ubuntu系一般是再 ~/.ssh目录下
+    # 服务端: ~/.ssh/authorized_keys
     # 这是我的主机，你们自行替换成自己的
     ssh root@207.148.21.221
     # 如果登录成功，说明已经配置好了
@@ -51,7 +54,7 @@
     }
     ```
 
-    ```JSON
+    ```JS
     // package.json配置
     "scripts": {
       "deployTest": "zx ./start.mjs test",
