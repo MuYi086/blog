@@ -41,6 +41,10 @@ nvm install 5.0.0
 nvm node_mirror https://npm.taobao.org/mirrors/node/
 nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 
+# 终端连接不上nvm时
+# ~/.bashrc文件中添加下句，设置永久环境变量
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+
 # windows可以通过修改setting.txt配置, 加入上面俩行即可
 # 目录: C:\Users\用户\AppData\Roaming\nvm
 ```
