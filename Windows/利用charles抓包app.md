@@ -47,6 +47,9 @@
     # 参考官方说明: https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/
     # 设置-通用-描述文件-安装
     # 手机设置-通用-关于手机-证书信任设置
+
+    # 如浏览器不出现下载提示,则用默认浏览器流量打开如下链接
+    # https://www.charlesproxy.com/assets/legacy-ssl/charles.crt 
     ```
 
 1. 解决接口名 `unknown` 的问题
@@ -61,3 +64,4 @@
 1. [Charles 抓包使用教程 - Windows](https://www.cnblogs.com/peng-lan/p/11242954.html 'Charles 抓包使用教程 - Windows')
 1. [Charles安装和配置HTTPS证书](https://www.jianshu.com/p/6aa52610c11f 'Charles安装和配置HTTPS证书')
 1. [Charles 抓取https unknown](https://www.cnblogs.com/jingmo0319/p/13328191.html 'Charles https unknown')
+1. [ios 配置了代理且使用 chls.pro/ssl 下载不了证书，无法弹出下载证书的提示](https://blog.csdn.net/LittleGiantWang/article/details/125501842 'ios 配置了代理且使用 chls.pro/ssl 下载不了证书，无法弹出下载证书的提示')
