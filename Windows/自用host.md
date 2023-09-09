@@ -1,16 +1,13 @@
 ## 自用host
 
+#### 软件
+使用开源的 [SwitchHosts](https://github.com/oldj/SwitchHosts 'SwitchHosts') 管理 `hosts`
+
+#### 查找最快ip
+可以使用 [站长之家的ping检测](https://ping.chinaz.com/github.com '站长之家的ping检测') , 选择其他,找到国外最快 `ip` .然后选择电信，联通，移动，找到国内能访问的最快 `ip`作为替补 
 #### 常用网站host
 ```SHELL
 127.0.0.1	localhost
-
-# The following lines are desirable for IPv6 capable hosts
-::1     localhost ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-
 #jetbrains.com
 0.0.0.0 account.jetbrains.com
 
@@ -18,37 +15,53 @@ ff02::2 ip6-allrouters
 127.0.0.1  www.xmind.net
 
 #mega.nz
-66.203.127.18  mega.nz
+31.216.144.5  mega.nz
 
-# figma
-18.65.159.61 figma.com
-99.86.202.88 figma.com
-54.230.1.97 figma.com
+# figma.com
+13.35.147.48 figma.com
+52.222.214.18 figma.com
+52.84.251.53 figma.com
+# figma.com国内线路
+13.225.103.65 figma.com
+99.84.133.16 figma.com
 
 # github
-13.250.177.223 github.com
-52.74.223.119  github.com
-13.229.188.59  github.com
-13.229.188.59    gist.github.com
-13.250.177.223   gist.github.com
-52.74.223.119    gist.github.com
-151.101.229.194  github.global.ssl.fastly.net
-151.101.1.194    github.global.ssl.fastly.net
-151.101.109.194  github.global.ssl.fastly.net
-51.251.140.56   codeload.github.com
-13.250.162.133  codeload.github.com
-13.229.189.0    codeload.github.com
+20.248.137.48  github.com
+140.82.121.4 github.com
+140.82.121.3 github.com
+20.27.177.113 github.com
+# github国内线路
+20.205.243.166 github.com
+# gist.github.com
+20.248.137.48    gist.github.com
+140.82.121.4   gist.github.com
+140.82.121.3    gist.github.com
+# gist.github.com国内线路
+78.16.49.15 gist.github.com
+20.205.243.166 gist.github.com
+# github.global.ssl.fastly.net
+151.101.1.194  github.global.ssl.fastly.net
+199.232.45.194    github.global.ssl.fastly.net
+# codeload.github.com
+20.248.137.55 codeload.github.com
+140.82.121.9  codeload.github.com
+20.27.177.114  codeload.github.com
+# codeload.github.com国内线路
+20.205.243.165 codeload.github.com
+# objects.githubusercontent.com
+185.199.108.133 objects.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.110.133 objects.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
 
-# sina.com.cn
-118.123.0.239 finance.sina.com.cn
-183.60.95.201 finance.sina.com.cn
-118.123.0.243 finance.sina.com.cn
-119.188.120.239 finance.sina.com.cn
-125.39.135.205 finance.sina.com.cn
-
-# dustinbrett.com
+# dustinbrett.com 网页操作系统
+104.21.44.105 dustinbrett.com
 188.114.96.3 dustinbrett.com
-188.114.96.0 dustinbrett.com
 172.67.198.186 dustinbrett.com
+# dustinbrett.com国内线路
 104.21.44.105 dustinbrett.com
 ```
+
+#### 常见问题
+1. `switchhosts` 增加了场景未生效, `ping` 显示的 `ip` 还是原来的?
+答: 可能是 `switchhosts` 未能写入成功, 可以先去 `etc`目录查看是否有`hosts` 文件,如果没有，需要手动创建一个，然后再启动 `switchhosts`
