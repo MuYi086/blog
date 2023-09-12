@@ -95,6 +95,8 @@ lsmod | grep nouveau
 # 重启,NVIDIA驱动运行正常,且多屏扩展也ok了
 ```
 
+#### 注意
+因为是第三方插件,部分机型重启后有可能导致 `dde` 崩溃，任务栏进入安全模式。可以下载星火商店，找到`dde-dock` ，卸载后重启即可
 
 #### 参考
 1. [Deepin20.1安装NVIDIA最新显卡驱动](https://bbs.deepin.org/post/213544  'Deepin20.1安装NVIDIA最新显卡驱动')
