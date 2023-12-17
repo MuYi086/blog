@@ -53,6 +53,11 @@
 185.199.109.133 objects.githubusercontent.com
 185.199.110.133 objects.githubusercontent.com
 185.199.111.133 objects.githubusercontent.com
+#raw.githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.110.133 raw.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
 
 # dustinbrett.com 网页操作系统
 104.21.44.105 dustinbrett.com
