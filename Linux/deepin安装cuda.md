@@ -1,4 +1,4 @@
-## deepin安装cuda
+## deepin安装cuda和cuDNN
 
 #### 基本安装程序
 选择不同发行版，下载链接其实是同一个
@@ -14,11 +14,18 @@ sudo apt-get -y install cuda-toolkit-12-3
 
 #### 驱动程序安装程序
 为适配 `cuda`, `nvdia` 驱动需要升级到版本 `545` 以上
+
+[cuDNN下载](https://developer.nvidia.com/rdp/cudnn-archive 'cuDNN下载')
 ```SHELL
 # 如果已经安装过nvdia驱动，不要再次安装驱动,会覆盖之前的，告知nvdia-smi无法使用
 ```
 
+#### 安装cuDNN
+```SHELL
+# 选择操作系统对应的cuda版本下载,需要登陆nvdia账号
+```
 
 #### 参考
 1. [nvida 驱动下载](https://www.nvidia.cn/geforce/drivers/ 'nvida 驱动下载')
+1. [cuDNN下载](https://developer.nvidia.com/rdp/cudnn-archive 'cuDNN下载')
 1. [CUDA Toolkit Download](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local 'CUDA Toolkit Download')
