@@ -55,8 +55,16 @@ conda config --set show_channel_urls yes
 ```
 
 `conda` 加入到环境变量
+如果命令行找不到 `conda` ,需要添加环境变量
 ```SHELL
+# linux
 export PATH=/home/ougege/anaconda3/bin:$PATH
+# windows
+# 左下角搜索->高级系统设置->环境变量->用户变量选择Path->编辑
+# 新建,将 C:\ProgramData\anaconda3 加入
+# 新建,将 C:\ProgramData\anaconda3\Scripts 加入
+# 新建,将 C:\ProgramData\anaconda3\Library\bin 加入
+# 然后一路确定
 ```
 
 创建新的环境
@@ -70,7 +78,9 @@ conda create -n env_name numpy matplotlib python=2.7
 
 环境切换
 ```SHELL
-# 切换到新环境# linux/Mac下需要使用source activate env_name
+# windows:使用cmd进入,不要使用powershell,会报错
+activate env_name
+# 切换到新环境 linux/Mac下需要使用source activate env_name
 source activate env_name
 #退出环境，也可以使用`activate root`切回root环境
 deactivate env_name
@@ -94,6 +104,11 @@ conda install -n env_name pandas
 conda list
 # 指定查看某环境下安装的package
 conda list -n env_name
+
+# 列出已经创建的虚拟环境
+conda info --envs
+conda env list
+conda info -e
 
 # 查找包
 conda search pyqtgraph
