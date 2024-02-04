@@ -23,6 +23,26 @@ apt-cache showpkg docker
 apt-cache pkgnames docker
 ```
 
+#### 压缩和解压
+```SHELL
+# zip和unzip。如果没有zip请使用apt-get update && apt-get install -y zip安装
+zip -r dir.zip test_directory/   # 将test_directory文件夹压缩为dir.zip文件
+unzip dir.zip   # 将dir.zip文件解压
+
+# tar. 以下参数c代表压缩，x表示解压，z代表压缩/解压为gz格式的压缩包
+tar czf dir.tar.gz test_directory/   # 将test_directory文件夹压缩为dir.tar.gz文件
+tar xzf dir.tar.gz   # 将dir.tar.gz文件解压
+
+# tar还可以用于压缩和解压其他格式的压缩文件，比如bz2
+tar cjf dir.tar.bz2 test_directory/   # 将test_directory文件夹压缩为dir.tar.bz2文件
+tar xjf dir.tar.bz2   # 将dir.tar.bz2文件解压
+```
+
+#### 查看GPU信息
+```SHELL
+nvidia-smi
+```
+
 #### 磁盘使用情况
 ```SHELL
 df -h
