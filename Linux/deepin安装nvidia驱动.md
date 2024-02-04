@@ -19,7 +19,7 @@ sudo apt-get install deepin-graphics-driver-manager
 ```
 ![显卡驱动管理](/images/linux/deepin安装nvidia驱动/step_4.png '显卡驱动管理')
 
-2. 协助`NVIDIA`开源驱动和闭源驱动
+2. 卸载`NVIDIA`开源驱动和闭源驱动
 ```SHELL
 sudo apt autoremove nvidia-*
 ```
@@ -28,7 +28,10 @@ sudo apt autoremove nvidia-*
 `nouveau` 是通过逆向 `Nvidia` 的 `Linux` 驱动创造的一个开源第三方 `Nvidia` 显卡驱动程序，因此其效果差，性能低。在手动安装 `NVIDIA` 闭源驱动时需要禁用 `nouveau` 驱动。
 ```SHELL
 # 许多帖子的说法是blacklist.conf，但我deepin是最新20.6，找到的是blacklist-bcm43.conf
+# deepin 20.6
 sudo gedit /etc/modprobe.d/blacklist-bcm43.conf
+# deepin 23
+sudo gedit /etc/modprobe.d/blacklist.conf
 
 # 在打开的文件中添加一下，并保存关闭
 blacklist nouveau
@@ -99,5 +102,6 @@ lsmod | grep nouveau
 因为是第三方插件,部分机型重启后有可能导致 `dde` 崩溃，任务栏进入安全模式。可以下载星火商店，找到`dde-dock` ，卸载后重启即可
 
 #### 参考
+1. [nvida 驱动下载](https://www.nvidia.cn/geforce/drivers/ 'nvida 驱动下载')
 1. [Deepin20.1安装NVIDIA最新显卡驱动](https://bbs.deepin.org/post/213544  'Deepin20.1安装NVIDIA最新显卡驱动')
 1. [Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）](https://www.likecs.com/show-187504.html 'Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）')
