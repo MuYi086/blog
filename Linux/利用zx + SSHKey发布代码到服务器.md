@@ -40,17 +40,17 @@
       projectName: 'test', // 项目名称
       test: {
         host: '207.148.21.221', // 主机
-        username: 'ougege', // 账号
+        username: 'MuYi086', // 账号
         distPath: 'dist', // 本地打包目录
         webDir: '/www/wwwroot/test/dist', // 服务器部署路径（不可为空或'/'）
-        privateKeyPath: '/home/ougege/.ssh/id_ed25519' // sshKey路径
+        privateKeyPath: '/home/MuYi086/.ssh/id_ed25519' // sshKey路径
       },
       prod: {
         host: '207.148.21.221', // 主机
         username: 'root', // 账号
         distPath: 'dist', // 本地打包目录
         webDir: '/www/wwwroot/test/dist', // 服务器部署路径（不可为空或'/'）
-        privateKeyPath: '/home/ougege/.ssh/id_ed25519' // sshKey路径
+        privateKeyPath: '/home/MuYi086/.ssh/id_ed25519' // sshKey路径
       }
     }
     ```
@@ -69,7 +69,7 @@
     /**
     * @Author: yanglu
     * @Email: 1258947325@qq.com
-    * @Blog: https://github.com/ougege/blog
+    * @Blog: https://github.com/MuYi086/blog
     * @Theme: zx+ssh上传文件
     * @Date: 2022/09/13 14:28
     */

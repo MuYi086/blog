@@ -111,7 +111,7 @@ bash ./v2-ui.sh
         "wsSettings": {
         "path": "/ws/", # 路径
         "headers": {
-            "Host": "ougege.cn" # 伪装域名
+            "Host": "MuYi086.cn" # 伪装域名
         }
         }
     },

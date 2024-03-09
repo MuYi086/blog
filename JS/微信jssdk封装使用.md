@@ -11,7 +11,7 @@
     npm i jweixin-module --save
     ```
 
-1. 封装(以下我使用了封装好的 `util` 和 `api` ,具体可参考: [webMostUse](https://github.com/ougege/webMostUse 'webMostUse'))
+1. 封装(以下我使用了封装好的 `util` 和 `api` ,具体可参考: [webMostUse](https://github.com/MuYi086/webMostUse 'webMostUse'))
 
     ```JS
     var jweixin = require('jweixin-module')

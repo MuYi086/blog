@@ -58,14 +58,14 @@ arr.reduce(function (total, currentVal) {return total + currentVal}) // 10
 #### Object
 ```JS
 // 添加或更改对象属性
-let test = {name: 'ougege'}
+let test = {name: 'MuYi086'}
 Object.defineProperty(test, 'age', {value: 26})
-console.log(Object) // {name: "ougege", age: 26}
+console.log(Object) // {name: "MuYi086", age: 26}
 
 // 添加或更改多个对象属性
 let props = {'age': {value: 26, writable: true}, 'weight': {value: 70, writable: false}}
 Object.defineProperties(test, props)
-console.log(test) // {name: "ougege", age: 26, weight: 70}
+console.log(test) // {name: "MuYi086", age: 26, weight: 70}
 
 // 用defineProperty实现双向绑定
 // HTML
@@ -85,14 +85,14 @@ Object.defineProperty(input, 'val', {
   }
 })
 
-input.val = 'ougege, 你好'
+input.val = 'MuYi086, 你好'
 
 // 访问属性
 let res = Object.getOwnPropertyDescriptor(test, 'name')
-console.log(res) // {value: "ougege", writable: true, enumerable: true, configurable: true}
+console.log(res) // {value: "MuYi086", writable: true, enumerable: true, configurable: true}
 
 // 以数组返回所有属性
-let test = {name: 'ougege', age: 26}
+let test = {name: 'MuYi086', age: 26}
 let res = Object.getOwnPropertyNames(test)
 console.log(res) // ["name", "age"]
 
@@ -128,14 +128,14 @@ Object.isFrozen(test)
 // Function.prototype.bind
 function aa () {console.log(this.author)}
 function bb (name) {this.author = name}
-let test = new bb('ougege')
+let test = new bb('MuYi086')
 let showResult = aa.bind(test)
 showResult()
 
 // bind会把第一个实参作为当前this
 // 第二参起，会依次传递给原始函数
 function aa (age) {
-  this.name = 'ougege'
+  this.name = 'MuYi086'
   this.age = age
 }
 let obj = {}

@@ -79,12 +79,12 @@ sudo service docker restart
     sudo docker run hello-world
     # 让普通用户也能运行docker:把账号加到docker用户组,重启docker服务,切换身份
     sudo groupadd docker
-    sudo gpasswd -a user_name(ougege) docker
+    sudo gpasswd -a user_name(MuYi086) docker
     newgrp - docker # 将当前用户切换到docker组中
     sudo service docker restart
     # 并不是一劳永逸,首次进入需切换身份
     su root
-    su user_name(ougege)
+    su user_name(MuYi086)
     # 如果提示鉴定错误，是由于初次安装未给root设置密码,重新设置即可
     sudo passwd root
     # 列出镜像

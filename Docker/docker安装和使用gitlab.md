@@ -102,7 +102,7 @@ docker restart gitlab
 ```SHELL
 # 选择一个项目 => 左侧设置 => 仓库
 # 填入对应的github项目地址,注意//后插入用户名,例如
-https://ougege@github.com/ougege/blog.git
+https://MuYi086@github.com/MuYi086/blog.git
 # 密码位置输入之前获得的token或者当前github用户的密码
 ```
 ![强制更新](../images/linux/docker安装和使用gitlab/gitlab_01.png)

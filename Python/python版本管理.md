@@ -58,7 +58,7 @@ conda config --set show_channel_urls yes
 如果命令行找不到 `conda` ,需要添加环境变量
 ```SHELL
 # linux
-export PATH=/home/ougege/anaconda3/bin:$PATH
+export PATH=/home/MuYi086/anaconda3/bin:$PATH
 # windows
 # 左下角搜索->高级系统设置->环境变量->用户变量选择Path->编辑
 # 新建,将 C:\ProgramData\anaconda3 加入
@@ -122,7 +122,7 @@ conda remove numpy
 # anaconda3 新建一个.condarc文件
 conda config --add channels r
 # anaconda3 换源
-sudo gedit /home/ougege/condarc
+sudo gedit /home/MuYi086/condarc
 # 清华
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/

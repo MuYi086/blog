@@ -40,19 +40,19 @@
 1. 新建一个目录用户安装 `maven` ,将文件解压复制到文件夹内
     ```SHELL
     # username 为当前用户
-    mkdir /home/ougege/maven
+    mkdir /home/MuYi086/maven
     ```
 
 1. 设置环境变量
     ```SHELL
     sudo vim /etc/profile
     # 将以下内容加到最后:注意之前java的export调整了
-    JAVA_HOME=/home/ougege/program/jdk1.8.0_231      
-    JRE_HOME=/home/ougege/program/jdk1.8.0_231/jre   
+    JAVA_HOME=/home/MuYi086/program/jdk1.8.0_231      
+    JRE_HOME=/home/MuYi086/program/jdk1.8.0_231/jre   
     CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
     PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 
-    MAVEN_HOME=/home/ougege/program/maven-3.6.2
+    MAVEN_HOME=/home/MuYi086/program/maven-3.6.2
     PATH=${PATH}:${MAVEN_HOME}/bin
     export JAVA_HOME JRE_HOME CLASS_PATH PATH MAVEN_HOME
     ```
@@ -83,14 +83,14 @@
         "workbench.startupEditor": "newUntitledFile",
         "java.errors.incompleteClasspath.severity": "ignore",
         "workbench.colorTheme": "Atom One Dark",
-        "java.home":"/home/ougege/program/jdk1.8.0_231",
-        "java.configuration.maven.userSettings": "/home/ougege/program/maven-3.6.2/conf/settings.xml",
-        "maven.executable.path": "/home/ougege/program/maven-3.6.2/bin/mvn",
+        "java.home":"/home/MuYi086/program/jdk1.8.0_231",
+        "java.configuration.maven.userSettings": "/home/MuYi086/program/maven-3.6.2/conf/settings.xml",
+        "maven.executable.path": "/home/MuYi086/program/maven-3.6.2/bin/mvn",
         "maven.terminal.useJavaHome": true,
         "maven.terminal.customEnv": [
             {
                 "environmentVariable": "JAVA_HOME",
-                "value": "/home/ougege/program/jdk1.8.0_231"
+                "value": "/home/MuYi086/program/jdk1.8.0_231"
             }
         ],
     }
@@ -104,14 +104,14 @@ View => Command Palette
 #### 连接数据库
 修改 `app.java`
 ```JAVA
-package com.ougege.myapp;
+package com.MuYi086.myapp;
 import java.sql.*;
 public class App {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String url = "jdbc:mysql://localhost:3306/test";  
     // 数据库的用户名与密码，需要根据自己的设置
-    static final String user = "ougege";
-    static final String password = "ougege";
+    static final String user = "MuYi086";
+    static final String password = "MuYi086";
     public static void main( String[] args ) {
         Connection conn = null;
         Statement stmt = null;

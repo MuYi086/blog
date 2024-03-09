@@ -201,7 +201,7 @@ setTimeout(function () {
 
     // 用4个语句创建和初始化对象==浪费
     var person = new Object()
-    person.name = 'ougege'
+    person.name = 'MuYi086'
     person.age = 26
     person.sayName = function () {
         alert(this.name)
@@ -216,7 +216,7 @@ setTimeout(function () {
 
     // 用一条语句创建和初始化对象
     var person = {
-        name : 'ougege',
+        name : 'MuYi086',
         age : 26,
         sayName: function () {
         alert(this.name)

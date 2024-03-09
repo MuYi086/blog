@@ -12,12 +12,12 @@
     * 选择第二栏 iso 模式并导出(我就不截图了,下图来自老毛桃官网)
         ![iso模式](/images/linux/linux下virtualbox用gho还原系统/laomaotao_01.png 'iso模式')
     
-    * 最好将iso镜像用户根目录.我这里放到/home/ougege下
+    * 最好将iso镜像用户根目录.我这里放到/home/MuYi086下
 
 1. 在virtualbox中添加当前用户组
     ```SHELL
-    # ougege是我当前用户名
-    sudo usermod -G vboxusers -a ougege
+    # MuYi086是我当前用户名
+    sudo usermod -G vboxusers -a MuYi086
     ```
 
 1. 挂载 `gho` 文件所在磁盘
@@ -30,7 +30,7 @@
     # 为磁盘建立一个虚拟硬盘镜像
     # -filename 是要输出的位置
     # -rawdisk 是磁盘路径
-    VBoxManage internalcommands createrawvmdk -filename /home/ougege/vboxee.vmdk -rawdisk /dev/sdb1
+    VBoxManage internalcommands createrawvmdk -filename /home/MuYi086/vboxee.vmdk -rawdisk /dev/sdb1
     ```
 
 1. 在 `virtualbox` 存储中添加磁盘

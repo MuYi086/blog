@@ -21,8 +21,8 @@ verdaccio
 #### 配置文件
 ```SHELL
 # 以本机deepin 为例,配置文件位置如下:
-cd /home/ougege/.config/verdaccio
-# 其中ougege是用户名
+cd /home/MuYi086/.config/verdaccio
+# 其中MuYi086是用户名
 vim ./config.yaml
 # vim的操作可自行百度
 # 或者用gedit来编辑

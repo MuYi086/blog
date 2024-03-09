@@ -32,8 +32,8 @@
     function test(name, height, msg = name + ' height is ' + height) {
       return [name, height, msg]
     }
-    test('ougege', 'nihao') // ["ougege", "nihao", "ougege height is nihao"]
-    test('ougege', 'nihao', 'hello world') // ["ougege", "nihao", "hello world"]
+    test('MuYi086', 'nihao') // ["MuYi086", "nihao", "MuYi086 height is nihao"]
+    test('MuYi086', 'nihao', 'hello world') // ["MuYi086", "nihao", "hello world"]
     ```
 
 1. 默认值参数应当放在函数末尾,否则函数调用入参不能省略,会报错
@@ -63,7 +63,7 @@ student = {name: '小王'} // 报错
 #### 模板字符串
 在 `ES6` 以前,字符串模板常用+号进行字符串拼接,在 `ES6` 里使用反引号(`)表示普通字符串,同时可以插入变量
 ```JS
-let name = 'ougege'
+let name = 'MuYi086'
 let age = 26
 let str1 = '名字: ' + name + ', 今年' + age + '岁'
 let str2 = `名字: ${name}, 今年${age}岁`
@@ -112,7 +112,7 @@ let fn = a => alert('hello world')
 let fn = a => a
 
 // 由于大括号被解释成代码,如果返回值是对象,必须在对象外加括号,否则报错
-let fn = id => ({name: 'ougege'})
+let fn = id => ({name: 'MuYi086'})
 
 // 高级用法
 let fn = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b +c
@@ -182,7 +182,7 @@ testArr.forEach(item => {
 })
 
 // for in 循环会打印出属性
-testArr.attr = 'ougege 的blog'
+testArr.attr = 'MuYi086 的blog'
 for (let idx in testArr) {
   console.log(testArr[idx])
 }
@@ -206,11 +206,11 @@ for (let test of testArr) {
 ```JS
 // 利用对象字面量解构
 let test = {
-  name: 'ougege',
+  name: 'MuYi086',
   age: 26
 }
 let {name, age} = test
-console.log(name, age) // ougege 26
+console.log(name, age) // MuYi086 26
 
 // 解构赋值不存在的属性时,会被赋值为undefined
 let {height} = test
@@ -336,7 +336,7 @@ console.log(k.next()) // {value: undefined, done: true}
 
 // 遍历普通对象
 let obj = {
-  name: 'ougege',
+  name: 'MuYi086',
   age: 26
 }
 // 拥有Symbol.iterator属性就能使用for...of与...运算符
@@ -389,7 +389,7 @@ console.log(displayClass.next().value) // hide
 let requestSingFn = function* () {
   yield new Promise(function(resolve, reject) {
     setTimeout(function () {
-      resolve({code: 304, data: {username: 'ougege'}})
+      resolve({code: 304, data: {username: 'MuYi086'}})
     }, 300)
   })
 }
@@ -420,7 +420,7 @@ function test (x, y) {
 test.prototype.toString = function () {
   return this.x + ':' + this.y
 }
-let testObj = new test(name, ougege)
+let testObj = new test(name, MuYi086)
 
 // 在ES6里使用class写法
 class test {
@@ -446,7 +446,7 @@ let person = new class {
   sayName () {
     console.log(this.name)
   }
-}('ougege')
+}('MuYi086')
 person.sayName()
 
 // 类里的方法名采用表达式
@@ -509,7 +509,7 @@ console.log(test.getVal_01())
 // 与上不同，子类可以继承静态方法
 class Parent {
   static doPrint () {
-    console.log('ougege')
+    console.log('MuYi086')
   }
 }
 class Child extends Parent {}

@@ -8,7 +8,7 @@
 # 拉取最新镜像
 docker pull nginx
 # 创建一个目录用来存放nginx配置
-cd /home/ougege/program
+cd /home/MuYi086/program
 mkdir -p nginx/www
 # 运行容器
 # -m 最大占用内存 --memory-reservation 内存+swap
@@ -17,14 +17,14 @@ mkdir -p nginx/www
 # -p:将容器内部端口向外映射
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -m 200M -d --rm -p 8089:80 --name nginx --network testnet --network-alias nginx -v /home/ougege/program/nginx/www:/usr/share/nginx/html nginx
+docker run -m 200M -d --rm -p 8089:80 --name nginx --network testnet --network-alias nginx -v /home/MuYi086/program/nginx/www:/usr/share/nginx/html nginx
 # 然后在www目录创建一个hello world页面
-echo '<h1>Ｈello World</h1>' >> /home/ougege/program/nginx/www/index.html
+echo '<h1>Ｈello World</h1>' >> /home/MuYi086/program/nginx/www/index.html
 # 把容器内nginx配置拷贝出来并命名为conf
-docker cp nginx:/etc/nginx /home/ougege/program/nginx/conf
+docker cp nginx:/etc/nginx /home/MuYi086/program/nginx/conf
 # 最后停止docker
 # 重新创建一个nginx容器
-docker run -m 200M -d --rm -p 8089:80 --name nginx --network testnet --network-alias nginx -v /home/ougege/program/nginx/www:/usr/share/nginx/html -v /home/ougege/program/nginx/conf:/etc/nginx nginx
+docker run -m 200M -d --rm -p 8089:80 --name nginx --network testnet --network-alias nginx -v /home/MuYi086/program/nginx/www:/usr/share/nginx/html -v /home/MuYi086/program/nginx/conf:/etc/nginx nginx
 ```
 
 #### 安装php-fpm
@@ -38,7 +38,7 @@ docker pull php:7.1-fpm
 # -p:将容器内部端口向外映射
 # --name:命名容器名称
 # -v:将容器内数据文件夹,日志,配置等挂载到宿主机指定目录下
-docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php -v /home/ougege/program/nginx/www:/home php:7.1-fpm
+docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php -v /home/MuYi086/program/nginx/www:/home php:7.1-fpm
 ```
 
 对应调整 `nginx` 配置
@@ -47,7 +47,7 @@ docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php
 docker inspect php | grep "IPAddress"
 
 # 进入nginx/www,创建index.php
-cd /home/ougege/program/nginx/www && touch index.php
+cd /home/MuYi086/program/nginx/www && touch index.php
 gedit index.php
 
 # 粘贴一个hello world
@@ -60,7 +60,7 @@ gedit index.php
     </body>
 </html>
 
-gedit /home/ougege/program/nginx/conf/conf.d/default.conf
+gedit /home/MuYi086/program/nginx/conf/conf.d/default.conf
 # 修改nginx配置,如下
 # 注意:php ip改为刚才获取的; /scripts改成新建php容器时的目录
 
@@ -97,7 +97,7 @@ docker pull mysql
 # --rm：容器停止运行后，自动删除容器文件
 # -p:将容器内部端口向外映射
 # --name:命名容器名称
-docker run -d -it --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=ougege mysql
+docker run -d -it --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=MuYi086 mysql
 # 新版本mysql无法插入中文
 # 临时生效
 docker exec -it mysql env LANG=C.UTF-8 /bin/sh

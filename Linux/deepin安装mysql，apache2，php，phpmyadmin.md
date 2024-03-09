@@ -14,7 +14,7 @@ mysql -u root -p
 #### 修改mysql密码
 我们使用 `mysql_secure_installation` 来修改数据库 `Root` 用户的密码
 ```SHELL
-ougege@ougege-PC:~$sudo mysql_secure_installation
+MuYi086@MuYi086-PC:~$sudo mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
 
@@ -94,8 +94,8 @@ sudo ln -s /usr/share/phpmyadmin/ /var/www/html/phpmyadmin
 ```SHELL
 sudo mysql -u root -p
 # 输入密码登录
-# 以下ougege是要填入创建的用户名,password是要填入的密码
-MariaDB [(none)]>CREATE USER ougege@localhost IDENTIFIED BY 'password';
+# 以下MuYi086是要填入创建的用户名,password是要填入的密码
+MariaDB [(none)]>CREATE USER MuYi086@localhost IDENTIFIED BY 'password';
 # 回车创建
 ```
 再次在`localhost/phpmyadmin`登录
@@ -106,7 +106,7 @@ MariaDB [(none)]>CREATE USER ougege@localhost IDENTIFIED BY 'password';
 sudo mysql -u root -p
 # 输入密码登录
 # 给用户授权
-grant all on *.* to ougege@localhost;
+grant all on *.* to MuYi086@localhost;
 # 重新加载权限
 flush privileges;
 
@@ -129,7 +129,7 @@ select current_user();
 # 显示所有用户
 select user from mysql.user;
 # 删除用户
-delete from user where user='ougege';
+delete from user where user='MuYi086';
 ```
 
 

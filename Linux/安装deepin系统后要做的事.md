@@ -16,7 +16,7 @@
 
 1. 从 `github` 仓库下载常用项目
     ```SHELL
-    https://github.com/ougege?tab=repositories
+    https://github.com/MuYi086?tab=repositories
     ```
 
 1. 搭建本地 `v2ray` 客户端
