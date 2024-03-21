@@ -30,7 +30,22 @@
     # 为磁盘建立一个虚拟硬盘镜像
     # -filename 是要输出的位置
     # -rawdisk 是磁盘路径
+    # 以下是6.1及之前创建方式
     VBoxManage internalcommands createrawvmdk -filename /home/MuYi086/vboxee.vmdk -rawdisk /dev/sdb1
+
+    # 以下是7.0版本创建方式,依旧报错,内外网均为找到答案
+    VBoxManage createmedium disk --filename=/home/MuYi086/demo1.vmdk --sizebyte=2000398934016 --diffparent=/dev/sdb1 --format=VMDK --variant=Standard
+
+    # 方法一：7.0改用扩展包支持usb
+    # 下载Oracle VM VirtualBox Extension Pack
+    # sudo groupadd usbfs
+    # sudo adduser MuYi086 usbfs
+    # sudo adduser MuYi086 vboxusers
+    # reboot
+    # 右下角U盘挂载对应盘符
+
+    # 方法二：
+    # 光盘 => 选择或创建虚拟盘 => 创建 => 选择文件夹 => 右键注册 => 创建 => CD光驱
     ```
 
 1. 在 `virtualbox` 存储中添加磁盘
@@ -48,3 +63,5 @@
 #### 参考
 1. [老毛桃](https://www.laomaotao.net/ '老毛桃')
 1. [Ubuntu与Windows下使得Virtualbox从U盘启动系统](https://blog.csdn.net/SimileciWH/article/details/86750966 'Ubuntu与Windows下使得Virtualbox从U盘启动系统')
+1. [VBoxManage createmedium](https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-createmedium.html 'VBoxManage createmedium')
+1. [Oracle VM VirtualBox Extension Pack](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html 'Oracle VM VirtualBox Extension Pack')
