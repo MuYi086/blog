@@ -55,6 +55,9 @@ npm who am i
 ```SHELL
 # 开发一个npm包:可自行百度,这里不展开了;
 npm init
+# 如果创建一个范围公共包
+npm init --scope=@my-username
+# 添加用户
 npm adduser
 # 如果直接修改github里的project，重新登录即可
 npm login
@@ -65,6 +68,8 @@ npm config set registry https://registry.npmjs.org/
 # 然后发布到本地verdaccio
 npm publish
 # 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
+# 如果发布一个范围公共包
+npm publish --access public
 ```
 
 #### 使用pm2守护进程
