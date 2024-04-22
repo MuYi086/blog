@@ -23,7 +23,7 @@
     # ~/.config/nvm/versions/node/v18.17.0/lib
     ```
 1. 进入这个目录，找到真实 `taro` 的路径
-    ```SHELL
+    ```shell
     cd ~/.config/nvm/versions/node/v18.17.0/lib
     # 我们会发现下面还有一个node_modules目录,再然后子目录才全局安装包目录，其中就包括了@tarojs
     # 在里面有cli目录，再进入才是bin目录，再下级才是最终的taro目录
@@ -47,7 +47,7 @@
     ```
 
 1. 关闭重新打开终端，执行 `taro -v` 验证是否成功
-    ```SHELL
+    ```shell
     taro -v
     ```
 

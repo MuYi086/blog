@@ -17,7 +17,7 @@
 中国科学技术大学|http://pypi.mirrors.ustc.edu.cn/|
 
 ## 常用命令
-```SHELL
+```shell
 # 查找软件
 pip search Package
 
@@ -38,7 +38,7 @@ pip list
 ```
 
 ## 下载安装pip
-```SHELL
+```shell
 # 下载
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
@@ -47,7 +47,7 @@ python3 get-pip.py
 ```
 
 ## 修改源
-```SHELL
+```shell
 # 没有则新建pip.conf
 mkdir ~/.pip && cd ~/.pip && touch pip.conf
 
@@ -61,7 +61,7 @@ trusted-host = mirrors.aliyun.com
 ```
 
 ## pip3错误修复
-```SHELL
+```shell
 # 错误提示如下：
 Traceback (most recent call last):
   File "/usr/bin/pip3", line 9, in <module>

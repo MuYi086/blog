@@ -4,7 +4,7 @@
 之前使用 `docker` 部署 `gitlab` 和 `jenkins` 很是舒服，管理也很方便。于是今天来尝试 `nginx＋php` 。
 
 ## 安装nginx
-```SHELL
+```shell
 # 拉取最新镜像
 docker pull nginx
 
@@ -33,7 +33,7 @@ docker run -m 200M -d --rm -p 8089:80 --name nginx --network testnet --network-a
 ```
 
 ## 安装php-fpm
-```SHELL
+```shell
 # 拉取镜像
 docker pull php:7.1-fpm
 
@@ -48,7 +48,7 @@ docker run -d --rm -p 9000:9000 --name php --network testnet --network-alias php
 ```
 
 对应调整 `nginx` 配置
-```SHELL
+```shell
 # 查询php容器的ip：我的是172.18.0.3
 docker inspect php | grep "IPAddress"
 
@@ -95,7 +95,7 @@ service nginx reload
 ```
 
 ## 安装mysql
-```SHELL
+```shell
 # 拉取mysql镜像
 docker pull mysql
 

@@ -10,10 +10,10 @@
 [nvm-windows地址](https://github.com/coreybutler/nvm-windows 'nvm-windows地址')
 
 ::: code-group
-```SHELL [curl]
+```shell [curl]
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
-```SHELL [wget]
+```shell [wget]
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 :::
@@ -25,7 +25,7 @@ Failed to connect to raw.githubusercontent.com port 443: 拒绝连接
 
 解决方案如下:
 
-```SHELL
+```shell
 # 直接复制网址在浏览器打开
 # https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh
 # 复制页面内容保存到本地install.sh,用bash执行
@@ -54,7 +54,7 @@ nvm uninstall 5.0.0
 ```
 
 ## 使用淘宝镜像
-```SHELL
+```shell
 # 使用淘宝镜像可加快下载速度
 # 经测试官网镜像下载npm会巨慢,建议改用淘宝镜像
 
@@ -71,14 +71,14 @@ export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 ```
 
 ## 查看node和npm版本
-```SHELL
+```shell
 node --version
 npm --version
 ```
 
 ## 其他错误
 `npm` 在 `install` 包,报 `No package.json found`
-```SHELL
+```shell
 # 初始化package.json
 npm init --yes
 # 修复
@@ -90,14 +90,14 @@ npm install package
 ```
 
 ## 安装nrm
-```SHELL
+```shell
 npm install -g nrm
 # 安装老版本保证use方法生效
 npm install -g @adams549659584/nrm
 ```
 
 ## windows上无法识别nrm命令
-```SHELL
+```shell
 # 原因是nrm没有添加到path
 # 进入系统设置环境变量
 # 查看node的目录位置
@@ -107,7 +107,7 @@ npm config ls
 ```
 
 ## nrm 命令
-```SHELL
+```shell
 # nrm 列表
 nrm ls
 

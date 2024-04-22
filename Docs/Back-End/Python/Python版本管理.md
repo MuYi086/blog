@@ -4,13 +4,13 @@
 由于开发需要，某些 `package` 需要 `python3.6` 以上,但是本机使用的 `deepin` ，当前系统内置了 `python 2.7` 和 `python 3.5` ,且非常不好动弹，容易导致系统出问题。于是想到用版本管理 `python` ，本文尝试了 `pyenv` 和 `miniconda`
 
 ## pyenv安装和使用
-```SHELL
+```shell
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash 
 
 ```
 
 ## 设置环境变量
-```SHELL
+```shell
 # 打开配置文件
 sudo gedit /etc/profile
 
@@ -27,7 +27,7 @@ pyenv --version
 ```
 
 ## 常用命令
-```SHELL
+```shell
 # 默认pyenv安装速度很慢,建议下载源码放在./pyenv/cache下（注意是tar.xz的，tgz的不识别）
 # 安装依赖：否则会报错装不上
 sudo apt-get install libc6-dev gcc
@@ -51,7 +51,7 @@ pyenv rehash
 ## miniconda安装和使用
 [下载地址](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/ '下载地址')
 
-```SHELL
+```shell
 # 下载latest版本
 wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 安装,按提示yes即可
@@ -64,7 +64,7 @@ conda config --set show_channel_urls yes
 
 `conda` 加入到环境变量
 如果命令行找不到 `conda` ,需要添加环境变量
-```SHELL
+```shell
 # linux
 export PATH=/home/MuYi086/anaconda3/bin:$PATH
 
@@ -78,7 +78,7 @@ export PATH=/home/MuYi086/anaconda3/bin:$PATH
 
 创建新的环境
 
-```SHELL
+```shell
 # 指定python版本为2.7，注意至少需要指定python版本或者要安装的包# 后一种情况下，自动安装最新python版本
 conda create -n env_name python=2.7
 
@@ -87,7 +87,7 @@ conda create -n env_name numpy matplotlib python=2.7
 ```
 
 环境切换
-```SHELL
+```shell
 # windows:使用cmd进入,不要使用powershell,会报错
 activate env_name
 
@@ -99,12 +99,12 @@ deactivate env_name
 ```
 
 移除环境
-```SHELL
+```shell
 conda remove -n env_name --all
 ```
 
 常用命令
-```SHELL
+```shell
 # 安装package
 #  1. 切换到该环境下直接安装
 activate env_nameconda install pandas

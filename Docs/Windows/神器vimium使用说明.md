@@ -4,7 +4,7 @@
 1. 打开 `vimium` 设置界面
 1. 修改  `Custom search engines`配置
 
-    ```SHELL
+    ```shell
     w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia
 
     # More examples.
@@ -25,7 +25,7 @@
 1. 点击底部保存
 
 ## 操作网页
-```SHELL
+```shell
 j # 向下滚动一点
 k # 向上滚动一点
 d # 向下滚动半页
@@ -48,7 +48,7 @@ gF # 选择下一个frame(尤其在选择网页内置视频的时候很管用)
 ```
 
 ## 操作标签
-```SHELL
+```shell
 t # 新建标签页
 J, gT # 切换到左标签页
 K, gt # 切换到右标签页
@@ -63,20 +63,20 @@ X # 恢复关闭的标签页
 ```
 
 ## 浏览历史
-```SHELL
+```shell
 L # 前进
 H # 后退
 ```
 
 ## 查找功能
-```SHELL
+```shell
 / # 开启查找功能(右下角输入enter结束)
 n # 查找下一个
 N # 查找上一个
 ```
 
 ## 使用搜索框
-```SHELL
+```shell
 o # 从url，书签，历史记录中搜索地址,回车打开
 O # 从url，书签，历史记录中搜索地址,回车在新标签页打开
 b # 仅从书签搜索地址，回车打开

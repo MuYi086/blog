@@ -13,7 +13,7 @@
 1. 下载 [CyanogenMod 14.1](https://cyanogenmodroms.com/flo/ 'CyanogenMod 14.1')
 
 ## 刷机
-```SHELL
+```shell
 # 1. 长按音量-和开机键进入fastboot
 # 2. 解压platform-tools,将twrp压缩包放到解压后的platform-tools目录
 # 3. 打开cmd命令行,进入到platform-tools对应目录

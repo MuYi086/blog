@@ -2,7 +2,7 @@
 
 ## 安装
 
-```SHELL
+```shell
 # pip3 安装 mitmproxy
 pip3 install mitmproxy
 
@@ -12,7 +12,7 @@ sudo apt-get install python3-pip
 
 ## 使用
 
-```SHELL
+```shell
 # 指定监听端口,默认8080
 mitmproxy -p 8888
 

@@ -10,7 +10,7 @@
 确实, `GitKraken` 官方从 `6.5.3` 版本开始对本地库收费
 
 ## 下载地址
-```Shell
+```shell
 "url_deb": "https://release.axocdn.com/linux/GitKraken-v6.5.1.deb",
 "url_rpm": "https://release.axocdn.com/linux/GitKraken-v6.5.1.rpm",
 "url_targz": "https://release.axocdn.com/linux/GitKraken-v6.5.1.tar.gz",

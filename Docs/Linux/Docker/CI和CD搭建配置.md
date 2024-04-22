@@ -9,7 +9,7 @@
 
 安装 `gitlab-runner`
 1. 方法一: `GNU/Linux` 安装(不好使)
-    ```SHELL
+    ```shell
     # For Debian/Ubuntu/Mint
     curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
 
@@ -32,7 +32,7 @@
     sudo yum install gitlab-runner-10.0.0-1
     ```
 1. 方法二: `FreeBSD` 安装(推荐)
-    ```SHELL
+    ```shell
     # Linux x86-64
     sudo wget -O /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
 
@@ -54,7 +54,7 @@
     ```
 1. 方法三: 通过 `deb` 安装
     可能大家在使用方法一安装提示:无法定位到软件包 `gitlab-runner` , 那么可以使用这种方式手动安装 [地址](https://gitlab-runner-downloads.s3.amazonaws.com/latest/index.html '地址')
-    ```SHELL
+    ```shell
     # For Debian/Ubuntu/Mint
     dpkg -i gitlab-runner_<arch>.deb
 
@@ -62,7 +62,7 @@
     rpm -i gitlab-runner_<arch>.rpm
     ```
 1. 方法四: 通过 `docker` 安装
-    ```SHELL
+    ```shell
     # 下载安装镜像
     docker pull gitlab/gitlab-runner:latest
     # 运行容器
@@ -75,7 +75,7 @@
     ```
 
 然后注册 `gitlab-runner`
-```SHELL
+```shell
 # linux，mac等
 sudo gitlab-runner register
 # docker register
@@ -87,7 +87,7 @@ docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/git
 ```
 
 配置 `.gitlab-ci.yml`
-```SHELL
+```shell
 # 定义 stages
 stages:
   - update
@@ -126,7 +126,7 @@ build:
 
 
 ## dist目录下index.html打开空白页的解决方案
-```SHELL
+```shell
 # 可以在log看到如下提示
 # Tip: built files are meant to be served over an HTTP server.
 # Opening index.html over file:// won't work.
@@ -138,7 +138,7 @@ cd dist && hs
 ```
 
 ## 安装和使用jenkins
-```SHELL
+```shell
 # 使用docker安装镜像比较方便
 docker pull jenkins/jenkins
 # 运行一个容器
@@ -166,7 +166,7 @@ cat /var/jenkins_home/.ssh/id_rsa.pub
 
 在 `jenkins` 中配置 `git` 项目的地址?
 由于我们的 `gitlab-ce` 也是运行在 `docker` 中，无法直接获取项目地址,所以这里需要创建 `Bridge` 网桥方便容器之间互相访问
-```SHELL
+```shell
 # 创建bridge网络
 docker network create testnet
 # 查询新创建的bridge

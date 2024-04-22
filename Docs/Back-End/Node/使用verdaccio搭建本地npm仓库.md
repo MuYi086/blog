@@ -10,17 +10,17 @@
 1. 加速:本地 `npm` 服务器会缓存下载过的包
 
 ## 安装
-```SHELL
+```shell
 npm install -g verdaccio
 ```
 
 ## 运行
-```SHELL
+```shell
 verdaccio
 ```
 
 ## 配置文件
-```SHELL
+```shell
 # 以本机deepin 为例,配置文件位置如下:
 cd /home/MuYi086/.config/verdaccio
 
@@ -41,7 +41,7 @@ listen: 0.0.0.0:4873
 ```
 
 ## 添加用户
-```SHELL
+```shell
 # 域名自行修改
 npm set registry http://127.0.0.1:4873
 npm adduser --registry http://127.0.0.1:4873
@@ -51,13 +51,13 @@ npm adduser --registry http://127.0.0.1:4873
 ```
 
 ## 查看当前用户
-```SHELL
+```shell
 # 判断是否注册用户
 npm who am i
 ```
 
 ## 发布
-```SHELL
+```shell
 # 开发一个npm包:可自行百度,这里不展开了;
 npm init
 # 如果创建一个范围公共包
@@ -78,7 +78,7 @@ npm publish --access public
 ```
 
 ## 使用pm2守护进程
-```SHELL
+```shell
 # 全局安装pm2
 npm install -g pm2 --unsafe-perm
 # 使用pm2启动verdaccio

@@ -2,20 +2,20 @@
 
 ## 安装
 `deepin20.3` 默认没有安装 `tcpdump`
-```SHELL
+```shell
 # 安装
 sudo apt-get install tcpdump
 ```
 
 ## 提权
 当前用户默认不能直接运行 `tcpdump` ，需要使用 `root` 权限
-```SHELL
+```shell
 # 让当前用户可以执行tcpdump
 sudo chmod u+s /usr/sbin/tcpdump
 ```
 
 ## 使用
-```SHELL
+```shell
 # 监听指定协议和端口得数据包:比如vue项目
 tcpdump tcp port 8089
 

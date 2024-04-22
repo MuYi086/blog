@@ -5,12 +5,12 @@
 
 ## 全局安装vue-cli
 建议这里使用 [nrm](./使用nvm和nrm.md 'nrm') ,切换到 `taobao` 源会比较快
-```SHELL
+```shell
 npm i -g vue-cli
 ```
 
 ## 项目初始化
-```SHELL
+```shell
 vue init webpack vue-project
 # 如下图所示:这里节省时间没有安装ESLint，Unit，Nightwatch
 # 由于国内网络,安装photomjs和electron真的很慢,后面我们使用另外方法单独安装
@@ -19,7 +19,7 @@ vue init webpack vue-project
 ![初始化项目](/Images/Back-End/Node/使用vue-cli搭建vue项目/vueDemo_01.png '初始化项目')
 
 ## VUE CLI 4.x安装使用
-```SHELL
+```shell
 # 卸载旧
 npm uninstall vue-cli -g
 # 安装新
@@ -35,7 +35,7 @@ vue ui
 ```
 
 ## 启动程序
-```SHELL
+```shell
 # 如果缺少依赖
 npm i
 # 运行
@@ -45,7 +45,7 @@ npm run dev
 接下来我们来锦上添花,增加一些附加功能.
 
 ## 安装使用ESLint
-```SHELL
+```shell
 # 安装eslint和规则模块
 # 注意：这里指定了10.2.1这个版本（跟随vue-cli推荐版本）;是因为之后的版本验证更严格，只使用一次的变量会报错.提示让你用const定义
 npm i eslint eslint-config-standard@10.2.1 eslint-friendly-formatter eslint-loader eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-vue babel-eslint --save-dev
@@ -179,7 +179,7 @@ devtool: 'cheap-module-eval-source-map',
 
 
 ## 使用Mocha进行单元测试
-```SHELL
+```shell
 # 建议全局安装mocha
 npm i -g mocha
 # 安装断言库chai
@@ -211,11 +211,11 @@ describe('加法函数测试', function() {
 :::
 
 `mocha` 默认运行 `test` 子目录里面的测试脚本
-```SHELL
+```shell
 mocha test
 ```
 当然，你也可以自定义漂亮的报告格式,例如 `mochawesome`
-```SHELL
+```shell
 npm i -g mochawesome
 ```
 
@@ -230,7 +230,7 @@ npm i -g mochawesome
 :::
 
 运行测试用例
-```SHELL
+```shell
 npm test
 ```
 最后在 `mochawesome-report` 子目录查看
@@ -309,7 +309,7 @@ afterEach(function() {
     :::
 
 1. 运行程序
-```SHELL
+```shell
 node demo.js
 ```
 

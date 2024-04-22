@@ -6,7 +6,7 @@
 ## 查找最快ip
 可以使用 [站长之家的ping检测](https://ping.chinaz.com/github.com '站长之家的ping检测') , 选择其他,找到国外最快 `ip` .然后选择电信，联通，移动，找到国内能访问的最快 `ip`作为替补 
 ## 常用网站host
-```SHELL
+```shell
 127.0.0.1	localhost
 
 #jetbrains.com

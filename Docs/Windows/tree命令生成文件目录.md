@@ -5,7 +5,7 @@
 
 ## 生成文件目录
 ::: code-group
-```SHELL [windows]
+```shell [windows]
 # 进入CMD
 # 切换到项目具体盘符,我这里是D盘
 D:
@@ -22,7 +22,7 @@ rd /s ./xxx
 tree /f > tree.txt
 ```
 
-```SHELL [linux]
+```shell [linux]
 # 获取命令帮助
 tree --help
 # -f 表示打印完整路径

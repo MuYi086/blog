@@ -8,7 +8,7 @@
 
 ![提示](/Images/Windows/gitbash交互提示符不工作/tip_1.jpg "提示")
 
-```SHELL
+```shell
 # 进入git安装目录
 gedit /etc/bash.bashrc
 

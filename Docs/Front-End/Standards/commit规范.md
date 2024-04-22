@@ -106,7 +106,7 @@
 - 更新测试框架或工具
 :::
 
-```SHELL
+```shell
 # example (类型后跟随冒号+空格)
 feat: add a new feature
 ```

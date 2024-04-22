@@ -11,7 +11,7 @@
 ## 后端开发过程
 1. 搭建 `koa` 项目
 
-    ```SHELL
+    ```shell
     # 全局安装koa
     npm i koa -g
     # 全局安装koa2项目生成器
@@ -23,7 +23,7 @@
     ```
 
 1. 丰富项目骨架
-    ```SHELL
+    ```shell
     # 安装sequelize, mysql, mysql2
     npm i sequelize mysql mysql2 --save
     # 解决跨域
@@ -225,14 +225,14 @@
     ```
 
 1. 启动服务
-    ```SHELL
+    ```shell
     npm start
     ```
 1. [利用postman测试](https://blog.csdn.net/believe__dream/article/details/78723288 '利用postman测试')
 
 ## 前端开发过程
 1. 利用 `vue-cli` 新建一个项目,安装依赖
-    ```SHELL
+    ```shell
     vue init webpack koafront
     cd ./koafront && npm i
     ```
@@ -259,7 +259,7 @@
     ```
 
 1. 使用 `scss` 预处理器
-    ```SHELL
+    ```shell
     # 安装node-sass、sass-loader、style-loader
     # 注意这里sass-loader安装是尝试过的可用版本，最新版本会抛错
     npm i sass-loader@7.3.1 --save-dev
@@ -276,7 +276,7 @@
     ```
 
 1. 安装 `sass-resource-loader` 来全局引入
-    ```SHELL
+    ```shell
     npm i sass-resources-loader --save-dev
     ```
 1. 修改 `build` 中的 `utils.js` 配置

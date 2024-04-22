@@ -1,7 +1,7 @@
 # Git安装和配置
 
 ## Git配置用户名和邮箱
-```SHELL
+```shell
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
 ```
@@ -10,7 +10,7 @@ git config --global user.email "email@example.com"
 
 旧命令生成的 `rsa`， `github` 不认
 ~~ssh-keygen -t rsa -C "youremail@example.com"~~
-```SHELL
+```shell
 
 # 尝试一:使用新命令生成rsa(gitee没问题了，github提示rsa type invalid)
 ssh-keygen -t ed25519 -C "yourEmail@example.com"
@@ -34,6 +34,6 @@ ssh-keygen -t ed25519 -C "yourEmail@example.com"
 
 验证是否成功，在 `git bash` 里面输入下面的命令
 
-```SHELL
+```shell
 ssh -T git@github.com
 ```

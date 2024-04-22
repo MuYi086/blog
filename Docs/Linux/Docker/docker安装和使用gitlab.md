@@ -3,13 +3,13 @@
 ## 安装gitlab镜像
 如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
 
-```SHELL
+```shell
 # 安装gitlab社区版
 docker pull gitlab/gitlab-ce
 ```
 
 ## 运行一个gitlab容器
-```SHELL
+```shell
 # -m 最大占用内存 --memory-reservation 内存+swap
 # --rm 停止后自动删除
 # -d: 后台运行
@@ -21,7 +21,7 @@ docker run -m 2048M -d -p 8443:443 -p 80:80 -p 8022:22 --name gitlab --restart a
 ```
 
 ## 配置gitlab.rb
-```SHELL
+```shell
 sudo gedit /home/gitlab/config/gitlab.rb
 
 # 配置http协议所用访问地址
@@ -48,7 +48,7 @@ gitlab-ctl restart
 ```
 
 ## gitlab邮件设置
-```SHELL
+```shell
 # 进入容器
 docker exec -it gitlab bash
 # 重新配置
@@ -60,7 +60,7 @@ exit
 ```
 
 ## 修改gitlab默认root密码
-```SHELL
+```shell
 # 进入容器
 docker exec -it gitlab bash
 # 进入控制台
@@ -80,7 +80,7 @@ docker restart gitlab
 ```
 
 ## gitlab切换为中文
-```SHELL
+```shell
 # 头像 => setttings => 左侧边栏preferences => language
 ```
 
@@ -88,7 +88,7 @@ docker restart gitlab
 可参考[Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
 
 ## 从github导入项目
-```SHELL
+```shell
 # 保存token
 # github => settings => Developer settings
 # Personal access tokens => Generate new token
@@ -99,7 +99,7 @@ docker restart gitlab
 ```
 
 ## 自动同步到github
-```SHELL
+```shell
 # 选择一个项目 => 左侧设置 => 仓库
 # 填入对应的github项目地址,注意//后插入用户名,例如
 https://MuYi086@github.com/MuYi086/blog.git
