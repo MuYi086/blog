@@ -124,6 +124,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Essay/前端开发对接问题和解决办法汇总">前端开发对接问题和解决办法汇总</a-button>
   <a-button href="/Docs/Essay/足球知识速成">足球知识速成</a-button>
   <a-button href="/Docs/Essay/IOS申请邓白氏编码">IOS申请邓白氏编码</a-button>
+  <a-button href="/Docs/Essay/新建销售计划-页面卡死问题分析">新建销售计划-页面卡死问题分析</a-button>
 </a-row>
 
 <!-- Linux/Docker -->
