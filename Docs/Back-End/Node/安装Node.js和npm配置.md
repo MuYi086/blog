@@ -21,6 +21,11 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 npm config list
 ```
 
+## 获取npm镜像地址
+```shell
+npm config get registry
+```
+
 ## 镜像地址替换成淘宝地址
 ```shell
 npm config set registry http://registry.npm.taobao.org/
