@@ -81,7 +81,7 @@ export default {
 :::
 
 ## 参考
-1. [koa-https](https://www.jianshu.com/p/86a92923c981 'koa-https')
-1. [node应用本地https](https://www.albertaz.com/blog/nodejs-local-https 'node应用本地https')
-1. [How to create an HTTPS server in localhost](https://www.leohuynh.dev/blog/use-https-in-local-development/ 'How to create an HTTPS server in localhost')
-1. [Vite启用https](https://cn.vitejs.dev/config/server-options.html#server-https 'Vite启用https')
+1. [koa-https](https://www.jianshu.com/p/86a92923c981)
+1. [node应用本地https](https://www.albertaz.com/blog/nodejs-local-https)
+1. [How to create an HTTPS server in localhost](https://www.leohuynh.dev/blog/use-https-in-local-development/)
+1. [Vite启用https](https://cn.vitejs.dev/config/server-options.html#server-https)

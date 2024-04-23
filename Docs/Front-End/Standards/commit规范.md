@@ -113,4 +113,4 @@ feat: add a new feature
 
 
 ## 参考
-1. [commitlint 规范](https://github.com/conventional-changelog/commitlint 'commitlint 规范')
+1. [commitlint 规范](https://github.com/conventional-changelog/commitlint)

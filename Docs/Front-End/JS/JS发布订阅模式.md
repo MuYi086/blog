@@ -122,4 +122,4 @@ eventEmitter.emit('article2', 'JS 观察者模式')
 ```
 
 ## 参考
-1. [JavaScript 发布-订阅模式](https://segmentfault.com/a/1190000019260857 'JavaScript 发布-订阅模式')
+1. [JavaScript 发布-订阅模式](https://segmentfault.com/a/1190000019260857)

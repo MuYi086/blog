@@ -34,4 +34,4 @@
 最近在玩 `AI` 绘画, `Stable Diffusion` 确实太吃性能和硬盘了,所以把双系统格了装回了`windows` ，还没有在 `linux` 上尝试 `Openssl` 环境，毕竟太多发行版，后续有空了再补上
 
 ## 参考
-1. [如何在windows上安装Openssl环境](https://blog.csdn.net/xjs38829890/article/details/131635153 '如何在windows上安装Openssl环境')
+1. [如何在windows上安装Openssl环境](https://blog.csdn.net/xjs38829890/article/details/131635153)

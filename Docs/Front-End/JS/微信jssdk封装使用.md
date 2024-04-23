@@ -135,6 +135,6 @@ npm i jweixin-module --save
 :::
 
 ## 参考
-1. [微信JSSdk实现分享功能](https://www.cnblogs.com/ifme/p/11796705.html '微信JSSdk实现分享功能')
-1. [vue使用微信JS-SDK实现分享功能](https://segmentfault.com/a/1190000020163797 'vue使用微信JS-SDK实现分享功能')
-1. [uniapp中使用微信jssdk](https://www.cnblogs.com/niceyoo/p/12232641.html 'uniapp中使用微信jssdk')
+1. [微信JSSdk实现分享功能](https://www.cnblogs.com/ifme/p/11796705.html)
+1. [vue使用微信JS-SDK实现分享功能](https://segmentfault.com/a/1190000020163797)
+1. [uniapp中使用微信jssdk](https://www.cnblogs.com/niceyoo/p/12232641.html)

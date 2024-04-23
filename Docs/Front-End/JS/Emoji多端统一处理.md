@@ -191,5 +191,5 @@ export { Wcemoji }
 ```
 
 ## 参考
-1. [unicode](https://unicode.org/emoji/charts/full-emoji-list.html 'unicode')
-1. [emojipedia](https://emojipedia.org/ 'emojipedia')
+1. [unicode](https://unicode.org/emoji/charts/full-emoji-list.html)
+1. [emojipedia](https://emojipedia.org/)

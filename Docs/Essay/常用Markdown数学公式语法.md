@@ -151,4 +151,4 @@ $\Omega$|`$\Omega$`|$\omega$|`$\omega$`|
 
 
 ## 参考
-[Markdown数学公式语法](https://www.jianshu.com/p/e74eb43960a1  'Markdown数学公式语法')
+[Markdown数学公式语法](https://www.jianshu.com/p/e74eb43960a1)

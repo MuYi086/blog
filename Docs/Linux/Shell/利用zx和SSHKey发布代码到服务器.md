@@ -146,9 +146,9 @@
     :::
 
 ## 参考
-1. [zx](https://github.com/google/zx 'zx')
-1. [SFTP/SSH/SCP访问设置Public Key认证](https://www.cnblogs.com/leadership/p/11820014.html 'SFTP/SSH/SCP访问设置Public Key认证')
-1. [unzip命令](https://blog.csdn.net/chekongfu/article/details/121147010 'unzip命令')
-1. [node-ssh](https://github.com/steelbrain/node-ssh 'node-ssh')
-1. [ssh实现免密码登录和文件传输](https://www.cnblogs.com/igoodful/p/11583751.html 'ssh实现免密码登录和文件传输')
-1. [linux免秘钥登录和scp传输文件](https://blog.csdn.net/lsr40/article/details/89923703 'linux免秘钥登录和scp传输文件')
+1. [zx](https://github.com/google/zx)
+1. [SFTP/SSH/SCP访问设置Public Key认证](https://www.cnblogs.com/leadership/p/11820014.html)
+1. [unzip命令](https://blog.csdn.net/chekongfu/article/details/121147010)
+1. [node-ssh](https://github.com/steelbrain/node-ssh)
+1. [ssh实现免密码登录和文件传输](https://www.cnblogs.com/igoodful/p/11583751.html)
+1. [linux免秘钥登录和scp传输文件](https://blog.csdn.net/lsr40/article/details/89923703)

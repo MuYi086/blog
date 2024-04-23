@@ -22,5 +22,5 @@ sudo ln -s /tmp/mysql.sock /var/lib/mysql/mysql.sock
 重新使用 `navicat` 连接数据库,已经可以正常使用了
 
 ## 参考
-1. [Navicat连接BT宝塔mysql数据库](https://blog.csdn.net/weixin_44043817/article/details/109184721 'Navicat连接BT宝塔mysql数据库')
-1. [解决Navicat 连接 Mysql报错](https://www.jianshu.com/p/1fdeb2e5b25a '解决Navicat 连接 Mysql报错')
+1. [Navicat连接BT宝塔mysql数据库](https://blog.csdn.net/weixin_44043817/article/details/109184721)
+1. [解决Navicat 连接 Mysql报错](https://www.jianshu.com/p/1fdeb2e5b25a)

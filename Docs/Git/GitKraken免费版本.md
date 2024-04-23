@@ -20,6 +20,6 @@
 建议下载后存云盘，以避免外链失效
 
 ## 参考
-1. [GitKraken](https://blog.csdn.net/qq_38880380/article/details/114708328 'GitKraken')
-1. [GitKraken提示无法打开private repository](https://www.jianshu.com/p/ed2982d3a617 'GitKraken提示无法打开private repository')
+1. [GitKraken](https://blog.csdn.net/qq_38880380/article/details/114708328)
+1. [GitKraken提示无法打开private repository](https://www.jianshu.com/p/ed2982d3a617)
 

@@ -28,5 +28,5 @@ sudo wget -O install.sh https://notdocker.xp.cn/install.sh && sudo bash install.
 
 
 ## 参考
-1. [phpstudy linux面板安装](https://www.xp.cn/linux.html#install-show 'phpstudy linux面板安装')
-1. [deepin v20安装mysql](https://blog.csdn.net/weixin_45079974/article/details/109033353 'deepin v20安装mysql')
+1. [phpstudy linux面板安装](https://www.xp.cn/linux.html#install-show)
+1. [deepin v20安装mysql](https://blog.csdn.net/weixin_45079974/article/details/109033353)

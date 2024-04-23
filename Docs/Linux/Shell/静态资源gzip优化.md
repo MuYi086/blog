@@ -86,9 +86,9 @@ nginx -V
     ```
 
 ## 参考
-1. [nginx常用命令](./nginx常用命令.md 'nginx常用命令')
-1. [CompressionWebpackPlugin文档](https://www.webpackjs.com/plugins/compression-webpack-plugin/ 'CompressionWebpackPlugin文档')
-1. [Vue项目 webpack优化 compression-webpack-plugin 开启gzip](https://www.cnblogs.com/zigood/p/12504401.html 'Vue项目 webpack优化 compression-webpack-plugin 开启gzip')
-1. [前端性能优化-gzip压缩](https://zhuanlan.zhihu.com/p/37429159 '前端性能优化-gzip压缩')
-1. [nginx静态压缩(ngx_http_gzip_static_module)](http://www.ttlsa.com/nginx/nginx-ngx_http_gzip_static_module/ 'nginx静态压缩(ngx_http_gzip_static_module)') 
-1. [HttpGzipStatic文档](https://www.nginx.cn/doc/optional/gzipstatic.html 'HttpGzipStatic')
+1. [nginx常用命令](./nginx常用命令.md)
+1. [CompressionWebpackPlugin文档](https://www.webpackjs.com/plugins/compression-webpack-plugin/)
+1. [Vue项目 webpack优化 compression-webpack-plugin 开启gzip](https://www.cnblogs.com/zigood/p/12504401.html)
+1. [前端性能优化-gzip压缩](https://zhuanlan.zhihu.com/p/37429159)
+1. [nginx静态压缩(ngx_http_gzip_static_module)](http://www.ttlsa.com/nginx/nginx-ngx_http_gzip_static_module/) 
+1. [HttpGzipStatic文档](https://www.nginx.cn/doc/optional/gzipstatic.html)

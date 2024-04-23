@@ -17,7 +17,7 @@ wget -N https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh && bash CFwarp.sh
 ```shell
 # Settings -> IPV6 —> Add
 ```
-![添加IPV6](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/vultr_step_1.png)
+![添加IPV6](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/vultr_step_1.png '添加IPV6')
 
 ## 启动脚本并安装
 ```shell
@@ -187,11 +187,11 @@ systemctl restart wg-quick@wgcf
 
 由于笔者安装了 `xui`, 所以配置文件直接在网页上修改，然后重启面板生效
 
-![调整v2ray配置](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/xui_step1.png)
+![调整v2ray配置](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/xui_step1.png '调整v2ray配置')
 
 ## 最后
 再次使用 `Google` 访问 `chat` 页面, 发现可以正常使用了
 
 ## 参考
-1. [使用 V2Ray + CloudFlare Warp 解锁 ChatGPT](https://powerfulyang.com/post/136 '使用 V2Ray + CloudFlare Warp 解锁 ChatGPT')
-1. [使用 Cloudflare WARP 作为 V2Ray/Shadowsocks 出站（落地）连接](https://iecho.cc/2023/03/27/apply-cloudflare-warp-for-v2ray-shadowsocks-outbound-connections/ '使用 Cloudflare WARP 作为 V2Ray/Shadowsocks 出站（落地）连接')
+1. [使用 V2Ray + CloudFlare Warp 解锁 ChatGPT](https://powerfulyang.com/post/136)
+1. [使用 Cloudflare WARP 作为 V2Ray/Shadowsocks 出站（落地）连接](https://iecho.cc/2023/03/27/apply-cloudflare-warp-for-v2ray-shadowsocks-outbound-connections/)

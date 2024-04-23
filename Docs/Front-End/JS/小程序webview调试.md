@@ -9,7 +9,7 @@
 
 ## 步骤
 1. 微信公众平台进入公众号设置的功能设置里填写 `JS` 接口安全域名
-1. [服务端签名](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#4 '服务端签名')
+1. [服务端签名](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#4)
 1. 前端静态资源服务器上传微信校验文件并通过验证
 1. 前端引入 `jweixin` ,并初始化需要申请的接口列表
   * `index.html` 引入 `jweixin`
@@ -171,5 +171,5 @@
       ```
 
 ## 参考
-1. [服务端签名](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#4 '服务端签名')
-1. [webview文档](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html 'webview文档')
+1. [服务端签名](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#4)
+1. [webview文档](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html)

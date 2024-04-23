@@ -1,7 +1,7 @@
 # docker安装和使用gitlab
 
 ## 安装gitlab镜像
-如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
+如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](./deepin搭建docker环境.md)
 
 ```shell
 # 安装gitlab社区版
@@ -85,7 +85,7 @@ docker restart gitlab
 ```
 
 ## 添加SSH keys
-可参考[Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
+可参考[Git安装和配置](../Git/Git安装和配置.md)
 
 ## 从github导入项目
 ```shell
@@ -108,12 +108,12 @@ https://MuYi086@github.com/MuYi086/blog.git
 ![强制更新](/Images/Linux/docker安装和使用gitlab/gitlab_01.png)
 
 ## 参考
-1. [docker下gitlab安装配置使用(完整版)](https://www.jianshu.com/p/080a962c35b6 'docker下gitlab安装配置使用(完整版)')
-1. [deepin搭建docker环境](./deepin搭建docker环境.md 'deepin搭建docker环境')
-1. [Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
-1. [gitlab代码自动同步到github](https://www.cnblogs.com/sxdcgaq8080/p/10530176.html 'gitlab代码自动同步到github')
-1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332 'docker部署gitlab配置SMTP')
-1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446 'gitlab使用163邮箱向用户发送邮件')
-1. [gitlab内存占用过大](https://blog.csdn.net/wanchaopeng/article/details/84771195 'gitlab内存占用过大')
-1. [Docker(二十)-Docker容器CPU、memory资源限制](https://www.cnblogs.com/zhuochong/p/9728383.html 'Docker(二十)-Docker容器CPU、memory资源限制')
+1. [docker下gitlab安装配置使用(完整版)](https://www.jianshu.com/p/080a962c35b6')
+1. [deepin搭建docker环境](./deepin搭建docker环境.md)
+1. [Git安装和配置](../Git/Git安装和配置.md)
+1. [gitlab代码自动同步到github](https://www.cnblogs.com/sxdcgaq8080/p/10530176.html)
+1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332)
+1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446)
+1. [gitlab内存占用过大](https://blog.csdn.net/wanchaopeng/article/details/84771195)
+1. [Docker(二十)-Docker容器CPU、memory资源限制](https://www.cnblogs.com/zhuochong/p/9728383.html)
 

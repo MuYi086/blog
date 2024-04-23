@@ -55,6 +55,6 @@ location @router {
 
 
 ## 参考
-1. [nginx下载](http://nginx.org/en/download.html 'nginx下载')
-1. [nginx文档](http://nginx.org/en/docs/ 'nginx文档')
-1. [linux下nginx常用命令](https://www.cnblogs.com/lcword/p/14380831.html 'linux下nginx常用命令')
+1. [nginx下载](http://nginx.org/en/download.html)
+1. [nginx文档](http://nginx.org/en/docs/)
+1. [linux下nginx常用命令](https://www.cnblogs.com/lcword/p/14380831.html)

@@ -5,7 +5,7 @@
 系统环境: `deepin 15.11 x64`
 
 ## gitlab-ci
-[安装gitlab](../Linux/docker安装和使用gitlab.md '安装gitlab')
+[安装gitlab](../Linux/docker安装和使用gitlab.md)
 
 安装 `gitlab-runner`
 1. 方法一: `GNU/Linux` 安装(不好使)
@@ -53,7 +53,7 @@
     sudo gitlab-runner start
     ```
 1. 方法三: 通过 `deb` 安装
-    可能大家在使用方法一安装提示:无法定位到软件包 `gitlab-runner` , 那么可以使用这种方式手动安装 [地址](https://gitlab-runner-downloads.s3.amazonaws.com/latest/index.html '地址')
+    可能大家在使用方法一安装提示:无法定位到软件包 `gitlab-runner` , 那么可以使用这种方式手动安装 [地址](https://gitlab-runner-downloads.s3.amazonaws.com/latest/index.html)
     ```shell
     # For Debian/Ubuntu/Mint
     dpkg -i gitlab-runner_<arch>.deb
@@ -182,7 +182,7 @@ ping gitlab
 # 把刚才对应的ip追加到hosts
 echo '172.18.0.2 gitlab.com' >> /etc/hosts
 ```
-把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](./Git安装和配置 'Git安装和配置')
+把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Docs//Git//Git安装和配置)
 新建一个 `nodejs` 项目
 ![添加描述](/Images/Linux/CI和CD搭建配置/jenkins_03.png '添加描述')
 
@@ -200,20 +200,20 @@ echo '172.18.0.2 gitlab.com' >> /etc/hosts
 1. `gitlab-runner` 图形可视化更友好,集成到 `gitlab` ,可实时显示当前状态
 
 ## 参考
-1. [图文详解k8s自动化持续集成之GitLab CI/CD](https://www.cnblogs.com/sunsky303/p/10775126.html '图文详解k8s自动化持续集成之GitLab')
-1. [Gitlab CI持续集成 - GitLab Runner 安装与注册](https://www.jianshu.com/p/fab407ddfed0 'Gitlab CI持续集成 - GitLab Runner 安装与注册')
-1. [gitlab runner](https://docs.gitlab.com/runner/install/index.html 'gitlab runner')
-1. [Install GitLab Runner on FreeBSD](https://docs.gitlab.com/runner/install/freebsd.html 'Install GitLab Runner on FreeBSD')
-1. [基于Gitlab CI搭建持续集成环境](https://www.jianshu.com/p/705428ca1410 '基于Gitlab CI搭建持续集成环境')
-1. [用 GitLab CI 进行持续集成](https://scarletsky.github.io/2016/07/29/use-gitlab-ci-for-continuous-integration/ '用 GitLab CI 进行持续集成')
-1. [前端项目基于GitLab-CI的持续集成/持续部署（CI/CD）](https://juejin.im/post/5c015f4ae51d453244120d86 '前端项目基于GitLab-CI的持续集成/持续部署（CI/CD）')
-1. [前端项目gitlab CI（持续集成）实践](https://github.com/WarpPrism/Blog/issues/38 '前端项目gitlab CI（持续集成）实践')
-1. [Gitlab自动部署之二：安装GITLAB-RUNNER](https://juejin.im/post/5cb92a3ae51d456e5f76c485 'Gitlab自动部署之二：安装GITLAB-RUNNER')
-1. [gitlab-runner注册](https://docs.gitlab.com/runner/register/index.html#docker 'gitlab-runner注册')
-1. [如何通过文件打开Vue中的index.html](https://www.sail.name/2017/06/10/how-to-open-index-html-of-vue-over-file/ '如何通过文件打开Vue中的index.html')
-1. [安装jenkins](https://jenkins.io/zh/doc/book/installing/ '安装jenkins')
-1. [jenkins配置git报错returned status code 128](https://blog.csdn.net/oceanyang520/article/details/100583187 'jenkins配置git报错returned status code 128')
-1. [Docker容器互访三种方式](https://www.cnblogs.com/shenh/p/9714547.html 'Docker容器互访三种方式')
-1. [jenkins学习之自动打包构建nodejs应用](https://www.cnblogs.com/vipzhou/p/7890016.html 'jenkins学习之自动打包构建nodejs应用')
+1. [图文详解k8s自动化持续集成之GitLab CI/CD](https://www.cnblogs.com/sunsky303/p/10775126.html)
+1. [Gitlab CI持续集成 - GitLab Runner 安装与注册](https://www.jianshu.com/p/fab407ddfed0)
+1. [gitlab runner](https://docs.gitlab.com/runner/install/index.html)
+1. [Install GitLab Runner on FreeBSD](https://docs.gitlab.com/runner/install/freebsd.html)
+1. [基于Gitlab CI搭建持续集成环境](https://www.jianshu.com/p/705428ca1410)
+1. [用 GitLab CI 进行持续集成](https://scarletsky.github.io/2016/07/29/use-gitlab-ci-for-continuous-integration/)
+1. [前端项目基于GitLab-CI的持续集成/持续部署（CI/CD）](https://juejin.im/post/5c015f4ae51d453244120d86)
+1. [前端项目gitlab CI（持续集成）实践](https://github.com/WarpPrism/Blog/issues/38)
+1. [Gitlab自动部署之二：安装GITLAB-RUNNER](https://juejin.im/post/5cb92a3ae51d456e5f76c485)
+1. [gitlab-runner注册](https://docs.gitlab.com/runner/register/index.html#docker)
+1. [如何通过文件打开Vue中的index.html](https://www.sail.name/2017/06/10/how-to-open-index-html-of-vue-over-file/)
+1. [安装jenkins](https://jenkins.io/zh/doc/book/installing/)
+1. [jenkins配置git报错returned status code 128](https://blog.csdn.net/oceanyang520/article/details/100583187)
+1. [Docker容器互访三种方式](https://www.cnblogs.com/shenh/p/9714547.html)
+1. [jenkins学习之自动打包构建nodejs应用](https://www.cnblogs.com/vipzhou/p/7890016.html)
 
 

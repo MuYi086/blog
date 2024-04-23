@@ -15,4 +15,4 @@ sudo sysctl -p
 ```
 
 ## 参考
-1. [System limit for number of file watchers reached, watch](https://blog.csdn.net/qiphon3650/article/details/108577103 'System limit for number of file watchers reached, watch')
+1. [System limit for number of file watchers reached, watch](https://blog.csdn.net/qiphon3650/article/details/108577103)

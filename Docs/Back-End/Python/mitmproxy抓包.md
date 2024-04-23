@@ -22,5 +22,5 @@ mitmweb
 ```
 
 ## 参考
-1. [mitmproxy docs](https://docs.mitmproxy.org/stable/overview-installation/ 'mitmproxy docs')
-1. [mitmproxy在windows+chrome上的配置](https://www.jianshu.com/p/8a9c4b298a1f 'mitmproxy在windows+chrome上的配置')
+1. [mitmproxy docs](https://docs.mitmproxy.org/stable/overview-installation/)
+1. [mitmproxy在windows+chrome上的配置](https://www.jianshu.com/p/8a9c4b298a1f)

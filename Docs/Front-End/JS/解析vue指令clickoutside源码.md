@@ -47,5 +47,5 @@ export default {
 
 
 ## 参考
-1. [Vue directive](https://cn.vuejs.org/v2/guide/custom-directive.html 'Vue directive')
+1. [Vue directive](https://cn.vuejs.org/v2/guide/custom-directive.html)
 

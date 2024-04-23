@@ -177,5 +177,5 @@ console.log(now)
 
 
 ## 参考
-1. [官方仓库](https://github.com/moment/moment '官方仓库')
-1. [Moment.js 文档](http://momentjs.cn/docs/ 'Moment.js 文档')
+1. [官方仓库](https://github.com/moment/moment)
+1. [Moment.js 文档](http://momentjs.cn/docs/)

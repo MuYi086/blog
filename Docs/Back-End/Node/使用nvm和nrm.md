@@ -5,9 +5,9 @@
 `nrm` 则可以控制切换多个 `npm` 源
 
 ## nvm安装
-[官方nvm地址](https://github.com/nvm-sh/nvm '官方nvm地址')
+[官方nvm地址](https://github.com/nvm-sh/nvm)
 
-[nvm-windows地址](https://github.com/coreybutler/nvm-windows 'nvm-windows地址')
+[nvm-windows地址](https://github.com/coreybutler/nvm-windows)
 
 ::: code-group
 ```shell [curl]

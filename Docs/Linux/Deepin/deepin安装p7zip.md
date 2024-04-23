@@ -16,4 +16,4 @@ sudo apt-get install p7zip
 
 
 ## 参考
-1. [deepin安装p7zip](https://www.cnblogs.com/yiwd/p/3649094.html 'deepin安装p7zip')
+1. [deepin安装p7zip](https://www.cnblogs.com/yiwd/p/3649094.html)

@@ -49,7 +49,7 @@ pyenv rehash
 ```
 
 ## miniconda安装和使用
-[下载地址](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/ '下载地址')
+[下载地址](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)
 
 ```shell
 # 下载latest版本
@@ -164,7 +164,7 @@ ssl_verify: true
 1. `miniconda` 继承了 `anaconda` 的特性,插件很丰富
 
 ## 参考
-1. [pyenv](https://github.com/pyenv/pyenv 'pyenv')
-1. [安装pyenv](https://www.cnblogs.com/ttkl/p/10778857.html '安装pyenv')
-1. [linux安装或卸载miniconda](https://www.jianshu.com/p/fab0068a32b4 'linux安装或卸载miniconda')
-1. [如何安装并使用conda指令管理python环境](https://www.jb51.net/article/165067.htm '如何安装并使用conda指令管理python环境')
+1. [pyenv](https://github.com/pyenv/pyenv)
+1. [安装pyenv](https://www.cnblogs.com/ttkl/p/10778857.html)
+1. [linux安装或卸载miniconda](https://www.jianshu.com/p/fab0068a32b4)
+1. [如何安装并使用conda指令管理python环境](https://www.jb51.net/article/165067.htm)

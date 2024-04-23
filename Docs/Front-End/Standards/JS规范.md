@@ -478,6 +478,6 @@
     ``` 
 
 ## 参考
-1. [JS规范](https://guide.aotu.io/docs/js/language.html 'JS规范')
-1. [W3C](https://www.w3.org/ 'W3C')
-1. [Apple Developer](https://developer.apple.com/ 'Apple Developer')
+1. [JS规范](https://guide.aotu.io/docs/js/language.html)
+1. [W3C](https://www.w3.org/)
+1. [Apple Developer](https://developer.apple.com/)

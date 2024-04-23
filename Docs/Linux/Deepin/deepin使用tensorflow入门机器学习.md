@@ -48,8 +48,8 @@ pip install tensorflow
 
 
 ## 参考
-1. [在Deepin操作系统中安装Python-3.7.1.tgz的方法](https://ywnz.com/linuxjc/3575.html '在Deepin操作系统中安装Python-3.7.1.tgz的方法')
-1. [python官网](https://www.python.org/downloads/source/ 'python官网')
-1. [deepin 升级python--深度论坛](https://bbs.deepin.org/forum.php?mod=viewthread&tid=144792 'deepin 升级python--深度论坛')
-1. [anaconda下载](https://www.anaconda.com/distribution/ 'anaconda下载')
-1. [用一个小例子教你入门机器学习框架TensorFlow](https://juejin.im/post/5b11117f6fb9a01e59182980 '用一个小例子教你入门机器学习框架TensorFlow')
+1. [在Deepin操作系统中安装Python-3.7.1.tgz的方法](https://ywnz.com/linuxjc/3575.html)
+1. [python官网](https://www.python.org/downloads/source/)
+1. [deepin 升级python--深度论坛](https://bbs.deepin.org/forum.php?mod=viewthread&tid=144792)
+1. [anaconda下载](https://www.anaconda.com/distribution/)
+1. [用一个小例子教你入门机器学习框架TensorFlow](https://juejin.im/post/5b11117f6fb9a01e59182980)

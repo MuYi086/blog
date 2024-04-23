@@ -572,7 +572,7 @@
 ```
 
 ## 参考
-1. [CSS规范](https://guide.aotu.io/docs/css/code.html 'CSS规范')
-1. [W3C](https://www.w3.org/ 'W3C')
-1. [Apple Developer](https://developer.apple.com/ 'Apple Developer')
-1. [带BOM的UTF-8和无BOM的UTF-8有什么区别？网页代码一般使用哪个？](https://www.zhihu.com/question/20167122  '带BOM的UTF-8和无BOM的UTF-8有什么区别？网页代码一般使用哪个？')
+1. [CSS规范](https://guide.aotu.io/docs/css/code.html)
+1. [W3C](https://www.w3.org/)
+1. [Apple Developer](https://developer.apple.com/)
+1. [带BOM的UTF-8和无BOM的UTF-8有什么区别？网页代码一般使用哪个？](https://www.zhihu.com/question/20167122)

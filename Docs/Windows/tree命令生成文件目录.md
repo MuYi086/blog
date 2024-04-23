@@ -34,5 +34,5 @@ tree -a --noreport -o tree.txt
 
 
 ## 参考
-1. [windows CMD生成文件夹树状图（tree）命令](https://cloud.tencent.com/developer/article/2108238 'windows CMD生成文件夹树状图（tree）命令')
-1. [Linux命令之tree命令](https://blog.csdn.net/carefree2005/article/details/132205901 'Linux命令之tree命令')
+1. [windows CMD生成文件夹树状图（tree）命令](https://cloud.tencent.com/developer/article/2108238)
+1. [Linux命令之tree命令](https://blog.csdn.net/carefree2005/article/details/132205901)

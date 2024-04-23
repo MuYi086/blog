@@ -134,7 +134,7 @@ delete from user where user='MuYi086';
 
 
 ## 参考
-1. [使用deepin(linux)系统安装mysql教程](https://blog.csdn.net/weixin_42747717/article/details/83788580 '使用deepin(linux)系统安装mysql教程')
-1. [DeepIn15.11新安装MYSQL改root密码的问题](https://zhuanlan.zhihu.com/p/76483155 'DeepIn15.11新安装MYSQL改root密码的问题')
-1. [安装Apache, PHP, MySQL and phpMyAdmin on deepin](https://bbs.deepin.org/forum.php?mod=viewthread&tid=42668 '安装Apache, PHP, MySQL and phpMyAdmin on deepin')
-1. [MariaDB数据库用户创建/删除及权限授权/撤回](https://www.cnblogs.com/apollo1616/articles/10294490.html 'MariaDB数据库用户创建/删除及权限授权/撤回')
+1. [使用deepin(linux)系统安装mysql教程](https://blog.csdn.net/weixin_42747717/article/details/83788580)
+1. [DeepIn15.11新安装MYSQL改root密码的问题](https://zhuanlan.zhihu.com/p/76483155)
+1. [安装Apache, PHP, MySQL and phpMyAdmin on deepin](https://bbs.deepin.org/forum.php?mod=viewthread&tid=42668)
+1. [MariaDB数据库用户创建/删除及权限授权/撤回](https://www.cnblogs.com/apollo1616/articles/10294490.html)

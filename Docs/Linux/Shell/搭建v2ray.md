@@ -13,7 +13,7 @@
 `Cloudflare` : 这里我们用来解析域名的 `DNS` ,并创建 `SSL` 证书
 `BT` : 创建网站并绑定证书
 
-1. [注册](https://dash.cloudflare.com '注册') 并解析域名
+1. [注册](https://dash.cloudflare.com) 并解析域名
     * 添加域名:代理状态设为关闭
 
         ![代理](/Images/Linux/搭建v2ray/v2ray_01.png '代理')
@@ -52,8 +52,8 @@
         ![绑定证书](/Images/Linux/搭建v2ray/v2ray_07.gif '绑定证书')
 
 ## 安装v2ray和配置
-> 方法(1)： 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装 [自建v2ray服务器教程-高阶篇](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B '自建v2ray服务器教程')
-> 方法(2)： [安装x-ui：支持多协议多用户的 xray 面板](https://github.com/vaxilu/x-ui '安装x-ui') (推荐)
+> 方法(1)： 一键安装脚本已失效,改用 `Alvin9999/new-pac` 安装 [自建v2ray服务器教程-高阶篇](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
+> 方法(2)： [安装x-ui：支持多协议多用户的 xray 面板](https://github.com/vaxilu/x-ui) (推荐)
 
 **记得先校正服务器时间，参见下方特别注意**
 
@@ -180,14 +180,14 @@ mkdir /var/lib/dpkg/info
 ```
 
 ## 客户端使用
-详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md 'v2ray使用')
+详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md)
 
 ## 参考(优先第一条)
-1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html 'V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS')
-1. [V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ 'V2Ray完全使用教程')
-1. [VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh](https://v2raycn.com/96.html 'VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh')
-1. [v2ray-文档](https://toutyrater.github.io/prep/install.html 'v2ray-文档')
-1. [V2Ray-Wiki](https://github.com/233boy/v2ray/wiki 'v2ray-Wiki')
-1. [国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间](国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间 'http://xiaohost.com/1806.html')
-1. [v2ray下载地址](v2ray下载地址 'https://www.yuque.com/renxinlei/wv98lk/owswbg?language=en-us')
-1. [ProjectV](ProjectV 'https://www.atzlinux.com/doc/v/v2ray/')
+1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html)
+1. [V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/)
+1. [VPS 一键开启原版谷歌 BBR 加速教程，bbr.sh](https://v2raycn.com/96.html)
+1. [v2ray-文档](https://toutyrater.github.io/prep/install.html)
+1. [V2Ray-Wiki](https://github.com/233boy/v2ray/wiki)
+1. [国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间](国外Linux服务器修改为系统时间为国内东八区，并更新BIOS时间)
+1. [v2ray下载地址](https://www.yuque.com/renxinlei/wv98lk/owswbg?language=en-us)
+1. [ProjectV](https://www.atzlinux.com/doc/v/v2ray/)

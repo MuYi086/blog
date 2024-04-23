@@ -7,10 +7,10 @@
 打开 `usb` 调试后连上电脑，发现显示设备名是`nexus 7` ,但是搜索互联网，发现 `nexus 7` 分俩个版本的,2012和2013，那么我手上的板砖到底属于哪一款呢？搜索多个帖子后，通过比对平板背面的 `logo` ，终于确定机型为 `2013 wifi flo` 型。
 
 ## 准备
-1. 下载 [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip 'platform-tools')
-1. 下载 [twrp](https://dl.twrp.me/flo/ 'twrp')
-1. 下载 [官方rom](https://developers.google.com/android/nexus/images '官方rom')
-1. 下载 [CyanogenMod 14.1](https://cyanogenmodroms.com/flo/ 'CyanogenMod 14.1')
+1. 下载 [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+1. 下载 [twrp](https://dl.twrp.me/flo/)
+1. 下载 [官方rom](https://developers.google.com/android/nexus/images)
+1. 下载 [CyanogenMod 14.1](https://cyanogenmodroms.com/flo/)
 
 ## 刷机
 ```shell
@@ -36,9 +36,9 @@ adb sideload xxx.zip
 在 `recovery` 中刷入 `superSu` 后，重启 `root` 权限并未生效,有时间再看
 
 ## 参考
-1. [List of Best Custom ROM for Google Nexus 7 2013](https://www.getdroidtips.com/custom-rom-nexus-7-2013/#google_vignette 'List of Best Custom ROM for Google Nexus 7 2013')
-1. [Nexus7 II 刷入 miui4.4](https://github.com/xx-sec/xx-sec/issues/21 'Nexus7 II 刷入 miui4.4')
-1. [ADB Sideload是什么以及我如何使用](https://www.kancloud.cn/hancf/twrp_cn/2160303 'ADB Sideload是什么以及我如何使用')
-1. [NEXUS7二代如何刷机?](https://www.zhihu.com/question/22821607 'NEXUS7二代如何刷机?')
-1. [NEXUS 7刷回官方4.3系统的方法](https://kzpu.com/archives/3157.html 'NEXUS 7刷回官方4.3系统的方法')
-1. [Cyanogenmod ROM Google Nexus 7 Wi-Fi 2013 flo](https://cyanogenmodroms.com/flo/ 'Cyanogenmod ROM Google Nexus 7 Wi-Fi 2013')
+1. [List of Best Custom ROM for Google Nexus 7 2013](https://www.getdroidtips.com/custom-rom-nexus-7-2013/#google_vignette)
+1. [Nexus7 II 刷入 miui4.4](https://github.com/xx-sec/xx-sec/issues/21)
+1. [ADB Sideload是什么以及我如何使用](https://www.kancloud.cn/hancf/twrp_cn/2160303)
+1. [NEXUS7二代如何刷机?](https://www.zhihu.com/question/22821607)
+1. [NEXUS 7刷回官方4.3系统的方法](https://kzpu.com/archives/3157.html)
+1. [Cyanogenmod ROM Google Nexus 7 Wi-Fi 2013 flo](https://cyanogenmodroms.com/flo/)

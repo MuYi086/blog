@@ -10,8 +10,8 @@
 
 ## 纯后端实现
 这里就不介绍了，阮一峰老师有个 `demo`，使用 `koa` + `axios`实现
-博客: [GitHub OAuth 第三方登录示例教程](http://www.ruanyifeng.com/blog/2019/04/github-oauth.html 'GitHub OAuth 第三方登录示例教程')
-源码: [node-oauth-demo](https://github.com/ruanyf/node-oauth-demo 'node-oauth-demo')
+博客: [GitHub OAuth 第三方登录示例教程](http://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
+源码: [node-oauth-demo](https://github.com/ruanyf/node-oauth-demo)
 
 ## 纯前端实现
 为了方便大家理解, 这里将认证步骤归纳总结如下:
@@ -216,7 +216,7 @@
 
 
 ## 参考
-1. [OAuth文档](https://gitee.com/api/v5/oauth_doc#/ 'OAuth文档')
-1. [Axios](https://javasoho.com/axios/index.html 'Axios文档')
-1. [Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch 'Fecth')
+1. [OAuth文档](https://gitee.com/api/v5/oauth_doc#/)
+1. [Axios](https://javasoho.com/axios/index.html)
+1. [Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
 

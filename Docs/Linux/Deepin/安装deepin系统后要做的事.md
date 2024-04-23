@@ -1,8 +1,8 @@
 # 安装deepin系统后要做的事
 
-1. [deepin 换源](./deepin换源.md  'deepin 换源')
+1. [deepin 换源](./deepin换源.md)
 
-1. [Git安装和配置](../Git/Git安装和配置.md 'Git安装和配置')
+1. [Git安装和配置](../Git/Git安装和配置.md)
 
 1. 在应用商店下载安装常用软件:
 
@@ -35,7 +35,7 @@
     sudo systemctl stop v2ray
     ```
 
-1. 修改 `v2ray` 配置: [3种常用且稳定的梯子](./3种常用且稳定的梯子.md '3种常用且稳定的梯子')
+1. 修改 `v2ray` 配置: [3种常用且稳定的梯子](./3种常用且稳定的梯子.md)
     ```shell
     # 启动v2ray
     service v2ray start
@@ -47,13 +47,13 @@
 
 1. 登录谷歌账号,同步书签和插件
 
-1. [安装Node.js和npm配置](../Node/安装Node.js和npm配置.md '安装Node.js和npm配置')
+1. [安装Node.js和npm配置](../Node/安装Node.js和npm配置.md)
 
-1. [使用nvm和nrm](../Node/使用nvm和nrm.md '使用nvm和nrm')
+1. [使用nvm和nrm](../Node/使用nvm和nrm.md)
 
 
 1. 利用 `switch-omega` 和 `shadowsock-over-websocket` 实现 `chrome` 科学上网
 
-1. [python版本管理](../Python/python版本管理.md 'python版本管理')
+1. [python版本管理](../Python/python版本管理.md)
 
-1. [Python源管理](../Python/Python源管理.md 'Python源管理')
+1. [Python源管理](../Python/Python源管理.md)

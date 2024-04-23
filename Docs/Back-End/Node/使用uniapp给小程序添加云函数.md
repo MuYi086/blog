@@ -95,5 +95,5 @@
 
 
 ## 参考
-1. [manifest.json配置cloudfunctionroot](https://uniapp.dcloud.io/collocation/manifest?id=cloudfunctionroot 'manifest.json配置cloudfunctionroot')
-1. [云开发消息推送](https://developers.weixin.qq.com/miniprogram/dev/framework/server-ability/message-push.html#option-cloud '云开发消息推送')
+1. [manifest.json配置cloudfunctionroot](https://uniapp.dcloud.io/collocation/manifest?id=cloudfunctionroot)
+1. [云开发消息推送](https://developers.weixin.qq.com/miniprogram/dev/framework/server-ability/message-push.html#option-cloud)

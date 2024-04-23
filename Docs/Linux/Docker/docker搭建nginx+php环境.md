@@ -113,10 +113,10 @@ docker exec -it mysql env LANG=C.UTF-8 /bin/sh
 ```
 
 ## 参考
-1. [docker-nginx](https://hub.docker.com/_/nginx/ 'docker-nginx')
-1. [docker-php-fpm](https://hub.docker.com/r/crunchgeek/php-fpm 'docker-php-fpm')
-1. [Nginx容器教程](https://www.ruanyifeng.com/blog/2018/02/nginx-docker.html 'Nginx容器教程')
-1. [Docker中配置Nginx与PHP](https://segmentfault.com/a/1190000011637451 'Docker中配置Nginx与PHP')
-1. [docker部署php+nginx环境](https://juejin.im/post/5b20cf9ef265da6dfd1a7fcb 'docker部署php+nginx环境')
-1. [Docker-Hub-mysql](https://hub.docker.com/_/mysql/ 'Docker-Hub-mysql')
-1. [docker-mysql](https://www.cnblogs.com/xiangzideheiniu/p/11804156.html 'docker-mysql')
+1. [docker-nginx](https://hub.docker.com/_/nginx/)
+1. [docker-php-fpm](https://hub.docker.com/r/crunchgeek/php-fpm)
+1. [Nginx容器教程](https://www.ruanyifeng.com/blog/2018/02/nginx-docker.html)
+1. [Docker中配置Nginx与PHP](https://segmentfault.com/a/1190000011637451)
+1. [docker部署php+nginx环境](https://juejin.im/post/5b20cf9ef265da6dfd1a7fcb')
+1. [Docker-Hub-mysql](https://hub.docker.com/_/mysql/)
+1. [docker-mysql](https://www.cnblogs.com/xiangzideheiniu/p/11804156.html)

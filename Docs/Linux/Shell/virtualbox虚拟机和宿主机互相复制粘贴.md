@@ -27,4 +27,4 @@
 
 
 ## 参考
-1. [Virtualbox主机和虚拟机之间文件夹共享及双向拷贝](https://www.zhangshengrong.com/p/pDXBO3z1Pd/ 'Virtualbox主机和虚拟机之间文件夹共享及双向拷贝')
+1. [Virtualbox主机和虚拟机之间文件夹共享及双向拷贝](https://www.zhangshengrong.com/p/pDXBO3z1Pd/)

@@ -87,4 +87,4 @@ export default {
 1. 切换路由，`mouted` 页面不会调用 `connect` 方法,需要手动刷新
 
 ## 参考
-1. [vue-socketio](https://www.npmjs.com/package/vue-socketio 'vue-socketio')
+1. [vue-socketio](https://www.npmjs.com/package/vue-socketio)

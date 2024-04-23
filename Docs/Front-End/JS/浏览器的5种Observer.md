@@ -204,8 +204,8 @@
 ```
 
 ## 参考
-1. [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver 'IntersectionObserver')
-1. [MutationObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver 'MutationObserver')
-1. [ResizeObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/ResizeObserver 'ResizeObserver')
-1. [PerformanceObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceObserver 'PerformanceObserver')
-1. [ReportingObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/ReportingObserver 'ReportingObserver')
+1. [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver)
+1. [MutationObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver)
+1. [ResizeObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/ResizeObserver)
+1. [PerformanceObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceObserver)
+1. [ReportingObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/ReportingObserver)

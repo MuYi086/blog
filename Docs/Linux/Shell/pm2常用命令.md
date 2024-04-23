@@ -55,4 +55,4 @@ pm2 save
 ```
 
 ## 参考
-1. [PM2 Process Management Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/ 'PM2 Process Management Quick Start')
+1. [PM2 Process Management Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)

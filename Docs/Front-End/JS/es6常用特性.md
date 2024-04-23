@@ -323,7 +323,7 @@ child.test(2) // instance 2
 
 ## Promise
 专门有总结过一篇关于 `Promise` 的使用
-[Promise介绍和使用](./Promise介绍和使用.md)
+[Promise介绍和使用](/Docs/Front-End/JS/Promise介绍和使用)
 
 ## Generator Function
 ::: details 点我查看代码

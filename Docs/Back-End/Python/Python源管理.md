@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
 
 ## 参考
-1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017 'python 国内镜像加速')
-1. [pip常用命令](https://www.cnblogs.com/keithtt/p/9393036.html 'pip常用命令')
-1. [pip　install](https://pip.pypa.io/en/stable/installing/ 'pip install')
+1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017)
+1. [pip常用命令](https://www.cnblogs.com/keithtt/p/9393036.html)
+1. [pip　install](https://pip.pypa.io/en/stable/installing/)
 

@@ -61,7 +61,7 @@
 ```
 
 ## 参考
-1. [老毛桃](https://www.laomaotao.net/ '老毛桃')
-1. [Ubuntu与Windows下使得Virtualbox从U盘启动系统](https://blog.csdn.net/SimileciWH/article/details/86750966 'Ubuntu与Windows下使得Virtualbox从U盘启动系统')
-1. [VBoxManage createmedium](https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-createmedium.html 'VBoxManage createmedium')
-1. [Oracle VM VirtualBox Extension Pack](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html 'Oracle VM VirtualBox Extension Pack')
+1. [老毛桃](https://www.laomaotao.net/)
+1. [Ubuntu与Windows下使得Virtualbox从U盘启动系统](https://blog.csdn.net/SimileciWH/article/details/86750966)
+1. [VBoxManage createmedium](https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-createmedium.html)
+1. [Oracle VM VirtualBox Extension Pack](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)

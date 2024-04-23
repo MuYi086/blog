@@ -106,7 +106,7 @@ pm2 stop verdaccio
 ![步骤图](/Images/Back-End/Node/使用verdaccio搭建npm仓库/verdaccio_01.png '步骤图')
 
 ## 参考
-1. [使用verdaccio 搭建私有npm 服务器](https://blog.csdn.net/qq_29594393/article/details/81587989 '使用verdaccio 搭建私有npm 服务器')
-1. [npm 私服工具verdaccio 搭建](https://blog.csdn.net/yyzzhc999/article/details/80097073 'npm 私服工具verdaccio 搭建')
-1. [verdaccio官网](https://www.npmjs.com/package/verdaccio 'verdaccio官网')
-1. [pm2官网](https://www.npmjs.com/package/pm2 'pm2官网')
+1. [使用verdaccio 搭建私有npm 服务器](https://blog.csdn.net/qq_29594393/article/details/81587989)
+1. [npm 私服工具verdaccio 搭建](https://blog.csdn.net/yyzzhc999/article/details/80097073)
+1. [verdaccio官网](https://www.npmjs.com/package/verdaccio)
+1. [pm2官网](https://www.npmjs.com/package/pm2)

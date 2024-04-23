@@ -8,7 +8,7 @@ sudo lshw -numeric -C display
 ```
 ![查看电脑显卡型号](/Images/Linux/deepin安装nvidia驱动/step_1.png '查看电脑显卡型号')
 
-2. 进入`NVIDIA`官网 [下载驱动](https://www.nvidia.cn/Download/index.aspx?lang=cn '下载驱动')
+2. 进入`NVIDIA`官网 [下载驱动](https://www.nvidia.cn/Download/index.aspx?lang=cn)
 ![搜索驱动](/Images/Linux/deepin安装nvidia驱动/step_2.png '搜索驱动')
 
 ![下载驱动](/Images/Linux/deepin安装nvidia驱动/step_3.png '下载驱动')
@@ -103,6 +103,6 @@ lsmod | grep nouveau
 因为是第三方插件,部分机型重启后有可能导致 `dde` 崩溃，任务栏进入安全模式。可以下载星火商店，找到`dde-dock` ，卸载后重启即可
 
 ## 参考
-1. [nvida 驱动下载](https://www.nvidia.cn/geforce/drivers/ 'nvida 驱动下载')
-1. [Deepin20.1安装NVIDIA最新显卡驱动](https://bbs.deepin.org/post/213544  'Deepin20.1安装NVIDIA最新显卡驱动')
-1. [Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）](https://www.likecs.com/show-187504.html 'Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）')
+1. [nvida 驱动下载](https://www.nvidia.cn/geforce/drivers/)
+1. [Deepin20.1安装NVIDIA最新显卡驱动](https://bbs.deepin.org/post/213544)
+1. [Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）](https://www.likecs.com/show-187504.html)

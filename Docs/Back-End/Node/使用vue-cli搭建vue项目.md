@@ -4,7 +4,7 @@
 在工作中，我们常常面临要同时创建和开发多个 `vue` 项目.于是，产生一个想法，把这些重复的操作流程化,以便于以后 `CTRL+C` 和 `CTRL+V`
 
 ## 全局安装vue-cli
-建议这里使用 [nrm](./使用nvm和nrm.md 'nrm') ,切换到 `taobao` 源会比较快
+建议这里使用 [nrm](/Docs/Back-End/Node/使用nvm和nrm) ,切换到 `taobao` 源会比较快
 ```shell
 npm i -g vue-cli
 ```
@@ -344,10 +344,10 @@ function getData () {
 
 
 ## 参考
-1. [VUE-CLI使用](https://www.cnblogs.com/samve/p/9095328.html 'VUE-CLI使用')
-1. [jsTraining](https://github.com/ruanyf/jstraining/blob/master/demos/README.md 'jsTraining')
-1. [ESLint](https://eslint.org/ 'ESLint')
-1. [测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html '测试框架 Mocha 实例教程')
-1. [Nightmare](https://github.com/segmentio/nightmare 'Nightmare')
-1. [解决npm安装electron很慢的问题](https://segmentfault.com/a/1190000020932174 '解决npm安装electron很慢的问题')
-1. [前端的UI自动化测试](https://maizsss.github.io/2017/10/28/%E5%89%8D%E7%AB%AF%E7%9A%84UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/ '前端的UI自动化测试')
+1. [VUE-CLI使用](https://www.cnblogs.com/samve/p/9095328.html)
+1. [jsTraining](https://github.com/ruanyf/jstraining/blob/master/demos/README.md)
+1. [ESLint](https://eslint.org/)
+1. [测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
+1. [Nightmare](https://github.com/segmentio/nightmare)
+1. [解决npm安装electron很慢的问题](https://segmentfault.com/a/1190000020932174)
+1. [前端的UI自动化测试](https://maizsss.github.io/2017/10/28/%E5%89%8D%E7%AB%AF%E7%9A%84UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/)

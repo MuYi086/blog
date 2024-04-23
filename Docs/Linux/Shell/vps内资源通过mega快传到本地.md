@@ -100,6 +100,6 @@
 1. 最后使用 `MEGASync` 拖回本地即可
 
 ## 参考
-1. [youtube-dl官方仓库](https://github.com/ytdl-org/youtube-dl 'youtube-dl')
-1. [rclone官方仓库](https://rclone.org/downloads/ 'rclone官方仓库')
-1. [rclone-mega](https://rclone.org/mega/ 'rclone-mega')
+1. [youtube-dl官方仓库](https://github.com/ytdl-org/youtube-dl)
+1. [rclone官方仓库](https://rclone.org/downloads/)
+1. [rclone-mega](https://rclone.org/mega/)

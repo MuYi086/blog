@@ -4,9 +4,9 @@
 在 `vscode` 上快速开发 `java` 我们需要先搭建环境,比如 `java` , `maven` 等
 
 ## 安装java
-1. 注册 `oracle` 账号用户 `jdk` 下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx '注册')
+1. 注册 `oracle` 账号用户 `jdk` 下载  [注册](https://profile.oracle.com/myprofile/account/create-account.jspx)
 
-1. 下载 `jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 'java-se')
+1. 下载 `jdk` [java-se](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 1. 新建一个目录用于安装 `jdk` ,将 `jdk` 解压复制到文件夹内
     ```shell
@@ -35,7 +35,7 @@
     ```
 
 ## 安装maven
-1. 官网 [下载](http://maven.apache.org/download.cgi '下载') 最新版
+1. 官网 [下载](http://maven.apache.org/download.cgi) 最新版
 
 1. 新建一个目录用户安装 `maven` ,将文件解压复制到文件夹内
     ```shell
@@ -164,7 +164,7 @@ public class App {
 :::
 
 ## 参考
-1. [Linux上Java的安装与配置](https://www.cnblogs.com/lamp01/p/8932740.html 'Linux上Java的安装与配置')
-1. [Linux下Java和Maven的安装及配置](https://blog.csdn.net/ula_liu/article/details/80853713 'Linux下Java和Maven的安装及配置')
-1. [VsCode搭建Java开发环境](https://www.cnblogs.com/miskis/p/9816135.html 'VsCode搭建Java开发环境')
-1. [Java mysql连接](https://www.runoob.com/java/java-mysql-connect.html 'Java mysql连接')
+1. [Linux上Java的安装与配置](https://www.cnblogs.com/lamp01/p/8932740.html)
+1. [Linux下Java和Maven的安装及配置](https://blog.csdn.net/ula_liu/article/details/80853713)
+1. [VsCode搭建Java开发环境](https://www.cnblogs.com/miskis/p/9816135.html)
+1. [Java mysql连接](https://www.runoob.com/java/java-mysql-connect.html)

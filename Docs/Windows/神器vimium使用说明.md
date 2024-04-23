@@ -86,7 +86,6 @@ T # 搜索当前浏览器的所有标签
 
 
 #### 参考
-1. [vimium README](https://github.com/philc/vimium#keyboard-bindings 'vimium README')
-1. [神器vimium：比同级程序员成长更快，我主要靠它](https://zhuanlan.zhihu.com/p/38179086 '神器vimium：比同级程序员成长更快，我主要靠它
-张小鸡')
-1. [Chrome神器Vimium使用方法](https://www.jianshu.com/p/2af687487d2c 'Chrome神器Vimium使用方法')
+1. [vimium README](https://github.com/philc/vimium#keyboard-bindings)
+1. [神器vimium：比同级程序员成长更快，我主要靠它](https://zhuanlan.zhihu.com/p/38179086)
+1. [Chrome神器Vimium使用方法](https://www.jianshu.com/p/2af687487d2c)

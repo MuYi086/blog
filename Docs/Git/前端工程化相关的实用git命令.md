@@ -292,6 +292,6 @@ console.log(branch, '-------------------------getGitBranch/branch---------------
 
 
 ## 参考
-1. [Git中文参考](https://www.bookstack.cn/read/git-doc-zh/README.md 'Git中文参考')
-1. [git-scm](https://git-scm.com/docs/gittutorial 'git-scm')
-1. [Git常用命令](https://www.runoob.com/note/56524 'Git常用命令')
+1. [Git中文参考](https://www.bookstack.cn/read/git-doc-zh/README.md)
+1. [git-scm](https://git-scm.com/docs/gittutorial)
+1. [Git常用命令](https://www.runoob.com/note/56524)

@@ -28,5 +28,5 @@ sudo apt-get upgrade # 更新已安装的包
 
 
 ## 参考
-1. [deepin15官方源更细特别慢，换阿里云的记录](https://blog.csdn.net/mqc19881123/article/details/74016132/ 'deepin15官方源更细特别慢，换阿里云的记录')
-1. [Deepin更换镜像源,更换系统软件更新源方法完整整理用html书写](https://blog.csdn.net/baidu_41751590/article/details/89064220 'Deepin更换镜像源,更换系统软件更新源方法完整整理用html书写')
+1. [deepin15官方源更细特别慢，换阿里云的记录](https://blog.csdn.net/mqc19881123/article/details/74016132/)
+1. [Deepin更换镜像源,更换系统软件更新源方法完整整理用html书写](https://blog.csdn.net/baidu_41751590/article/details/89064220)

@@ -23,7 +23,7 @@ wget -q0- https://get.docker.com/ | sh
     ```
 
 1. 下载安装秘钥
-    国内源优选[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)或[中科大开源镜像站](http://mirrors.ustc.edu.cn/)
+    国内源优选 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/) 或 [中科大开源镜像站](http://mirrors.ustc.edu.cn/)
     ```shell
     curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -
     # 如下官方源：网络问题，容易被墙
@@ -127,6 +127,6 @@ wget -q0- https://get.docker.com/ | sh
     :::
 
 ## 参考
-1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806 'deepin系统下的docker安装')
-1. [Deepin下安装Docker](https://www.diandian100.cn/bce2e291.html 'Deepin下安装Docker')
-1. [Docker 加速器](http://guide.daocloud.io/dcs/daocloud-9153151.html 'Docker 加速器')
+1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806)
+1. [Deepin下安装Docker](https://www.diandian100.cn/bce2e291.html)
+1. [Docker 加速器](http://guide.daocloud.io/dcs/daocloud-9153151.html)

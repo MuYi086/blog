@@ -25,4 +25,4 @@ nameserver 208.67.222.222
 
 
 ## 参考
-1. [ping: google.com: Temporary failure in name resolution](https://stackoverflow.com/questions/53687051/ping-google-com-temporary-failure-in-name-resolution 'ping: google.com: Temporary failure in name resolution')
+1. [ping: google.com: Temporary failure in name resolution](https://stackoverflow.com/questions/53687051/ping-google-com-temporary-failure-in-name-resolution)

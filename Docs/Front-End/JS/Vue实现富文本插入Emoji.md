@@ -192,5 +192,5 @@ broswerRichtextHack() {
 :::
 
 ## 参考
-1. [HTMl DOM Range用法](https://vimsky.com/examples/usage/html-dom-range-setstart-method.html 'HTMl DOM Range用法')
-1. [Selection和Range参考](https://www.cnblogs.com/kidsitcn/p/11628822.html 'Selection和Range参考')
+1. [HTMl DOM Range用法](https://vimsky.com/examples/usage/html-dom-range-setstart-method.html)
+1. [Selection和Range参考](https://www.cnblogs.com/kidsitcn/p/11628822.html)
