@@ -5,7 +5,7 @@
 系统环境: `deepin 15.11 x64`
 
 ## gitlab-ci
-[安装gitlab](../Linux/docker安装和使用gitlab.md)
+[安装gitlab](/Docs/Linux/Docker/docker安装和使用gitlab)
 
 安装 `gitlab-runner`
 1. 方法一: `GNU/Linux` 安装(不好使)

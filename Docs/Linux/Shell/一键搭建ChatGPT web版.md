@@ -1,7 +1,7 @@
 # 一键搭建ChatGPT web版
 
 ## 介绍
-成功 [解锁ChatGPT](/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare%20Warp%E8%A7%A3%E9%94%81GPT.md) 后，虽然官网的 `3.5` 是免费，但是使用上也不是很方便，需要科学上网才能使用访问 `chat` 页面。于是想到有没有可以国内访问的 `web` 版本，还真有， `github` 上已经开源了 `ChatGPT-Next-Web` ，使用 `openai` 的付费 `api key` 即可。
+成功 [解锁ChatGPT](/Docs/Linux/Shell/使用V2ray,CloudFlare%20Warp解锁GPT) 后，虽然官网的 `3.5` 是免费，但是使用上也不是很方便，需要科学上网才能使用访问 `chat` 页面。于是想到有没有可以国内访问的 `web` 版本，还真有， `github` 上已经开源了 `ChatGPT-Next-Web` ，使用 `openai` 的付费 `api key` 即可。
 ![ChatGPT-Next-Web](/Images/Linux/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BAChatGPT%20web%E7%89%88/ChatGPT-Next-Web_step4.png 'ChatGPT-Next-Web')
 
 ## 创建API keys

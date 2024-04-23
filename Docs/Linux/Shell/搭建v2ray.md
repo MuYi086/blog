@@ -180,7 +180,7 @@ mkdir /var/lib/dpkg/info
 ```
 
 ## 客户端使用
-详细使用参考 [v2ray使用](./3种常用且稳定的梯子.md)
+详细使用参考 [v2ray使用](/Docs/Linux/Shell/3种常用且稳定的梯子)
 
 ## 参考(优先第一条)
 1. [V2Ray+WebSocket(ws)+TLS+Nginx+Cloudflare拯救搬瓦工被封IP的VPS](https://liubing.me/v2ray-websocket-tl-nginx-cloudflare-bandwagonhost.html)
