@@ -47,6 +47,7 @@ python3 get-pip.py
 ```
 
 ## 修改源
+::: info linux
 ```shell
 # 没有则新建pip.conf
 mkdir ~/.pip && cd ~/.pip && touch pip.conf
@@ -59,6 +60,25 @@ gedit pip.conf
 index-url = https://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
 ```
+:::
+
+::: info windows
+```shell
+# 使用 `pip -v config list` 查看配置文件目录
+# 类似如下结果
+For variant 'global', will try loading 'C:\ProgramData\pip\pip.ini'
+For variant 'user', will try loading 'C:\Users\Administrator\pip\pip.ini'
+For variant 'user', will try loading 'C:\Users\Administrator\AppData\Roaming\pip\pip.ini'
+For variant 'site', will try loading 'C:\ProgramData\anaconda3\pip.ini'
+
+# 然后在Administrator下新建目路pip
+# 新建文件pip.ini
+# 编辑文件,填入,保存
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+trusted-host = mirrors.aliyun.com
+```
+:::
 
 ## pip3错误修复
 ```shell
