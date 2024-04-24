@@ -59,6 +59,10 @@
     ```
     ![接口名unknown](/Images/Windows/利用charles抓包app/interface_unknown.png '接口名unknown')
 
+    ::: warning 注意
+    浏览器接口已经可以正常显示,微信等 `app` 流量依然显示 `unknown`
+    :::
+
 ## 参考
 1. [利用Charles抓取数据详细流程](https://www.jianshu.com/p/5c205ae5431b)
 1. [Charles 抓包使用教程 - Windows](https://www.cnblogs.com/peng-lan/p/11242954.html)
