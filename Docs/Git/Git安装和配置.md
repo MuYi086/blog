@@ -1,5 +1,13 @@
 # Git安装和配置
 
+## 下载
+[Git下载](https://git-scm.com/downloads)
+
+## 安装
+如果是 `windows` 记得勾选 `Add a Git Bash Profile to Windows Terminal` , 其他都选默认即可
+
+`linux` 和 `mac` 直接安装就行
+
 ## Git配置用户名和邮箱
 ```shell
 git config --global user.name "Your Name"

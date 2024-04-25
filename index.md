@@ -147,7 +147,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Deepin/deepin安装nvidia驱动">deepin安装nvidia驱动</a-button>
   <a-button href="/Docs/Linux/Deepin/deepin安装p7zip">deepin安装p7zip</a-button>
   <a-button href="/Docs/Linux/Deepin/deepin使用tensorflow入门机器学习">deepin使用tensorflow入门机器学习</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装oh my zsh">deepin安装oh my zsh</a-button>
+  <a-button href="/Docs/Linux/Deepin/deepin安装oh my Zsh">deepin安装oh my Zsh</a-button>
 </a-row>
 
 <!-- Linux/Shell -->
