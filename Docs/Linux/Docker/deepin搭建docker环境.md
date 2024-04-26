@@ -74,52 +74,80 @@ wget -q0- https://get.docker.com/ | sh
     ```shell
     # 启动docker
     systemctl start docker
+
     # 停止docker
     systemctl stop docker
+
     # 查看安装的版本信息
     docker version
+
     # docker的demo项目hello-world
     sudo docker run hello-world
+
     # 让普通用户也能运行docker:把账号加到docker用户组,重启docker服务,切换身份
     sudo groupadd docker
     sudo gpasswd -a user_name(MuYi086) docker
     newgrp - docker # 将当前用户切换到docker组中
     sudo service docker restart
+
     # 并不是一劳永逸,首次进入需切换身份
     su root
     su user_name(MuYi086)
+
     # 如果提示鉴定错误，是由于初次安装未给root设置密码,重新设置即可
     sudo passwd root
+
     # 列出镜像
     docker images
+
     # 查找镜像
     docker search python
+
     # 获取镜像
     docker pull python
+
     # 删除镜像
     docker rmi python
+
     # 查看状态
     docker stats 
+
     # 列举当前活动容器
     docker ps
+
     # 列举所有容器
     docker ps -a
+
     # 创建bridge网络
     docker newwork create netname
+
     # 查询新创建的bridge
     docker network ls
+
     # 启动容器
     docker run -it ubuntu /bin/bash
+
     # 停止容器
     docker stop container_name
+
     # 重启容器
     docker start container_name
+
+    # 搜索docker hub上的镜像
+    docker search ubuntu
+
+    # 管理镜像
+    docker inspect ubuntu
+
     # 查询容器Ip
     docker inspect container_name | grep "IPAddress"
+
     # 移除容器
     docker rm container_name
+
     # 删除镜像:该镜像下容器实例必须都已停止
     docker rmi image_name
+
     # 卸载docker-ce
     apt remove docker-ce
     apt autoremove
