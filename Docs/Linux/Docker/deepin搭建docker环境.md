@@ -112,26 +112,27 @@ wget -q0- https://get.docker.com/ | sh
     # 查看状态
     docker stats 
 
-    # 列举当前活动容器
+    # 列出当前活动容器
     docker ps
 
-    # 列举所有容器
+    # 列出所有容器
     docker ps -a
 
-    # 创建bridge网络
-    docker newwork create netname
-
-    # 查询新创建的bridge
-    docker network ls
+    # 创建容器
+    docker create nginx:1.12
 
     # 启动容器
+    docker start nginx
+
+    # 创建+启动容器
     docker run -it ubuntu /bin/bash
 
-    # 停止容器
-    docker stop container_name
+    # 进入容器
+    docker exec -it nginx bash
 
-    # 重启容器
-    docker start container_name
+    # 停止和删除容器
+    docker stop nginx
+    docker rm nginx
 
     # 搜索docker hub上的镜像
     docker search ubuntu
@@ -151,6 +152,50 @@ wget -q0- https://get.docker.com/ | sh
     # 卸载docker-ce
     apt remove docker-ce
     apt autoremove
+
+    # 容器互联
+    # 创建一个 MySQL 容器，将运行我们 Web 应用的容器连接到这个 MySQL 容器上，打通两个容器间的网络，实现它们之间的网络互通
+    docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+    docker run -d --name webapp --link mysql webapp:latest
+
+    # 创建bridge网络
+    docker network create -d bridge individual
+
+    # 查询新创建的bridge
+    docker network ls
+    docker network lis
+
+    # 挂载文件到容器: 传递 -v 或 --volume 选项来指定内外挂载的对应目录或文件
+    docker run -d --name nginx -v /webapp/html:/usr/share/nginx/html nginx:1.12
+
+    # 挂载临时文件目录
+    docker run -d --name webapp --tmpfs /webapp/cache webapp:latest
+
+    # 删除数据卷
+    docker volume rm appdata
+
+    # 提交容器更改
+    docker commit -m "Configured" webapp
+
+    # 为镜像命名
+    docker tag 0bc42f7ff218 webapp:1.0
+    docker tag webapp:1.0 webapp:latest
+
+    # 镜像迁移
+    docker save webapp:1.0 > webapp-1.0.tar
+    docker save -o ./webapp-1.0.tar webapp:1.0
+
+    # 导入镜像
+    docker load < webapp-1.0.tar
+    docker load -i webapp-1.0.tar
+
+    # 批量迁移
+    docker save -o ./images.tar webapp:1.0 nginx:1.12 mysql:5.7
+
+    # 导出和导入容器
+    docker export -o ./webapp.tar webapp
+    docker import ./webapp.tar webapp:1.0
+
     ```
     :::
 
