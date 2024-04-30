@@ -45,6 +45,7 @@ npm uninstall -g node-sass
 类似 `node-sass` , `phantomjs` 等会从 `github.com` 上下载一个 `.node` 文件，大部分安装不成功的原因都源自这里，因为 `GitHub Releases` 里的文件都托管在 `s3.amazonaws.com` 上面,而这个地址被墙了
 ```shell
 # 新建一个.npmrc文件
+# 注意.npmrc文件的registry会影响npm get registry的值
 registry=https://registry.npm.taobao.org
 disturl=https://npm.taobao.org/mirrors/node
 sass_binary_site=https://npm.taobao.org/mirrors/node-sass/

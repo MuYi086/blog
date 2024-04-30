@@ -58,7 +58,7 @@ nvm uninstall 5.0.0
 # 使用淘宝镜像可加快下载速度
 # 经测试官网镜像下载npm会巨慢,建议改用淘宝镜像
 
-# linux和mac 在终端修改配置
+# linux和mac 在终端修改配置（可以不用设置，使用nrm更改镜像地址更安全）
 nvm node_mirror https://npm.taobao.org/mirrors/node/
 nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 
