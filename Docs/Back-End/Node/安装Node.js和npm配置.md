@@ -36,6 +36,11 @@ npm config set registry http://registry.npm.taobao.org/
 npm config set registry https://registry.npmjs.org/
 ```
 
+## 删除包
+```shell
+npm uninstall -g node-sass
+```
+
 ## 快速下载node-sass等
 类似 `node-sass` , `phantomjs` 等会从 `github.com` 上下载一个 `.node` 文件，大部分安装不成功的原因都源自这里，因为 `GitHub Releases` 里的文件都托管在 `s3.amazonaws.com` 上面,而这个地址被墙了
 ```shell
