@@ -51,6 +51,9 @@ nvm use 5.0.0
 # 删除版本
 # 5.0.0是对应的版本号
 nvm uninstall 5.0.0
+
+# 指定默认的node版本
+nvm alias default 5.0.0
 ```
 
 ## 使用淘宝镜像
