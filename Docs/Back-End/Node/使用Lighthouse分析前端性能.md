@@ -4,11 +4,30 @@
 对于前端开发而言，项目开发完了，如何做优化呢？
 其实, `google` 给我们提供了 `Lighthouse` 来分析前端性能，有对应的 `devtools` , `chrome extension`, `npm packages` 等.
 
-## 使用
+## windows使用
 ::: danger
-`windows` 下执行 `lighthouse` <url> 会报错 `ChromeLauncher waiting for browser`
-给官方提了 [issue](https://github.com/GoogleChrome/lighthouse/issues/15980), 待官方修复
+`windows` 下执行 `lighthouse <url>` 会报错 `ChromeLauncher waiting for browser`
+
+给官方提了 [issue](https://github.com/GoogleChrome/lighthouse/issues/15980), 等待修复
 :::
+
+## linux使用
+::: danger 方法一
+`deepin` 下安装 `sudo apt-get install chromium`， 执行 `lighthouse <url>` 会报错 `You are using an unsupported command-line flag: --disable-setuid-sandbox. Stability and security will suffer.`
+:::
+
+::: tip 方法二
+```shell
+# clone
+git clone https://github.com/scheib/chromium-latest-linux
+
+# vpn全局代理
+
+# 进入chromium-latest-linux目录,执行update.sh
+bash ./update.sh
+```
+:::
+
 
 ## FCP
 
