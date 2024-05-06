@@ -67,10 +67,19 @@ yarn add -D husky
 
 ### 配置
 ::: code-group
-```json [package.json]
+```json [package.json husky9]
 {
   "scripts": {
-    "prepare": "git init && husky install "
+    "prepare": "husky && npm run huskyInit",
+    "huskyInit": "zx ./huskyInit.mjs"
+  }
+}
+```
+```json [package.json husky8]
+{
+  "scripts": {
+    "prepare": "husky install && npm run huskyInit",
+    "huskyInit": "zx ./huskyInit.mjs"
   }
 }
 ```
@@ -112,7 +121,99 @@ npx --no-install commitlint --edit
 ```
 :::
 
+## 自定义husky init脚本
+可以使用 `bash` , `node` , `zx` 达到目的
+三选一即可，`zx` 和 `node` 语法一样的，主要是 `import` 改成 `require`
 
+::: code-group
+```shell [husky-init.sh]
+# bash脚本执行husky-init
+# commit-msg
+echo '#!/usr/bin/env sh' > .husky/_/commit-msg
+echo '. "$(dirname -- "$0")/husky.sh"' >> .husky/_/commit-msg
+echo 'npx --no-install commitlint --edit' >> .husky/_/commit-msg
+
+# pre-commit
+echo '#!/usr/bin/env sh' > .husky/_/pre-commit
+echo '. "$(dirname -- "$0")/husky.sh"' >> .husky/_/pre-commit
+echo '# npx --no-install -- lint-staged' >> .husky/_/pre-commit
+```
+
+```js [huskyInit.mjs]
+#!/usr/bin/env zx
+/**
+ * @Description: zx脚本执行husky-init
+ * @Author: MuYi086
+ * @Email: 1258947325@qq.com
+ * @Blog: https://github.com/MuYi086/blog
+ * @Date: 2024/05/06 15:23
+ */
+import fs from 'fs/promises'
+import chalk from 'chalk'
+const dir = '.husky/_/'
+const preCommitFile = 'pre-commit'
+const commitMsgFile = 'commit-msg'
+/**
+ * 往固定路径的文件同步写入内容
+ * @param {*} path
+ * @param {*} content
+ */
+async function writeCommitScriptToHusky (path, content) {
+  try {
+    await fs.writeFile(path, content)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+/**
+ * 往固定路径的文件同步追加内容
+ * @param {*} path
+ * @param {*} content
+ */
+async function addCommitScriptToHusky (path, content) {
+  try {
+    await fs.appendFile(path, content)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+/**
+ * 启动
+ */
+async function start () {
+  const commitMsgPath = `${dir}${commitMsgFile}`
+  const preCommitPath = `${dir}${preCommitFile}`
+  console.log(chalk.blue('准备执行husky-init'))
+  // commit-msg
+  console.log(chalk.blue('初始化husky commit-msg'))
+  await writeCommitScriptToHusky(commitMsgPath, '#!/usr/bin/env sh')
+  await addCommitScriptToHusky(commitMsgPath, '\r\n. "$(dirname -- "$0")/husky.sh"')
+  await addCommitScriptToHusky(commitMsgPath, '\r\nnpx --no-install commitlint --edit')
+  // pre-commit
+  console.log(chalk.blue('初始化husky pre-commit'))
+  await writeCommitScriptToHusky(preCommitPath, '#!/usr/bin/env sh')
+  await addCommitScriptToHusky(preCommitPath, '\r\n. "$(dirname -- "$0")/husky.sh"')
+  await addCommitScriptToHusky(preCommitPath, '\r\n# npx --no-install -- lint-staged')
+  console.log(chalk.green('已完成husky init'))
+}
+start()
+
+```
+:::
+
+## 注意
+::: warning
+`husky8` 生成 `hook` 目录与 `9` 不一致，
+::: code-group
+```js [huskyInit.mjs husky8]
+const dir = '.husky/'
+```
+```js [huskyInit.mjs husky9]
+const dir = '.husky/_/'
+```
+:::
 
 ## 参考
 1. [commitlint 规范](https://github.com/conventional-changelog/commitlint)
