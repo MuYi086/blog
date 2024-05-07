@@ -76,6 +76,24 @@
 
 # dustinbrett.com国内线路
 104.21.44.105 dustinbrett.com
+
+# reddit.com
+151.101.1.140 reddit.com
+146.75.113.140 rediit.com
+151.101.109.140 reddit.com
+146.75.49.140 reddit.com
+
+#ux.surfshark.com
+104.18.120.34 ux.surfshark.com
+104.18.121.34 ux.surfshark.com
+#ext.surfshark.com
+104.18.120.34 ext.surfshark.com
+104.18.121.34 ext.surfshark.com
+#stats.surfshark.com
+104.18.120.34 stats.surfshark.com
+104.18.121.34 stats.surfshark.com
+#go-front-s.surfshark.com
+92.249.36.138 go-front-s.surfshark.com
 ```
 
 ## 常见问题
