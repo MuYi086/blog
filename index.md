@@ -182,6 +182,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Shell/windows+linux双系统引导修复">windows+linux双系统引导修复</a-button>
   <a-button href="/Docs/Linux/Shell/zsh常用插件和命令">zsh常用插件和命令</a-button>
   <a-button href="/Docs/Linux/Shell/Surfshark使用指南">Surfshark使用指南</a-button>
+  <a-button href="/Docs/Linux/Shell/Ubuntu安装deepin桌面环境">Ubuntu安装deepin桌面环境</a-button>
 </a-row>
 
 <!-- Windows -->
