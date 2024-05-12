@@ -94,6 +94,10 @@
 104.18.121.34 stats.surfshark.com
 #go-front-s.surfshark.com
 92.249.36.138 go-front-s.surfshark.com
+
+#packages.openvpn.net
+104.19.190.106 packages.openvpn.net
+104.19.191.106 packages.openvpn.net
 ```
 
 ## 常见问题
