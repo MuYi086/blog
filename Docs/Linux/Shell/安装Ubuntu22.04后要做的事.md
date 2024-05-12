@@ -93,12 +93,19 @@
     使用 `npm` 安装 `nrm` 控制 `npm` 源
     :::
 
+1. 安装 `curl`
+    ```shell
+    sudo apt install curl
+    ```
+
 1. 安装 `ifconfig`
     ```shell
     sudo apt install net-tools
     ```
 
 1. 安装搜狗输入法
+
+    [安装教程](https://shurufa.sogou.com/linux/guide)
 
     [下载地址](https://pinyin.sogou.com/linux/?r=pinyin)
     
