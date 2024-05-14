@@ -72,6 +72,9 @@
     sudo apt-get install vim
     ```
 
+1. 常用其他 `windows` 软件的 `linux` 平替可以使用 [铜豌豆应用商店](https://www.atzlinux.com/allpackages.htm) 来安装
+
+
 1. 安装 `chrome`
 
     [chrome下载](https://www.google.cn/intl/zh-CN/chrome/)
