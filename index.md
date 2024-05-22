@@ -142,6 +142,7 @@ const rowWrapVal = ref(true)
 <a-divider orientation="left">Linux/Wall</a-divider>
 <a-row justify="start">
   <a-button href="/Docs/Linux/Wall/科学上网-heroku">科学上网-heroku</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-XX-NET">科学上网-XX-NET</a-button>
 </a-row>
 
 <!-- Linux/Deepin -->
