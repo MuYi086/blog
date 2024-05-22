@@ -144,6 +144,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Wall/科学上网-heroku">科学上网-heroku</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-XX-NET">科学上网-XX-NET</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-Tor">科学上网-Tor</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-让终端走代理">科学上网-让终端走代理</a-button>
 </a-row>
 
 <!-- Linux/Deepin -->
@@ -171,7 +172,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Shell/解决linux安装xmind缺少依赖报错">解决linux安装xmind缺少依赖报错</a-button>
   <a-button href="/Docs/Linux/Shell/静态资源gzip优化">静态资源gzip优化</a-button>
   <a-button href="/Docs/Linux/Shell/利用zx和SSHKey发布代码到服务器">利用zx和SSHKey发布代码到服务器</a-button>
-  <a-button href="/Docs/Linux/Shell/让终端走代理">让终端走代理</a-button>
   <a-button href="/Docs/Linux/Shell/使用V2ray,CloudFlare Warp解锁GPT">使用V2ray,CloudFlare Warp解锁GPT</a-button>
   <a-button href="/Docs/Linux/Shell/使用vscode进行java开发">使用vscode进行java开发</a-button>
   <a-button href="/Docs/Linux/Shell/特别实用的shell命令">特别实用的shell命令</a-button>
