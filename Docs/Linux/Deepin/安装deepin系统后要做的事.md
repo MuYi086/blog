@@ -35,7 +35,7 @@
     sudo systemctl stop v2ray
     ```
 
-1. 修改 `v2ray` 配置: [3种常用且稳定的梯子](/Docs/Linux/Shell/3种常用且稳定的梯子)
+1. 修改 `v2ray` 配置:
     ```shell
     # 启动v2ray
     service v2ray start
