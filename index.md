@@ -148,6 +148,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Wall/科学上网-Surfshark">科学上网-Surfshark</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-浏览器代理">科学上网-浏览器代理</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-shadowsock">科学上网-shadowsock</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-v2ray搭建">科学上网-v2ray搭建</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-v2ray使用">科学上网-v2ray使用</a-button>
 </a-row>
 
@@ -168,9 +169,7 @@ const rowWrapVal = ref(true)
 <!-- Linux/Shell -->
 <a-divider orientation="left">Linux/Shell</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Linux/Shell/3种常用且稳定的梯子">3种常用且稳定的梯子</a-button>
   <a-button href="/Docs/Linux/Shell/安装Ubuntu22.04后要做的事">安装Ubuntu22.04后要做的事</a-button>
-  <a-button href="/Docs/Linux/Shell/搭建v2ray">搭建v2ray</a-button>
   <a-button href="/Docs/Linux/Shell/反爬虫一些方案总结和尝试">反爬虫一些方案总结和尝试</a-button>
   <a-button href="/Docs/Linux/Shell/简单使用tcpdump">简单使用tcpdump</a-button>
   <a-button href="/Docs/Linux/Shell/解决linux安装xmind缺少依赖报错">解决linux安装xmind缺少依赖报错</a-button>
@@ -194,6 +193,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Shell/zsh常用插件和命令">zsh常用插件和命令</a-button>
   <a-button href="/Docs/Linux/Shell/Ubuntu安装deepin桌面环境">Ubuntu安装deepin桌面环境</a-button>
   <a-button href="/Docs/Linux/Shell/Ubuntu常见问题汇总">Ubuntu常见问题汇总</a-button>
+  <a-button href="/Docs/Linux/Shell/安装1Panel">安装1Panel</a-button>
 </a-row>
 
 <!-- Windows -->
