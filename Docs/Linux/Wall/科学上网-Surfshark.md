@@ -1,4 +1,4 @@
-# Surfshark使用指南
+# 科学上网-Surfshark
 
 ::: danger 警告
 后文都可忽略，截止 `20240522`，当前已选择退款处理（30天内可向官方申请退款）。实在是大陆封锁太严重了，`surfshark` 针对大陆的节点（日本，美国，英国，香港，台湾，泰国，韩国），只有泰国能连上，这几天还异常的慢，经常断连接，正常访问 `google` 和 `gmail` 都无法保证。后续还是自己购买 `vps` ，搭建自用的机场。
@@ -48,6 +48,24 @@ sudo snap install snap-store-proxy-client
 
 ## android
 去 `google play` 下载 [Surfshark](https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android&referrer=utm_source%3Ddirect%26utm_medium%3Dnone) 客户端，或者官网下载 [apk](https://downloads.surfshark.com/android/Surfshark.apk), 登录后默认配置即可
+
+## hosts
+```hosts
+#ux.surfshark.com
+104.18.120.34 ux.surfshark.com
+104.18.121.34 ux.surfshark.com
+
+#ext.surfshark.com
+104.18.120.34 ext.surfshark.com
+104.18.121.34 ext.surfshark.com
+
+#stats.surfshark.com
+104.18.120.34 stats.surfshark.com
+104.18.121.34 stats.surfshark.com
+
+#go-front-s.surfshark.com
+92.249.36.138 go-front-s.surfshark.com
+```
 
 ## 其他方法
 ### WireGuard

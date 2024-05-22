@@ -145,6 +145,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Wall/科学上网-XX-NET">科学上网-XX-NET</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-Tor">科学上网-Tor</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-让终端走代理">科学上网-让终端走代理</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-Surfshark">科学上网-Surfshark</a-button>
 </a-row>
 
 <!-- Linux/Deepin -->
@@ -188,7 +189,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Shell/vscode修改文件监控数">vscode修改文件监控数</a-button>
   <a-button href="/Docs/Linux/Shell/windows+linux双系统引导修复">windows+linux双系统引导修复</a-button>
   <a-button href="/Docs/Linux/Shell/zsh常用插件和命令">zsh常用插件和命令</a-button>
-  <a-button href="/Docs/Linux/Shell/Surfshark使用指南">Surfshark使用指南</a-button>
   <a-button href="/Docs/Linux/Shell/Ubuntu安装deepin桌面环境">Ubuntu安装deepin桌面环境</a-button>
   <a-button href="/Docs/Linux/Shell/Ubuntu常见问题汇总">Ubuntu常见问题汇总</a-button>
 </a-row>
