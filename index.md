@@ -146,6 +146,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Wall/科学上网-Tor">科学上网-Tor</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-让终端走代理">科学上网-让终端走代理</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-Surfshark">科学上网-Surfshark</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-浏览器代理">科学上网-浏览器代理</a-button>
 </a-row>
 
 <!-- Linux/Deepin -->
