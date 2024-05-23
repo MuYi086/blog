@@ -7,7 +7,7 @@
 
 配置如下:
 
-![ss配置](/Images/Linux/3种常用且稳定的梯子/outside_04.png 'ss配置')
+![ss配置](/Images/Linux/Wall/科学上网-heroku/outside_04.png 'ss配置')
 
 ## 客户端下载
 

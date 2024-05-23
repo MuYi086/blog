@@ -26,7 +26,7 @@
 
 把浏览器的代理 `SwitchyOmega` 或者 `proxy` 设置成 `sock5` 代理1080端口即可
 
-![科学上网](/Images/Linux/科学上网-让你连接互联网/internet_02.png "科学上网")
+![科学上网](/Images/Linux/Wall/科学上网-浏览器代理/outside_02.png "科学上网")
 
 ## linux/mac
 `heroku` 下载地址: [https://github.com/VincentChanX/shadowsocks-over-websocket.git](https://github.com/VincentChanX/shadowsocks-over-websocket.git)
@@ -66,10 +66,10 @@ relay.setLogFile(local.logFile)
 relay.bootstrap()
 ```
 
-![科学上网](/Images/Linux/科学上网-让你连接互联网/internet_03.png "科学上网")
+![科学上网](/Images/Linux/Wall/科学上网-浏览器代理/outside_03.png "科学上网")
 保存,在终端 `node local.js` ，浏览器代理设置,然后可以 `google` 了
 
-![科学上网](/Images/Linux/科学上网-让你连接互联网/internet_04.png "科学上网")
+![科学上网](/Images/Linux/Wall/科学上网-heroku/outside_04.png "科学上网")
 
 项目地址: [https://github.com/mrluanma/shadowsocks-heroku](https://github.com/mrluanma/shadowsocks-heroku)
 

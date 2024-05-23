@@ -59,7 +59,7 @@
 ## 修改配置
 1. `windows`
 
-    ![windows配置](/Images/Linux/3种常用且稳定的梯子/outside_01.png 'windows配置')
+    ![windows配置](/Images/Linux/Wall/科学上网-v2ray使用/outside_01.png 'windows配置')
 
 1. `Linux`
 

@@ -16,7 +16,7 @@
 重要的事情说三遍：官方默认的配置不能看油管 ！看油管 ！ 油管 ！
 
 如果出现如下情况:
-![科学上网](/Images/Linux/科学上网-让你连接互联网/internet_05.png "科学上网")
+![科学上网](/Images/Linux/Wall/科学上网-XX-NET/internet_05.png "科学上网")
 请点击链接参考文档：建议先看看,不过文档里很模糊，基本无用(我试过。。。。。）
 
 还可以试试这个：[https://blog.csdn.net/buptzhengchaojie/article/details/51335621](https://blog.csdn.net/buptzhengchaojie/article/details/51335621)  (亲测有效，☺）

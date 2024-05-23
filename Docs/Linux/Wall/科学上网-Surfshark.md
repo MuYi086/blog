@@ -50,7 +50,7 @@ sudo snap install snap-store-proxy-client
 去 `google play` 下载 [Surfshark](https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android&referrer=utm_source%3Ddirect%26utm_medium%3Dnone) 客户端，或者官网下载 [apk](https://downloads.surfshark.com/android/Surfshark.apk), 登录后默认配置即可
 
 ## hosts
-```hosts
+```shell
 #ux.surfshark.com
 104.18.120.34 ux.surfshark.com
 104.18.121.34 ux.surfshark.com

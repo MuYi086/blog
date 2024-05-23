@@ -21,7 +21,7 @@
 
 1. 添加域名:代理状态设为关闭
 
-    ![代理](/Images/Linux/搭建v2ray/v2ray_01.png '代理')
+    ![代理](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_01.png '代理')
 
 1. 在域名控制面板将 `DNS` 修改指向到 `Cloudflare`
 
@@ -33,17 +33,17 @@
 ### 加密和创建证书
 1. 使用 `SSL/TLS` 加密
 
-    ![代理](/Images/Linux/搭建v2ray/v2ray_02.png '代理')
+    ![代理](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_02.png '代理')
 
 1. 创建证书
 
-    ![证书](/Images/Linux/搭建v2ray/v2ray_03.png '证书')
+    ![证书](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_03.png '证书')
 
-    ![证书](/Images/Linux/搭建v2ray/v2ray_04.png '证书')
+    ![证书](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_04.png '证书')
 
 1. 记录并保存证书信息
 
-    ![证书](/Images/Linux/搭建v2ray/v2ray_05.png '证书')
+    ![证书](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_05.png '证书')
     
 1. 将证书和密钥写到对应 `/etc/ssl/cert.pem` 和 `/etc/ssl/key.pem` 中
 
@@ -78,7 +78,7 @@ bash install.sh
 
 ## Cloudflare开启代理
 
-![开启代理](/Images/Linux/搭建v2ray/v2ray_11.png '开启代理')
+![开启代理](/Images/Linux/Wall/科学上网-v2ray搭建/v2ray_11.png '开启代理')
 
 ::: warning 特别注意
 使用 `x-ui` 等面板可忽略以下
