@@ -21,9 +21,45 @@ sudo apt-get update && sudo apt-get install cloudflare-warp
 ```
 
 ## 升级Warp+
+下载 `telegram` 搜索关键词 `warp + bot` 获取 `key`
+
+然后 `warp` 客户端 偏好设置 -> 账号 -> 使用其他秘钥
+
+更新后显示余额 `24pb` 的流量
+
 
 ## 升级Warp Trust账户
 
+1. 登录 `cloudflare`
+
+1. 右侧点击 `zero trust`
+
+    ![点击zero trust](/Images/Linux/Wall/科学上网-Cloudflare-Warp/step_1.png '点击zero trust')
+
+
+1. 进入 `settings`
+
+    ![进入settings](/Images/Linux/Wall/科学上网-Cloudflare-Warp/step_2.png '进入settings')
+
+1. 选择 `warp client`
+
+    ![选择warp client](/Images/Linux/Wall/科学上网-Cloudflare-Warp/step_3.jpg '选择warp client')
+
+1. 选择免费计划
+
+    ![free plan](/Images/Linux/Wall/科学上网-Cloudflare-Warp/step_4.jpg 'free plan')
+
+1. 接下来会提示添加支付方式，可以使用 `paypal` 或者自行添加 `visa` 或 `master` 卡
+
+1. 再然后 `settings` -> `warp client` -> `Device enrollment` -> `manage` 增加 `rule` (选择符合条件的邮箱后缀)
+
+1. 最后在 `warp` 客户端登录 `zero trust` 账号
+
+::: warning 注意
+如果忘记团队名
+
+可以在 `settings` -> `custom pages` 获取团队名称 
+:::
 
 
 ## 参考
