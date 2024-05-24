@@ -151,6 +151,8 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Wall/科学上网-v2ray搭建">科学上网-v2ray搭建</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-v2ray使用">科学上网-v2ray使用</a-button>
   <a-button href="/Docs/Linux/Wall/科学上网-RackNerd">科学上网-RackNerd</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-RackNerd">科学上网-RackNerd</a-button>
+  <a-button href="/Docs/Linux/Wall/科学上网-Cloudflare-Pages">科学上网-Cloudflare-Pages</a-button>
 </a-row>
 
 <!-- Linux/Deepin -->
