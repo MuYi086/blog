@@ -3,6 +3,10 @@
 ## 介绍
 利用 `Slicehosting` 空间搭建免费科学上网节点，作为一个备用梯子。
 
+::: warning 注意
+不稳定，用了一天服务就 `ban` 了，登录面板一切正常，重启依旧不能正常代理
+:::
+
 ## 注册
 打开官网 [https://dash.slicehosting.tech/](https://dash.slicehosting.tech/) 点击 `Login with Discord` 按钮进行注册
 
