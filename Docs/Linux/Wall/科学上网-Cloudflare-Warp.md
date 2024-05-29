@@ -7,7 +7,7 @@
 
 1. `linux`
 
-以下是 [Ubuntu如何安装Warp](https://pkg.cloudflareclient.com/#ubuntu)
+以下是 [Ubuntu如何安装Warp-Cli](https://pkg.cloudflareclient.com/#ubuntu)
 
 ```shell
 # Add cloudflare gpg key
@@ -19,6 +19,34 @@ echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] ht
 # Install
 sudo apt-get update && sudo apt-get install cloudflare-warp
 ```
+
+安装 `warp-cli` 后需要配合 `gui` 来使用 [warp-cloudflare-gui](https://github.com/mrmoein/warp-cloudflare-gui)
+
+::: code-group
+```shell
+# warp-cli 注册
+warp-cli register
+
+# 克隆项目
+git clone https://github.com/mrmoein/warp-cloudflare-gui
+
+# 进入目录
+cd warp-cloudflare-gui
+
+# 安装依赖，如果没有 pip3 ，需要先执行 sudo apt install python3-pip
+python3 install.py
+
+# 运行
+sudo chmod +x ~/.local/share/applications/warp-gui.desktop
+
+# 运行软件,登录 Cloudflare Zero Trust帐号即可
+```
+
+
+::: warning 注意
+访问 `pkg.cloudflareclient.com` 需要翻墙, 搭在国外 `v2ray` 梯子，使用移动速度很慢，换电信速度就很快
+:::
+
 
 ## 升级Warp+
 下载 `telegram` 搜索关键词 `warp + bot` 获取 `key`
