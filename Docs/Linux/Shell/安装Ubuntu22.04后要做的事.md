@@ -163,9 +163,13 @@
     
     然后使用 `GDebi` 安装 `deb` 包
 
-1. 安装 `listen1`
+1. 安装 `listen1` 或者 `lx-music` 搭配 `6音音源`
 
-    [下载地址](https://github.com/listen1/listen1_desktop/releases)
+    [listen1](https://github.com/listen1/listen1_desktop/releases)
+
+    [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop/releases)
+
+    [6音音源](https://www.sixyin.com/8498.html)
 
 1. `Snap` 商店
 
