@@ -163,6 +163,12 @@
     
     然后使用 `GDebi` 安装 `deb` 包
 
+    ::: warning 注意
+    如果切换输入法出现无法输入中文,请参考这篇将 `ibus` 卸载干净再重新安装
+
+    [Ubuntu22.04 安装搜狗拼音输入法](https://www.cnblogs.com/bibibobobaoxiang/p/18146810)
+    :::
+
 1. 安装 `listen1` 或者 `lx-music` 搭配 `6音音源`
 
     [listen1](https://github.com/listen1/listen1_desktop/releases)
@@ -170,6 +176,18 @@
     [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop/releases)
 
     [6音音源](https://www.sixyin.com/8498.html)
+
+1. 安装 `钉钉`
+
+    [下载地址](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/)
+
+1. 安装 `微信`
+
+    属于内侧版本，软件包已同步到比特球，使用 `gdebi` 安装即可
+
+    ::: warning 注意
+    笔者的系统是 `ubuntu 22.04`, 并没有提示需要其他依赖，其他的发行版可参考 [Ubuntu22.04安装微信Linux版](https://juejin.cn/post/7348385409552957459)
+    :::
 
 1. `Snap` 商店
 
