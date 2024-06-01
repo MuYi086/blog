@@ -78,8 +78,17 @@ sudo snap install snap-store-proxy-client
 
 ###  OpenVPN
 
+添加一个 `openvpn` 配置一般包括 `ca` 证书, 用户证书 `crt` ,用户私钥 `key`
+
+也可以直接导入 `.ovpn` 文件,会自动识别对应的配置
+
+![ovpn配置](/Images/Linux/Wall/科学上网-Surfshark/opvn.jpg 'ovpn配置')
+
 [OpenVPN 3 Linux](https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux)
 
+::: danger
+`openvpn3` 地址 `403 forbidden` 了, 挂代理无法安装
+:::
 
 
 
