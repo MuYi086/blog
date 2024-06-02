@@ -39,6 +39,7 @@ const rowWrapVal = ref(true)
 <a-row justify="start">
   <a-button href="/Docs/Front-End/CSS/开发常用样式">开发常用样式</a-button>
   <a-button href="/Docs/Front-End/CSS/实用效果">实用效果</a-button>
+  <a-button href="/Docs/Front-End/CSS/CSS优化-PurgeCSS">CSS优化-PurgeCSS</a-button>
 </a-row>
 
 <!-- Front-End/Standards -->
