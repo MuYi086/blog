@@ -50,6 +50,12 @@
 
     这样系统就基本干净了
 
+1. 安装 `ifconfig`
+
+    ```shell
+    sudo apt-get install net-tools
+    ```
+
 1. 安葬 `AppImage` 依赖
 
     ```shell

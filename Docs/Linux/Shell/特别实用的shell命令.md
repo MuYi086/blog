@@ -86,43 +86,52 @@ free -h
 ::: code-group
 ```shell [memoryFree.sh]
 #!/bin/bash
-# CPU
-cpu=`cat /proc/cpuinfo | grep "cpu cores" | uniq | awk -F: '{print $2}'`
-# 总内存
-MemTotal=`free -g |grep "Mem:" | awk '{print $2}'`
-# 剩余内存
-MemFree=`free -m |grep "Mem:" | awk '{print $4}'`
-# 磁盘大小
-disk_size=`df -h / | awk '{print $2}' | sed -n '2p'`
-# 系统架构
-system_bit=`getconf LONG_BIT`
-# 进程
-process=`ps -ef | wc -l`
-# 软件数
-soft_num=`dpkg -l |wc -l`
-# ip
-ip=`ifconfig eth0 |grep "inet \u5730\u5740"|awk -F ' ' '{print $2}'|cut -d ":" -f 2`
-# echo "cpu num:$cpu"
-# echo "memory tatal: $MemTotal""G"
-echo "memory free: $MemFree""M"
-# echo "disk size: $disk_size"
-# echo "system bit: $system_bit"
-# echo "process: $process"
-# echo "software num: $soft_num"
-# echo "ip: $ip"
-# 限制内存800M触发
+
+# 获取 CPU 核心数
+cpu_cores=$(cat /proc/cpuinfo | grep "cpu cores" | uniq | awk -F: '{print $2}')
+
+# 获取内存信息
+mem_info=$(grep MemFree /proc/meminfo | awk '{print $2}')
+
+#将内存大小单位从 kB 转换为 MB
+MemFree=$(($mem_info / 1024))
+
+#将内存大小单位从 kB 转换为 MB
+MemTotal=$(grep MemTotal /proc/meminfo | awk '{print $2}')
+MemTotal=$(($MemTotal / 1024))
+
+# 获取磁盘大小
+disk_size=$(df -h / | awk 'NR==2 {print $2}')
+
+# 获取系统架构
+system_bit=$(getconf LONG_BIT)
+
+# 获取进程数量
+process_count=$(ps -ef | wc -l)
+
+# 获取已安装软件数
+software_count=$(dpkg -l | grep ^ii | wc -l)
+
+# 获取 IP 地址（适应新的网络接口命名约定）
+ip_address=$(ip addr show | awk '/inet / {print $2}' | grep -v "127.0.0.1" | awk 'NR==1')
+
+# 打印系统信息
+echo "Memory free: $MemFree""M"
+echo "CPU cores: $cpu_cores"
+echo "Memory total: $MemTotal""M"
+echo "Disk size: $disk_size"
+echo "System bit: $system_bit"
+echo "Process count: $process_count"
+echo "Software count: $software_count"
+echo "IP address: $ip_address"
+
+# 检查内存是否低于阈值并执行相应操作
 memoryLimit=800
-# -gt：大于; -lt: 小于; -eq:等于; -ge:大于等于; -le:小于等于; -ne:不等于;
-if [ $MemFree -gt $memoryLimit ]
-then
-  echo "内存大于800M,不担心"
+if [[ -n $MemFree && $MemFree -gt $memoryLimit ]]; then
+  echo "Memory is greater than 800M, everything's fine."
   echo $MemFree
 else
-  echo "我要清理内存了"
-  # echo 1 > /proc/sys/vm/drop_caches
-  # 1:清空pagecache;
-  # 2:清空dentries和inodes
-  # 3:清空给所有缓存(pagecache,dentries和inodes)
+  echo "Low memory detected, performing cache cleanup."
   sync && echo 1 > /proc/sys/vm/drop_caches
 fi
 ```
