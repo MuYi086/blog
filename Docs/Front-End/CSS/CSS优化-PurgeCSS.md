@@ -41,6 +41,10 @@
 ## 总结
 效果拔群，`3.7M` 直接降到 `2.5M` , 体积减少 `33%`, 能有效提升前端页面加载速度。
 
+::: warning 注意
+有些页面会丢夫部分样式，需要观察后再做调整。
+:::
+
 
 ## 参考
 1. [PurgeCss Wiki](https://purgecss.com/getting-started.html)
