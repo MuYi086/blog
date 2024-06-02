@@ -73,7 +73,10 @@ free -h
 
 # 清理
 su
-echo N > /proc/sys/vm/drop_caches
+
+# sync 命令用于将数据从内存缓冲区写入磁盘
+# 将值 1 写入 /proc/sys/vm/drop_caches 文件, 代表清理 page cache，inode 和 dentry 缓存
+sudo sync && echo 1 > /proc/sys/vm/drop_caches
 
 # 清理后
 free -h
@@ -120,8 +123,7 @@ else
   # 1:清空pagecache;
   # 2:清空dentries和inodes
   # 3:清空给所有缓存(pagecache,dentries和inodes)
-  echo 3 > /proc/sys/vm/drop_caches
-  # sudo bash -c "echo 3 > /proc/sys/vm/drop_caches"
+  sync && echo 1 > /proc/sys/vm/drop_caches
 fi
 ```
 ```shell [do.sh]
