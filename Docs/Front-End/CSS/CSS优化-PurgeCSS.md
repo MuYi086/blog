@@ -38,12 +38,55 @@
 其他打包软件和框架配置，比如 `grunt`, `gulp` , `webpack` , `react`, `vue` 等请参考官方文档。
 :::
 
+## 白名单
+利用 `safelist` 参数指定哪些 `CSS` 选择器可以保留在最终的 `CSS` 中。
+
+```js
+const purgecss = new Purgecss({
+  content: [], // content
+  css: [], // css
+  safelist: ['random', 'yep', 'button']
+})
+```
+
+也可以在 CSS 中指定
+
+```CSS
+/*! purgecss start ignore */
+h5 {
+  color: pink;
+}
+
+h6 {
+  color: lightcoral;
+}
+/*! purgecss end ignore */
+```
+
 ## 总结
-效果拔群，`3.7M` 直接降到 `2.5M` , 体积减少 `33%`, 能有效提升前端页面加载速度。
+效果拔群，`3.7M` 直接降到 `2.5M` , 体积减少 `33%`
 
 ::: warning 注意
-有些页面会丢夫部分样式，需要观察后再做调整。
+我们会发现有些页面会丢夫部分样式，这是因为 PurgeCSS 删除的是未在content 选项中制定的文件中的 CSS
+
+我们仅仅指定了 html 文件，所以 vue 文件中的样式会被删除
+
+我们需要调整配置，设置如下
+
+```js
+module.exports = {
+  plugins: [
+    purgecss({
+      content: ['./**/*.html', '**/*.vue']
+    })
+  ]
+}
+```
 :::
+
+再次编译, 体积为 `2.9M` ， 减少 `22%` , 能有效提升前端页面加载速度。
+
+![已优化](/Images/Front-End/CSS/CSS优化-PurgeCSS/step_3.jpg "已优化")
 
 
 ## 参考
