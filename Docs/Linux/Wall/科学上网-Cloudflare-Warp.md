@@ -89,6 +89,40 @@ sudo chmod +x ~/.local/share/applications/warp-gui.desktop
 可以在 `settings` -> `custom pages` 获取团队名称 
 :::
 
+## 一直连接中
+表示你的本地ip地址被墙了，需要换一个优选 `ip` 后重新连接
+
+::: code-group
+```shell [windows]
+# windows 下载 Warp 工具 （已上传到比特球)
+
+# 解压后执行一键脚本替换优选 `ip`
+
+# 备选方案参考 https://github.com/yonggekkk/warp-yg
+```
+```shell [linux]
+# linux 下使用脚本获取优选ip
+curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh
+
+sudo chmod +x endip.sh && ./endip.sh
+
+# 打开result.csv,复制第一行对应的ip
+
+# 设置warp-cli 优选ip
+sudo warp-cli tunnel endpoint set ip
+```
+:::
+
+::: code-group
+::: warning 注意
+重置优选 `ip`
+```shell
+sudo warp-cli tunnel endpoint reset
+```
+:::
+
+
+
 
 ## 参考
 1. [Warp](https://one.one.one.one/)
