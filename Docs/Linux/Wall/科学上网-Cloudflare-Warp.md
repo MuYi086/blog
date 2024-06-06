@@ -128,3 +128,5 @@ sudo warp-cli tunnel endpoint reset
 1. [Warp](https://one.one.one.one/)
 1. [合法免费高速VPN环境搭建——Warp 1.1.1.1](https://blog.csdn.net/luoqiaoliang/article/details/138466429)
 1. [WARP科学上网全攻略：详细教程及账号升级操作解析](https://blog.ilue.pp.ua/archives/warpke-xue-shang-wang-quan-gong-lue-xiang-xi-jiao-cheng-ji-zhang-hao-sheng-ji-cao-zuo-jie-xi)
+1. [Cloudflare WARP 使用教程，ip优选，解决WARP连接问题](https://zhpengfei.com/cloudflare-warp-setting-ip-cf_dns_lookup_failure/)
+1. [Cloudflare WARP 优选ip](https://playlab.eu.org/archives/warp-selectip)
