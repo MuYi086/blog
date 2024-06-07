@@ -201,6 +201,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Linux/Shell/Ubuntu常见问题汇总">Ubuntu常见问题汇总</a-button>
   <a-button href="/Docs/Linux/Shell/安装1Panel">安装1Panel</a-button>
   <a-button href="/Docs/Linux/Shell/Ubuntu安装wireshark">Ubuntu安装wireshark</a-button>
+  <a-button href="/Docs/Linux/Shell/Ubuntu安装flatpak软件">Ubuntu安装flatpak软件</a-button>
 </a-row>
 
 <!-- Windows -->
