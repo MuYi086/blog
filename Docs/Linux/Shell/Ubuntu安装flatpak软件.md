@@ -46,6 +46,8 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 ![flatpak_install](/Images/Linux/Ubuntu安装flatpak软件/flatpak_install.jpg 'flatpak_install')
 
+重启电脑，软件列表里就会出现刚刚安装的软件
+
 ## 其他
 
 ```shell

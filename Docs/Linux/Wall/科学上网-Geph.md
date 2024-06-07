@@ -8,6 +8,12 @@
 
 ![下载](/Images/Linux/Wall/科学上网-Geph/download.png '下载')
 
+::: warning 注意
+`windows` ，`mac` 直接安装即可
+
+`linux` 因为下载后的文件是 `flatpak` 格式， 需要 [安装flatpak](/Docs/Linux/Shell/Ubuntu安装flatpak软件) 后使用
+:::
+
 ## 使用
 免费版限速 `125kb/s`, 且只有四个地区可选;付费版不限速，`€5/month`
 
