@@ -39,3 +39,9 @@ webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2
 `Tor` 官网下载地址: [https://www.torproject.org/projects/torbrowser.html.en](https://www.torproject.org/projects/torbrowser.html.en)
 
 备用地址: [https://tor.calyxinstitute.org/download/](https://tor.calyxinstitute.org/download/)
+
+::: warning 注意
+`windows` 和 `macOS` 下安装后直接使用
+
+`linux` 解压文件后，再终端执行 `./start-tor-browser.desktop`
+:::
