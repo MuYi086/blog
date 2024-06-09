@@ -168,7 +168,23 @@ axios.request(options).then(function(response) {
 
     ![img2](/Images/Front-End/JS/体验CloudflareWorkersAI/img2.jpg "img2")
 
+## AI GATEWAY
+1. 在 `AI` => `AI Gateway` , 创建一个网关
+1. 调整 `curl` 命令
+
+```shell
+curl https://gateway.ai.cloudflare.com/v1/${account_id}/ai-test/workers-ai/@cf/qwen/qwen1.5-14b-chat-awq \
+-X POST \
+-H "Authorization: Bearer ${token}" \
+-d '{ "messages": [{ "role": "system", "content": "You are a friendly assistant" }, { "role": "user", "content": "分析在编程领域为什么偏向使用英语而不是其他语言" }]}'
+```
+然后可以在面板中查看分析和实时日志
+
+![gateway](/Images/Front-End/JS/体验CloudflareWorkersAI/gateway.jpg "gateway")
+
+
 
 ## 参考
 1. [Workers AI](https://developers.cloudflare.com/workers-ai/)
 1. [Excute Ai Model](https://developers.cloudflare.com/api/operations/workers-ai-post-run-model)
+1. [AI GATEWAY](https://developers.cloudflare.com/ai-gateway/get-started/creating-gateway/)
