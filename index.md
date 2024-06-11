@@ -25,6 +25,12 @@ import { ref } from 'vue'
 const rowWrapVal = ref(true)
 </script>
 
+<!-- AI -->
+<a-divider orientation="left">AI</a-divider>
+<a-row justify="start">
+  <a-button href="/Docs/AI/体验Cloudflare Workers AI">体验Cloudflare Workers AI</a-button>
+</a-row>
+
 <!-- Git -->
 <a-divider orientation="left">Git</a-divider>
 <a-row justify="start">
@@ -88,7 +94,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Front-End/JS/uniapp使用eslint校验代码">uniapp使用eslint校验代码</a-button>
   <a-button href="/Docs/Front-End/JS/Vue+Oauth登录实现">Vue+Oauth登录实现</a-button>
   <a-button href="/Docs/Front-End/JS/Vue实现富文本插入Emoji">Vue实现富文本插入Emoji</a-button>
-  <a-button href="/Docs/Front-End/JS/体验Cloudflare Workers AI">体验Cloudflare Workers AI</a-button>
 </a-row>
 
 <!-- Back-End/Python -->

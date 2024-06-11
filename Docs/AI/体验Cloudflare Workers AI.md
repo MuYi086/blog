@@ -80,7 +80,7 @@ export default {
 
 使用 `npm run dev` 运行推理，再打开的网页使用 `cloudflare` 授权后，即可看到返回结果。
 
-![CLI](/Images/Front-End/JS/体验CloudflareWorkersAI/cli.jpg)
+![CLI](/Images/AI/体验CloudflareWorkersAI/cli.jpg)
 
 ## curl 运行
 
@@ -95,7 +95,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run
   -d '{ "messages": [{ "role": "system", "content": "You are a friendly assistant" }, { "role": "user", "content": "对比Vue和React,并给出未来前端的趋势" }]}'
 ```
 
-  ![curl](/Images/Front-End/JS/体验CloudflareWorkersAI/curl.jpg "curl")
+  ![curl](/Images/AI/体验CloudflareWorkersAI/curl.jpg "curl")
 
 ## REST API
 
@@ -153,7 +153,7 @@ axios.request(options).then(function(response) {
     } satisfies ExportedHandler<Env>;
     ```
 
-    ![img1](/Images/Front-End/JS/体验CloudflareWorkersAI/img1.jpg "img1")
+    ![img1](/Images/AI/体验CloudflareWorkersAI/img1.jpg "img1")
 
 1. 使用 `culr` 实现
 
@@ -166,7 +166,7 @@ axios.request(options).then(function(response) {
       -o test2.jpg
     ```
 
-    ![img2](/Images/Front-End/JS/体验CloudflareWorkersAI/img2.jpg "img2")
+    ![img2](/Images/AI/体验CloudflareWorkersAI/img2.jpg "img2")
 
 ## AI GATEWAY
 1. 在 `AI` => `AI Gateway` , 创建一个网关
@@ -180,7 +180,7 @@ curl https://gateway.ai.cloudflare.com/v1/${account_id}/ai-test/workers-ai/@cf/q
 ```
 然后可以在面板中查看分析和实时日志
 
-![gateway](/Images/Front-End/JS/体验CloudflareWorkersAI/gateway.jpg "gateway")
+![gateway](/Images/AI/体验CloudflareWorkersAI/gateway.jpg "gateway")
 
 
 
