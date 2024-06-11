@@ -29,6 +29,7 @@ const rowWrapVal = ref(true)
 <a-divider orientation="left">AI</a-divider>
 <a-row justify="start">
   <a-button href="/Docs/AI/体验Cloudflare Workers AI">体验Cloudflare Workers AI</a-button>
+  <a-button href="/Docs/AI/体验deepseek">体验deepseek</a-button>
 </a-row>
 
 <!-- Git -->
