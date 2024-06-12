@@ -139,7 +139,7 @@ conda remove numpy
 # anaconda3 新建一个.condarc文件
 conda config --add channels r
 # anaconda3 换源
-sudo gedit /home/MuYi086/condarc
+sudo gedit /home/MuYi086/.condarc
 # 清华
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
