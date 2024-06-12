@@ -28,21 +28,23 @@ Z<sub>a</sub>
 
 ~~这是加删除线的文字~~
 
+<a-row>
 Z<sup>a</sup>
+</a-row>
 
+<a-row>
 Z<sub>a</sub>
+</a-row>
 
+<a-row>
 <kbd>Ctrl</kbd>
+</a-row>
 
 ## 脚注
 ```markdown
 Markdown[^1]
 [^1]: Markdown是一种纯文本标记语言
 ```
-
-Markdown[^1]
-
-[^1]: Markdown是一种纯文本标记语言
 
 ## 锚点
 ```markdown
