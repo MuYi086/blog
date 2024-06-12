@@ -60,6 +60,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Front-End/Standards/HTML规范">HTML规范</a-button>
   <a-button href="/Docs/Front-End/Standards/JS规范">JS规范</a-button>
   <a-button href="/Docs/Front-End/Standards/CSS格式化之stylelint">CSS格式化之stylelint</a-button>
+  <a-button href="/Docs/Front-End/Standards/使用husky+commitlint规范代码提交">使用husky+commitlint规范代码提交</a-button>
 </a-row>
 
 <!-- Front-End/JS -->
@@ -119,7 +120,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Back-End/Node/koa使用和API实现">koa使用和API实现</a-button>
   <a-button href="/Docs/Back-End/Node/Taro command not found多平台解决方案">Taro command not found多平台解决方案</a-button>
   <a-button href="/Docs/Back-End/Node/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
-  <a-button href="/Docs/Back-End/Node/使用husky+commitlint规范代码提交">使用husky+commitlint规范代码提交</a-button>
 </a-row>
 
 <!-- Essay -->
