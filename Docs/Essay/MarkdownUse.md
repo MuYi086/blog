@@ -49,14 +49,10 @@ Markdown[^1]
 [公式标题锚点](#1)
 ```
 
-[公式标题锚点](#1)
-
 ## 自动邮箱链接
 ```markdown
 <xxx@gmail.com>
 ```
-
-<xxx@gmail.com>
 
 ## 引用
 ```markdown

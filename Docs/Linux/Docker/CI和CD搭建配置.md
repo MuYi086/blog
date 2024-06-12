@@ -182,7 +182,7 @@ ping gitlab
 # 把刚才对应的ip追加到hosts
 echo '172.18.0.2 gitlab.com' >> /etc/hosts
 ```
-把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Docs//Git//Git安装和配置)
+把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Docs/Git/Git安装和配置)
 新建一个 `nodejs` 项目
 ![添加描述](/Images/Linux/CI和CD搭建配置/jenkins_03.png '添加描述')
 
