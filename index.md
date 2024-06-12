@@ -120,6 +120,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Back-End/Node/koa使用和API实现">koa使用和API实现</a-button>
   <a-button href="/Docs/Back-End/Node/Taro command not found多平台解决方案">Taro command not found多平台解决方案</a-button>
   <a-button href="/Docs/Back-End/Node/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
+  <a-button href="/Docs/Back-End/Node/通过Github Action将内容部署到vps">通过Github Action将内容部署到vps</a-button>
 </a-row>
 
 <!-- Essay -->
