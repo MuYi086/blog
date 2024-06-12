@@ -24,7 +24,10 @@
   "stylelint-order": "^5.0.0"
 }
 "scripts": {
-  "lint:stylelint": "stylelint \"src/**/*.{vue,css,scss}\" --fix"
+  // 正常模式
+  "lint:stylelint": "stylelint \"src/**/*.{vue,css,scss}\" --fix",
+  // 以下为忽略特定目录检查
+  "lint:stylelint": "stylelint \"src/**/*.{vue,css,scss}\" --ignore-pattern 'src/uni_modules/**/*' --fix"
 }
 ```
 
