@@ -178,6 +178,22 @@ module.exports = {
 ## 使用
 使用 `npm run lint:stylelint`，会自动修复大多数错误，剩下的错误需要按照终端提示修复。当终端无任何提示则表示全局已经没有样式错误。
 
+::: warning 注意
+添加 `stylelint-disable scss/no-global-function-names` 跳过某些 `class` 检查
+```scss
+// stylelint-disable scss/no-global-function-names
+.picker-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: darken(#fff, 2%);
+}
+// stylelint-enable scss/no-global-function-names
+```
+:::
+
 ## 实现ide保存自动格式化
 1. `vscode` 下载 `stylelint` 插件
 1. 在项目下新建 `.vscode` 文件夹，新建 `settings.json` 文件, 添加如下配置
