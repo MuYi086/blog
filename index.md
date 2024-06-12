@@ -59,6 +59,7 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Front-End/Standards/CSS规范">CSS规范</a-button>
   <a-button href="/Docs/Front-End/Standards/HTML规范">HTML规范</a-button>
   <a-button href="/Docs/Front-End/Standards/JS规范">JS规范</a-button>
+  <a-button href="/Docs/Front-End/Standards/CSS格式化之stylelint">CSS格式化之stylelint</a-button>
 </a-row>
 
 <!-- Front-End/JS -->
