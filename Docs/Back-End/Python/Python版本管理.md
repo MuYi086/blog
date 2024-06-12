@@ -66,7 +66,11 @@ conda config --set show_channel_urls yes
 如果命令行找不到 `conda` ,需要添加环境变量
 ```shell
 # linux
-export PATH=/home/MuYi086/anaconda3/bin:$PATH
+sudo gedit /etc/profile
+export CONDA="/home/MuYi086/anaconda3/bin"
+export PATH=$CONDA:$PATH
+# 使之生效
+source /etc/profile
 
 # windows
 # 左下角搜索->高级系统设置->环境变量->用户变量选择Path->编辑
