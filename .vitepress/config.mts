@@ -5,6 +5,12 @@ export default defineConfig({
   lang: 'zh',
   title: 'blog',
   description: "MuYi086's blog",
+  head: [
+    // https://animate.style/
+    ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css', rel: 'stylesheet' }],
+    // https://ant-design.antgroup.com/index-cn
+    ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/4.2.2/reset.css', rel: 'stylesheet' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: '',
