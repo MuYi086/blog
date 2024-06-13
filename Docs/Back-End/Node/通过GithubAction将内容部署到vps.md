@@ -50,8 +50,8 @@ jobs:
         host: ${{ secrets.SERVER_HOST }} # 服务器地址
         username: ${{ secrets.SERVER_USER }} # 服务器用户名
         port: ${{ secrets.SERVER_PORT }} # 服务器端口
-        key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
-        # password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
+        # key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
+        password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
         strip_components: 2 # 跳过指定目录
         source: '.vitepress/dist' # 源目录
         target: ${{ secrets.SERVER_TARGET }} # 目标目录
