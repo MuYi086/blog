@@ -1,0 +1,28 @@
+name: GitHub Actions 部署 vitepress 博客
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install yarn
+      run: npm install -g yarn
+    - name: Install dependencies
+      run: yarn install
+    - name: Build VitePress
+      run: yarn run docs:build
+    - name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.VITEPRESS_BLOG_TOKEN }}
+        publish_dir: .vitepress/dist
+        publish_branch: gh-pages
+        dotfiles: true
