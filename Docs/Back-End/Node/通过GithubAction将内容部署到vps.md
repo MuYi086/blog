@@ -50,8 +50,8 @@ jobs:
         host: ${{ secrets.SERVER_HOST }} # 服务器地址
         username: ${{ secrets.SERVER_USER }} # 服务器用户名
         port: ${{ secrets.SERVER_PORT }} # 服务器端口
-        # key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
-        password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
+        key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
+        # password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
         strip_components: 2 # 跳过指定目录
         source: '.vitepress/dist' # 源目录
         target: ${{ secrets.SERVER_TARGET }} # 目标目录
@@ -86,7 +86,7 @@ jobs:
     # 生成ssh秘钥
     ssh-keygen -t rsa -b 4096 -C "github-actions-node"
     # 将公钥复制到服务器的authorized_keys文件中
-    cat /root/.ssh/id_rsa.pub >> authorized_keys
+    cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
     ```
 1. 配置 `Actions Secrets`
 
