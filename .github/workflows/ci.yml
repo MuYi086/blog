@@ -1,28 +1,39 @@
+# 标题
 name: GitHub Actions 部署 vitepress 博客
+# 触发时机:表示推送master分支时触发
 on:
   push:
     branches:
       - master
+# 任务列表
 jobs:
   build-and-deploy:
+    # 运行环境
     runs-on: ubuntu-latest
+    # 步骤
     steps:
+    # 步骤1:安装Node.js
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
+    # 步骤2:检出代码
     - name: Checkout
       uses: actions/checkout@v4
+    # 步骤3:安装yarn
     - name: Install yarn
       run: npm install -g yarn
+    # 步骤4:安装依赖
     - name: Install dependencies
       run: yarn install
+    # 步骤5:构建VitePress
     - name: Build VitePress
       run: yarn run docs:build
+    # 步骤6:部署到Github Pages
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.VITEPRESS_BLOG_TOKEN }}
-        publish_dir: .vitepress/dist
-        publish_branch: gh-pages
-        dotfiles: true
+        github_token: ${{ secrets.VITEPRESS_BLOG_TOKEN }} # 自定义的action环境变量
+        publish_dir: .vitepress/dist # 指定部署目录
+        publish_branch: gh-pages # 指定部署分支
+        dotfiles: true # 允许使用.gitignore文件
