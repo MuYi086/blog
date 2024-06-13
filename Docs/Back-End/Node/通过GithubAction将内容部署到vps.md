@@ -36,13 +36,25 @@ jobs:
     - name: Build VitePress
       run: yarn run docs:build
     # 步骤6:部署到Github Pages
-    - name: Deploy to Github Pages
-      uses: peaceiris/actions-gh-pages@v3
+    # - name: Deploy to Github Pages
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.VITEPRESS_BLOG_TOKEN }} # 自定义的action环境变量
+    #     publish_dir: .vitepress/dist # 指定部署目录
+    #     publish_branch: gh-pages # 指定部署分支
+    #     dotfiles: true # 允许使用.gitignore文件
+    # 步骤7: scp部署到 vps
+    - name: Deploy to VPS
+      uses: appleboy/scp-action@master
       with:
-        github_token: ${{ secrets.VITEPRESS_BLOG_TOKEN }} # 自定义的action环境变量
-        publish_dir: .vitepress/dist # 指定部署目录
-        publish_branch: gh-pages # 指定部署分支
-        dotfiles: true # 允许使用.gitignore文件
+        host: ${{ secrets.SERVER_HOST }} # 服务器地址
+        username: ${{ secrets.SERVER_USER }} # 服务器用户名
+        port: ${{ secrets.SERVER_PORT }} # 服务器端口
+        key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
+        # password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
+        strip_components: 2 # 跳过指定目录
+        source: '.vitepress/dist' # 源目录
+        target: ${{ secrets.SERVER_TARGET }} # 目标目录
 ```
 
 ## 配置 Action 环境变量
@@ -66,7 +78,22 @@ jobs:
 
 ![github_pages](/Images/Back-End/Node/通过GithubAction将内容部署到vps/github_pages.png "github_pages")
 
+## 配置action scp 部署到vps
 
+1. 登录 `vps` ，生成 `SSH` 秘钥
+
+    ```shell
+    # 生成ssh秘钥
+    ssh-keygen -t rsa -b 4096 -C "github-actions-node"
+    # 将公钥复制到服务器的authorized_keys文件中
+    cat /root/.ssh/id_rsa.pub >> authorized_keys
+    ```
+1. 配置 `Actions Secrets`
+
+    ```shell
+    # 打印私钥，复制粘贴到github action环境变量中，命名为SSH_KEY
+    cat /root/.ssh/id_rsa
+    ```
 
 
 ## 参考
@@ -75,3 +102,5 @@ jobs:
 1. [通过 Github Action 将 GitHub 上的内容部署到 VPS](https://tourcoder.com/deploy-from-github-to-vps-via-github-action/)
 1. [使用 GitHub Actions 在代码更新时自动部署代码到 VPS](https://blog.csdn.net/m0_57236802/article/details/134216395)
 1. [vitepress项目使用github的action自动部署到github-pages中](https://blog.csdn.net/weixin_43972992/article/details/135123018)
+1. [使用Github Actions自动部署Golang应用到VPS服务器](https://github.com/axiaoxin/axiaoxin/issues/27)
+1. [使用 GitHub Actions 部署 Next.js 项目到 VPS](https://riddma.com/post/deploy-next-js-to-vps-using-github-actions)
