@@ -227,4 +227,5 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Windows/SourceTree破解免登录">SourceTree破解免登录</a-button>
   <a-button href="/Docs/Windows/tree命令生成文件目录">tree命令生成文件目录</a-button>
   <a-button href="/Docs/Windows/安装msi文件报错2503和2502">安装msi文件报错2503和2502</a-button>
+  <a-button href="/Docs/Windows/浏览器提示HSTS">浏览器提示HSTS</a-button>
 </a-row>
