@@ -9,6 +9,9 @@
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
 ```
 
+## 开启SSL
+面板设置 => 安全 => 面板SSL => 按钮打开
+
 ## 防火墙
 `1Panel` 集成了两种广泛使用的 `Linux` 防火墙软件：`Firewalld` 和 `UFW`
 
@@ -35,5 +38,24 @@ sudo ufw allow 8090/tcp
 sudo ufw enable
 ```
 
+## 绑定域名
+这里使用反代域名实现
+1. 先在 `cloudflare` 上 解析一个二级域名
+
+1. `1panel` 面板创建 一个网站 => 绑定域名
+
+![反代设置](/Images/Linux/安装1Panel/反代设置.png '反代设置')
+
+保存后, 再次输入刚才的二级域名即可访问 `1panel` 面板
+
+::: warning 注意
+通过 面板设置 => 安全 => 域名绑定 会无法访问面板
+
+暂未找到解决办法
+
+可以通过登录ssh，输入 `1pctl reset domain` 重置绑定域名
+:::
+
 ## 参考
 1. [在线安装](https://1panel.cn/docs/installation/online_installation/)
+1. [请教1panel面板绑定域名应该如何操作](https://bbs.fit2cloud.com/t/topic/2092/4)
