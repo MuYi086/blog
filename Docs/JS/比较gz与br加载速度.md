@@ -22,7 +22,7 @@
 ## br
 `br` 是 `Brotli` 的缩写，是 `Google` 出的一种文件压缩工具，根据 `Google` 的官方数据和实际使用经验，`Brotli` 相对于 `Gzip` 可以实现更高的压缩率，有时候可以达到 `20-30%` 的压缩率提升。
 
-`nginx` 安装 `brotli` 请参考之前的一篇文章[宝塔nginx安装ngx_brotli](/Docs/Linux/Shell/宝塔nginx安装ngx_brotli)
+`nginx` 安装 `brotli` 请参考之前的一篇文章[宝塔nginx安装ngx_brotli](/Docs/Shell/宝塔nginx安装ngx_brotli)
 
 ![br](/Images/JS/比较gz与br加载速度/br.jpg 'br')
 

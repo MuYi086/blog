@@ -61,16 +61,16 @@ gzip -k -f -9 ./*.html
 cd ../Standards
 gzip -k -f -9 ./*.html
 cd ../../
-# 处理Linux/Deepin目录
-cd Linux/Deepin
+# 处理Deepin目录
+cd Deepin
 gzip -k -f -9 ./*.html
-# 处理Linux/Docker目录
+# 处理Docker目录
 cd ../Docker
 gzip -k -f -9 ./*.html
-# 处理Linux/Shell目录
+# 处理Shell目录
 cd ../Shell
 gzip -k -f -9 ./*.html
-# 处理Linux/Wall目录
+# 处理Wall目录
 cd ../Wall
 gzip -k -f -9 ./*.html
 cd ../../

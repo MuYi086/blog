@@ -140,80 +140,80 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Essay/新建销售计划-页面卡死问题分析">新建销售计划-页面卡死问题分析</a-button>
 </a-row>
 
-<!-- Linux/Docker -->
-<a-divider orientation="left">Linux/Docker</a-divider>
+<!-- Docker -->
+<a-divider orientation="left">Docker</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Linux/Docker/CI和CD搭建配置">CI和CD搭建配置</a-button>
-  <a-button href="/Docs/Linux/Docker/deepin搭建docker环境">deepin搭建docker环境</a-button>
-  <a-button href="/Docs/Linux/Docker/docker安装和使用gitlab">docker安装和使用gitlab</a-button>
-  <a-button href="/Docs/Linux/Docker/docker搭建nginx+php环境">docker搭建nginx+php环境</a-button>
+  <a-button href="/Docs/Docker/CI和CD搭建配置">CI和CD搭建配置</a-button>
+  <a-button href="/Docs/Docker/deepin搭建docker环境">deepin搭建docker环境</a-button>
+  <a-button href="/Docs/Docker/docker安装和使用gitlab">docker安装和使用gitlab</a-button>
+  <a-button href="/Docs/Docker/docker搭建nginx+php环境">docker搭建nginx+php环境</a-button>
 </a-row>
 
-<!-- Linux/Wall -->
-<a-divider orientation="left">Linux/Wall</a-divider>
+<!-- Wall -->
+<a-divider orientation="left">Wall</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Linux/Wall/科学上网-heroku">科学上网-heroku</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-XX-NET">科学上网-XX-NET</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Tor">科学上网-Tor</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-让终端走代理">科学上网-让终端走代理</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Surfshark">科学上网-Surfshark</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-浏览器代理">科学上网-浏览器代理</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-shadowsock">科学上网-shadowsock</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-v2ray搭建">科学上网-v2ray搭建</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-v2ray使用">科学上网-v2ray使用</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-RackNerd">科学上网-RackNerd</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Cloudflare-Pages">科学上网-Cloudflare-Pages</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Cloudflare-Warp">科学上网-Cloudflare-Warp</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Slicehosting">科学上网-Slicehosting</a-button>
-  <a-button href="/Docs/Linux/Wall/科学上网-Geph">科学上网-Geph</a-button>
+  <a-button href="/Docs/Wall/科学上网-heroku">科学上网-heroku</a-button>
+  <a-button href="/Docs/Wall/科学上网-XX-NET">科学上网-XX-NET</a-button>
+  <a-button href="/Docs/Wall/科学上网-Tor">科学上网-Tor</a-button>
+  <a-button href="/Docs/Wall/科学上网-让终端走代理">科学上网-让终端走代理</a-button>
+  <a-button href="/Docs/Wall/科学上网-Surfshark">科学上网-Surfshark</a-button>
+  <a-button href="/Docs/Wall/科学上网-浏览器代理">科学上网-浏览器代理</a-button>
+  <a-button href="/Docs/Wall/科学上网-shadowsock">科学上网-shadowsock</a-button>
+  <a-button href="/Docs/Wall/科学上网-v2ray搭建">科学上网-v2ray搭建</a-button>
+  <a-button href="/Docs/Wall/科学上网-v2ray使用">科学上网-v2ray使用</a-button>
+  <a-button href="/Docs/Wall/科学上网-RackNerd">科学上网-RackNerd</a-button>
+  <a-button href="/Docs/Wall/科学上网-Cloudflare-Pages">科学上网-Cloudflare-Pages</a-button>
+  <a-button href="/Docs/Wall/科学上网-Cloudflare-Warp">科学上网-Cloudflare-Warp</a-button>
+  <a-button href="/Docs/Wall/科学上网-Slicehosting">科学上网-Slicehosting</a-button>
+  <a-button href="/Docs/Wall/科学上网-Geph">科学上网-Geph</a-button>
 </a-row>
 
-<!-- Linux/Deepin -->
-<a-divider orientation="left">Linux/Deepin</a-divider>
+<!-- Deepin -->
+<a-divider orientation="left">Deepin</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Linux/Deepin/deepin换源">deepin换源</a-button>
-  <a-button href="/Docs/Linux/Deepin/安装deepin系统后要做的事">安装deepin系统后要做的事</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin20安装mysql">deepin20安装mysql</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装cuda和cuDNN">deepin安装cuda和cuDNN</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装lamp">deepin安装lamp</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装nvidia驱动">deepin安装nvidia驱动</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装p7zip">deepin安装p7zip</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin使用tensorflow入门机器学习">deepin使用tensorflow入门机器学习</a-button>
-  <a-button href="/Docs/Linux/Deepin/deepin安装oh my Zsh">deepin安装oh my Zsh</a-button>
+  <a-button href="/Docs/Deepin/deepin换源">deepin换源</a-button>
+  <a-button href="/Docs/Deepin/安装deepin系统后要做的事">安装deepin系统后要做的事</a-button>
+  <a-button href="/Docs/Deepin/deepin20安装mysql">deepin20安装mysql</a-button>
+  <a-button href="/Docs/Deepin/deepin安装cuda和cuDNN">deepin安装cuda和cuDNN</a-button>
+  <a-button href="/Docs/Deepin/deepin安装lamp">deepin安装lamp</a-button>
+  <a-button href="/Docs/Deepin/deepin安装nvidia驱动">deepin安装nvidia驱动</a-button>
+  <a-button href="/Docs/Deepin/deepin安装p7zip">deepin安装p7zip</a-button>
+  <a-button href="/Docs/Deepin/deepin使用tensorflow入门机器学习">deepin使用tensorflow入门机器学习</a-button>
+  <a-button href="/Docs/Deepin/deepin安装oh my Zsh">deepin安装oh my Zsh</a-button>
 </a-row>
 
-<!-- Linux/Shell -->
-<a-divider orientation="left">Linux/Shell</a-divider>
+<!-- Shell -->
+<a-divider orientation="left">Shell</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Linux/Shell/安装Ubuntu22.04后要做的事">安装Ubuntu22.04后要做的事</a-button>
-  <a-button href="/Docs/Linux/Shell/反爬虫一些方案总结和尝试">反爬虫一些方案总结和尝试</a-button>
-  <a-button href="/Docs/Linux/Shell/简单使用tcpdump">简单使用tcpdump</a-button>
-  <a-button href="/Docs/Linux/Shell/解决linux安装xmind缺少依赖报错">解决linux安装xmind缺少依赖报错</a-button>
-  <a-button href="/Docs/Linux/Shell/静态资源gzip优化">静态资源gzip优化</a-button>
-  <a-button href="/Docs/Linux/Shell/利用zx和SSHKey发布代码到服务器">利用zx和SSHKey发布代码到服务器</a-button>
-  <a-button href="/Docs/Linux/Shell/使用V2ray,CloudFlare Warp解锁GPT">使用V2ray,CloudFlare Warp解锁GPT</a-button>
-  <a-button href="/Docs/Linux/Shell/使用vscode进行java开发">使用vscode进行java开发</a-button>
-  <a-button href="/Docs/Linux/Shell/特别实用的shell命令">特别实用的shell命令</a-button>
-  <a-button href="/Docs/Linux/Shell/一键搭建ChatGPT web版">一键搭建ChatGPT web版</a-button>
-  <a-button href="/Docs/Linux/Shell/dell G3装系统无法识别第二块硬盘">dell G3装系统无法识别第二块硬盘</a-button>
-  <a-button href="/Docs/Linux/Shell/linux下virtualbox用gho还原系统">linux下virtualbox用gho还原系统</a-button>
-  <a-button href="/Docs/Linux/Shell/mysql常用命令">mysql常用命令</a-button>
-  <a-button href="/Docs/Linux/Shell/navicat连接一键集成环境的mysql">navicat连接一键集成环境的mysql</a-button>
-  <a-button href="/Docs/Linux/Shell/nginx常用命令">nginx常用命令</a-button>
-  <a-button href="/Docs/Linux/Shell/pm2常用命令">pm2常用命令</a-button>
-  <a-button href="/Docs/Linux/Shell/virtualbox虚拟机和宿主机互相复制粘贴">virtualbox虚拟机和宿主机互相复制粘贴</a-button>
-  <a-button href="/Docs/Linux/Shell/vps报错temporary failure in name resolution">vps报错temporary failure in name resolution</a-button>
-  <a-button href="/Docs/Linux/Shell/vps内资源通过mega快传到本地">vps内资源通过mega快传到本地</a-button>
-  <a-button href="/Docs/Linux/Shell/vscode修改文件监控数">vscode修改文件监控数</a-button>
-  <a-button href="/Docs/Linux/Shell/windows+linux双系统引导修复">windows+linux双系统引导修复</a-button>
-  <a-button href="/Docs/Linux/Shell/zsh常用插件和命令">zsh常用插件和命令</a-button>
-  <a-button href="/Docs/Linux/Shell/Ubuntu安装deepin桌面环境">Ubuntu安装deepin桌面环境</a-button>
-  <a-button href="/Docs/Linux/Shell/Ubuntu常见问题汇总">Ubuntu常见问题汇总</a-button>
-  <a-button href="/Docs/Linux/Shell/安装1Panel">安装1Panel</a-button>
-  <a-button href="/Docs/Linux/Shell/Ubuntu安装wireshark">Ubuntu安装wireshark</a-button>
-  <a-button href="/Docs/Linux/Shell/Ubuntu安装flatpak软件">Ubuntu安装flatpak软件</a-button>
-  <a-button href="/Docs/Linux/Shell/安装Bt面板">安装Bt面板</a-button>
-  <a-button href="/Docs/Linux/Shell/宝塔nginx安装ngx_brotli">宝塔nginx安装ngx_brotli</a-button>
+  <a-button href="/Docs/Shell/安装Ubuntu22.04后要做的事">安装Ubuntu22.04后要做的事</a-button>
+  <a-button href="/Docs/Shell/反爬虫一些方案总结和尝试">反爬虫一些方案总结和尝试</a-button>
+  <a-button href="/Docs/Shell/简单使用tcpdump">简单使用tcpdump</a-button>
+  <a-button href="/Docs/Shell/解决linux安装xmind缺少依赖报错">解决linux安装xmind缺少依赖报错</a-button>
+  <a-button href="/Docs/Shell/静态资源gzip优化">静态资源gzip优化</a-button>
+  <a-button href="/Docs/Shell/利用zx和SSHKey发布代码到服务器">利用zx和SSHKey发布代码到服务器</a-button>
+  <a-button href="/Docs/Shell/使用V2ray,CloudFlare Warp解锁GPT">使用V2ray,CloudFlare Warp解锁GPT</a-button>
+  <a-button href="/Docs/Shell/使用vscode进行java开发">使用vscode进行java开发</a-button>
+  <a-button href="/Docs/Shell/特别实用的shell命令">特别实用的shell命令</a-button>
+  <a-button href="/Docs/Shell/一键搭建ChatGPT web版">一键搭建ChatGPT web版</a-button>
+  <a-button href="/Docs/Shell/dell G3装系统无法识别第二块硬盘">dell G3装系统无法识别第二块硬盘</a-button>
+  <a-button href="/Docs/Shell/linux下virtualbox用gho还原系统">linux下virtualbox用gho还原系统</a-button>
+  <a-button href="/Docs/Shell/mysql常用命令">mysql常用命令</a-button>
+  <a-button href="/Docs/Shell/navicat连接一键集成环境的mysql">navicat连接一键集成环境的mysql</a-button>
+  <a-button href="/Docs/Shell/nginx常用命令">nginx常用命令</a-button>
+  <a-button href="/Docs/Shell/pm2常用命令">pm2常用命令</a-button>
+  <a-button href="/Docs/Shell/virtualbox虚拟机和宿主机互相复制粘贴">virtualbox虚拟机和宿主机互相复制粘贴</a-button>
+  <a-button href="/Docs/Shell/vps报错temporary failure in name resolution">vps报错temporary failure in name resolution</a-button>
+  <a-button href="/Docs/Shell/vps内资源通过mega快传到本地">vps内资源通过mega快传到本地</a-button>
+  <a-button href="/Docs/Shell/vscode修改文件监控数">vscode修改文件监控数</a-button>
+  <a-button href="/Docs/Shell/windows+linux双系统引导修复">windows+linux双系统引导修复</a-button>
+  <a-button href="/Docs/Shell/zsh常用插件和命令">zsh常用插件和命令</a-button>
+  <a-button href="/Docs/Shell/Ubuntu安装deepin桌面环境">Ubuntu安装deepin桌面环境</a-button>
+  <a-button href="/Docs/Shell/Ubuntu常见问题汇总">Ubuntu常见问题汇总</a-button>
+  <a-button href="/Docs/Shell/安装1Panel">安装1Panel</a-button>
+  <a-button href="/Docs/Shell/Ubuntu安装wireshark">Ubuntu安装wireshark</a-button>
+  <a-button href="/Docs/Shell/Ubuntu安装flatpak软件">Ubuntu安装flatpak软件</a-button>
+  <a-button href="/Docs/Shell/安装Bt面板">安装Bt面板</a-button>
+  <a-button href="/Docs/Shell/宝塔nginx安装ngx_brotli">宝塔nginx安装ngx_brotli</a-button>
 </a-row>
 
 <!-- Windows -->
