@@ -41,63 +41,63 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Git/前端工程化相关的实用git命令">前端工程化相关的实用git命令</a-button>
 </a-row>
 
-<!-- Front-End/CSS -->
-<a-divider orientation="left">Front-End/CSS</a-divider>
+<!-- CSS -->
+<a-divider orientation="left">CSS</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Front-End/CSS/开发常用样式">开发常用样式</a-button>
-  <a-button href="/Docs/Front-End/CSS/实用效果">实用效果</a-button>
-  <a-button href="/Docs/Front-End/CSS/CSS优化-PurgeCSS">CSS优化-PurgeCSS</a-button>
+  <a-button href="/Docs/CSS/开发常用样式">开发常用样式</a-button>
+  <a-button href="/Docs/CSS/实用效果">实用效果</a-button>
+  <a-button href="/Docs/CSS/CSS优化-PurgeCSS">CSS优化-PurgeCSS</a-button>
 </a-row>
 
-<!-- Front-End/Standards -->
-<a-divider orientation="left">Front-End/Standards</a-divider>
+<!-- Standards -->
+<a-divider orientation="left">Standards</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Front-End/Standards/版本编号规范">版本编号规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/命名规范">命名规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/图片规范">图片规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/commit规范">commit规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/CSS规范">CSS规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/HTML规范">HTML规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/JS规范">JS规范</a-button>
-  <a-button href="/Docs/Front-End/Standards/CSS格式化之stylelint">CSS格式化之stylelint</a-button>
-  <a-button href="/Docs/Front-End/Standards/使用husky+commitlint规范代码提交">使用husky+commitlint规范代码提交</a-button>
+  <a-button href="/Docs/Standards/版本编号规范">版本编号规范</a-button>
+  <a-button href="/Docs/Standards/命名规范">命名规范</a-button>
+  <a-button href="/Docs/Standards/图片规范">图片规范</a-button>
+  <a-button href="/Docs/Standards/commit规范">commit规范</a-button>
+  <a-button href="/Docs/Standards/CSS规范">CSS规范</a-button>
+  <a-button href="/Docs/Standards/HTML规范">HTML规范</a-button>
+  <a-button href="/Docs/Standards/JS规范">JS规范</a-button>
+  <a-button href="/Docs/Standards/CSS格式化之stylelint">CSS格式化之stylelint</a-button>
+  <a-button href="/Docs/Standards/使用husky+commitlint规范代码提交">使用husky+commitlint规范代码提交</a-button>
 </a-row>
 
-<!-- Front-End/JS -->
-<a-divider orientation="left">Front-End/JS</a-divider>
+<!-- JS -->
+<a-divider orientation="left">JS</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Front-End/JS/常用的设计模式">常用的设计模式</a-button>
-  <a-button href="/Docs/Front-End/JS/常用正则">常用正则</a-button>
-  <a-button href="/Docs/Front-End/JS/常用snippets">常用snippets</a-button>
-  <a-button href="/Docs/Front-End/JS/高德地图常用方法封装">高德地图常用方法封装</a-button>
-  <a-button href="/Docs/Front-End/JS/高阶函数片段">高阶函数片段</a-button>
-  <a-button href="/Docs/Front-End/JS/键盘事件与KeyBoardWrapper交互">键盘事件与KeyBoardWrapper交互</a-button>
-  <a-button href="/Docs/Front-End/JS/解析vue指令clickoutside源码">解析vue指令clickoutside源码</a-button>
-  <a-button href="/Docs/Front-End/JS/浏览器的5种Observer">浏览器的5种Observer</a-button>
-  <a-button href="/Docs/Front-End/JS/浏览器宏任务和微任务">浏览器宏任务和微任务</a-button>
-  <a-button href="/Docs/Front-End/JS/前后端启用https">前后端启用https</a-button>
-  <a-button href="/Docs/Front-End/JS/深入理解赋值、浅拷贝、深拷贝">深入理解赋值、浅拷贝、深拷贝</a-button>
-  <a-button href="/Docs/Front-End/JS/实现一个中间件">实现一个中间件</a-button>
-  <a-button href="/Docs/Front-End/JS/使用vue-socketio">使用vue-socketio</a-button>
-  <a-button href="/Docs/Front-End/JS/微信jssdk封装使用">微信jssdk封装使用</a-button>
-  <a-button href="/Docs/Front-End/JS/小程序webview调试">小程序webview调试</a-button>
-  <a-button href="/Docs/Front-End/JS/优秀js库moment">优秀js库moment</a-button>
-  <a-button href="/Docs/Front-End/JS/与移动端通信">与移动端通信</a-button>
-  <a-button href="/Docs/Front-End/JS/chrome扩展入门">chrome扩展入门</a-button>
-  <a-button href="/Docs/Front-End/JS/Emoji多端统一处理">Emoji多端统一处理</a-button>
-  <a-button href="/Docs/Front-End/JS/es5新特性">es5新特性</a-button>
-  <a-button href="/Docs/Front-End/JS/es6常用特性">es6常用特性</a-button>
-  <a-button href="/Docs/Front-End/JS/es常用片段">es常用片段</a-button>
-  <a-button href="/Docs/Front-End/JS/JS标准内置对象">JS标准内置对象</a-button>
-  <a-button href="/Docs/Front-End/JS/JS发布订阅模式">JS发布订阅模式</a-button>
-  <a-button href="/Docs/Front-End/JS/JS链式调用原理">JS链式调用原理</a-button>
-  <a-button href="/Docs/Front-End/JS/JS性能优化">JS性能优化</a-button>
-  <a-button href="/Docs/Front-End/JS/Promise介绍和使用">Promise介绍和使用</a-button>
-  <a-button href="/Docs/Front-End/JS/Range的使用">Range的使用</a-button>
-  <a-button href="/Docs/Front-End/JS/uniapp使用eslint校验代码">uniapp使用eslint校验代码</a-button>
-  <a-button href="/Docs/Front-End/JS/Vue+Oauth登录实现">Vue+Oauth登录实现</a-button>
-  <a-button href="/Docs/Front-End/JS/Vue实现富文本插入Emoji">Vue实现富文本插入Emoji</a-button>
-  <a-button href="/Docs/Front-End/JS/比较gz与br加载速度">比较gz与br加载速度</a-button>
+  <a-button href="/Docs/JS/常用的设计模式">常用的设计模式</a-button>
+  <a-button href="/Docs/JS/常用正则">常用正则</a-button>
+  <a-button href="/Docs/JS/常用snippets">常用snippets</a-button>
+  <a-button href="/Docs/JS/高德地图常用方法封装">高德地图常用方法封装</a-button>
+  <a-button href="/Docs/JS/高阶函数片段">高阶函数片段</a-button>
+  <a-button href="/Docs/JS/键盘事件与KeyBoardWrapper交互">键盘事件与KeyBoardWrapper交互</a-button>
+  <a-button href="/Docs/JS/解析vue指令clickoutside源码">解析vue指令clickoutside源码</a-button>
+  <a-button href="/Docs/JS/浏览器的5种Observer">浏览器的5种Observer</a-button>
+  <a-button href="/Docs/JS/浏览器宏任务和微任务">浏览器宏任务和微任务</a-button>
+  <a-button href="/Docs/JS/前后端启用https">前后端启用https</a-button>
+  <a-button href="/Docs/JS/深入理解赋值、浅拷贝、深拷贝">深入理解赋值、浅拷贝、深拷贝</a-button>
+  <a-button href="/Docs/JS/实现一个中间件">实现一个中间件</a-button>
+  <a-button href="/Docs/JS/使用vue-socketio">使用vue-socketio</a-button>
+  <a-button href="/Docs/JS/微信jssdk封装使用">微信jssdk封装使用</a-button>
+  <a-button href="/Docs/JS/小程序webview调试">小程序webview调试</a-button>
+  <a-button href="/Docs/JS/优秀js库moment">优秀js库moment</a-button>
+  <a-button href="/Docs/JS/与移动端通信">与移动端通信</a-button>
+  <a-button href="/Docs/JS/chrome扩展入门">chrome扩展入门</a-button>
+  <a-button href="/Docs/JS/Emoji多端统一处理">Emoji多端统一处理</a-button>
+  <a-button href="/Docs/JS/es5新特性">es5新特性</a-button>
+  <a-button href="/Docs/JS/es6常用特性">es6常用特性</a-button>
+  <a-button href="/Docs/JS/es常用片段">es常用片段</a-button>
+  <a-button href="/Docs/JS/JS标准内置对象">JS标准内置对象</a-button>
+  <a-button href="/Docs/JS/JS发布订阅模式">JS发布订阅模式</a-button>
+  <a-button href="/Docs/JS/JS链式调用原理">JS链式调用原理</a-button>
+  <a-button href="/Docs/JS/JS性能优化">JS性能优化</a-button>
+  <a-button href="/Docs/JS/Promise介绍和使用">Promise介绍和使用</a-button>
+  <a-button href="/Docs/JS/Range的使用">Range的使用</a-button>
+  <a-button href="/Docs/JS/uniapp使用eslint校验代码">uniapp使用eslint校验代码</a-button>
+  <a-button href="/Docs/JS/Vue+Oauth登录实现">Vue+Oauth登录实现</a-button>
+  <a-button href="/Docs/JS/Vue实现富文本插入Emoji">Vue实现富文本插入Emoji</a-button>
+  <a-button href="/Docs/JS/比较gz与br加载速度">比较gz与br加载速度</a-button>
 </a-row>
 
 <!-- Python -->

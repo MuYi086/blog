@@ -6,7 +6,7 @@
 ## Oauth流程
 其实各家 `Oauth` 登录流程大同小异，最为经典的莫过于 `github` 的 `Oauth` 登录.但是由于 `GFW` 的原因,时不时的抽风,调用接口调试有时候会超时。
 因此下面我们使用国内的 `gitee` 举例说明.
-![Oauth流程](/Images/Front-End/JS/Vue+Oauth登录实现/oauth_step_1.png)
+![Oauth流程](/Images/JS/Vue+Oauth登录实现/oauth_step_1.png)
 
 ## 纯后端实现
 这里就不介绍了，阮一峰老师有个 `demo`，使用 `koa` + `axios`实现

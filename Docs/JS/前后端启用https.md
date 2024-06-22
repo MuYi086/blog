@@ -15,7 +15,7 @@
 1. 客户端随机生成一个值(内容秘钥),通过数字证书中预设的公钥(传输公钥) 进行加密后传输给服务端
 1. 服务端接收到信息后，用(传输私钥) 进行解密获得内容秘钥.之后双方基于这个内容私钥通过对称算法进行内容的加密和解密(用对称算法的原因是因为开销小),传输还是通过非对称算法进行加密解密(性能开销大，但是更安全)
 一般浏览器中会预置一些权威 `CA`（权威证书颁发机构）的证书，这样浏览器可以直接进行访问。如果是自己制作的证书那么会跳下面这个界面，需要信任后才能访问
-![https warning](/Images/Front-End/JS/前后端启用https/https_step_1.png 'https warning')
+![https warning](/Images/JS/前后端启用https/https_step_1.png 'https warning')
 
 ## 证书制作
 一般而言，我们可以在域名服务商那里申请证书,但是有门槛和时间限制。为了方便，我们一般使用 `openssl` 或者 `cloudflare` 来申请证书.
@@ -36,7 +36,7 @@
     openssl x509 -req -in ca-req.csr -out ca-cert.pem -signkey private_key.pem -days 3650
     ```
 可以看到目录下已经生成三个文件
-![证书](/Images/Front-End/JS/前后端启用https/https_step_2.png '证书')
+![证书](/Images/JS/前后端启用https/https_step_2.png '证书')
 
 ## 后端启用https
 简单代码结构

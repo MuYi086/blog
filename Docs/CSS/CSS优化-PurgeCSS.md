@@ -8,7 +8,7 @@
 ## 使用
 1. 我们先记录下未使用 `PurgeCSS` 之前的项目打包大小
 
-![未优化](/Images/Front-End/CSS/CSS优化-PurgeCSS/step_1.jpg "未优化")
+![未优化](/Images/CSS/CSS优化-PurgeCSS/step_1.jpg "未优化")
 
 2. `postcss` 使用 `Purgecss` 
 
@@ -32,7 +32,7 @@
 
 3. 再次编译，查看体积
 
-![已优化](/Images/Front-End/CSS/CSS优化-PurgeCSS/step_2.jpg "已优化")
+![已优化](/Images/CSS/CSS优化-PurgeCSS/step_2.jpg "已优化")
 
 ::: warning
 其他打包软件和框架配置，比如 `grunt`, `gulp` , `webpack` , `react`, `vue` 等请参考官方文档。
@@ -86,7 +86,7 @@ module.exports = {
 
 再次编译, 体积为 `2.9M` ， 减少 `22%` , 能有效提升前端页面加载速度。
 
-![已优化](/Images/Front-End/CSS/CSS优化-PurgeCSS/step_3.jpg "已优化")
+![已优化](/Images/CSS/CSS优化-PurgeCSS/step_3.jpg "已优化")
 
 
 ## 参考

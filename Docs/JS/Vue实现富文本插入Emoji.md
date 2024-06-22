@@ -7,8 +7,8 @@
 一个富文本框，支持输入文字，插入 `emoji` 转成 `img` ，同时在发送时转成字符串，接收消息，将字符串转成 `document node` 在页面显示
 
 ## 难点
-1. 得焦插入和失焦插入内容时光标位置计算, 参考[Range的使用](/Docs/Front-End/JS/Range的使用)
-1. 富文本内容(含 `emoji` 图片)转字符串, 参考[Emoji多端统一处理](/Docs/Front-End/JS/Emoji多端统一处理)
+1. 得焦插入和失焦插入内容时光标位置计算, 参考[Range的使用](/Docs/JS/Range的使用)
+1. 富文本内容(含 `emoji` 图片)转字符串, 参考[Emoji多端统一处理](/Docs/JS/Emoji多端统一处理)
 1. 字符串消息转成 `html` (含 `emoji` 图片)
 
 ## 核心代码

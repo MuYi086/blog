@@ -16,7 +16,7 @@ npx eslint --init
 eslint --fix src
 # 如未改变，需重启vscode
 ```
-![步骤图](/Images/Front-End/JS/uniapp使用eslint校验代码/console_01.jpg '步骤图')
+![步骤图](/Images/JS/uniapp使用eslint校验代码/console_01.jpg '步骤图')
 
 ```shell
 # vscode左侧extensions安装eslint插件

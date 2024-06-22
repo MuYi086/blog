@@ -9,7 +9,7 @@
 :::
 
 ## git-commit 
-点击查看详情 [commit规范](/Docs/Front-End/Standards/commit规范)
+点击查看详情 [commit规范](/Docs/Standards/commit规范)
 
 ## docker
 ::: details 点我查看详情

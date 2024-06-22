@@ -51,13 +51,13 @@ gzip -k -f -9 ./*.html
 cd ../Python
 gzip -k -f -9 ./*.html
 cd ../../
-# 处理Front-End/CSS目录
-cd Front-End/CSS
+# 处理CSS目录
+cd CSS
 gzip -k -f -9 ./*.html
-# 处理Front-End/JS目录
+# 处理JS目录
 cd ../JS
 gzip -k -f -9 ./*.html
-# 处理Front-End/Standards目录
+# 处理Standards目录
 cd ../Standards
 gzip -k -f -9 ./*.html
 cd ../../

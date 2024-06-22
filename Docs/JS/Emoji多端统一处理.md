@@ -2,7 +2,7 @@
 
 ## 介绍
 项目中在聊天页面，要求实现一个类似 `youtube` 的 `emoji` 功能,发送后能消息界面，多端显示一致
-![显示](/Images/Front-End/JS/Emoji多端统一处理/bak_1.png)
+![显示](/Images/JS/Emoji多端统一处理/bak_1.png)
 
 ## 需求分析
 一个富文本框，支持输入文字，插入 `emoji` 转成 `img` ，同时在发送时转成字符串，接收消息，将字符串转成 `document node` 在页面显示

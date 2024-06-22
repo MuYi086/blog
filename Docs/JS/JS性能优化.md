@@ -65,23 +65,23 @@ var query = url.substring(url.indexOf('?'))
 1. **减值迭代**:大多数循环使用从0开始,增加到某个特定值.在很多情况下,从最大值开始,在循环中不断减值的迭代器更加高效
 > 但是在我实验中,并没有发现倒序快,难道是 `chrome V8` 引擎优化过？
 
-![循环](/Images/Front-End/JS/JS性能优化/forEach_01.png)
+![循环](/Images/JS/JS性能优化/forEach_01.png)
 
-![循环](/Images/Front-End/JS/JS性能优化/forEach_02.png)
+![循环](/Images/JS/JS性能优化/forEach_02.png)
 
 > 但是我发现俩个放一起执行,永远是后一个执行速度快!
 
-![循环](/Images/Front-End/JS/JS性能优化/forEach_03.png)
+![循环](/Images/JS/JS性能优化/forEach_03.png)
 
 2. **简化终止条件**:由于每次循环都会计算终止条件，所以必须保证他尽可能快，应该避免属性查找
 3. **使用后测试循环**:最常用的 `for循环` 和 `while循环` 都是前测试循环,而 `do-while` 这种后测试循环,可以避免最初终止条件的运算，因此运行更快.
 这一条测试也没有得到预期效果，发现同样是后面的函数执行快
 
-![循环](/Images/Front-End/JS/JS性能优化/forEach_04.png)
+![循环](/Images/JS/JS性能优化/forEach_04.png)
 
 4. **展开循环**:当循环的次数是确定的,消除循环并多次使用函数调用会更快
 
-![循环](/Images/Front-End/JS/JS性能优化/forEach_05.png)
+![循环](/Images/JS/JS性能优化/forEach_05.png)
 
 这个经过测试的确会快一些
 > 我们剧汇王朝产品可以考虑是否采用 `Duff` 来循环,效果比较明显

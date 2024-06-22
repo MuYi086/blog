@@ -88,7 +88,7 @@
     ```
 
 ## 使用案例
-请阅读[Vue实现富文本插入Emoji](/Docs/Front-End/JS/Vue实现富文本插入Emoji)
+请阅读[Vue实现富文本插入Emoji](/Docs/JS/Vue实现富文本插入Emoji)
 
 
 
