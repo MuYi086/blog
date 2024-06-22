@@ -4,7 +4,7 @@
 在工作中，我们常常面临要同时创建和开发多个 `vue` 项目.于是，产生一个想法，把这些重复的操作流程化,以便于以后 `CTRL+C` 和 `CTRL+V`
 
 ## 全局安装vue-cli
-建议这里使用 [nrm](/Docs/Back-End/Node/使用nvm和nrm) ,切换到 `taobao` 源会比较快
+建议这里使用 [nrm](/Docs/Node/使用nvm和nrm) ,切换到 `taobao` 源会比较快
 ```shell
 npm i -g vue-cli
 ```
@@ -16,7 +16,7 @@ vue init webpack vue-project
 # 由于国内网络,安装photomjs和electron真的很慢,后面我们使用另外方法单独安装
 ```
 
-![初始化项目](/Images/Back-End/Node/使用vue-cli搭建vue项目/vueDemo_01.png '初始化项目')
+![初始化项目](/Images/Node/使用vue-cli搭建vue项目/vueDemo_01.png '初始化项目')
 
 ## VUE CLI 4.x安装使用
 ```shell

@@ -44,10 +44,10 @@ cd ../
 cd Essay
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Back-End/Node目录
-cd Back-End/Node
+# 处理Node目录
+cd Node
 gzip -k -f -9 ./*.html
-# 处理Back-End/Python目录
+# 处理Python目录
 cd ../Python
 gzip -k -f -9 ./*.html
 cd ../../

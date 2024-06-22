@@ -47,13 +47,13 @@
 
 1. 登录谷歌账号,同步书签和插件
 
-1. [安装Node.js和npm配置](/Docs/Back-End/Node/安装Node.js和npm配置)
+1. [安装Node.js和npm配置](/Docs/Node/安装Node.js和npm配置)
 
-1. [使用nvm和nrm](/Docs/Back-End/Node/使用nvm和nrm)
+1. [使用nvm和nrm](/Docs/Node/使用nvm和nrm)
 
 
 1. 利用 `switch-omega` 和 `shadowsock-over-websocket` 实现 `chrome` 科学上网
 
-1. [python版本管理](/Docs/Back-End/Python/Python版本管理)
+1. [python版本管理](/Docs/Python/Python版本管理)
 
-1. [Python源管理](/Docs/Back-End/Python/Python源管理)
+1. [Python源管理](/Docs/Python/Python源管理)

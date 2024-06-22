@@ -103,7 +103,7 @@ pm2 stop verdaccio
 编辑 => 虚拟网络编辑器 => 更改设置 => 选择桥接模式,选择宿主机网卡
 ```
 
-![步骤图](/Images/Back-End/Node/使用verdaccio搭建npm仓库/verdaccio_01.png '步骤图')
+![步骤图](/Images/Node/使用verdaccio搭建npm仓库/verdaccio_01.png '步骤图')
 
 ## 参考
 1. [使用verdaccio 搭建私有npm 服务器](https://blog.csdn.net/qq_29594393/article/details/81587989)

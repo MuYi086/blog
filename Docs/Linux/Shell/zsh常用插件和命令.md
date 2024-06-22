@@ -38,7 +38,7 @@
 :::
 
 ## nvm 
-点击查看详情 [使用nvm和nrm](/Docs/Back-End/Node/使用nvm和nrm#nvm-命令)
+点击查看详情 [使用nvm和nrm](/Docs/Node/使用nvm和nrm#nvm-命令)
 
 ## pip 
 ::: details 点我查看详情

@@ -100,28 +100,28 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Front-End/JS/比较gz与br加载速度">比较gz与br加载速度</a-button>
 </a-row>
 
-<!-- Back-End/Python -->
-<a-divider orientation="left">Back-End/Python</a-divider>
+<!-- Python -->
+<a-divider orientation="left">Python</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Back-End/Python/微信公众号开发爬坑经历">微信公众号开发爬坑经历</a-button>
-  <a-button href="/Docs/Back-End/Python/mitmproxy抓包">mitmproxy抓包</a-button>
-  <a-button href="/Docs/Back-End/Python/Python版本管理">Python版本管理</a-button>
-  <a-button href="/Docs/Back-End/Python/Python源管理">Python源管理</a-button>
+  <a-button href="/Docs/Python/微信公众号开发爬坑经历">微信公众号开发爬坑经历</a-button>
+  <a-button href="/Docs/Python/mitmproxy抓包">mitmproxy抓包</a-button>
+  <a-button href="/Docs/Python/Python版本管理">Python版本管理</a-button>
+  <a-button href="/Docs/Python/Python源管理">Python源管理</a-button>
 </a-row>
 
-<!-- Back-End/Node -->
-<a-divider orientation="left">Back-End/Node</a-divider>
+<!-- Node -->
+<a-divider orientation="left">Node</a-divider>
 <a-row justify="start">
-  <a-button href="/Docs/Back-End/Node/安装Node.js和npm配置">安装Node.js和npm配置</a-button>
-  <a-button href="/Docs/Back-End/Node/node安装报错Unexpected-token">node安装报错Unexpected-token</a-button>
-  <a-button href="/Docs/Back-End/Node/使用nvm和nrm">使用nvm和nrm</a-button>
-  <a-button href="/Docs/Back-End/Node/使用uniapp给小程序添加云函数">使用uniapp给小程序添加云函数</a-button>
-  <a-button href="/Docs/Back-End/Node/使用verdaccio搭建本地npm仓库">使用verdaccio搭建本地npm仓库</a-button>
-  <a-button href="/Docs/Back-End/Node/使用vue-cli搭建vue项目">使用vue-cli搭建vue项目</a-button>
-  <a-button href="/Docs/Back-End/Node/koa使用和API实现">koa使用和API实现</a-button>
-  <a-button href="/Docs/Back-End/Node/Taro command not found多平台解决方案">Taro command not found多平台解决方案</a-button>
-  <a-button href="/Docs/Back-End/Node/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
-  <a-button href="/Docs/Back-End/Node/通过GithubAction将内容部署到vps">通过GithubAction将内容部署到vps</a-button>
+  <a-button href="/Docs/Node/安装Node.js和npm配置">安装Node.js和npm配置</a-button>
+  <a-button href="/Docs/Node/node安装报错Unexpected-token">node安装报错Unexpected-token</a-button>
+  <a-button href="/Docs/Node/使用nvm和nrm">使用nvm和nrm</a-button>
+  <a-button href="/Docs/Node/使用uniapp给小程序添加云函数">使用uniapp给小程序添加云函数</a-button>
+  <a-button href="/Docs/Node/使用verdaccio搭建本地npm仓库">使用verdaccio搭建本地npm仓库</a-button>
+  <a-button href="/Docs/Node/使用vue-cli搭建vue项目">使用vue-cli搭建vue项目</a-button>
+  <a-button href="/Docs/Node/koa使用和API实现">koa使用和API实现</a-button>
+  <a-button href="/Docs/Node/Taro command not found多平台解决方案">Taro command not found多平台解决方案</a-button>
+  <a-button href="/Docs/Node/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
+  <a-button href="/Docs/Node/通过GithubAction将内容部署到vps">通过GithubAction将内容部署到vps</a-button>
 </a-row>
 
 <!-- Essay -->
