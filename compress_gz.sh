@@ -32,48 +32,47 @@ cd Docs
 cd AI
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Windows目录
-cd Windows
+# 处理CSS目录
+cd CSS
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Git目录
-cd Git
+# 处理Deepin目录
+cd Deepin
+gzip -k -f -9 ./*.html
+cd ../
+# 处理Docker目录
+cd Docker
 gzip -k -f -9 ./*.html
 cd ../
 # 处理Essay目录
 cd Essay
 gzip -k -f -9 ./*.html
 cd ../
+# 处理Git目录
+cd Git
+gzip -k -f -9 ./*.html
+cd ../
+# 处理JS目录
+cd JS
+gzip -k -f -9 ./*.html
+cd ../
 # 处理Node目录
 cd Node
 gzip -k -f -9 ./*.html
+cd ../
 # 处理Python目录
-cd ../Python
+cd Python
 gzip -k -f -9 ./*.html
-cd ../../
-# 处理CSS目录
-cd CSS
-gzip -k -f -9 ./*.html
-# 处理JS目录
-cd ../JS
-gzip -k -f -9 ./*.html
-# 处理Standards目录
-cd ../Standards
-gzip -k -f -9 ./*.html
-cd ../../
-# 处理Deepin目录
-cd Deepin
-gzip -k -f -9 ./*.html
-# 处理Docker目录
-cd ../Docker
-gzip -k -f -9 ./*.html
+cd ../
 # 处理Shell目录
-cd ../Shell
+cd Shell
 gzip -k -f -9 ./*.html
-# 处理Wall目录
-cd ../Wall
+cd ../
+# 处理Standards目录
+cd Standards
 gzip -k -f -9 ./*.html
-cd ../../
-
-
-
+cd ../
+# 处理Windows目录
+cd Windows
+gzip -k -f -9 ./*.html
+cd ../

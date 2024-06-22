@@ -1,7 +1,7 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "docs:build": "vitepress build && npm run compress:gz",
     "docs:preview": "vitepress preview",
     "compress:gz": "bash ./compress_gz.sh"
   },
