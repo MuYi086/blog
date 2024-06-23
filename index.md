@@ -75,7 +75,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/JS/解析vue指令clickoutside源码">解析vue指令clickoutside源码</a-button>
   <a-button href="/Docs/JS/浏览器的5种Observer">浏览器的5种Observer</a-button>
   <a-button href="/Docs/JS/浏览器宏任务和微任务">浏览器宏任务和微任务</a-button>
-  <a-button href="/Docs/JS/前后端启用https">前后端启用https</a-button>
   <a-button href="/Docs/JS/深入理解赋值、浅拷贝、深拷贝">深入理解赋值、浅拷贝、深拷贝</a-button>
   <a-button href="/Docs/JS/实现一个中间件">实现一个中间件</a-button>
   <a-button href="/Docs/JS/使用vue-socketio">使用vue-socketio</a-button>
@@ -97,7 +96,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/JS/uniapp使用eslint校验代码">uniapp使用eslint校验代码</a-button>
   <a-button href="/Docs/JS/Vue+Oauth登录实现">Vue+Oauth登录实现</a-button>
   <a-button href="/Docs/JS/Vue实现富文本插入Emoji">Vue实现富文本插入Emoji</a-button>
-  <a-button href="/Docs/JS/比较gz与br加载速度">比较gz与br加载速度</a-button>
 </a-row>
 
 <!-- Python -->
@@ -120,7 +118,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Node/使用vue-cli搭建vue项目">使用vue-cli搭建vue项目</a-button>
   <a-button href="/Docs/Node/koa使用和API实现">koa使用和API实现</a-button>
   <a-button href="/Docs/Node/Taro command not found多平台解决方案">Taro command not found多平台解决方案</a-button>
-  <a-button href="/Docs/Node/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
   <a-button href="/Docs/Node/通过GithubAction将内容部署到vps">通过GithubAction将内容部署到vps</a-button>
 </a-row>
 
@@ -187,9 +184,7 @@ const rowWrapVal = ref(true)
 <a-row justify="start">
   <a-button href="/Docs/Shell/安装Ubuntu22.04后要做的事">安装Ubuntu22.04后要做的事</a-button>
   <a-button href="/Docs/Shell/反爬虫一些方案总结和尝试">反爬虫一些方案总结和尝试</a-button>
-  <a-button href="/Docs/Shell/简单使用tcpdump">简单使用tcpdump</a-button>
   <a-button href="/Docs/Shell/解决linux安装xmind缺少依赖报错">解决linux安装xmind缺少依赖报错</a-button>
-  <a-button href="/Docs/Shell/静态资源gzip优化">静态资源gzip优化</a-button>
   <a-button href="/Docs/Shell/利用zx和SSHKey发布代码到服务器">利用zx和SSHKey发布代码到服务器</a-button>
   <a-button href="/Docs/Shell/使用V2ray,CloudFlare Warp解锁GPT">使用V2ray,CloudFlare Warp解锁GPT</a-button>
   <a-button href="/Docs/Shell/使用vscode进行java开发">使用vscode进行java开发</a-button>
@@ -213,7 +208,6 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Shell/Ubuntu安装wireshark">Ubuntu安装wireshark</a-button>
   <a-button href="/Docs/Shell/Ubuntu安装flatpak软件">Ubuntu安装flatpak软件</a-button>
   <a-button href="/Docs/Shell/安装Bt面板">安装Bt面板</a-button>
-  <a-button href="/Docs/Shell/宝塔nginx安装ngx_brotli">宝塔nginx安装ngx_brotli</a-button>
 </a-row>
 
 <!-- Windows -->
@@ -230,11 +224,17 @@ const rowWrapVal = ref(true)
   <a-button href="/Docs/Windows/SourceTree破解免登录">SourceTree破解免登录</a-button>
   <a-button href="/Docs/Windows/tree命令生成文件目录">tree命令生成文件目录</a-button>
   <a-button href="/Docs/Windows/安装msi文件报错2503和2502">安装msi文件报错2503和2502</a-button>
-  <a-button href="/Docs/Windows/浏览器提示HSTS">浏览器提示HSTS</a-button>
 </a-row>
 
 <!-- Network -->
 <a-divider orientation="left">Network</a-divider>
 <a-row justify="start" :wrap="rowWrapVal.value">
+  <a-button href="/Docs/Network/比较gz与br加载速度">比较gz与br加载速度</a-button>
+  <a-button href="/Docs/Network/前后端启用https">前后端启用https</a-button>
+  <a-button href="/Docs/Network/简单使用tcpdump">简单使用tcpdump</a-button>
+  <a-button href="/Docs/Network/使用Lighthouse分析前端性能">使用Lighthouse分析前端性能</a-button>
+  <a-button href="/Docs/Network/静态资源gzip优化">静态资源gzip优化</a-button>
+  <a-button href="/Docs/Network/宝塔nginx安装ngx_brotli">宝塔nginx安装ngx_brotli</a-button>
+  <a-button href="/Docs/Network/浏览器提示HSTS">浏览器提示HSTS</a-button>
   <a-button href="/Docs/Network/浏览器https提示不安全">浏览器https提示不安全</a-button>
 </a-row>

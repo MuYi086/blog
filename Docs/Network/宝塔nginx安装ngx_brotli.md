@@ -8,7 +8,7 @@
 
 ::: warning 注意
 无特殊需求，建议选极速安装，非必要不要选 `编译安装`, 相当的慢，我测试 `brotli`，在 `ubuntu 18.04` 和 `20.04` 上重新编译 `nginx` , 等了很长时间不提，最后还编译失败了。
-![18.04_error](/Images/Shell/宝塔nginx安装ngx_brotli/18.04_error.png "18.04_error")
+![18.04_error](/Images/Network/宝塔nginx安装ngx_brotli/18.04_error.png "18.04_error")
 
 最后，在 `22.04` 花了将近一个小时，终于编译成功。
 :::
@@ -43,7 +43,7 @@ brotli_types text/xml text/plain text/css application/javascript application/x-j
 ```
 
 再次访问网页，可以看到 `Content-Encoding: br`，说明成功了。
-![internet_br](/Images/Shell/宝塔nginx安装ngx_brotli/internet_br.jpg "internet_br")
+![internet_br](/Images/Network/宝塔nginx安装ngx_brotli/internet_br.jpg "internet_br")
 
 
 
