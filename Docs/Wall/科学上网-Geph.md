@@ -11,7 +11,7 @@
 ::: warning 注意
 `windows` ，`mac` 直接安装即可
 
-`linux` 因为下载后的文件是 `flatpak` 格式， 需要 [安装flatpak](/Docs/Shell/Ubuntu安装flatpak软件) 后使用
+`linux` 因为下载后的文件是 `flatpak` 格式， 需要 [安装flatpak](/Shell/Ubuntu安装flatpak软件) 后使用
 :::
 
 ## 使用

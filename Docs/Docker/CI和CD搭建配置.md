@@ -5,7 +5,7 @@
 系统环境: `deepin 15.11 x64`
 
 ## gitlab-ci
-[安装gitlab](/Docs/Docker/docker安装和使用gitlab)
+[安装gitlab](/Docker/docker安装和使用gitlab)
 
 安装 `gitlab-runner`
 1. 方法一: `GNU/Linux` 安装(不好使)
@@ -182,7 +182,7 @@ ping gitlab
 # 把刚才对应的ip追加到hosts
 echo '172.18.0.2 gitlab.com' >> /etc/hosts
 ```
-把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Docs/Git/Git安装和配置)
+把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Git/Git安装和配置)
 新建一个 `nodejs` 项目
 ![添加描述](/Images/Shell/CI和CD搭建配置/jenkins_03.png '添加描述')
 

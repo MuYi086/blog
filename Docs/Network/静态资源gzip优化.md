@@ -86,7 +86,7 @@ nginx -V
     ```
 
 ## 参考
-1. [nginx常用命令](/Docs/Shell/nginx常用命令)
+1. [nginx常用命令](/Shell/nginx常用命令)
 1. [CompressionWebpackPlugin文档](https://www.webpackjs.com/plugins/compression-webpack-plugin/)
 1. [Vue项目 webpack优化 compression-webpack-plugin 开启gzip](https://www.cnblogs.com/zigood/p/12504401.html)
 1. [前端性能优化-gzip压缩](https://zhuanlan.zhihu.com/p/37429159)

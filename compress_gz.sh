@@ -1,7 +1,7 @@
 # gzip压缩脚本
 
 # 进入dist目录
-cd ./.vitepress/dist
+cd Docs/.vitepress/dist
 
 # 压缩dist目录下的所有html文件
 # for file in `ls *.html`
@@ -26,8 +26,6 @@ gzip -k -f -9 ./*.html
 # 退出回到dist
 cd ../../
 
-# 进入dist/Docs
-cd Docs
 # 处理AI目录
 cd AI
 gzip -k -f -9 ./*.html
@@ -44,36 +42,46 @@ cd ../
 cd Essay
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Back-End/Node目录
-cd Back-End/Node
+# 处理Node目录
+cd Node
 gzip -k -f -9 ./*.html
-# 处理Back-End/Python目录
-cd ../Python
+cd ../
+# 处理Python目录
+cd Python
 gzip -k -f -9 ./*.html
-cd ../../
-# 处理Front-End/CSS目录
-cd Front-End/CSS
+cd ../
+# 处理CSS目录
+cd CSS
 gzip -k -f -9 ./*.html
-# 处理Front-End/JS目录
-cd ../JS
+cd ../
+# 处理JS目录
+cd JS
 gzip -k -f -9 ./*.html
-# 处理Front-End/Standards目录
-cd ../Standards
+cd ../
+# 处理Standards目录
+cd Standards
 gzip -k -f -9 ./*.html
-cd ../../
-# 处理Linux/Deepin目录
-cd Linux/Deepin
+cd ../
+# 处理Deepin目录
+cd Deepin
 gzip -k -f -9 ./*.html
-# 处理Linux/Docker目录
-cd ../Docker
+cd ../
+# 处理Docker目录
+cd Docker
 gzip -k -f -9 ./*.html
-# 处理Linux/Shell目录
-cd ../Shell
+cd ../
+# 处理Shell目录
+cd Shell
 gzip -k -f -9 ./*.html
-# 处理Linux/Wall目录
-cd ../Wall
+cd ../
+# 处理Wall目录
+cd Wall
 gzip -k -f -9 ./*.html
-cd ../../
+cd ../
+# 处理Network目录
+cd Network
+gzip -k -f -9 ./*.html
+cd ../
 
 
 

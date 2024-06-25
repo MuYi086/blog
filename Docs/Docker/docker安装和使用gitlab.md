@@ -1,7 +1,7 @@
 # docker安装和使用gitlab
 
 ## 安装gitlab镜像
-如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](/Docs/Docker/deepin搭建docker环境)
+如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](/Docker/deepin搭建docker环境)
 
 ```shell
 # 安装gitlab社区版
@@ -85,7 +85,7 @@ docker restart gitlab
 ```
 
 ## 添加SSH keys
-可参考[Git安装和配置](/Docs/Git/Git安装和配置)
+可参考[Git安装和配置](/Git/Git安装和配置)
 
 ## 从github导入项目
 ```shell
@@ -109,8 +109,8 @@ https://MuYi086@github.com/MuYi086/blog.git
 
 ## 参考
 1. [docker下gitlab安装配置使用(完整版)](https://www.jianshu.com/p/080a962c35b6')
-1. [deepin搭建docker环境](/Docs/Docker/deepin搭建docker环境)
-1. [Git安装和配置](/Docs/Git/Git安装和配置)
+1. [deepin搭建docker环境](/Docker/deepin搭建docker环境)
+1. [Git安装和配置](/Git/Git安装和配置)
 1. [gitlab代码自动同步到github](https://www.cnblogs.com/sxdcgaq8080/p/10530176.html)
 1. [docker部署gitlab配置SMTP](https://blog.csdn.net/xiazichenxi/article/details/90233332)
 1. [gitlab使用163邮箱向用户发送邮件](https://www.jianshu.com/p/3ff4c301a446)

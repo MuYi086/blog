@@ -45,7 +45,7 @@ apt-get install zsh
 :::
 ::: info 方法二
 以 `Git Bash` 终端为基础，来安装 `Zsh`终端
-1. [下载安装 Git Bash](/Docs/Git/Git安装和配置)
+1. [下载安装 Git Bash](/Git/Git安装和配置)
 1. [下载Zsh](https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64)
 1. 将解压的文件和目录一起放入 `git bash` 的安装目录, 一般是在 `C:\Program Files\Git`
 1. 将 `zsh` 设为默认 `bash`
@@ -68,7 +68,7 @@ fi
 ::: warning 注意
 如果遇到网络问题无法正常安装，可以尝试将 `vpn` 配置为系统代理
 
-或者 [科学上网-让终端走代理](/Docs/Wall/科学上网-让终端走代理)
+或者 [科学上网-让终端走代理](/Wall/科学上网-让终端走代理)
 :::
 
 ## plugin

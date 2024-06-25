@@ -4,7 +4,7 @@
 在工作中，我们常常面临要同时创建和开发多个 `vue` 项目.于是，产生一个想法，把这些重复的操作流程化,以便于以后 `CTRL+C` 和 `CTRL+V`
 
 ## 全局安装vue-cli
-建议这里使用 [nrm](/Docs/Node/使用nvm和nrm) ,切换到 `taobao` 源会比较快
+建议这里使用 [nrm](/Node/使用nvm和nrm) ,切换到 `taobao` 源会比较快
 ```shell
 npm i -g vue-cli
 ```

@@ -9,7 +9,7 @@
 :::
 
 ## git-commit 
-点击查看详情 [commit规范](/Docs/Standards/commit规范)
+点击查看详情 [commit规范](/Standards/commit规范)
 
 ## docker
 ::: details 点我查看详情
@@ -38,7 +38,7 @@
 :::
 
 ## nvm 
-点击查看详情 [使用nvm和nrm](/Docs/Node/使用nvm和nrm#nvm-命令)
+点击查看详情 [使用nvm和nrm](/Node/使用nvm和nrm#nvm-命令)
 
 ## pip 
 ::: details 点我查看详情

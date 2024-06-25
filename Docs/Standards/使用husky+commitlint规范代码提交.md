@@ -5,7 +5,7 @@
 
 ## commitlint
 
-[commit规范说明](/Docs/Standards/commit规范)
+[commit规范说明](/Standards/commit规范)
 
 ### 安装
 ```shell
