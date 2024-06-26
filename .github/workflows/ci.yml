@@ -52,5 +52,5 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
         # password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
         strip_components: 2 # 跳过指定目录
-        source: 'Docs/.vitepress/dist' # 源目录
+        source: 'Docs/.vitepress/dist/' # 源目录
         target: ${{ secrets.SERVER_TARGET }} # 目标目录
