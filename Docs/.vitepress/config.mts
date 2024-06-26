@@ -68,10 +68,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MuYi086' },
     ],
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present MuYi086'
-    },
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2019-present MuYi086'
+    // },
     // search: {
     //   provider: 'local',
     //   options: {

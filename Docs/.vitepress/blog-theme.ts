@@ -3,6 +3,7 @@ import { getThemeConfig } from '@sugarat/theme/node'
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
+  author: 'MuYi086',
   // 开启RSS支持
   // RSS,
 
@@ -12,12 +13,18 @@ const blogTheme = getThemeConfig({
 
   // markdown 图表支持（会增加一定的构建耗时）
   // mermaid: true
-
+  home: {
+    name: "MuYi086's Blog",
+    motto: '记录工作和生活的点滴',
+    logo: '/Images/home/logo.png'
+  },
   // 页脚
   footer: {
+    version: false,
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    // copyright: 'MIT License | MuYi086',
+    message: 'Released under the MIT License.',
+    copyright: 'Copyright © 2019-present MuYi086'
     // icpRecord: {
     //   name: '浙ICP备xxx号',
     //   link: 'https://beian.miit.gov.cn/'
@@ -30,10 +37,6 @@ const blogTheme = getThemeConfig({
 
   // 主题色修改
   themeColor: 'el-blue',
-
-  // 文章默认作者
-  author: 'MuYi086',
-
   // 友链
   friend: [
     {
