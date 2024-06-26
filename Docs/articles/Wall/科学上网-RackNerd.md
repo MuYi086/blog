@@ -14,12 +14,12 @@
 1. 安装 `1Panel` 面板
 
     ::: warning 注意
-    方法一: 使用 [Tor浏览器](/Wall/科学上网-Tor) 访问被屏蔽的 `1Panel` 面板地址
+    方法一: 使用 [Tor浏览器](/Articles/Wall/科学上网-Tor) 访问被屏蔽的 `1Panel` 面板地址
 
     方法二: 使用 [免费的v2ray节点](https://github.com/barry-far/V2ray-Configs) 访问被屏蔽的 `1Panel` 面板地址 
     :::
 
-1. 将域名解析到 `Cloudflare`, 所有流量走 `SSL`, 参考[科学上网-v2ray搭建](/Wall/科学上网-v2ray搭建#cloudflare--1panel)
+1. 将域名解析到 `Cloudflare`, 所有流量走 `SSL`, 参考[科学上网-v2ray搭建](/Articles/Wall/科学上网-v2ray搭建#cloudflare--1panel)
 
 ## 使用体验
 从以下可以发现, 开启 `BBR` 对于 `vmess` 提升还是比较大的, 平均来看 `vless` 协议速度优于 `vmess`, 但提升不大。

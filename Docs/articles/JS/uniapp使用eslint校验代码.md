@@ -5,7 +5,7 @@
 
 
 ## 步骤
-[vue中使用eslint](/Node/使用vue-cli搭建vue项目)
+[vue中使用eslint](/Articles/Node/使用vue-cli搭建vue项目)
 ```shell
 # 全局安装eslint
 npm install eslint -g

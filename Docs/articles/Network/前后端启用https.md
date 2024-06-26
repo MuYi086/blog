@@ -19,7 +19,7 @@
 
 ## 证书制作
 一般而言，我们可以在域名服务商那里申请证书,但是有门槛和时间限制。为了方便，我们一般使用 `openssl` 或者 `cloudflare` 来申请证书.
-请先参考如下文档 [安装Openssl](/Windows/安装Openssl)
+请先参考如下文档 [安装Openssl](/Articles/Windows/安装Openssl)
 
 1. 生成私钥
     ```shell
