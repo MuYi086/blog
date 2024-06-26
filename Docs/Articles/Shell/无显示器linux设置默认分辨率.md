@@ -1,3 +1,8 @@
+---
+tags:
+  - Shell
+  - linux
+---
 # 无显示器linux设置默认分辨率
 
 ## 介绍

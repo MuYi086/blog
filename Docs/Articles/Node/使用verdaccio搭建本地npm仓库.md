@@ -1,3 +1,9 @@
+---
+tags:
+  - Node
+  - verdaccio
+  - npm
+---
 # 使用verdaccio搭建本地npm仓库
 
 

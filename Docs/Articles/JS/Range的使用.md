@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - Range
+---
 # Range的使用
 
 ## 介绍

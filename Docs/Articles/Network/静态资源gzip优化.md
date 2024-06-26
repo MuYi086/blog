@@ -1,3 +1,8 @@
+---
+tags:
+  - Network
+  - gzip
+---
 # 静态资源gzip优化
 
 ## 前言

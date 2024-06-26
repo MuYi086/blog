@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows
+  - host
+---
 # 自用host
 
 ## 软件

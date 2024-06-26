@@ -1,3 +1,8 @@
+---
+tags:
+  - Wall
+  - Surfshark
+---
 # 科学上网-Surfshark
 
 ::: danger 警告

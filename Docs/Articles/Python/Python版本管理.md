@@ -1,3 +1,7 @@
+---
+tags:
+  - Python
+---
 # Python版本管理
 
 ## 前言

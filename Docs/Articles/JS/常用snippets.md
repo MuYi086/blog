@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - snippets
+---
 # 常用snippets
 
 ## 背景

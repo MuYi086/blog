@@ -1,3 +1,9 @@
+---
+tags:
+  - Shell
+  - windows
+  - linux
+---
 # windows+linux双系统引导修复
 
 ## windows

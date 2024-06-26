@@ -1,3 +1,9 @@
+---
+tags:
+  - Shell
+  - Ubuntu
+  - flatpak
+---
 # Ubuntu安装flatpak软件
 
 ## 安装 flatpak

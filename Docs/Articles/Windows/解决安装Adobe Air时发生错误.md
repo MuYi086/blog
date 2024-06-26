@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows
+  - Adobe
+---
 # 解决安装Adobe Air时发生错误
 系统 `win 10` 64位,报错如下:
 

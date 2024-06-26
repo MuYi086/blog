@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows
+  - vimium
+---
 # 神器vimium使用说明
 
 ## 设置搜索引擎

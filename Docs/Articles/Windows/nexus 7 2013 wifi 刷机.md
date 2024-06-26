@@ -1,3 +1,7 @@
+---
+tags:
+  - Windows
+---
 # nexus 7 2013 wifi 刷机
 
 ## 背景

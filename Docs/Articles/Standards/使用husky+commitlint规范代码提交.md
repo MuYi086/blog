@@ -1,3 +1,9 @@
+---
+tags:
+  - Standards
+  - husky
+  - commitlint
+---
 # 使用husky+commitlint规范代码提交
 
 ## 介绍

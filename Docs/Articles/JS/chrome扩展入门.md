@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - chrome
+---
 # chrome扩展入门
 
 ## 说明

@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - Vue
+---
 # 解析vue指令clickoutside源码
 
 ## 介绍

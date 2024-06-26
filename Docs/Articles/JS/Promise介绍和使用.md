@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - Promise
+---
 # Promise介绍和使用
 
 ## Promise状态

@@ -1,3 +1,9 @@
+---
+tags:
+  - Shell
+  - Ubuntu
+  - deepin
+---
 # Ubuntu安装deepin桌面环境
 
 ## 介绍

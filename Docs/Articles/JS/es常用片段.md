@@ -1,3 +1,7 @@
+---
+tags:
+  - JS
+---
 # es常用片段
 
 ## switch case 优化

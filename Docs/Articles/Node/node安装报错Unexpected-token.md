@@ -1,3 +1,7 @@
+---
+tags:
+  - Node
+---
 # node安装报错Unexpected-token
 
 ## 起因

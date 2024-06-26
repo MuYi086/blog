@@ -1,3 +1,9 @@
+---
+tags:
+  - Shell
+  - zx
+  - ssh
+---
 # 利用zx和SSHKey发布代码到服务器
 
 ## 介绍

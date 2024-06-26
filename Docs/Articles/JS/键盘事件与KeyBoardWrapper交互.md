@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - KeyBoard
+---
 # 键盘事件与KeyBoardWrapper交互
 
 ## 场景

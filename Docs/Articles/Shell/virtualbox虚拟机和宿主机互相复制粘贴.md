@@ -1,3 +1,8 @@
+---
+tags:
+  - Shell
+  - virtualbox
+---
 # virtualbox虚拟机和宿主机互相复制粘贴
 
 ## 介绍

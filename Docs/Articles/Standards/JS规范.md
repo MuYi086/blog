@@ -1,3 +1,8 @@
+---
+tags:
+  - Standards
+  - JS
+---
 # JS规范
 
 ## 语言规范

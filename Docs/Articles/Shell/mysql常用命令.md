@@ -1,3 +1,8 @@
+---
+tags:
+  - Shell
+  - mysql
+---
 # mysql常用命令
 
 ## 介绍

@@ -1,3 +1,9 @@
+---
+tags:
+  - Node
+  - nvm
+  - nrm
+---
 # 使用nvm和nrm
 
 ## 背景

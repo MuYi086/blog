@@ -1,3 +1,8 @@
+---
+tags:
+  - Node
+  - Taro
+---
 # Taro command not found 多平台解决方案
 
 ## 问题

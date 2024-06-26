@@ -1,3 +1,8 @@
+---
+tags:
+  - Wall
+  - Cloudflare
+---
 # 科学上网-Cloudflare-Pages
 
 ## 部署 Cloudflare Pages

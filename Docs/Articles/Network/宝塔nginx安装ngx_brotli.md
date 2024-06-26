@@ -1,3 +1,9 @@
+---
+tags:
+  - Network
+  - nginx
+  - brotli
+---
 # 宝塔nginx安装ngx_brotli
 
 ## 介绍

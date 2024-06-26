@@ -1,3 +1,8 @@
+---
+tags:
+  - Shell
+  - nginx
+---
 # nginx常用命令
 
 ## 介绍

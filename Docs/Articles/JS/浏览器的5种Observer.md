@@ -1,3 +1,8 @@
+---
+tags:
+  - JS
+  - Observer
+---
 # 浏览器的5种Observer
 
 ## IntersectionObserver

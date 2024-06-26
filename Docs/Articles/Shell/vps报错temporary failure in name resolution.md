@@ -1,3 +1,8 @@
+---
+tags:
+  - Shell
+  - vps
+---
 # vps报错temporary failure in name resolution
 
 ## 介绍

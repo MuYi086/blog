@@ -1,3 +1,8 @@
+---
+tags:
+  - Wall
+  - shadowsock
+---
 # 科学上网-shadowsock
 
 ## 介绍
