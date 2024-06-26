@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - oh my Zsh
+---
 # deepin安装oh my Zsh
 
 ## 介绍

@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - cuda
+---
 # deepin安装cuda和cuDNN
 
 ## 基本安装程序

@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - nvidia
+---
 # deepin安装nvidia驱动
 
 ## 下载准确驱动

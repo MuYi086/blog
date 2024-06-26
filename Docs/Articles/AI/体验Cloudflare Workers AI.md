@@ -1,3 +1,8 @@
+---
+tags:
+  - AI
+  - Cloudflare
+---
 # 体验Cloudflare Workers AI
 
 ## 介绍

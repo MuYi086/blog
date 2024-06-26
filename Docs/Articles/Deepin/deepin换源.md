@@ -1,3 +1,7 @@
+---
+tags:
+  - Deepin
+---
 # deepin换源
 
 ## 过程

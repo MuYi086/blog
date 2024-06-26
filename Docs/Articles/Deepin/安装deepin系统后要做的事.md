@@ -1,3 +1,7 @@
+---
+tags:
+  - Deepin
+---
 # 安装deepin系统后要做的事
 
 1. [deepin 换源](/Articles/Deepin/deepin换源)

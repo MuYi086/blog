@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - lamp
+---
 # deepin安装lamp
 
 ## 安装mysql

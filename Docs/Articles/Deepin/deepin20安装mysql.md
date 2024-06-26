@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - mysql
+---
 # deepin20安装mysql
 
 ## 介绍

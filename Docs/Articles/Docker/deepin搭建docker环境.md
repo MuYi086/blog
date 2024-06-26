@@ -1,3 +1,8 @@
+---
+tags:
+  - Deepin
+  - docker
+---
 # deepin搭建docker环境
 
 ## 前言

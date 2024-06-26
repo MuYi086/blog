@@ -1,3 +1,7 @@
+---
+tags:
+  - Essay
+---
 # IOS申请邓白氏编码
 原博文地址： [https://www.jianshu.com/p/b32ed56f8a78](https://www.jianshu.com/p/b32ed56f8a78)
 
