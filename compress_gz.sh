@@ -26,6 +26,8 @@ gzip -k -f -9 ./*.html
 # 退出回到dist
 cd ../../
 
+# 进入Articles目录
+cd Articles
 # 处理AI目录
 cd AI
 gzip -k -f -9 ./*.html
