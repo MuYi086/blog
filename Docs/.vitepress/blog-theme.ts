@@ -78,6 +78,7 @@ const blogTheme = getThemeConfig({
   //   duration: 0
   // },
   // giscus配置: https://giscus.app/zh-CN
+  // 软件推荐: https://vitepress.yiov.top/plugin.html
   comment: {
     type: 'giscus',
     options: {
@@ -88,6 +89,15 @@ const blogTheme = getThemeConfig({
       inputPosition: 'top'
     },
     mobileMinify: true
+  },
+  // 看板娘配置
+  oml2d: {
+    mobileDisplay: true,
+    models: [
+      {
+        path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json'
+      }
+    ]
   }
 })
 
