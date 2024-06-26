@@ -23,9 +23,9 @@ jobs:
     # 步骤3:安装yarn
     - name: Install yarn
       run: npm install -g yarn
-    # 步骤:删除node_modules
-    - name: Delete node_modules
-      run: rm -fr node_modules
+    # 步骤n:删除node_modules,替换或更新包时使用
+    # - name: Delete node_modules
+    #   run: rm -fr node_modules
     # 步骤4:安装依赖
     - name: Install dependencies
       run: yarn install

@@ -114,7 +114,7 @@ sudo chmod +x endip.sh && ./endip.sh
 # 打开result.csv,复制第一行对应的ip
 
 # 设置warp-cli 优选ip
-sudo warp-cli tunnel endpoint set ip
+sudo warp-cli tunnel endpoint set 162.159.192.152:891
 ```
 :::
 
