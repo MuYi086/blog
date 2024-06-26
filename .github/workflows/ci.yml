@@ -26,10 +26,15 @@ jobs:
     # 步骤4:安装依赖
     - name: Install dependencies
       run: yarn install
-    # 步骤5:构建VitePress
+    # 步骤5:删除cache和dist
+    - name: Clean up cache and dist
+      run: |
+        rm -rf Docs/.vitepress/cache
+        rm -rf Docs/.vitepress/dist
+    # 步骤6:构建VitePress
     - name: Build VitePress
       run: yarn run build
-    # 步骤6:部署到Github Pages
+    # 步骤7:部署到Github Pages
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v3
     #   with:
@@ -37,7 +42,7 @@ jobs:
     #     publish_dir: .vitepress/dist # 指定部署目录
     #     publish_branch: gh-pages # 指定部署分支
     #     dotfiles: true # 允许使用.gitignore文件
-    # 步骤7: scp部署到 vps
+    # 步骤8: scp部署到 vps
     - name: Deploy to VPS
       uses: appleboy/scp-action@master
       with:
