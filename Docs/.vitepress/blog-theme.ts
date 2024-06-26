@@ -74,6 +74,18 @@ const blogTheme = getThemeConfig({
   //   ],
   //   duration: 0
   // },
+  // giscus配置: https://giscus.app/zh-CN
+  comment: {
+    type: 'giscus',
+    options: {
+      repo: 'MuYi086/blog',
+      repoId: 'MDEwOlJlcG9zaXRvcnkxNzE3NzI2NTU=',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOCj0K784CgZR2',
+      inputPosition: 'top'
+    },
+    mobileMinify: true
+  }
 })
 
 export { blogTheme }
