@@ -1,8 +1,6 @@
 ---
 tags:
   - Windows
-  - git
-  - SourceTree
 ---
 # SourceTree破解免登录(windows版)
 

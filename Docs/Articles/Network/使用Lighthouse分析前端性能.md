@@ -1,7 +1,6 @@
 ---
 tags:
   - Network
-  - Lighthouse
 ---
 # 使用Lighthouse分析前端性能
 

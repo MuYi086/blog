@@ -1,9 +1,6 @@
 ---
 tags:
   - Shell
-  - V2ray
-  - CloudFlare
-  - GPT
 ---
 # 使用V2ray,CloudFlare Warp解锁GPT
 

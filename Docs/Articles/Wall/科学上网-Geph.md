@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - Geph
 ---
 # 科学上网-Geph
 

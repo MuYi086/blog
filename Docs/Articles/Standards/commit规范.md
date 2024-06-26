@@ -1,7 +1,6 @@
 ---
 tags:
   - Standards
-  - commit
 ---
 # commit规范
 

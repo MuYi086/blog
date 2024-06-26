@@ -1,7 +1,6 @@
 ---
 tags:
   - Standards
-  - CSS
 ---
 # CSS规范
 

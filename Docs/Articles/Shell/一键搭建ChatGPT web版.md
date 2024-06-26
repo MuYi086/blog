@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - ChatGPT
 ---
 # 一键搭建ChatGPT web版
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - Bt
 ---
 # 安装Bt面板
 

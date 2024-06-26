@@ -1,7 +1,6 @@
 ---
 tags:
   - Essay
-  - Markdown
 ---
 # 常用Markdown数学公式语法
 

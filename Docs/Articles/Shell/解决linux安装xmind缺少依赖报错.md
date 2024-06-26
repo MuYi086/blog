@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - linux
-  - xmind
 ---
 # 解决linux安装xmind缺少依赖报错
 

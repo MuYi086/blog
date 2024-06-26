@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - navicat
-  - mysql
 ---
 # navicat连接一键集成环境的mysql
 

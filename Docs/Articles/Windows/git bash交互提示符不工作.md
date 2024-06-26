@@ -1,8 +1,6 @@
 ---
 tags:
   - Windows
-  - git
-  - shell
 ---
 # git bash交互提示符不工作
 

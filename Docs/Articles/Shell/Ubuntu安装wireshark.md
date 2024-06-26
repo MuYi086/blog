@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - Ubuntu
-  - wireshark
 ---
 # Ubuntu安装wireshark
 

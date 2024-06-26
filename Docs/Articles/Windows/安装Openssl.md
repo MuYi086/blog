@@ -1,7 +1,6 @@
 ---
 tags:
   - Windows
-  - Openssl
 ---
 # 安装Openssl
 

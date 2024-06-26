@@ -1,7 +1,6 @@
 ---
 tags:
   - Git
-  - GitKraken
 ---
 # GitKraken免费版本
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - moment
 ---
 # 优秀js库moment
 

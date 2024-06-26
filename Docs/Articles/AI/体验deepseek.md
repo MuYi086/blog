@@ -1,7 +1,6 @@
 ---
 tags:
   - AI
-  - deepseek
 ---
 # 体验deepseek
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - cuda
 ---
 # deepin安装cuda和cuDNN
 

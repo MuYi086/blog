@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - p7zip
 ---
 # deepin安装p7zip
 

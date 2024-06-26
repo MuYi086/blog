@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - jssdk
 ---
 # 微信jssdk封装使用
 

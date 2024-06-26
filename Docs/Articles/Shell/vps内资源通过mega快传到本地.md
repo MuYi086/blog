@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - vps
-  - mega
 ---
 # vps内资源通过mega快传到本地
 

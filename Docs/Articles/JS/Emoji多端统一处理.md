@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - Emoji
 ---
 # Emoji多端统一处理
 

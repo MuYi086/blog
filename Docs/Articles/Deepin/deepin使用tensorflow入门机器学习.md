@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - tensorflow
 ---
 # deepin使用tensorflow入门机器学习
 

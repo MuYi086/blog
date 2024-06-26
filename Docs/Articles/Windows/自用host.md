@@ -1,7 +1,6 @@
 ---
 tags:
   - Windows
-  - host
 ---
 # 自用host
 

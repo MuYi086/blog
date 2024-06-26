@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - Surfshark
 ---
 # 科学上网-Surfshark
 

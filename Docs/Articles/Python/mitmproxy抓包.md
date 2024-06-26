@@ -1,6 +1,6 @@
 ---
 tags:
-  - mitmproxy
+  - Python
 ---
 # mitmproxy抓包
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - 1Panel
 ---
 # 安装1Panel
 

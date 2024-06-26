@@ -1,7 +1,6 @@
 ---
 tags:
   - Standards
-  - JS
 ---
 # JS规范
 

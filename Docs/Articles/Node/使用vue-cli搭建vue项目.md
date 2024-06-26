@@ -1,7 +1,6 @@
 ---
 tags:
   - Node
-  - vue
 ---
 # 使用vue-cli搭建vue项目
 

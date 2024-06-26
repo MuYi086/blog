@@ -1,7 +1,6 @@
 ---
 tags:
   - Node
-  - npm
 ---
 # 安装Node.js和npm配置
 [Node官网下载](https://nodejs.org/en/)

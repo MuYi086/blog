@@ -1,8 +1,6 @@
 ---
 tags:
   - Standards
-  - CSS
-  - stylelint
 ---
 # CSS格式化之stylelint
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - vscode
 ---
 # vscode修改文件监控数
 

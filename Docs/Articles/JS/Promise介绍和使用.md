@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - Promise
 ---
 # Promise介绍和使用
 

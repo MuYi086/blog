@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - Ubuntu
 ---
 # Ubuntu常见问题汇总
 

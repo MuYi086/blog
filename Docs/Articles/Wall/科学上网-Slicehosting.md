@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - Slicehosting
 ---
 # 科学上网-Slicehosting
 

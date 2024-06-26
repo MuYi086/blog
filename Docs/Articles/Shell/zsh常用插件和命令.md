@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - zsh
 ---
 # zsh常用插件和命令
 

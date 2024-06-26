@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - CI
 ---
 # CI/CD搭建配置
 

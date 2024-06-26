@@ -1,7 +1,6 @@
 ---
 tags:
   - Git
-  - GitBook
 ---
 # GitBook安装和常用命令
 ## 安装GitBook

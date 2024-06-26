@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - chrome
 ---
 # chrome扩展入门
 

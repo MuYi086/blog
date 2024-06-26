@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - pm2
 ---
 # pm2常用命令
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - v2ray
 ---
 # 科学上网-v2ray使用
 

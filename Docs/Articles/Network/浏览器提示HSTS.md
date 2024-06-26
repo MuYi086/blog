@@ -1,7 +1,6 @@
 ---
 tags:
   - Network
-  - HSTS
 ---
 # 浏览器提示HSTS
 

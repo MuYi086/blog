@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - zsh
 ---
 # deepin安装oh my Zsh
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - CSS
-  - PurgeCSS
 ---
 # CSS优化-PurgeCSS
 

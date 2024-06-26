@@ -1,8 +1,6 @@
 ---
 tags:
   - Node
-  - GithubAction
-  - vps
 ---
 # 通过GithubAction将内容部署到vps
 

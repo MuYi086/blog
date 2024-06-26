@@ -1,7 +1,6 @@
 ---
 tags:
   - Standards
-  - HTML
 ---
 # HTML规范
 

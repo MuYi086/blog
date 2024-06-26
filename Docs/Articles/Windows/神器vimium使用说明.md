@@ -1,7 +1,6 @@
 ---
 tags:
   - Windows
-  - vimium
 ---
 # 神器vimium使用说明
 

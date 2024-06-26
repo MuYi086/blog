@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - vscode
-  - java
 ---
 # 使用vscode进行java开发
 

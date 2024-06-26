@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - RackNerd
 ---
 # 科学上网-RackNerd
 

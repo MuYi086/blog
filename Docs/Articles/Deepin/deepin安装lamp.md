@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - lamp
 ---
 # deepin安装lamp
 

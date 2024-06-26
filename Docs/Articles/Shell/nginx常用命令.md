@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - nginx
 ---
 # nginx常用命令
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - mysql
 ---
 # mysql常用命令
 

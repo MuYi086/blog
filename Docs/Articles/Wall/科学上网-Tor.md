@@ -1,7 +1,6 @@
 ---
 tags:
   - Wall
-  - Tor
 ---
 # 科学上网-Tor
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Network
-  - gzip
 ---
 # 比较gz与br加载速度
 

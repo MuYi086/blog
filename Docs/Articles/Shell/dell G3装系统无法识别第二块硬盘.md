@@ -1,7 +1,6 @@
 ---
 tags:
   - Shell
-  - dell
 ---
 # dell G3装系统无法识别第二块硬盘
 

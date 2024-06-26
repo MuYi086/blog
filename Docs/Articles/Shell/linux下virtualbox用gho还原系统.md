@@ -1,8 +1,6 @@
 ---
 tags:
   - Shell
-  - linux
-  - virtualbox
 ---
 # linux下virtualbox用gho还原系统
 

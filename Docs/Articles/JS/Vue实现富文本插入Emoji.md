@@ -1,8 +1,6 @@
 ---
 tags:
   - JS
-  - Vue
-  - Emoji
 ---
 # Vue实现富文本插入Emoji
 

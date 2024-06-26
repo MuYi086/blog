@@ -1,7 +1,6 @@
 ---
 tags:
   - JS
-  - Range
 ---
 # Range的使用
 

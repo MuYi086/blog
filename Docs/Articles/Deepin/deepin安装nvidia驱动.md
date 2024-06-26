@@ -1,7 +1,6 @@
 ---
 tags:
   - Deepin
-  - nvidia
 ---
 # deepin安装nvidia驱动
 

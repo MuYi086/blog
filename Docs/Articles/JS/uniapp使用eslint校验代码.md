@@ -1,8 +1,6 @@
 ---
 tags:
   - JS
-  - uniapp
-  - eslint
 ---
 # uniapp使用eslint校验代码
 
