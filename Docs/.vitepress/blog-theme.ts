@@ -16,7 +16,7 @@ const blogTheme = getThemeConfig({
   home: {
     name: "MuYi086's Blog",
     motto: '记录工作和生活的点滴',
-    logo: '/Images/home/logo.png'
+    logo: '/public/assets/home/logo.png'
   },
   // 页脚
   footer: {
