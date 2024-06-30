@@ -13,11 +13,11 @@ const blogTheme = getThemeConfig({
 
   // markdown 图表支持（会增加一定的构建耗时）
   // mermaid: true
-  home: {
-    name: "MuYi086's Blog",
-    motto: '记录工作和生活的点滴',
-    logo: '/public/assets/home/logo.png'
-  },
+  // home: {
+  //   name: "MuYi086's Blog",
+  //   motto: '记录工作和生活的点滴',
+  //   logo: '/public/assets/home/logo.png'
+  // },
   // 页脚
   footer: {
     version: false,
@@ -90,12 +90,20 @@ const blogTheme = getThemeConfig({
     },
     mobileMinify: true
   },
-  // 看板娘配置
+  // 看板娘模型: https://github.com/iCharlesZ/vscode-live2d-models#url
+  // 配置: https://oml2d.com/api/interfaces/ModelOptions.html
   oml2d: {
     mobileDisplay: true,
     models: [
       {
-        path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json'
+        // path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json'
+        path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/girls-frontline/UMP45-2/destroy/model.json',
+        position: [-50, 0],
+        scale: 0.06,
+        // stageStyle: {
+        //   width: '100%',
+        //   height: '100%'
+        // }
       }
     ]
   }

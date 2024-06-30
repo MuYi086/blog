@@ -2,6 +2,8 @@
 layout: home
 # 首页部分元素定制
 blog:
+  motto: '记录工作和生活的点滴'
+  logo: '/assets/home/logo.png'
   minScreenAvatar: true
   inspiring:
     - 人之所以爱旅行，不是为了抵达目的地，而是为了享受旅途中的种种乐趣
