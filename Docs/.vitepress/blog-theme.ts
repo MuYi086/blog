@@ -97,7 +97,7 @@ const blogTheme = getThemeConfig({
     models: [
       {
         // path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json'
-        path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/girls-frontline/UMP45-2/destroy/model.json',
+        path: 'https://raw.gitmirror.com/iCharlesZ/vscode-live2d-models/master/model-library/girls-frontline/UMP45-2/destroy/model.json',
         position: [-50, 0],
         scale: 0.06,
         // stageStyle: {
