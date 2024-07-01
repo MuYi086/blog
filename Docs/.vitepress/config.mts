@@ -28,6 +28,16 @@ export default defineConfig({
     ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css', rel: 'stylesheet' }],
     // https://ant-design.antgroup.com/index-cn
     ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/4.2.2/reset.css', rel: 'stylesheet' }],
+    // 百度统计: https://tongji.baidu.com/main/setting/10000636882/home/site/getjs?siteId=20724325
+    ['script', {}, 
+      `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ed558b679137e233a92a57c4dddef714";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();`
+    ],
     // https://clarity.microsoft.com
     ['script', {}, 
       `(function(c,l,a,r,i,t,y){
