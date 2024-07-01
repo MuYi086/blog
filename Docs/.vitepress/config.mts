@@ -28,16 +28,6 @@ export default defineConfig({
     ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css', rel: 'stylesheet' }],
     // https://ant-design.antgroup.com/index-cn
     ['link',{ href: 'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/4.2.2/reset.css', rel: 'stylesheet' }],
-    // 百度统计: https://tongji.baidu.com/main/setting/10000636882/home/site/getjs?siteId=20724325
-    ['script', {}, 
-      `var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?ed558b679137e233a92a57c4dddef714";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();`
-    ],
     // https://clarity.microsoft.com
     ['script', {}, 
       `(function(c,l,a,r,i,t,y){
@@ -45,20 +35,30 @@ export default defineConfig({
         t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, 'clarity', 'script', 'mo15sqq8xd')`
-    ],
-    // https://analytics.google.com/
-    [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-8NF14ZVCH5' }
-    ],
-    ['script', {}, 
-      `window.dataLayer = window.dataLayer || [];
+      ],
+      // https://analytics.google.com/
+      [
+        'script',
+        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-8NF14ZVCH5' }
+      ],
+      ['script', {}, 
+        `window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-8NF14ZVCH5');`
-    ]
-  ],
-  themeConfig: {
+      ],
+      // 百度统计: https://tongji.baidu.com/main/setting/10000636882/home/site/getjs?siteId=20724325
+      ['script', {}, 
+        `var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?ed558b679137e233a92a57c4dddef714";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();`
+      ],
+    ],
+    themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
       level: [2, 3],
