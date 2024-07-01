@@ -1,3 +1,7 @@
+---
+tags:
+  - AI
+---
 # 体验Chrome AI
 
 ## 介绍
