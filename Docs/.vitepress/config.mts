@@ -22,6 +22,7 @@ export default defineConfig({
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
+    ['meta', { name: 'msvalidate.01', content: '011728C0C573DFC396C941E8EF5D8387' }],
     // 配置网站的图标（显示在浏览器的 tab 上）
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     // https://animate.style/
