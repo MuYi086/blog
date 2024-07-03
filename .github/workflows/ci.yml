@@ -13,30 +13,30 @@ jobs:
     # 步骤
     steps:
     # 步骤1:安装Node.js
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
-    # 步骤2:检出代码
-    - name: Checkout
-      uses: actions/checkout@v4
-    # 步骤3:安装yarn
-    - name: Install yarn
-      run: npm install -g yarn
+    # - name: Setup Node.js
+    #   uses: actions/setup-node@v4
+    #   with:
+    #     node-version: 20
+    # # 步骤2:检出代码
+    # - name: Checkout
+    #   uses: actions/checkout@v4
+    # # 步骤3:安装yarn
+    # - name: Install yarn
+    #   run: npm install -g yarn
     # 步骤n:删除node_modules,替换或更新包时使用
     # - name: Delete node_modules
     #   run: rm -fr node_modules
     # 步骤4:安装依赖
-    - name: Install dependencies
-      run: yarn install
+    # - name: Install dependencies
+    #   run: yarn install
     # 步骤5:删除cache和dist
     # - name: Clean up cache and dist
     #   run: |
     #     rm -rf Docs/.vitepress/cache
     #     rm -rf Docs/.vitepress/dist
     # 步骤6:构建VitePress
-    - name: Build VitePress
-      run: yarn run build
+    # - name: Build VitePress
+    #   run: yarn run build
     # 步骤7:部署到Github Pages
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v3

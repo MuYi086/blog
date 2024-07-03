@@ -3,5 +3,5 @@ dist
 cache
 .temp
 .DS_Store
-Docs/.vitepress/dist
+# Docs/.vitepress/dist
 Docs/.vitepress/cache
