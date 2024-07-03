@@ -3,5 +3,5 @@ node_modules
 cache
 .temp
 .DS_Store
-# Docs/.vitepress/dist
+Docs/.vitepress/dist
 Docs/.vitepress/cache
