@@ -6,9 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev Docs",
-    "build": "vitepress build Docs && npm run compress:gz",
+    "build": "vitepress build Docs && npm run compress:gz && npm run mv:dist",
     "serve": "vitepress serve Docs",
-    "compress:gz": "bash ./compress_gz.sh"
+    "compress:gz": "bash ./compress_gz.sh",
+    "mv:dist": "rm -fr dist && mv Docs/.vitepress/dist ./"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
