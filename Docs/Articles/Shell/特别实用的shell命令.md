@@ -19,6 +19,11 @@ sudo netstat -lnp | grep id
 kill -s 9 id
 ```
 
+## 查找目录
+```shell
+find / -type d -name dist
+```
+
 ## 显示包相关信息
 ```shell
 # 已安装的包信息
