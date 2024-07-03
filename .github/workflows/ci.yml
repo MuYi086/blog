@@ -30,10 +30,10 @@ jobs:
     - name: Install dependencies
       run: yarn install
     # 步骤5:删除cache和dist
-    - name: Clean up cache and dist
-      run: |
-        rm -rf Docs/.vitepress/cache
-        rm -rf Docs/.vitepress/dist
+    # - name: Clean up cache and dist
+    #   run: |
+    #     rm -rf Docs/.vitepress/cache
+    #     rm -rf Docs/.vitepress/dist
     # 步骤6:构建VitePress
     - name: Build VitePress
       run: yarn run build
