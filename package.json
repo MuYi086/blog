@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev Docs",
-    "build": "vitepress build Docs && npm run compress:gz && npm run mv:dist",
+    "build": "vitepress build Docs && npm run compress:gz",
     "serve": "vitepress serve Docs",
     "compress:gz": "bash ./compress_gz.sh",
     "mv:dist": "rm -fr dist && mv Docs/.vitepress/dist ./"
