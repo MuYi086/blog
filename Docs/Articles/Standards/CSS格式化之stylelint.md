@@ -186,18 +186,35 @@ module.exports = {
 使用 `npm run lint:stylelint`，会自动修复大多数错误，剩下的错误需要按照终端提示修复。当终端无任何提示则表示全局已经没有样式错误。
 
 ::: warning 注意
-添加 `stylelint-disable scss/no-global-function-names` 跳过某些 `class` 检查
+关闭所有规则
 ```scss
-// stylelint-disable scss/no-global-function-names
-.picker-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  background-color: darken(#fff, 2%);
+/* stylelint-disable */
+a {}
+/* stylelint-enable */
+```
+
+关闭个别规则
+```scss
+/* stylelint-disable selector-max-id, declaration-no-important */
+#id {
+  color: pink !important;
 }
-// stylelint-enable scss/no-global-function-names
+/* stylelint-enable selector-max-id, declaration-no-important */
+```
+
+注释关闭各个行的规则
+```scss
+#id { /* stylelint-disable-line */
+  color: pink !important; /* stylelint-disable-line declaration-no-important */
+}
+```
+
+注释关闭下一行的规则
+```scss
+#id {
+  /* stylelint-disable-next-line declaration-no-important */
+  color: pink !important;
+}
 ```
 :::
 
@@ -224,6 +241,6 @@ module.exports = {
 
 
 ## 参考
-1. [Stylelint Docs](https://stylelint.io/)
+1. [Stylelint Wiki](https://stylelint.nodejs.cn/)
 1. [2022 Stylelint 配置详细步骤（css、less、sass、vue适用）](https://blog.csdn.net/m0_60273757/article/details/125762025)
 1. [vue2项目配置prettier + eslint + commitlint + stylelint](https://juejin.cn/post/7167175528909275143)
