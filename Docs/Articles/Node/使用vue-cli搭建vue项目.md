@@ -346,6 +346,16 @@ function getData () {
 }
 ```
 
+## 分析文件依赖
+
+```shell
+# 安装
+npm -g install madge
+
+# 使用
+madge src/main.js
+```
+
 
 ## 参考
 1. [VUE-CLI使用](https://www.cnblogs.com/samve/p/9095328.html)
@@ -355,3 +365,4 @@ function getData () {
 1. [Nightmare](https://github.com/segmentio/nightmare)
 1. [解决npm安装electron很慢的问题](https://segmentfault.com/a/1190000020932174)
 1. [前端的UI自动化测试](https://maizsss.github.io/2017/10/28/%E5%89%8D%E7%AB%AF%E7%9A%84UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/)
+1. [madge](https://github.com/pahen/madge?tab=readme-ov-file)
