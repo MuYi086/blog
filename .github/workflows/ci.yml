@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - master
+# 设置时区
+env:
+  TZ: Asia/Shanghai
 # 任务列表
 jobs:
   build-and-deploy:
@@ -20,6 +23,9 @@ jobs:
     # 步骤2:检出代码
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        # 保留 Git 信息
+        fetch-depth: 0
     # 步骤3:安装yarn
     - name: Install yarn
       run: npm install -g yarn
@@ -30,10 +36,10 @@ jobs:
     - name: Install dependencies
       run: yarn install
     # 步骤5:删除cache和dist
-    # - name: Clean up cache and dist
-    #   run: |
-    #     rm -rf Docs/.vitepress/cache
-    #     rm -rf Docs/.vitepress/dist
+    - name: Clean up cache and dist
+      run: |
+        rm -rf Docs/.vitepress/cache
+        rm -rf Docs/.vitepress/dist
     # 步骤6:构建VitePress
     - name: Build VitePress
       run: yarn run build
