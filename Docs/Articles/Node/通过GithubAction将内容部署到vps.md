@@ -7,6 +7,8 @@ tags:
 ## 创建Action文件
 在项目根目录创建 `.github/workflows/ci.yml`
 
+[参考文档](https://github.com/ATQQ/sugar-blog/blob/047a49ff164676502e97ce70247946ba7a5b15c8/packages/create-theme/public/template/.github/workflows/deploy.yml)
+
 ```yml
 # 标题
 name: GitHub Actions 部署 vitepress 博客
