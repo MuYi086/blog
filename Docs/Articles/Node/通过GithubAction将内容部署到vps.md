@@ -17,6 +17,9 @@ on:
   push:
     branches:
       - master
+# 设置时区
+env:
+  TZ: Asia/Shanghai
 # 任务列表
 jobs:
   build-and-deploy:
@@ -32,16 +35,27 @@ jobs:
     # 步骤2:检出代码
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        # 保留 Git 信息
+        fetch-depth: 0
     # 步骤3:安装yarn
     - name: Install yarn
       run: npm install -g yarn
+    # 步骤n:删除node_modules,替换或更新包时使用
+    # - name: Delete node_modules
+    #   run: rm -fr node_modules
     # 步骤4:安装依赖
     - name: Install dependencies
       run: yarn install
-    # 步骤5:构建VitePress
+    # 步骤5:删除cache和dist
+    - name: Clean up cache and dist
+      run: |
+        rm -rf Docs/.vitepress/cache
+        rm -rf Docs/.vitepress/dist
+    # 步骤6:构建VitePress
     - name: Build VitePress
-      run: yarn run docs:build
-    # 步骤6:部署到Github Pages
+      run: yarn run build
+    # 步骤7:部署到Github Pages
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v3
     #   with:
@@ -49,7 +63,7 @@ jobs:
     #     publish_dir: .vitepress/dist # 指定部署目录
     #     publish_branch: gh-pages # 指定部署分支
     #     dotfiles: true # 允许使用.gitignore文件
-    # 步骤7: scp部署到 vps
+    # 步骤8: scp部署到 vps
     - name: Deploy to VPS
       uses: appleboy/scp-action@master
       with:
@@ -59,8 +73,9 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }} # 服务器SSH 密钥
         # password: ${{ secrets.SERVER_USER_PASSWORD }} # 服务器用户密码
         strip_components: 2 # 跳过指定目录
-        source: '.vitepress/dist' # 源目录
+        source: 'Docs/.vitepress/dist' # 源目录
         target: ${{ secrets.SERVER_TARGET }} # 目标目录
+
 ```
 
 ## 配置 Action 环境变量
