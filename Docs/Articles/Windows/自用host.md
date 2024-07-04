@@ -9,7 +9,7 @@ tags:
 
 ## 查找最快ip
 可以使用 [站长之家的ping检测](https://ping.chinaz.com/github.com) , 选择其他,找到国外最快 `ip` .然后选择电信，联通，移动，找到国内能访问的最快 `ip`作为替补 
-## 常用网站host
+## 常用网站
 ```shell
 127.0.0.1	localhost
 
@@ -92,6 +92,15 @@ tags:
 104.19.191.106 packages.openvpn.net
 ```
 
+## Github520
+`SwitchHosts` 新建 => 远程 => 填写 `https://raw.hellogithub.com/hosts`
+
+![Github520](/Images/Windows/自用host/switch-hosts.png "Github520")
+
+
 ## 常见问题
 1. `switchhosts` 增加了场景未生效, `ping` 显示的 `ip` 还是原来的?
 答: 可能是 `switchhosts` 未能写入成功, 可以先去 `etc`目录查看是否有`hosts` 文件,如果没有，需要手动创建一个，然后再启动 `switchhosts`
+
+## 参考
+1. [Github520](https://github.com/521xueweihan/GitHub520)
