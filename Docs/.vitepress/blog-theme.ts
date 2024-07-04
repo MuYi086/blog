@@ -12,7 +12,7 @@ const blogTheme = getThemeConfig({
   // search: false,
 
   // markdown 图表支持（会增加一定的构建耗时）
-  // mermaid: true
+  mermaid: true, // 流程图
   // home: {
   //   name: "MuYi086's Blog",
   //   motto: '记录工作和生活的点滴',
