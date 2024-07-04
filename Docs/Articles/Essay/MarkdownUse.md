@@ -146,3 +146,11 @@ $\color{red}{红色}$
 ```
 
 $\color{red}{红色}$
+
+## emoji
+😅🦄 🤩👊 🐸
+
+可以从以下网站获取 `emoji` ，插入到文章中可以更加生动形象
+
+1. [Searchemoji](https://searchemoji.app/zh-hans)
+1. [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
