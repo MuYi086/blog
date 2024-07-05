@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev Docs",
-    "build": "vitepress build Docs && npm run compress:gz",
+    "build": "run-s buildStart compress:gz",
+    "buildStart": "vitepress build Docs",
     "serve": "vitepress serve Docs",
     "compress:gz": "bash ./compress_gz.sh"
   },
@@ -20,6 +21,7 @@
     "doc": "Docs"
   },
   "devDependencies": {
+    "npm-run-all2": "^6.2.2",
     "pagefind": "^1.1.0",
     "sass": "^1.76.0",
     "typescript": "^5.4.5",
