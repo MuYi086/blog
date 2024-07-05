@@ -45,6 +45,28 @@ npm config set registry https://registry.npmjs.org/
 npm uninstall -g node-sass
 ```
 
+## 增加npm-run-all
+我们可以安装 `npm-run-all` 包，来支持运行多个命令: 并行 `run-p`, 串行 `run-s`
+
+::: code-group
+```json [改造前]
+{
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "echo build esm",
+    "build:cjs": "echo build cjs"
+  }
+}
+```
+```json [改造后]
+{
+  "scripts": {
+    "build": "run-p build:esm build:cjs"
+  }
+}
+```
+:::
+
 ## 快速下载node-sass等
 类似 `node-sass` , `phantomjs` 等会从 `github.com` 上下载一个 `.node` 文件，大部分安装不成功的原因都源自这里，因为 `GitHub Releases` 里的文件都托管在 `s3.amazonaws.com` 上面,而这个地址被墙了
 ```shell
@@ -66,3 +88,4 @@ sqlite3_binary_site=https://npm.taobao.org/mirrors/sqlite3/
 
 ## 参考
 1. [安装 node-sass 的正确姿势](https://github.com/lmk123/blog/issues/28)
+1. [npm-run-all2](https://www.npmjs.com/package/npm-run-all2?activeTab=readme)
