@@ -4,6 +4,26 @@ tags:
 ---
 # 特别实用的shell命令
 
+## 查看已安装的软件列表
+::: code-group
+```shell [dpkg]
+# 查看已安装软件列表
+dpkg --get-selections
+# 列表很长，可以输出到文件中查看
+dpkg --get-selections > dpkg_installed_list.txt
+# 搜索特定软件包是否安装
+dpkg -l | grep docker
+```
+```shell [apt]
+# 查看已安装软件列表
+apt list --installed
+# 列表很长，可以输出到文件中查看(输出的内容比dpkg更详细,包括软件，版本号，平台等信息)
+apt list --installed > apt_installed_list.txt
+# 搜索特定软件包是否安装
+apt list --installed | grep docker
+```
+:::
+
 ## 进程名查看进程信息
 ```shell
 ps -ef | grep docker
@@ -16,8 +36,30 @@ sudo netstat -lnp | grep id
 
 ## 杀死进程
 ```shell
+# 使用kill命令杀死进程
 kill -s 9 id
+
+# 安装killport，使用脚本杀死进程
+curl -sL https://bit.ly/killport | sh
+# 终端无法连接的话，可以先浏览器访问，复制脚本保存到本地install.sh中，手动执行安装
+bash install.sh
+# 添加killport到PATH中
+sudo gedit /etc/profile
+# 编辑,保存
+export KILLPORT="/home/muyi086/.local/bin"
+export PATH=$KILLPORT:$PATH
+# 使环境变量生效
+source /etc/profile
+# 杀死指定进程
+killport 8080
+
 ```
+::: warning 注意
+报错 `No service found using port`
+
+已提 `issue` : https://github.com/jkfran/killport/issues/43 ，等作者修复
+:::
+
 
 ## 查找目录
 ```shell
