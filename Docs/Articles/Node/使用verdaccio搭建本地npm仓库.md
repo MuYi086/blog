@@ -80,6 +80,13 @@ npm publish
 # 如果发布一个范围公共包
 npm publish --access public
 ```
+::: warning 注意
+发布失败时，注意看 `log` 日志
+
+排除未登录原因后，一般依赖引用了别的包导致体积过大
+
+增加 `.npmignore` 忽略 `node_modules` 即可
+:::
 
 ## 使用pm2守护进程
 ```shell
