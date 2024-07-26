@@ -60,6 +60,20 @@ npm adduser --registry http://127.0.0.1:4873
 npm who am i
 ```
 
+## 设置代理
+```shell
+# 清除npm缓存
+npm cache clean --force
+
+# 设置代理
+npm config set proxy http://127.0.0.1:10809
+npm config set https-proxy http://127.0.0.1:10809
+
+# 取消代理
+npm config delete proxy
+npm config delete https-proxy
+```
+
 ## 发布
 ```shell
 # 开发一个npm包:可自行百度,这里不展开了;
@@ -78,10 +92,19 @@ npm config set registry https://registry.npmjs.org/
 npm publish
 # 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
 # 如果发布一个范围公共包
-npm publish --access public
+npm publish --access=public
 ```
+
 ::: warning 注意
 发布失败时，注意看 `log` 日志
+
+无法登录可以使用以下俩个操作
+
+1. 使用 `ping.cn` 拿到了延迟比较低的 `ip` ，然后粘贴到 `hosts`
+
+1. 更换 `dns` ，使用 `1.1.1.1` 或者 `8.8.8.8` ,这俩个对国外网站比较友好
+
+然后访问 `https://registry.npmjs.org`, 能正常返回 `200`, 基本就通了，可以正常 `npm login` 和 `publish` 了
 
 排除未登录原因后，一般依赖引用了别的包导致体积过大
 
