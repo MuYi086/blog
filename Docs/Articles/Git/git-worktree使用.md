@@ -1,3 +1,7 @@
+---
+tags:
+  - Git
+---
 # Git Worktree使用
 `worktree` 的意思是工作树，同一个仓库可以对应多个 `worktree` 、分支。
 
