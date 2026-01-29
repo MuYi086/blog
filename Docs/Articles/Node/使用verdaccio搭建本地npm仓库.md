@@ -93,6 +93,13 @@ npm publish
 # 如果要发布到npm.org;可以自行注册账号密码,然后切换本机npm的registry
 # 如果发布一个范围公共包
 npm publish --access=public
+
+# npm 最新规则需要Access Token，确保有 publish 权限且支持 Bypass 2FA,否则publish会报403
+# token和2FA秘钥需要自行保存，只出现一次
+# 参考: https://juejin.cn/post/7582231988147585075
+# 设置全局配置（只需执行一次）
+npm config set //registry.npmjs.org/:_authToken=你的_granular_token_here
+
 ```
 
 ::: warning 注意
