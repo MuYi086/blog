@@ -2,10 +2,10 @@
 tags:
   - Node
 ---
-# 使用nvm和nrm
+# 使用nvm或者fnm和nrm
 
 ## 背景
-为了方便在不同 `node` 版本下进行试验和开发,使用 `nvm` 可以在同一台设备上进行多个 `node` 版本切换;
+为了方便在不同 `node` 版本下进行试验和开发,使用 `nvm` 或者 `fnm` 可以在同一台设备上进行多个 `node` 版本切换;
 `nrm` 则可以控制切换多个 `npm` 源
 
 ## nvm安装
@@ -72,7 +72,8 @@ nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 # 终端连接不上nvm时
 # ~/.bashrc文件中添加下句，设置永久环境变量
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
-
+# 或者使用清华镜像
+export NVM_NODEJS_ORG_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
 # windows可以通过修改setting.txt配置, 加入上面俩行即可
 # 目录: C:\Users\用户\AppData\Roaming\nvm
 ```
@@ -95,6 +96,20 @@ npm install package
 # vscode安装包报错时
 # 使用bash npm i
 ```
+
+## fnm安装
+[官方地址](https://fnm.nodejs.cn/docs/)
+
+::: code-group
+```shell [curl]
+curl -fsSL https://fnm.vercel.app/install | bash
+
+# 设定环境变量
+export FNM_NODE_DIST_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
+# 然后正常使用 fnm 即可
+fnm install <version>
+```
+:::
 
 ## 安装nrm
 ```shell
