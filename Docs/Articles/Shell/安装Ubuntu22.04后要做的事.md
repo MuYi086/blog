@@ -187,6 +187,38 @@ tags:
 
     [6音音源](https://www.sixyin.com/8498.html)
 
+    ::: warning 注意
+    :::
+```
+
+    # 音源推荐
+    # yecao
+    # https://tt.tenmeng.com/moonue/js/yecao202412.js
+
+    # SixYin
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/sixyin/latest.js
+
+    # Huibq
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/huibq/latest.js
+
+    # Flower
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/flower/latest.js
+    
+    # LX
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/lx/latest.js
+
+    # Grass
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/grass/latest.js
+
+    # ikun
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/ikun/latest.js
+
+    # Grass
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/grass/latest.js
+
+    # juheApi
+    # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/juhe/latest.js
+```
 1. 安装 `钉钉`
 
     [下载地址](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/)
