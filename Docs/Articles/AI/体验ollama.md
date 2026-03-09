@@ -38,6 +38,78 @@ ollama run llama3.2 "总结以下内容：" < input.txt > output.txt
 ollama run qwen3:14b --verbose <<< "测试生成速度"
 ```
 
+## 设置为系统服务
+```bash
+# 1. 创建 ollama 服务文件
+sudo tee /etc/systemd/system/ollama.service > /dev/null <<EOF
+[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+User=$USER
+Group=$USER
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+EOF
+
+# 2. 重新加载 systemd
+sudo systemctl daemon-reload
+
+# 3. 设置开机自启并立即启动
+sudo systemctl enable --now ollama
+
+# 4. 检查服务状态（确认显示 active (running)）
+sudo systemctl status ollama
+
+```
+
+::: warning
+如果提示 Error: could not connect to ollama server, run 'ollama serve' to start it
+那么说明用户/权限配置有问题
+
+需要修改服务文件
+
+```bash
+
+sudo nano /etc/systemd/system/ollama.service
+
+```
+
+将用户改为你的实际用户
+
+```bash
+[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+User=muyi086           # 改成你的用户名
+Group=muyi086          # 改成你的用户组
+Restart=always
+RestartSec=3
+Environment="HOME=/home/muyi086"    # 改成你的 home 目录
+Environment="OLLAMA_HOST=0.0.0.0"
+
+[Install]
+WantedBy=default.target
+```
+
+然后重启服务
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+sudo systemctl status ollama
+```
+
+:::
+
+
 ## 配置镜像源(国内加速)
 ### 临时
 ```bash
