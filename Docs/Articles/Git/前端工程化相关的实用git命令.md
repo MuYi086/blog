@@ -294,6 +294,17 @@ const branch = getGitBranch()
 console.log(branch, '-------------------------getGitBranch/branch----------------------')
 ```
 
+## 云端保留，本地删除
+```shell
+# 1. 先恢复文件（从 Git 历史取回）
+git checkout HEAD -- .agents/ .claude/
+
+# 2. 标记为 skip-worktree（Git 会忽略本地的修改/删除）
+git update-index --skip-worktree $(git ls-files .agents/ .claude/)
+
+# 3. 现在可以手动删除，Git 不会再跟踪
+rm -rf .agents/ .claude/
+```
 
 ## 参考
 1. [Git中文参考](https://www.bookstack.cn/read/git-doc-zh/README.md)
