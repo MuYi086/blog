@@ -155,6 +155,12 @@ location /cloud/ {
 
 
 ## 其他
+| 模式             | 说明           | 适用场景         |
+| -------------- | ------------ | ------------ |
+| **Enforcing**  | 强制策略，拒绝违规操作  | 生产环境高安全要求    |
+| **Permissive** | 只记录警告，不阻止操作  | 调试、开发、避免权限问题 |
+| **Disabled**   | 完全关闭 SELinux | 不推荐，失去安全保护   |
+
 ```shell
 # 查看ip
 ip addr
@@ -163,13 +169,14 @@ ip addr
 # 查看状态
 getenforce
 
-# 如果显示 Enforcing，临时设置为 Permissive （0：宽容；1：严格）
+# 临时设置为 Permissive （0：宽容；1：严格）
 sudo setenforce 0
+
+# 每次主机重启会走默认的安全策略，重置为Enforcing,此时webview load 前端网页就会403
+# 我们需要永久设置为Permissive
+sudo vi /etc/selinux/config
+# 设置SELINUX=permissive
 ```
-
-
-
-
 
 ## 参考
 1. [nginx](https://nginx.org/en/)
