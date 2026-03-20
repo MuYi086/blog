@@ -60,11 +60,30 @@ pyenv rehash
 wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 安装,按提示yes即可
 bash Miniconda3-latest-Linux-x86_64.sh
-#　换源
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --set show_channel_urls yes
 ```
+
+### conda换源
+截止20260320，已经有许多源失效，以下是放置的为我个人找到还能使用的源
+打开 `sudo vim ~/.condarc`, 写入最新配置
+
+```yaml
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud
+```
+
+### 清理缓存
+```shell
+conda clean -i -y
+```
+
 
 `conda` 加入到环境变量
 如果命令行找不到 `conda` ,需要添加环境变量
