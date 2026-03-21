@@ -189,8 +189,8 @@ tags:
 
     ::: warning 注意
     :::
-```
 
+    ```
     # 音源推荐
     # yecao
     # https://tt.tenmeng.com/moonue/js/yecao202412.js
@@ -218,7 +218,9 @@ tags:
 
     # juheApi
     # https://ghproxy.net/raw.githubusercontent.com/pdone/lx-music-source/main/juhe/latest.js
-```
+
+    ```
+
 1. 安装 `钉钉`
 
     [下载地址](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/)
@@ -235,4 +237,6 @@ tags:
 
     [地址](https://snapcraft.io/store)
 
+1. 换源
+    打开`软件和更新`=>`Ubuntu软件`=>`下载自`=>`选择最佳服务器`
 
