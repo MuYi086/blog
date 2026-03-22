@@ -102,12 +102,41 @@ npm install package
 
 ::: code-group
 ```shell [curl]
+# 在线安装
 curl -fsSL https://fnm.vercel.app/install | bash
 
-# 设定环境变量
+# 如果网络环境不好，也可以离线安装
+# 先去下载对应系统的版本:https://github.com/Schniz/fnm/releases
+# 然后手动解压
+# 1. 创建安装目录
+mkdir -p ~/.local/share/fnm
+# 2. 移动 fnm 到该目录
+mv fnm ~/.local/share/fnm/
+# 3. 给它执行权限
+chmod +x ~/.local/share/fnm/fnm
+# 4. 添加到PATH
+echo 'export PATH="$HOME/.local/share/fnm:$PATH"' >> ~/.bashrc
+echo 'eval "$(fnm env --shell bash)"' >> ~/.bashrc
+source ~/.bashrc
+
+# 检查 fnm 是否可用
+fnm --version
+
+# 设定临时环境变量
 export FNM_NODE_DIST_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
+# 查看所有远程可安装的Node版本
+fnm list-remote
 # 然后正常使用 fnm 即可
 fnm install <version>
+fnm use <version>      # 使用Node.js 24
+# 查看当前正在使用的Node版本
+fnm current
+# 查看本地已安装的所有Node版本
+fnm list
+# 删除指定版本的Node
+fnm uninstall <version>
+# 验证 Node.js
+node --version
 ```
 :::
 
