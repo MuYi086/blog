@@ -80,9 +80,12 @@ sudo systemctl status ollama
 需要修改服务文件
 
 ```bash
+# 先找到ollama目录地址
+which ollama
 
+# 然后编辑ollama的配置文件,将ExecStart替换为上面具体的目录
 sudo nano /etc/systemd/system/ollama.service
-
+# 记得要去除配置文件中的注释后再保存
 ```
 
 将用户改为你的实际用户
