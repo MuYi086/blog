@@ -8,6 +8,16 @@ tags:
 `claude code` 是 `ai` 的当红炸仔鸡，尤其对开发人员有巨大的提效。以下内容也是我咨询了主流的前沿 `ai` 得到的最适合我目前技术栈的回答，同样也适用其他开发参考。
 
 ## 总结
+1. `Superpowers`
+
+    ```shell
+    # claude code
+    /plugin install superpowers@claude-plugins-official
+
+    # codex
+    Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
+    ```
+
 1. 代码智能：`typescript-lsp`（官方插件）
 
     ```shell
