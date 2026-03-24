@@ -68,6 +68,10 @@ wget -q0- https://get.docker.com/ | sh
             "https://mirror.ccs.tencentyun.com"
         ]
     }
+    # 或者使用阿里云镜像
+    # 1. 登录阿里云控制台：https://cr.console.aliyun.com/
+    # 2. 找到「镜像工具」→「镜像加速器」
+    # 3. 复制专属加速器地址（类似 https://xxxx.mirror.aliyuncs.com）
     # 重启
     sudo service docker restart
     ```
@@ -202,6 +206,32 @@ wget -q0- https://get.docker.com/ | sh
 
     ```
     :::
+
+## 错误
+```shell
+# 如果bash显示如下：其实是用户不在docker组
+# permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.50/images/create?fromImage=docker.io%2Flibrary%2Fhello-world&tag=latest": dial unix /var/run/docker.sock: connect: permission denied
+
+# 将当前用户加入 docker 组
+sudo usermod -aG docker $USER
+
+# 立即生效（不需要重新登录）
+newgrp docker
+
+# 验证
+docker ps
+docker pull hello-world
+
+# 如果还是不行，重启系统：
+
+sudo reboot
+
+# 重启后再次执行：
+
+docker ps
+docker pull hello-world
+```
+
 
 ## 参考
 1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806)
