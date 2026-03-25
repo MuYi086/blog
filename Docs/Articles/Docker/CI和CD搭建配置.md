@@ -163,10 +163,10 @@ ssh-keygen -t rsa
 cat /var/jenkins_home/.ssh/id_rsa.pub
 ```
 创建用户
-![创建用户](/Images/Shell/CI和CD搭建配置/jenkins_01.png '创建用户')
+![创建用户](/Images/Linux/CI和CD搭建配置/jenkins_01.png '创建用户')
 
 实例配置
-![实例配置](/Images/Shell/CI和CD搭建配置/jenkins_02.png '实例配置')
+![实例配置](/Images/Linux/CI和CD搭建配置/jenkins_02.png '实例配置')
 
 在 `jenkins` 中配置 `git` 项目的地址?
 由于我们的 `gitlab-ce` 也是运行在 `docker` 中，无法直接获取项目地址,所以这里需要创建 `Bridge` 网桥方便容器之间互相访问
@@ -188,15 +188,15 @@ echo '172.18.0.2 gitlab.com' >> /etc/hosts
 ```
 把 `jenkins` 的公钥添加到 `gitlab` 中： [Git安装和配置](/Articles/Git/Git安装和配置)
 新建一个 `nodejs` 项目
-![添加描述](/Images/Shell/CI和CD搭建配置/jenkins_03.png '添加描述')
+![添加描述](/Images/Linux/CI和CD搭建配置/jenkins_03.png '添加描述')
 
-![参数构建化过程](/Images/Shell/CI和CD搭建配置/jenkins_04.png '参数构建化过程')
+![参数构建化过程](/Images/Linux/CI和CD搭建配置/jenkins_04.png '参数构建化过程')
 
-![源码管理](/Images/Shell/CI和CD搭建配置/jenkins_05.png '源码管理')
+![源码管理](/Images/Linux/CI和CD搭建配置/jenkins_05.png '源码管理')
 
-![构建环境](/Images/Shell/CI和CD搭建配置/jenkins_06.png '构建环境')
+![构建环境](/Images/Linux/CI和CD搭建配置/jenkins_06.png '构建环境')
 
-![构建](/Images/Shell/CI和CD搭建配置/jenkins_07.png '构建')
+![构建](/Images/Linux/CI和CD搭建配置/jenkins_07.png '构建')
 
 ## 使用体验
 1. `gitlab-runner` 使用更加方便,和 `gitlab` 集成度高

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Shell
+  - Linux
 ---
 # 安装Ubuntu22.04后要做的事
 

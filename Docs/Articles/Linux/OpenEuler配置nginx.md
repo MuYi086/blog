@@ -1,6 +1,6 @@
 ---
 tags:
-  - Shell
+  - Linux
 ---
 # OpenEuler配置nginx
 
@@ -11,10 +11,10 @@ tags:
 最终团队内部讨论后，现阶段我们采用 `nginx` 反代绕过同源策略
 
 1. `nginx` 反代
-![nginx反代](../../Images/Shell/OpenEuler配置nginx/1.png 'nginx反代')
+![nginx反代](../../Images/Linux/OpenEuler配置nginx/1.png 'nginx反代')
 
 2. `App` 原生代理
-![App原生代理](../../Images/Shell/OpenEuler配置nginx/2.png 'App原生代理')
+![App原生代理](../../Images/Linux/OpenEuler配置nginx/2.png 'App原生代理')
 
 ## 优缺点
 | 维度 | 🅰️ 方案一：本地反向代理 (Nginx) | 🅱️ 方案二：JSBridge 原生代理 |
