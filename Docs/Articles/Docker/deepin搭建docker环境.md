@@ -59,13 +59,15 @@ wget -q0- https://get.docker.com/ | sh
     # 配置daemon.json:没有的话自己touch一个
     sudo gedit /etc/docker/daemon.json
     # 填入收集的镜像地址
+    # 大部分已失效,以下为20260325更新
     {
         "registry-mirrors": [
-            "https://hub-mirror.c.163.com",
-            "https://reg-mirror.qiniu.com",
-            "https://registry.docker-cn.com",
-            "https://docker.mirrors.ustc.edu.cn",
-            "https://mirror.ccs.tencentyun.com"
+            "https://docker.xuanyuan.me",
+            "https://dockerpull.com",
+            "https://docker.1panel.live",
+            "https://dockerproxy.cn",
+            "https://docker.hpcloud.cloud",
+            "https://registry-1.docker.io"
         ]
     }
     # 或者使用阿里云镜像
@@ -74,6 +76,7 @@ wget -q0- https://get.docker.com/ | sh
     # 3. 复制专属加速器地址（类似 https://xxxx.mirror.aliyuncs.com）
     # 重启
     sudo service docker restart
+    # docker desktop如果在代理模式下依然下载镜像很慢的话，可以设置终端代理，然后在终端中中拉取镜像，亲测速度飞快
     ```
 
 1. 常用 `docker` 命令
@@ -237,3 +240,6 @@ docker pull hello-world
 1. [deepin系统下的docker安装](https://www.jianshu.com/p/8200a3a50806)
 1. [Deepin下安装Docker](https://www.diandian100.cn/bce2e291.html)
 1. [Docker 加速器](http://guide.daocloud.io/dcs/daocloud-9153151.html)
+1. [轩辕镜像](https://docker.xuanyuan.me/)
+1. [DaoCloud-public-image-mirror](https://github.com/DaoCloud/public-image-mirror)
+1. [docker-china-mirror](https://lobehub.com/bg/skills/nemotrain-cursor-agent-docker-china-mirror)
