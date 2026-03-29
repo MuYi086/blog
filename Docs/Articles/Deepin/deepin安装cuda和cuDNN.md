@@ -27,6 +27,17 @@ sudo apt-get -y install cuda-toolkit-12-3
 ## 安装cuDNN
 ```shell
 # 选择操作系统对应的cuda版本下载,需要登陆nvdia账号
+
+# 安装完成后update如果提示如下错误：之前复制的 .pub 文件格式不对，apt 源配置要求的是 cudnn-local-08A7D361-keyring.gpg 这个二进制密钥环文件
+W: GPG 错误：file:/var/cudnn-local-repo-ubuntu2204-8.9.7.29  InRelease: 由于没有公钥，无法验证下列签名： NO_PUBKEY F37D203008A7D361
+E: 仓库 “file:/var/cudnn-local-repo-ubuntu2204-8.9.7.29  InRelease” 没有数字签名。
+N: 无法安全地用该源进行更新，所以默认禁用该源。
+N: 参见 apt-secure(8) 手册以了解仓库创建和用户配置方面的细节。
+
+# 需要手动修复
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.9.7.29/cudnn-local-08A7D361-keyring.gpg /usr/share/keyrings/
+# 重新更新
+sudo apt-get update
 ```
 
 ## 参考
