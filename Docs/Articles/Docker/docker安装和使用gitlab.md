@@ -1,6 +1,6 @@
 ---
 tags:
-  - Deepin
+  - Docker
 ---
 # docker安装和使用gitlab
 

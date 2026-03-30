@@ -1,6 +1,6 @@
 ---
 tags:
-  - Deepin
+  - Docker
 ---
 # deepin搭建docker环境
 
@@ -234,6 +234,52 @@ sudo reboot
 docker ps
 docker pull hello-world
 ```
+::: warning ubuntu24安装docker-ce-cli
+
+``` shell
+# 可能遇到如下提示:
+# 下列软件包有未满足的依赖关系：
+# docker-desktop : 依赖: docker-ce-cli 但无法安装它
+# E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系
+
+# 此时需要参考官方文档:https://docs.docker.com/engine/install/ubuntu/
+# 先卸载可能引发冲突的软件包
+sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
+
+# 设置docker的apt仓库
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+
+# 安装最新版本
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# 然后下载并安装docker-desktop: https://docs.docker.com/desktop/setup/install/linux/ubuntu/
+sudo apt-get update
+sudo apt install ./docker-desktop-amd64.deb
+
+# 验证docker服务
+sudo systemctl status docker
+
+# 选择终端代理后pull image会更快，此时不要给desktop配置registry-mirrors
+```
+
+:::
 
 
 ## 参考

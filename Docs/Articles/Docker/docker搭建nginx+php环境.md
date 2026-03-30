@@ -1,6 +1,6 @@
 ---
 tags:
-  - Deepin
+  - Docker
 ---
 # docker搭建nginx+php环境
 

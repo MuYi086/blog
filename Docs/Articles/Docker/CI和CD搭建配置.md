@@ -1,6 +1,6 @@
 ---
 tags:
-  - Deepin
+  - Docker
 ---
 # CI/CD搭建配置
 
