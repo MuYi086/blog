@@ -75,5 +75,14 @@ tags:
     ./scripts/setup-project.sh ~/projects/your-java-project
     ```
 
+1. `ccstatusline` 插件
+
+
+     ```shell
+    # 一个可高度自定义的 Claude Code CLI 状态栏格式化工具
+    git clone https://github.com/sirmalloc/ccstatusline
+    ```
+
+
 ## 参考
 1. [SKILLS](https://skills.sh/)
