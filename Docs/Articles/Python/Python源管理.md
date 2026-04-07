@@ -99,6 +99,20 @@ if __name__ == '__main__':
     sys.exit(__main__._main())
 ```
 
+## 使用pqi管理镜像源
+
+  ```shell
+  # 安装 pip 源切换工具                  
+  pip install pqi
+  # 列出可用源                                      
+  pqi ls
+  # 切换到阿里云                         
+  pqi use aliyun
+  # 切换到清华                               
+  pqi use tuna
+  # 验证配置
+  pip config list
+  ```
 
 ## 参考
 1. [python 国内镜像加速](https://www.jianshu.com/p/c7dbe4820017)
