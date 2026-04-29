@@ -178,5 +178,28 @@ sudo vi /etc/selinux/config
 # 设置SELINUX=permissive
 ```
 
+:::warning
+当网页无法正常访问时
+1. 查看 `nginx` 错误日志分析具体问题
+```shell
+tail -20 /var/log/nginx/error.log
+```
+2. 检查目录及文件权限
+```shell
+ls -la /data/pigx-web/dist/
+# 快速修复权限
+sudo chmod -R 755 /data/pigx-web/dist
+# 同事确保父目录可进入
+sudo chmod -R 755 /data/pigx-web
+
+# 确认nginx运行用户并把文件属主改成nginx用户
+ps aux | grep nginx
+sudo chown -R nginx:nginx /data/pigx-web/dist
+
+# 测试并重载nginx
+sudo nginx -t && sudo nginx -s reload
+```
+:::
+
 ## 参考
 1. [nginx](https://nginx.org/en/)
