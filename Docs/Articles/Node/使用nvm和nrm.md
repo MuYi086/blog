@@ -58,6 +58,9 @@ nvm uninstall 5.0.0
 
 # 指定默认的node版本
 nvm alias default 5.0.0
+
+# 列出远端可以安装的版本
+nvm list available
 ```
 
 ## 使用淘宝镜像
