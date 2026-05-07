@@ -68,7 +68,8 @@ wget -q0- https://get.docker.com/ | sh
             "https://dockerproxy.cn",
             "https://docker.hpcloud.cloud",
             "https://registry-1.docker.io"
-        ]
+        ],
+        "dns": ["1.1.1.1", "8.8.8.8", "223.5.5.5"]
     }
     # 或者使用阿里云镜像
     # 1. 登录阿里云控制台：https://cr.console.aliyun.com/
@@ -280,6 +281,27 @@ sudo systemctl status docker
 ```
 
 :::
+
+## pull失败
+```shell
+docker pull btpanel/baota:latest
+# 如果出现类似
+a230d1bb67fa: Downloading  1.398kB
+failed commit on ref "unknown-sha256:a230d1bb67fa3c53def770fa9b7a906ed14cc18f79280183fc57c6299e9f1923": commit failed: "unknown-sha256:a230d1bb67fa3c53def770fa9b7a906ed14cc18f79280183fc57c6299e9f1923" failed size validation: 1398 != 1215: failed precondition
+# 则可以重启systemd-resolved
+sudo systemctl restart systemd-resolved
+sudo systemctl restart docker
+
+resolvectl query registry-1.docker.io
+docker pull docker.io/btpanel/baota:latest
+
+# 然后按照上面操作修改daemon.json
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+docker pull docker.io/btpanel/baota:latest
+```
+
 
 
 ## 参考
