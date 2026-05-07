@@ -60,6 +60,48 @@ sudo ufw enable
 可以通过登录ssh，输入 `1pctl reset domain` 重置绑定域名
 :::
 
+## docker部署1panel
+1. 到 `docker hub` 搜索找到 [moelin/1panel](https://hub.docker.com/r/moelin/1panel), 接受新功能和架构可以选择 `v2` 版本
+2. `V2 Docker` 安装
+
+    ```shell
+    # linux
+    docker run -d \
+      --name 1panel-v2 \
+      --restart always \
+      --network host \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -v /opt:/opt \
+      -e TZ=Asia/Shanghai \
+      -e PORT=10086 \
+      -e USERNAME=admin \
+      -e PASSWORD=your_secure_password \
+      -e ENTRANCE=myentrance \
+      moelin/1panel:v2
+
+    # Windows/macOs (Docker Desktop 的虚拟机隔离会屏蔽--network host这种直连,需要手动指定端口映射)
+    docker run -d \
+    --name 1panel-v2 \
+    --restart always \
+    -p 10086:10086 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /opt:/opt \
+    -e TZ=Asia/Shanghai \
+    -e PORT=10086 \
+    -e USERNAME=admin \
+    -e PASSWORD=your_secure_password \
+    -e ENTRANCE=myentrance \
+    moelin/1panel:v2
+    ```
+
+3. 访问 `localhost:10086`
+  如果出现 `Access Temporarily Unavailable`，说明面板地址被未授权访问。
+  ```shell
+  # 需要从容器中获取真实的登录地址即可
+  docker exec 1panel-v2 1pctl user-info
+  ```
+
+
 ## 参考
 1. [在线安装](https://1panel.cn/docs/installation/online_installation/)
 1. [请教1panel面板绑定域名应该如何操作](https://bbs.fit2cloud.com/t/topic/2092/4)
