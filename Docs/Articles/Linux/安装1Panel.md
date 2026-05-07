@@ -61,7 +61,7 @@ sudo ufw enable
 :::
 
 ## docker部署1panel
-1. 到 `docker hub` 搜索找到 [moelin/1panel](https://hub.docker.com/r/moelin/1panel), 接受新功能和架构可以选择 `v2` 版本
+1. 到 `docker hub` 搜索找到 [moelin/1panel](https://hub.docker.com/r/moelin/1panel), 接受新功能和架构可以选择 `v2` 版本(本地部署`docker`通信有问题)，也可以选择稳定版的`v1`
 2. `V2 Docker` 安装
 
     ```shell
@@ -94,11 +94,41 @@ sudo ufw enable
     moelin/1panel:v2
     ```
 
-3. 访问 `localhost:10086`
+3. `V1 Docker` 安装
+
+    ```shell
+    # linux
+    docker run -d \
+    --name 1panel \
+    --restart always \
+    --network host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /var/lib/docker/volumes:/var/lib/docker/volumes \
+    -v /opt:/opt \
+    -v /root:/root \
+    -e TZ=Asia/Shanghai \
+    moelin/1panel:v1
+
+    # Windows/macOs (Docker Desktop 的虚拟机隔离会屏蔽--network host这种直连,需要手动指定端口映射)
+    docker run -d \
+    --name 1panel \
+    --restart always \
+    -p 10086:10086 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /var/lib/docker/volumes:/var/lib/docker/volumes \
+    -v /opt:/opt \
+    -v /root:/root \
+    -e TZ=Asia/Shanghai \
+    moelin/1panel:v1
+    ```
+
+4. 访问 `localhost:10086`
   如果出现 `Access Temporarily Unavailable`，说明面板地址被未授权访问。
   ```shell
   # 需要从容器中获取真实的登录地址即可
   docker exec 1panel-v2 1pctl user-info
+  # v1
+  docker exec 1panel 1pctl user-info
   ```
 
 
