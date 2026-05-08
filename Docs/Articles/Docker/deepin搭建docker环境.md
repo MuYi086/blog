@@ -300,6 +300,24 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 docker pull docker.io/btpanel/baota:latest
+
+# 临时测试前端发布效果的话，可以通过switch host将域名解析到本地
+# 同时在创建容器时映射端口段，参考如下示例
+docker run -idt \
+  -p 80:80 \
+  -p 443:443 \
+  -p 8888:8888 \
+  -p 888:888 \
+  -p 9091-9120:9091-9120 \
+  --privileged \
+  -v /www/wwwroot:/www/wwwroot \
+  -v /www/server/data:/www/server/data \
+  -v /www/server/panel/vhost:/www/server/panel/vhost \
+  -v /www/backup:/www/backup \
+  --network=bridge \
+  --name baota \
+  --restart always \
+  meteorkong/baota:7.6.0
 ```
 
 
