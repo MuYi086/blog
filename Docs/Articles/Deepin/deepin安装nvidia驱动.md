@@ -17,6 +17,13 @@ sudo lshw -numeric -C display
 
 ![下载驱动](/Images/Deepin/Deepin安装nvidia驱动/step_3.png '下载驱动')
 
+## 最简单方式
+适用于`deepin25`, 一步到位
+```shell
+sudo apt update
+sudo apt install nvidia-driver nvidia-settings nvidia-smi
+```
+
 ## 禁用 `nouveau` 驱动
 1.安装深度的`显卡驱动管理器`,切换到因特尔默认驱动，然后重启
 ```shell
@@ -109,4 +116,5 @@ lsmod | grep nouveau
 ## 参考
 1. [nvida 驱动下载](https://www.nvidia.cn/geforce/drivers/)
 1. [Deepin20.1安装NVIDIA最新显卡驱动](https://bbs.deepin.org/post/213544)
+1. [deepin 25系统 NVIDIA 显卡驱动安装](https://bbs.deepin.org.cn/zh/post/295712)
 1. [Linux(Deepin)如何安装NVIDIA显卡驱动（deepin-Linux）](https://www.likecs.com/show-187504.html)
