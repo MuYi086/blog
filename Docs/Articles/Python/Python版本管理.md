@@ -60,6 +60,7 @@ pyenv rehash
 wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 安装,按提示yes即可
 bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
 ```
 
 ### conda换源
@@ -195,3 +196,4 @@ ssl_verify: true
 1. [安装pyenv](https://www.cnblogs.com/ttkl/p/10778857.html)
 1. [linux安装或卸载miniconda](https://www.jianshu.com/p/fab0068a32b4)
 1. [如何安装并使用conda指令管理python环境](https://www.jb51.net/article/165067.htm)
+1. [Linux installer](https://www.anaconda.com/docs/getting-started/anaconda/install/linux-install#how-do-i-verify-my-installers-integrity)
