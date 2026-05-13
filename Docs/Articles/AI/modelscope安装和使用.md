@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python
+  - AI
 ---
 # modelscope安装和使用
 
@@ -33,7 +33,33 @@ pipx install modelscope
 ```shell
 # 命令行下载
 modelscope download --model OpenBMB/VoxCPM2
+
+# 下载整个模型到指定目录
+modelscope download --model OpenBMB/VoxCPM2 --local_dir ~/modelscope
+
+# 写入 `~/.bashrc`
+export MODELSCOPE_CACHE='您希望的下载路径'
+source ~/.bashrc
 ```
+
+:::warning
+如果提示 `modelscope：未找到命令`
+
+那么很大可能是当前 `shell` 的 `PATH` 环境变量里没有包含 `/home/muyi086/.local/bin`，所以直接敲 `modelscope` 系统找不到这个命令
+
+```shell
+# 方法一
+# 将下面这行添加到 ~/.bashrc 末尾
+export PATH="$HOME/.local/bin:$PATH"
+source ~/.bashrc
+
+# 方法二
+# 自动添加并提示
+pipx ensurepath
+```
+:::
 
 ## 参考
 1. [VoxCPM2 下载模型](https://modelscope.cn/models/OpenBMB/VoxCPM2)
+1. [ModelScope模型下载](https://zhuanlan.zhihu.com/p/19706523709)
+1. [ModelScope模型下载默认位置及如何修改为指定路径](https://www.onetts.com/wk/12439)
