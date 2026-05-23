@@ -234,6 +234,9 @@ sudo reboot
 
 docker ps
 docker pull hello-world
+
+# 查看容器的挂载详情
+docker inspect <容器名或ID>
 ```
 ::: warning ubuntu24安装docker-ce-cli
 
@@ -318,6 +321,15 @@ docker run -idt \
   --name baota \
   --restart always \
   meteorkong/baota:7.6.0
+```
+
+## 查看错误日志
+```shell
+# 查看实时日志（包含 error log）
+docker logs -f <容器名或ID>
+
+# 只看最近的错误日志（时间倒序）
+docker logs --tail 100 <容器名或ID>
 ```
 
 
