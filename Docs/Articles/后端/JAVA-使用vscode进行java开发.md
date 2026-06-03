@@ -1,6 +1,6 @@
 ---
 tags:
-  - JAVA
+  - 后端
 ---
 # JAVA-使用vscode进行java开发
 
@@ -20,7 +20,7 @@ tags:
     # file => Prefernces => settins => 搜索maven
     ```
 
-    ![maven配置](/Images/JAVA/JAVA-使用vscode进行java开发/java_01.png)
+    ![maven配置](/Images/后端/JAVA-使用vscode进行java开发/java_01.png)
 
 1. 填入配置( `java` 和 `maven` 目录及版本自行替换)
     ```json
