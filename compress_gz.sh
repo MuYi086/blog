@@ -60,8 +60,8 @@ cd ../
 cd JS
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Standards目录
-cd Standards
+# 处理前端目录
+cd 前端
 gzip -k -f -9 ./*.html
 cd ../
 # 处理Deepin目录

@@ -13,7 +13,7 @@ tags:
 :::
 
 ## git-commit 
-点击查看详情 [commit规范](/Articles/Standards/commit规范)
+点击查看详情 [commit规范](/Articles/前端/commit规范)
 
 ## docker
 ::: details 点我查看详情
