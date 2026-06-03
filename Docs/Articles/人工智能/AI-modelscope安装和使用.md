@@ -1,8 +1,8 @@
 ---
 tags:
-  - AI
+  - 人工智能
 ---
-# modelscope安装和使用
+# AI-modelscope安装和使用
 
 ## 背景
 从 `Python 3.11` 开始，很多 `Linux` 发行版将系统 `Python` 标记为“外部管理环境”，禁止直接使用 `pip install` 安装包。目的是防止你意外覆盖或破坏系统工具依赖的 `Python` 包，导致系统不稳定。

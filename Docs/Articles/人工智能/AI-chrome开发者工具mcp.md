@@ -1,8 +1,8 @@
 ---
 tags:
-  - AI
+  - 人工智能
 ---
-# chrome开发者工具mcp
+# AI-chrome开发者工具mcp
 
 ## 介绍
 `google` 将 `Gemini` 大模型在 `Chrome 127 dev` 版本中已经内置了，但是目前还只是处于实验阶段，感兴趣的同学可以和我们一起体验，提前拥抱变化。

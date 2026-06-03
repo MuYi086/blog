@@ -1,8 +1,8 @@
 ---
 tags:
-  - AI
+  - 人工智能
 ---
-# 前端快速熟悉python概念
+# AI-快速熟悉python概念
 
 ## 前端 (JavaScript/TypeScript) vs Python 开发工具对照表
 
