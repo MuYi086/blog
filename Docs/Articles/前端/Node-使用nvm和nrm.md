@@ -1,8 +1,8 @@
 ---
 tags:
-  - Node
+  - 前端
 ---
-# 使用nvm或者fnm和nrm
+# Node-使用nvm和nrm
 
 ## 背景
 为了方便在不同 `node` 版本下进行试验和开发,使用 `nvm` 或者 `fnm` 可以在同一台设备上进行多个 `node` 版本切换;

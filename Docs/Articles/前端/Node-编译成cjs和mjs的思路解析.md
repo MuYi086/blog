@@ -1,8 +1,8 @@
 ---
 tags:
-  - Node
+  - 前端
 ---
-# 编译成cjs和mjs的思路解析
+# Node-编译成cjs和mjs的思路解析
 这里拿我写的一个常用包 `@muyi086/var-type` 做说明
 
 ## 原始代码
