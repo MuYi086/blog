@@ -1,6 +1,6 @@
 ---
 tags:
-  - Network
+  - 运维
 ---
 # Network-浏览器提示HSTS
 
@@ -19,7 +19,7 @@ tags:
 
 查询并删除对应域名的 `HSTS` 记录
 
-![HSTS](/Images/Network/Network-浏览器提示HSTS/HSTS.png 'HSTS')
+![HSTS](/Images/运维/Network-浏览器提示HSTS/HSTS.png 'HSTS')
 
 再次访问 `muyi086.top` ，发现已经已经可以正常访问
 

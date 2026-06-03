@@ -1,19 +1,19 @@
 ---
 tags:
-  - Network
+  - 运维
 ---
 # Network-浏览器https提示不安全
 
 ## 介绍
 有些免费的 `SSL` 证书无法通过浏览器验证，访问时会提示不安全，非常影响用户访问。
 
-![network_error](/Images/Network/Network-浏览器https提示不安全/network_error.png 'network_error')
+![network_error](/Images/运维/Network-浏览器https提示不安全/network_error.png 'network_error')
 
 一些免费免费证书，比如我申请的 `cloudflare` 15年的证书就在此列（也包括一些其他证书）
 
 点开左上角 `URL` 可以看到详细提示信息
 
-![network_detail](/Images/Network/Network-浏览器https提示不安全/network_detail.png 'network_detail')
+![network_detail](/Images/运维/Network-浏览器https提示不安全/network_detail.png 'network_detail')
 
 ## 解决办法
 1. 申请其他受认证的免费 `SSL` 证书（比如腾讯云的免费证书 `TrustAsia` ，其他免费的 `Lets's Encrypt`, `ZeroSSL` 等）
@@ -24,11 +24,11 @@ tags:
 1. 填写绑定域名，手动DNS验证,申请邮箱 => 提交申请
 1. 复制腾讯云生成的解析信息
 
-    ![tencent_cname](/Images/Network/Network-浏览器https提示不安全/tencent_cname.png 'tencent_cname')
+    ![tencent_cname](/Images/运维/Network-浏览器https提示不安全/tencent_cname.png 'tencent_cname')
 
 1. 手动添加一条解析记录，比如我的域名由 `cloudflare` 解析的，就需要在 `cloudflare` 的 `DNS` 面板新增一条解析，并保存
 
-    ![cloudflare_cname](/Images/Network/Network-浏览器https提示不安全/cloudflare_cname.png 'cloudflare_cname')
+    ![cloudflare_cname](/Images/运维/Network-浏览器https提示不安全/cloudflare_cname.png 'cloudflare_cname')
 
 1. 腾讯云 `SSL` 申请页面, 点击验证域名, 成功后再证书列表找到刚才申请的证书，点击下载即可
 1. 在 `bt`，`1panel`等面板, 给相关的网站配置 `https`，证书信息填写刚才获得的 `KEY` 和 `PEM`
@@ -47,11 +47,11 @@ tags:
 1. 回到 `1panel` 面板，证书栏目 => 选择 `DNS` 账户 => 创建账户 => 选择 `Cloudflare` => 输入刚才复制的 `API` 令牌
 1. 点击申请证书 => 填写域名 => `Acme` 账户选择 `Let's Encrypt` => 秘钥算法选择 `EC 256` => 验证方式选择 `DNS` 账号(下拉选择 `cloudflare` ) => 确认
 
-    ![ssl_apply](/Images/Network/Network-浏览器https提示不安全/ssl_apply.png 'ssl_apply')
+    ![ssl_apply](/Images/运维/Network-浏览器https提示不安全/ssl_apply.png 'ssl_apply')
 
 1. 在面板对应网站 配置项 `https`，选择对应的 Acme 账户，选择对应的证书, 保存，再次访问网站，即可看到 `https` 正常访问
 
-    ![admin_ssl](/Images/Network/Network-浏览器https提示不安全/admin_ssl.png 'admin_ssl')
+    ![admin_ssl](/Images/运维/Network-浏览器https提示不安全/admin_ssl.png 'admin_ssl')
 
 
 ::: tip 提示

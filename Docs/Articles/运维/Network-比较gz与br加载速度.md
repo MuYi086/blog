@@ -1,6 +1,6 @@
 ---
 tags:
-  - Network
+  - 运维
 ---
 # Network-比较gz与br加载速度.md
 
@@ -14,11 +14,11 @@ tags:
 
 1. `gzip: off`
 
-    ![无压缩](/Images/Network/Network-比较gz与br加载速度/无压缩.jpg '无压缩')
+    ![无压缩](/Images/运维/Network-比较gz与br加载速度/无压缩.jpg '无压缩')
 
 1. `gzip: on`
 
-    ![gz](/Images/Network/Network-比较gz与br加载速度/gz.jpg 'gz')
+    ![gz](/Images/运维/Network-比较gz与br加载速度/gz.jpg 'gz')
 
 对比发现，`webvitals` 指标的时间差不多，但是 `network` 加载完成时间要快很多
 
@@ -28,7 +28,7 @@ tags:
 
 `nginx` 安装 `brotli` 请参考之前的一篇文章[宝塔nginx安装ngx_brotli](/Articles/Network/宝塔nginx安装ngx_brotli)
 
-![br](/Images/Network/Network-比较gz与br加载速度/br.jpg 'br')
+![br](/Images/运维/Network-比较gz与br加载速度/br.jpg 'br')
 
 
 ## 分析
@@ -51,7 +51,7 @@ npm i -g brotli-cli
 brotli-cli compress index.html
 ```
 
-![已压缩的数据](/Images/Network/Network-比较gz与br加载速度/已压缩的数据.jpg '已压缩的数据')
+![已压缩的数据](/Images/运维/Network-比较gz与br加载速度/已压缩的数据.jpg '已压缩的数据')
 
 可以看到文件大小 `br` < `gz` < `无压缩`
 
@@ -59,15 +59,15 @@ brotli-cli compress index.html
 
 1. 无压缩
 
-    ![实验2无压缩](/Images/Network/Network-比较gz与br加载速度/实验2无压缩.jpg '实验2无压缩')
+    ![实验2无压缩](/Images/运维/Network-比较gz与br加载速度/实验2无压缩.jpg '实验2无压缩')
 
 1. `gzip`
 
-    ![实验2gz](/Images/Network/Network-比较gz与br加载速度/实验2gz.jpg '实验2gz')
+    ![实验2gz](/Images/运维/Network-比较gz与br加载速度/实验2gz.jpg '实验2gz')
 
 1. `br`
 
-    ![实验2br](/Images/Network/Network-比较gz与br加载速度/实验2br.jpg '实验2br')
+    ![实验2br](/Images/运维/Network-比较gz与br加载速度/实验2br.jpg '实验2br')
 
 真的尽力，从图上看，依旧没能达到 `google` 宣传的加载速度。
 

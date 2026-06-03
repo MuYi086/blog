@@ -1,6 +1,6 @@
 ---
 tags:
-  - Network
+  - 运维
 ---
 # Network-静态资源gzip优化
 
