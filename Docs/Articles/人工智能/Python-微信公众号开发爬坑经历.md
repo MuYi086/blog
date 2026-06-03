@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python
+  - 人工智能
 ---
 # Python-微信公众号开发爬坑经历
 
@@ -13,7 +13,7 @@ tags:
 
 ## 成果展示
   如下图所示：
-  ![成果图](/Images/Python/Python-微信公众号开发爬坑经历/finished.jpg "成果图")
+  ![成果图](/Images/人工智能/Python-微信公众号开发爬坑经历/finished.jpg "成果图")
 
 ## 安装Python3
   ```shell
@@ -54,11 +54,11 @@ tags:
 
 ## 使用FileZilla连接FTP服务器
   如下图所示：
-  ![连接FTP](/Images/Python/Python-微信公众号开发爬坑经历/ftp.png "连接FTP")
+  ![连接FTP](/Images/人工智能/Python-微信公众号开发爬坑经历/ftp.png "连接FTP")
 
 ## 获取微信公众平台配置
   如下图所示：
-  ![微信公众平台配置](/Images/Python/Python-微信公众号开发爬坑经历/weChatDev.png "微信公众平台配置")
+  ![微信公众平台配置](/Images/人工智能/Python-微信公众号开发爬坑经历/weChatDev.png "微信公众平台配置")
 
   注意：先别点击提交，会提示 `token` 验证失败，需要后面操作完成后在保存
 
@@ -90,7 +90,7 @@ tags:
 
 ## 创建目录结构
   如下图所示：
-  ![目录结构](/Images/Python/Python-微信公众号开发爬坑经历/menuTree.png "目录结构")
+  ![目录结构](/Images/人工智能/Python-微信公众号开发爬坑经历/menuTree.png "目录结构")
 
 ## 完善帮助提示help.py
   ```python

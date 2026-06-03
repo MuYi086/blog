@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python
+  - 人工智能
 ---
 # Python-项目安装指南
 
