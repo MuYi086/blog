@@ -2,7 +2,7 @@
 tags:
   - Python
 ---
-# python项目安装指南
+# Python-项目安装指南
 
 ## 解决方案：使用 Python 虚拟环境
   ```shell

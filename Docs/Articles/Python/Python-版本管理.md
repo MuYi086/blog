@@ -2,7 +2,7 @@
 tags:
   - Python
 ---
-# Python版本管理
+# Python-版本管理
 
 ## 前言
 由于开发需要，某些 `package` 需要 `python3.6` 以上,但是本机使用的 `deepin` ，当前系统内置了 `python 2.7` 和 `python 3.5` ,且非常不好动弹，容易导致系统出问题。于是想到用版本管理 `python` ，本文尝试了 `pyenv` 和 `miniconda`

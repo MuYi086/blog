@@ -2,7 +2,7 @@
 tags:
   - Python
 ---
-# Python源管理
+# Python-源管理
 
 ## 前言
 `python` 默认的的源的速度真是惨不忍睹，谁用谁知道
