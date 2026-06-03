@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# navicat连接一键集成环境的mysql
+# Linux-navicat连接一键集成环境的mysql
 
 ## 介绍
 系统使用一键 `lnpm` 安装了 `mysql` , 但是使用 `navicat` 无法直接连接上 `mysql`

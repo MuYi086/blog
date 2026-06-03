@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# linux下virtualbox用gho还原系统
+# Linux-linux下virtualbox用gho还原系统
 
 ## 介绍
 `windows` 下用 `virtualbox` 安装 `iso` 和 `u盘` 启动的博文已经很多了，这里不赘述。本文主要讲述比较生僻的在 `linux` 上利用 `gho` 装系统。其实开源的 `virtualbox` 已经足够满足我需求了。至于为啥不用 `VM` ，只有一个字形容：穷。
@@ -14,7 +14,7 @@ tags:
 
 1. 挂载一个 `pe` 的 `iso` 镜像.
     * 选择第二栏 iso 模式并导出(我就不截图了,下图来自老毛桃官网)
-        ![iso模式](/Images/Linux/linux下virtualbox用gho还原系统/laomaotao_01.png 'iso模式')
+        ![iso模式](/Images/Linux/Linux-linux下virtualbox用gho还原系统/laomaotao_01.png 'iso模式')
     
     * 最好将iso镜像用户根目录.我这里放到/home/MuYi086下
 
@@ -53,7 +53,7 @@ tags:
     ```
 
 1. 在 `virtualbox` 存储中添加磁盘
-    ![添加磁盘](/Images/Linux/linux下virtualbox用gho还原系统/laomaotao_02.png '添加磁盘')
+    ![添加磁盘](/Images/Linux/Linux-linux下virtualbox用gho还原系统/laomaotao_02.png '添加磁盘')
 
 1. 启动中 `Win + F12` 选择 `CD` ，也就是老毛桃启动,进入PE之后就和 `windows` 一样，给系统分区，然后选择 `gho` 安装了.
 

@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# nginx常用命令
+# Linux-nginx常用命令
 
 ## 介绍
 工作中常用到 `putty` 连接远程的 `vps` 操作, 手输命令太麻烦且容易出错, 因此直接拷贝常用的 `nginx` 命令更为高效

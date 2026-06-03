@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# OpenEuler配置nginx
+# Linux-OpenEuler配置nginx
 
 ## 背景
 我们需要在店铺内主机部署一套前端的代码，同时支持本地登录和云端登录。本地登录好处理，直接访问局域网内接口即可，云端登录由于需要云服务器接口，这里会遇到同源策略限制。
@@ -11,10 +11,10 @@ tags:
 最终团队内部讨论后，现阶段我们采用 `nginx` 反代绕过同源策略
 
 1. `nginx` 反代
-![nginx反代](../../Images/Linux/OpenEuler配置nginx/1.png 'nginx反代')
+![nginx反代](../../Images/Linux/Linux-OpenEuler配置nginx/1.png 'nginx反代')
 
 2. `App` 原生代理
-![App原生代理](../../Images/Linux/OpenEuler配置nginx/2.png 'App原生代理')
+![App原生代理](../../Images/Linux/Linux-OpenEuler配置nginx/2.png 'App原生代理')
 
 ## 优缺点
 | 维度 | 🅰️ 方案一：本地反向代理 (Nginx) | 🅱️ 方案二：JSBridge 原生代理 |

@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Ubuntu安装flatpak软件
+# Linux-Ubuntu安装flatpak软件
 
 ## 安装 flatpak
 1. `Ubuntu 20.04` 及以后版本安装 `flatpak`
@@ -11,7 +11,7 @@ tags:
     sudo apt install flatpak
     ```
 
-    ![flathub](/Images/Linux/Ubuntu安装flatpak软件/flathub.jpg 'flathub')
+    ![flathub](/Images/Linux/Linux-Ubuntu安装flatpak软件/flathub.jpg 'flathub')
 
 1. `Ubuntu 18.04` 及以前版本需要使用 `PPA`
 
@@ -48,7 +48,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 ```
 安装过程中会逐步安装依赖
 
-![flatpak_install](/Images/Linux/Ubuntu安装flatpak软件/flatpak_install.jpg 'flatpak_install')
+![flatpak_install](/Images/Linux/Linux-Ubuntu安装flatpak软件/flatpak_install.jpg 'flatpak_install')
 
 重启电脑，软件列表里就会出现刚刚安装的软件
 

@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# 解决linux安装xmind缺少依赖报错
+# Linux-解决linux安装xmind缺少依赖报错
 
 最近需要查看思维导图,于是需要安装 `xmind` .
 [官方下载地址](https://www.xmind.cn/download/)

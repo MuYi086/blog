@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# windows+linux双系统引导修复
+# Linux-windows+linux双系统引导修复
 
 ## windows
 这个比较好做,我一般是用大白菜，将U盘制作成启动盘.然后进入 `PE` ，使用引导修复工具：这个会自动查找并修复 `windows` 的引导
@@ -28,7 +28,7 @@ fdisk -l
 
 ```
 
-![找出linux设备](/Images/Linux/windows+linux双系统引导修复/terminal_01.gif "找出linux设备")
+![找出linux设备](/Images/Linux/Linux-windows+linux双系统引导修复/terminal_01.gif "找出linux设备")
 
 ```shell
 # 将设备挂载至 /mnt

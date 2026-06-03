@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# vps报错temporary failure in name resolution
+# Linux-vps报错temporary failure in name resolution
 
 ## 介绍
 新购买了一台 `vps` ,系统 `Ubuntu 20.04 LTS` 64bit, 打算装宝塔时, 发现 `ping` 报错: `temporary failure in name resolution`

@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# 安装1Panel
+# Linux-安装1Panel
 
 ## 安装
 适用于 `Ubuntu`
@@ -48,7 +48,7 @@ sudo ufw enable
 
 1. `1panel` 面板创建 一个网站 => 绑定域名
 
-![反代设置](/Images/Linux/安装1Panel/反代设置.png '反代设置')
+![反代设置](/Images/Linux/Linux-安装1Panel/反代设置.png '反代设置')
 
 保存后, 再次输入刚才的二级域名即可访问 `1panel` 面板
 

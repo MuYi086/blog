@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Ubuntu安装wireshark
+# Linux-Ubuntu安装wireshark
 
 ## 安装
 `windows` 和 `macOS` 直接 [下载安装包](https://www.wireshark.org/download.html) 安装即可，`ubuntu` 下需要使用命令安装

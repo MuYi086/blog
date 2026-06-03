@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# 特别实用的shell命令
+# Linux-特别实用的shell命令
 
 ## 查看已安装的软件列表
 ::: code-group

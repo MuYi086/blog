@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Ubuntu常见问题汇总
+# Linux-Ubuntu常见问题汇总
 
 ## 问题
 1. 挂载移动硬盘时出现 `unknown error when mounting/dev/sdb1`

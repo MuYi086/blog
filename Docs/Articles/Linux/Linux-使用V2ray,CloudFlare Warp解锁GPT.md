@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# 使用V2ray,CloudFlare Warp解锁GPT
+# Linux-使用V2ray,CloudFlare Warp解锁GPT
 
 ## 背景
 搭建 `GPT` 后其实有正常使用几个月的，但是后来已经突然无法访问 `chat` 页面，并且提示 `Access Denied` 问题。我本身使用的 `Vultr` 的 `vps` 搭建的 `v2ray` 服务，梯子也能正常使用， 但是就是 `chat` 页面无法访问, 估计是 `openai` 针对多数 `vpn` 的公网 `ip` 做了识别。于是开始 `google` 寻求解决方案。英文论坛上有人提出 `openai` 使用了 `cloudflare` 的服务来过滤 `ip` ，然后给出的解决方法就是 "以子之矛, 攻子之盾"，因为 `cloudflare` 自己旗下有一款代理软件叫 `warp` 联想到他不会自己封禁自己, 于是我们使用 `cloudflare warp` 代理来躲避封禁。
@@ -21,7 +21,7 @@ wget -N https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh && bash CFwarp.sh
 ```shell
 # Settings -> IPV6 —> Add
 ```
-![添加IPV6](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/vultr_step_1.png '添加IPV6')
+![添加IPV6](/Images/Linux/Linux-%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/vultr_step_1.png '添加IPV6')
 
 ## 启动脚本并安装
 ```shell
@@ -191,7 +191,7 @@ systemctl restart wg-quick@wgcf
 
 由于笔者安装了 `xui`, 所以配置文件直接在网页上修改，然后重启面板生效
 
-![调整v2ray配置](/Images/Linux/%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/xui_step1.png '调整v2ray配置')
+![调整v2ray配置](/Images/Linux/Linux-%E4%BD%BF%E7%94%A8V2ray%2CCloudFlare-Warp%E8%A7%A3%E9%94%81GPT/xui_step1.png '调整v2ray配置')
 
 ## 最后
 再次使用 `Google` 访问 `chat` 页面, 发现可以正常使用了

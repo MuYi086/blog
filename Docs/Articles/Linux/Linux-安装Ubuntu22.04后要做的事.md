@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# 安装Ubuntu22.04后要做的事
+# Linux-安装Ubuntu22.04后要做的事
 
 ## 介绍
 记录免费开源的 `deb` 或者 `AppImage` 软件

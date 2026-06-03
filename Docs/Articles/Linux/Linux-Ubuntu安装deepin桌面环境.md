@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Ubuntu安装deepin桌面环境
+# Linux-Ubuntu安装deepin桌面环境
 
 ## 介绍
 有一说一，`Ubuntu22.04` 默认的桌面环境是真的很普通，对于颜控的我无法忍受，所以就尝试安装 `deepin` 桌面环境.

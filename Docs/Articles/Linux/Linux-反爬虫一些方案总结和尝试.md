@@ -2,15 +2,15 @@
 tags:
   - Linux
 ---
-# 反爬虫一些方案总结和尝试
+# Linux-反爬虫一些方案总结和尝试
 使用 `FontCreator` 尝试修改了 `Rookie` 字体,简单实现了 `字体混淆` 
 实际运用可以考虑项目是否需要防爬？进而思考产品信息是否需要混淆?
 
-![混淆](/Images/Linux/反爬虫一些方案总结和尝试/hunxiao.png)
+![混淆](/Images/Linux/Linux-反爬虫一些方案总结和尝试/hunxiao.png)
 
 ## 一、了解主流语言爬虫框架和爬虫原理
 
-![原理](/Images/Linux/反爬虫一些方案总结和尝试/yuanli.jpg)
+![原理](/Images/Linux/Linux-反爬虫一些方案总结和尝试/yuanli.jpg)
 
 文章并没有统计 `nodejs` ，补充下 `node` 也有的
 
@@ -31,7 +31,7 @@ tags:
 
 为防止滥用，应该考虑对 `API` 限流。 例如，可以限制每个用户 10 分钟内最多调用 `API` 100 次。 如果在规定的时间内接收了一个用户大量的请求，将返回响应状态代码 `429` (这意味着过多的请求)。
 
-![连接限制](/Images/Linux/反爬虫一些方案总结和尝试/rateLimit.png '连接限制')
+![连接限制](/Images/Linux/Linux-反爬虫一些方案总结和尝试/rateLimit.png '连接限制')
 
 ## 三、并发连接数
 
@@ -54,7 +54,7 @@ limit_conn_zone $binary_remote_addr zone=perip:10m;
 ```
 
 默认情况下,如下图所示位置:
-![Nginx](/Images/Linux/反爬虫一些方案总结和尝试/nginx.png 'Nginx')
+![Nginx](/Images/Linux/Linux-反爬虫一些方案总结和尝试/nginx.png 'Nginx')
 
 再在要设置限制连接数的虚拟主机配置里的 `server` 段里添加上
 
@@ -67,7 +67,7 @@ limit_rate 100k;
 
 如下图实例截图:
 
-![限制](/Images/Linux/反爬虫一些方案总结和尝试/ipLimit.png '限制')
+![限制](/Images/Linux/Linux-反爬虫一些方案总结和尝试/ipLimit.png '限制')
 
 限制每个连接速度为 `100K` ，此限制是针对单个线程，比如，我用IE下载是 `100K` ，当用迅雷时它会占用 `2` 个线程，所以迅雷下载速度为 `200K` ，如果单个IP的并发数设置为 `10` ，则多线程下载的话速度可以达到 `100K` × `10`。
 
@@ -84,10 +84,10 @@ limit_rate 100k;
 一些大网站为了反爬，使用了字体混淆,比如天眼查,去哪儿网
 
 1. 文字混淆
-![天眼查](/Images/Linux/反爬虫一些方案总结和尝试/tianYanCha.png '天眼查')
+![天眼查](/Images/Linux/Linux-反爬虫一些方案总结和尝试/tianYanCha.png '天眼查')
 
 1. 数字混淆
-![去哪儿网](/Images/Linux/反爬虫一些方案总结和尝试/qunaer.jpg '去哪儿网')
+![去哪儿网](/Images/Linux/Linux-反爬虫一些方案总结和尝试/qunaer.jpg '去哪儿网')
 
 ## 五、使用Fail2ban
 使用 `Fail2ban` 禁止垃圾采集爬虫，保护 `Nginx` 服务器
