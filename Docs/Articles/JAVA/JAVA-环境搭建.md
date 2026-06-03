@@ -2,7 +2,7 @@
 tags:
   - JAVA
 ---
-# Java环境搭建
+# JAVA-环境搭建
 
 ## 安装Java 17和配置环境变量
 

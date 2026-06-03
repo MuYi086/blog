@@ -2,7 +2,7 @@
 tags:
   - JAVA
 ---
-# 使用vscode进行java开发
+# JAVA-使用vscode进行java开发
 
 ## 介绍
 在 `vscode` 上快速开发 `java` 我们需要先搭建环境,比如 `java` , `maven` 等
@@ -20,7 +20,7 @@ tags:
     # file => Prefernces => settins => 搜索maven
     ```
 
-    ![maven配置](/Images/Linux/使用vscode进行java开发/java_01.png)
+    ![maven配置](/Images/JAVA/JAVA-使用vscode进行java开发/java_01.png)
 
 1. 填入配置( `java` 和 `maven` 目录及版本自行替换)
     ```json
