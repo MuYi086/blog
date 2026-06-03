@@ -82,7 +82,7 @@ jobs:
 
 1. 右上角头像 => `Settings` => `Developer Settings` => `Personal access tokens` => `Tokens(classic)` => `Generate new token`
 
-![vitepress_blog_token](/Images/前端/Node-通过GithubAction将内容部署到vps/vitepress_blog_token.png "vitepress_blog_token")
+![vitepress_blog_token](/Images/运维/Node-通过GithubAction将内容部署到vps/vitepress_blog_token.png "vitepress_blog_token")
 
 ::: warning 注意
 存储生成的 `token` ，请妥善保管，永远只出现一次。
@@ -97,7 +97,7 @@ jobs:
 
 1. 打开仓库主页 => `Settings` => `Pages` => `Source` => 选择 `gh-pages` 分支 => `Save`
 
-![github_pages](/Images/前端/Node-通过GithubAction将内容部署到vps/github_pages.png "github_pages")
+![github_pages](/Images/运维/Node-通过GithubAction将内容部署到vps/github_pages.png "github_pages")
 
 ## 配置action scp 部署到vps
 

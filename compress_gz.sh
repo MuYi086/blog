@@ -28,60 +28,36 @@ cd ../../
 
 # 进入Articles目录
 cd Articles
-# 处理AI目录
-cd AI
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Windows目录
-cd Windows
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Git目录
-cd Git
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Essay目录
-cd Essay
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Node目录
-cd Node
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Python目录
-cd Python
-gzip -k -f -9 ./*.html
-cd ../
-# 处理CSS目录
-cd CSS
-gzip -k -f -9 ./*.html
-cd ../
-# 处理JS目录
-cd JS
+# 处理后端目录
+cd 后端
 gzip -k -f -9 ./*.html
 cd ../
 # 处理前端目录
 cd 前端
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Deepin目录
-cd Deepin
+# 处理人工智能目录
+cd 人工智能
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Docker目录
-cd Docker
+# 处理随笔目录
+cd 随笔
 gzip -k -f -9 ./*.html
 cd ../
-# 处理Shell目录
-cd Shell
+# 处理运维目录
+cd 运维
+gzip -k -f -9 ./*.html
+cd ../
+# 处理Git目录
+cd Git
+gzip -k -f -9 ./*.html
+cd ../
+# 处理Linux目录
+cd Linux
 gzip -k -f -9 ./*.html
 cd ../
 # 处理Wall目录
 cd Wall
-gzip -k -f -9 ./*.html
-cd ../
-# 处理Network目录
-cd Network
 gzip -k -f -9 ./*.html
 cd ../
 

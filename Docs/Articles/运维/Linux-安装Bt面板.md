@@ -11,7 +11,7 @@ tags:
 1. 下载安装包
   在 `bt` 官网下载对应地区的脚本，不同地区使用的 `cdn` 地址，下载不同的镜像加速。如果购买的国外 `vps` ，记得下拉选欧美下载后再复制链接。
 
-    ![bt_install](/Images/Linux/Linux-安装Bt面板/bt_install.jpg "bt_install")
+    ![bt_install](/Images/运维/Linux-安装Bt面板/bt_install.jpg "bt_install")
 
     ```shell
     # ubuntu/deepin安装脚本(欧美下载)
@@ -23,7 +23,7 @@ tags:
 
 1. 终端安装完成后会提示面板信息
 
-    ![panel_info](/Images/Linux/Linux-安装Bt面板/panel_info.jpg "panel_info")
+    ![panel_info](/Images/运维/Linux-安装Bt面板/panel_info.jpg "panel_info")
 
 1. 复制到浏览器，访问面板，登录后会提示安装 `LNMP` 或者 `LAMP` 环境，最新版还会多一个选择 `JAVA` 环境，这里我们选择比较轻量的 `LNMP` 环境。
 
@@ -44,7 +44,7 @@ URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];
 
 1. 也可以在终端使用 `bt` 命令进行设置。（推荐）
 
-    ![bt_change_pw](/Images/Linux/Linux-安装Bt面板/bt_change_pw.jpg "bt_change_pw")
+    ![bt_change_pw](/Images/运维/Linux-安装Bt面板/bt_change_pw.jpg "bt_change_pw")
 
 ## 反向代理
 反向代理是一种代理服务器，它接受客户端的请求，然后将请求转发给内部网络上的目标服务器。反向代理可以提高安全性、负载均衡和缓存性能。
@@ -58,11 +58,11 @@ URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];
 
 1. 在 `cloudflare` 将一个二级域名解析到我们被屏蔽的主机，设置代理
 
-    ![cf_proxy](/Images/Linux/Linux-安装Bt面板/cf_proxy.jpg "cf_proxy")
+    ![cf_proxy](/Images/运维/Linux-安装Bt面板/cf_proxy.jpg "cf_proxy")
 
 1. 在 `bt` 面板中配置反向代理
 
-    ![bt_proxy](/Images/Linux/Linux-安装Bt面板/bt_proxy.jpg "bt_proxy")
+    ![bt_proxy](/Images/运维/Linux-安装Bt面板/bt_proxy.jpg "bt_proxy")
 
     ::: warning 注意
     `target URL` 需要注意填写到端口，不要接举例路径，否则 `network` 访问很多请求会报 `404`

@@ -61,7 +61,7 @@ tags:
     ```shell
     # Proxy => SSL Proxying Settings => SSL Proxying => include add 
     ```
-    ![接口名unknown](/Images/随笔/随笔-利用charles抓包app/interface_unknown.png '接口名unknown')
+    ![接口名unknown](/Images/运维/随笔-利用charles抓包app/interface_unknown.png '接口名unknown')
 
     ::: warning 注意
     浏览器接口已经可以正常显示,微信等 `app` 流量依然显示 `unknown`

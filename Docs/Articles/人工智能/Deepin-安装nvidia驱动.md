@@ -10,12 +10,12 @@ tags:
 # 查看电脑显卡型号
 sudo lshw -numeric -C display
 ```
-![查看电脑显卡型号](/Images/Linux/Deepin-安装nvidia驱动/step_1.png '查看电脑显卡型号')
+![查看电脑显卡型号](/Images/人工智能/Deepin-安装nvidia驱动/step_1.png '查看电脑显卡型号')
 
 2. 进入`NVIDIA`官网 [下载驱动](https://www.nvidia.cn/Download/index.aspx?lang=cn)
-![搜索驱动](/Images/Linux/Deepin-安装nvidia驱动/step_2.png '搜索驱动')
+![搜索驱动](/Images/人工智能/Deepin-安装nvidia驱动/step_2.png '搜索驱动')
 
-![下载驱动](/Images/Linux/Deepin-安装nvidia驱动/step_3.png '下载驱动')
+![下载驱动](/Images/人工智能/Deepin-安装nvidia驱动/step_3.png '下载驱动')
 
 ## 最简单方式
 适用于`deepin25`, 一步到位
@@ -29,7 +29,7 @@ sudo apt install nvidia-driver nvidia-settings nvidia-smi
 ```shell
 sudo apt-get install deepin-graphics-driver-manager
 ```
-![显卡驱动管理](/Images/Linux/Deepin-安装nvidia驱动/step_4.png '显卡驱动管理')
+![显卡驱动管理](/Images/人工智能/Deepin-安装nvidia驱动/step_4.png '显卡驱动管理')
 
 2. 卸载`NVIDIA`开源驱动和闭源驱动
 ```shell
