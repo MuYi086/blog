@@ -1,8 +1,8 @@
 ---
 tags:
-  - Essay
+  - 随笔
 ---
-# webview白屏的问题查找和修复
+# 随笔-webview白屏的问题查找和修复
 
 ## 介绍
 有运营反应，有部分用户访问我们的小程序后，打开 `webview` 页面，显示白屏，删除小程序重新进入也未解决问题。
@@ -18,7 +18,7 @@ tags:
 ## 顺藤摸瓜
 刚巧团队内部有个同事的 `iphone 7` 能复现这个问题, 于是我们首先进行了 `charles` 抓包, 分别拿到了正常手机和白屏手机的请求, 对比发现俩者从服务端拿到的资源请求包括文件名 `hash` 是一致的。
 
-![webview_charles_1](/Images/Essay/webview白屏的问题查找和修复/webview_charles_1.png "webview_charles_1")
+![webview_charles_1](/Images/随笔/随笔-webview白屏的问题查找和修复/webview_charles_1.png "webview_charles_1")
 
 到了这里我们基本可以确定不同设备上拿到的代码是一致的，出问题的是兼容性，在不同机型上渲染执行可能出错导致的白屏。
 
@@ -26,11 +26,11 @@ tags:
 
 于是我接下来的重点放到了查找问题代码，通过切换月份分支，从 `5,6,7` 月分别调试缩小到7月范围，然后按照 `commit` 减半调试缩小范围，确定了包含问题代码的 `commit` 记录
 
-![webview_commit_1](/Images/Essay/webview白屏的问题查找和修复/webview_commit_1.png "webview_commit_1")
+![webview_commit_1](/Images/随笔/随笔-webview白屏的问题查找和修复/webview_commit_1.png "webview_commit_1")
 
 在多次注释更新的包后，最终确定了问题定位出在 `package.json` 升级的新包 `@muyi086/var-type` 上.
 
-![webview_commit_2](/Images/Essay/webview白屏的问题查找和修复/webview_commit_2.png "webview_commit_2")
+![webview_commit_2](/Images/随笔/随笔-webview白屏的问题查找和修复/webview_commit_2.png "webview_commit_2")
 
 ## 出问题的代码分析
 1. 这是老版本的代码，使用 `js` 实现
