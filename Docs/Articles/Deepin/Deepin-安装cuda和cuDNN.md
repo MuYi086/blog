@@ -1,8 +1,8 @@
 ---
 tags:
-  - Deepin
+  - Linux
 ---
-# deepin安装cuda和cuDNN
+# Deepin-安装cuda和cuDNN
 
 ## 基本安装程序
 选择不同发行版，下载链接其实是同一个

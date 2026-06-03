@@ -1,8 +1,8 @@
 ---
 tags:
-  - Deepin
+  - Linux
 ---
-# deepin25浏览器提示webgl不可用
+# Deepin-浏览器提示webgl不可用
 
 ## 背景
 在使用 `figma` 查看设计图时，进入页面后提示由于当前不支持 `webgl`，页面自动关闭了。我满心疑问，之前一直好好地，怎么突然提示浏览器不支持 `webgl` 呢? 我琢磨了一下，大概率是显卡驱动的问题，因为我为了跑 `ollama` 和 `cuda`, 更新过 `nvidia` 驱动
