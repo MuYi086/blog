@@ -2,7 +2,7 @@
 tags:
   - Docker
 ---
-# deepin搭建docker环境
+# Docker-deepin搭建docker环境
 
 ## 前言
 本来我是想搭建 `gitlab` ,后来综合网上的教程，在 `deepin` 上试了多次，失败.于是转而通过学习 `docker` 来一键部署 `gitlab` .

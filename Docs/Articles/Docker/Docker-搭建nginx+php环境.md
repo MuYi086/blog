@@ -2,7 +2,7 @@
 tags:
   - Docker
 ---
-# docker搭建nginx+php环境
+# Docker-搭建nginx+php环境
 
 ## 前言
 之前使用 `docker` 部署 `gitlab` 和 `jenkins` 很是舒服，管理也很方便。于是今天来尝试 `nginx＋php` 。

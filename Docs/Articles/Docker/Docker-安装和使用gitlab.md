@@ -2,7 +2,7 @@
 tags:
   - Docker
 ---
-# docker安装和使用gitlab
+# Docker-安装和使用gitlab
 
 ## 安装gitlab镜像
 如未安装 `docker` ,请先移步搭建环境: [deepin搭建docker环境](/Articles/Docker/deepin搭建docker环境)
@@ -109,7 +109,7 @@ docker restart gitlab
 https://MuYi086@github.com/MuYi086/blog.git
 # 密码位置输入之前获得的token或者当前github用户的密码
 ```
-![强制更新](/Images/Docker/Docker安装和使用gitlab/gitlab_01.png)
+![强制更新](/Images/Docker/Docker-安装和使用gitlab/gitlab_01.png)
 
 ## 参考
 1. [docker下gitlab安装配置使用(完整版)](https://www.jianshu.com/p/080a962c35b6')
