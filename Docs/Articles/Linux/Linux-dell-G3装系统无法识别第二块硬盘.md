@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Linux-dell G3装系统无法识别第二块硬盘
+# Linux-dell-G3装系统无法识别第二块硬盘
 
 ## 介绍
 在进入 `deepin` 安装时,发现找不到 `ssd` 所在的第二块硬盘

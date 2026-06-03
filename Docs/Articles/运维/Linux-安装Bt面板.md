@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 运维
 ---
 # Linux-安装Bt面板
 

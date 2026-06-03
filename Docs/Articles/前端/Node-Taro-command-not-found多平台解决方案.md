@@ -2,7 +2,7 @@
 tags:
   - 前端
 ---
-# Node-Taro command not found多平台解决方案
+# Node-Taro-command-not-found多平台解决方案
 
 ## 问题
 在 `npmjs` 找到并全局安装 `@tarojs/cli` 后， 执行 `taro init` 命令，终端提示错误：`command not found`。

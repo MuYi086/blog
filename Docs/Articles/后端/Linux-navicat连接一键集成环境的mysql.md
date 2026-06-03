@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 后端
 ---
 # Linux-navicat连接一键集成环境的mysql
 

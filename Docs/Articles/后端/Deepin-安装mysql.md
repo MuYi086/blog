@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 后端
 ---
 # Deepin-安装mysql
 

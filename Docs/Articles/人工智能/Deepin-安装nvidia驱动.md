@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 人工智能
 ---
 # Deepin-安装nvidia驱动
 

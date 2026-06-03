@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 人工智能
 ---
 # Deepin-使用tensorflow入门机器学习
 

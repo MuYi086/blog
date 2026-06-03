@@ -1,6 +1,6 @@
 ---
 tags:
-  - 前端
+  - 运维
 ---
 # Node-通过GithubAction将内容部署到vps
 

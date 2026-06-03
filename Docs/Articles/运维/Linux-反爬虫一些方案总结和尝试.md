@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 运维
 ---
 # Linux-反爬虫一些方案总结和尝试
 使用 `FontCreator` 尝试修改了 `Rookie` 字体,简单实现了 `字体混淆` 

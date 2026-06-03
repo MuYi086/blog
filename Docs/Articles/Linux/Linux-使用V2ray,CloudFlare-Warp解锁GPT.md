@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-# Linux-使用V2ray,CloudFlare Warp解锁GPT
+# Linux-使用V2ray,CloudFlare-Warp解锁GPT
 
 ## 背景
 搭建 `GPT` 后其实有正常使用几个月的，但是后来已经突然无法访问 `chat` 页面，并且提示 `Access Denied` 问题。我本身使用的 `Vultr` 的 `vps` 搭建的 `v2ray` 服务，梯子也能正常使用， 但是就是 `chat` 页面无法访问, 估计是 `openai` 针对多数 `vpn` 的公网 `ip` 做了识别。于是开始 `google` 寻求解决方案。英文论坛上有人提出 `openai` 使用了 `cloudflare` 的服务来过滤 `ip` ，然后给出的解决方法就是 "以子之矛, 攻子之盾"，因为 `cloudflare` 自己旗下有一款代理软件叫 `warp` 联想到他不会自己封禁自己, 于是我们使用 `cloudflare warp` 代理来躲避封禁。

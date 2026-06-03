@@ -1,6 +1,6 @@
 ---
 tags:
-  - Linux
+  - 运维
 ---
 # Linux-OpenEuler配置nginx
 
