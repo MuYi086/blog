@@ -2,7 +2,7 @@
 tags:
   - Git
 ---
-# Git异常处理
+# Git-异常处理
 
 ## push 和 pull 报错
 1. `git push` 时提示 `push failed : master, your remote branch is out of date, please fetch origin before pushing` , 但是使用 `pull` 时报错 `pull failed reference refs/remotes/origin/dev_202312 not found`
