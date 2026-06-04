@@ -40,24 +40,36 @@ export OCR_USE_ANTHROPIC=true
 
 1. 测试连通性
 
-```shell
-ocr llm test
-```
+    ```shell
+    ocr llm test
+    ```
 
 1. 开始审查
 
-```shell
-cd your-project
+    ```shell
+    cd your-project
 
-# 工作区模式 —— 审查所有暂存、未暂存和未跟踪的变更
-ocr review
+    # 工作区模式 —— 审查所有暂存、未暂存和未跟踪的变更
+    ocr review
 
-# 分支范围 —— 比较两个引用
-ocr review --from main --to feature-branch
+    # 分支范围 —— 比较两个引用
+    ocr review --from main --to feature-branch
 
-# 单个提交
-ocr review --commit abc123
-```
+    # 单个提交
+    ocr review --commit abc123
+
+    # 启动 WebUI 会话查看器，地址 localhost:5483
+    ocr viewer
+
+    # 设置配置项
+    ocr config set <key> <value>
+
+    # 预览某个文件路径生效的审查规则
+    ocr rules check <file>
+
+    # 显示版本信息
+    ocr version
+    ```
 
 ## 集成到编程Agent
 ```shell
@@ -89,6 +101,36 @@ ocr review \
   --to "origin/feature-branch" \
   --format json \
   --audience agent
+```
+集成示例:
+* [GitHub Actions](https://github.com/alibaba/open-code-review/blob/main/examples/github_actions) 集成示例
+* [GitLab CI](https://github.com/alibaba/open-code-review/blob/main/examples/gitlab_ci) 集成示例
+
+## 示例
+```shell
+# 预览将被审查的文件（不调用 LLM）
+ocr review --preview
+ocr review -c abc123 -p
+
+# 使用默认设置审查工作区变更
+ocr review
+
+# 以更高并发审查分支差异
+ocr review --from main --to my-feature --concurrency 4
+
+# 审查特定提交并以 JSON 格式输出详细信息
+ocr review --commit abc123 --format json --audience agent
+
+# 使用自定义审查规则
+ocr review --rule /path/to/my-rules.json
+
+# 预览某个文件路径生效的规则
+ocr rules check src/main/java/com/example/Foo.java
+ocr rules check --rule custom.json src/main/resources/mapper/UserMapper.xml
+
+# 在浏览器中查看审查会话历史
+ocr viewer
+ocr viewer --addr :3000
 ```
 
 ## 参考
