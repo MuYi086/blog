@@ -23,6 +23,8 @@ $env:HF_ENDPOINT = "https://hf-mirror.com" # Windows Powershell
 
 # 3.下载模型
 huggingface-cli download --resume-download gpt2 --local-dir gpt2
+# huggingface-cli已经废弃，需要改用hf
+hf download gpt2 --local-dir ~/hf-mirror/gpt2
 
 # 4.下载数据集
 huggingface-cli download --repo-type dataset --resume-download wikitext --local-dir wikitext
