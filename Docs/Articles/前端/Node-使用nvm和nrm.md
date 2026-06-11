@@ -122,6 +122,12 @@ echo 'export PATH="$HOME/.local/share/fnm:$PATH"' >> ~/.bashrc
 echo 'eval "$(fnm env --shell bash)"' >> ~/.bashrc
 source ~/.bashrc
 
+# windows安装
+# 1. 点击环境变量。
+# 双击Path编辑用户变量。
+# 点击新建并将fnm.exe文件所在的路径位置xx\fnm-windows输入其中。
+# 点击确定即可新建完成，此时可关掉刚才打开的两个弹窗。
+
 # 检查 fnm 是否可用
 fnm --version
 
@@ -180,3 +186,6 @@ nrm del name
 
 ## 注意
 有时重启电脑后, `terminal` 进入默认的环境,会提示找不到已安装的相应的 `npm` 包, 此时重新 `nvm use` 一下即可
+
+## 参考
+1. [Windows中使用fnm](https://juejin.cn/post/7546054937026527273)
