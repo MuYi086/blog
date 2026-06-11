@@ -123,10 +123,42 @@ echo 'eval "$(fnm env --shell bash)"' >> ~/.bashrc
 source ~/.bashrc
 
 # windows安装
-# 1. 点击环境变量。
-# 双击Path编辑用户变量。
-# 点击新建并将fnm.exe文件所在的路径位置xx\fnm-windows输入其中。
-# 点击确定即可新建完成，此时可关掉刚才打开的两个弹窗。
+# ① 右键点击“此电脑”或“我的电脑”，选择“属性”；
+# ② 点击“高级系统设置”；
+# ④ 在“系统属性”窗口中，点击“环境变量”；
+# ⑤ 在“系统变量”部分，点击“新建”；
+# ⑥ 分别输入变量名FNM_DIR与变量值D:software nm-windows（记得替换为自己的Fnm安装路径）；
+# ⑦ 在“系统变量”部分，找到 Path 变量并双击；
+# ⑧ 点击“新建”，添加 Fnm 的安装路径%FNM_DIR%；
+# ⑨ 点击“确定”以保存更改。
+
+# 如果npm --version 报错
+# PowerShell 默认禁止运行 .ps1 脚本，npm 在 fnm_multishells 目录下生成了 npm.ps1，所以被拦截
+# 以管理员执行
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# windows系统如果要在powershell中运行
+# 1.如果文件不存在，先创建
+if (!(Test-Path $PROFILE)) {
+  New-Item -ItemType File -Path $PROFILE -Force
+}
+# 2.用记事本打开编辑
+notepad $PROFILE
+# 3.再打开的文件添加
+fnm env --use-on-cd | Out-String | Invoke-Expression
+# 4.保存并关闭记事本
+# 5.验证
+# 查看文件内容确认写入成功
+Get-Content $PROFILE
+# 关闭所有 PowerShell 窗口，重新打开一个新的
+# 然后直接测试
+node --version
+npm --version
+
+# windows系统如果要在bash中运行
+notepad ~/.bashrc
+# fnm 初始化
+eval "$(fnm env --use-on-cd --shell bash)"
+source ~/.bashrc
 
 # 检查 fnm 是否可用
 fnm --version
