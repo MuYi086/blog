@@ -96,12 +96,25 @@ export PATH=$CONDA:$PATH
 # 使之生效
 source /etc/profile
 
-# windows
+# windows-powershell
 # 左下角搜索->高级系统设置->环境变量->用户变量选择Path->编辑
 # 新建,将 C:\ProgramData\anaconda3 加入
 # 新建,将 C:\ProgramData\anaconda3\Scripts 加入
 # 新建,将 C:\ProgramData\anaconda3\Library\bin 加入
 # 然后一路确定
+
+# windows-git-bash
+# 打开编辑~/.bashrc，并添加
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if [ -f 'C:\ProgramData\anaconda3/etc/profile.d/conda.sh' ]; then
+    . 'C:\ProgramData\anaconda3/etc/profile.d/conda.sh'
+fi
+# <<< conda initialize <<<
+
+# 让配置生效
+source ~/.bashrc
 ```
 
 创建新的环境
