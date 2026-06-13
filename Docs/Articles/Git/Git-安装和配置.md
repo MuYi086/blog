@@ -49,3 +49,15 @@ ssh-keygen -t ed25519 -C "yourEmail@example.com"
 ```shell
 ssh -T git@github.com
 ```
+
+## wsl创建软连接
+```shell
+# 删除（如果存在的话）并重新创建符号链接
+sudo ln -sf /mnt/c/Users/<你的Win用户名>/.ssh ~/.ssh
+
+# 设置文件权限
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_*
+chmod 600 ~/.ssh/config   # 如有 config 文件
+```
+
