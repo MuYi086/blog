@@ -50,14 +50,34 @@ ssh-keygen -t ed25519 -C "yourEmail@example.com"
 ssh -T git@github.com
 ```
 
-## wsl创建软连接
-```shell
-# 删除（如果存在的话）并重新创建符号链接
-sudo ln -sf /mnt/c/Users/<你的Win用户名>/.ssh ~/.ssh
+## wsl复用同一份git key
 
-# 设置文件权限
-chmod 700 ~/.ssh
-chmod 600 ~/.ssh/id_*
-chmod 600 ~/.ssh/config   # 如有 config 文件
-```
+1. 方法一: 创建软连接
+
+    ```shell
+    # 但是软链接容易出现权限问题
+
+    # 删除（如果存在的话）并重新创建符号链接
+    sudo ln -sf /mnt/c/Users/<你的Win用户名>/.ssh ~/.ssh
+
+    # 设置文件权限
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/id_*
+    chmod 600 ~/.ssh/config   # 如有 config 文件
+    ```
+
+2. 方法二: 复制`.ssh`目录到`wsl`中
+
+    ```shell
+    # 1. 删除原来的软链接
+    rm ~/.ssh
+
+    # 2. 重新复制整个 .ssh 文件夹到 WSL
+    cp -r /mnt/c/Users/<你的Win用户名>/.ssh ~/
+
+    # 3. 修正权限
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/id_*
+    chmod 600 ~/.ssh/config   # 如果有 config 文件
+    ```
 
