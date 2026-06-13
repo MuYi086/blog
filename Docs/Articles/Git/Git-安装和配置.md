@@ -52,10 +52,10 @@ ssh -T git@github.com
 
 ## wsl复用同一份git key
 
-1. 方法一: 创建软连接
+~~1. 方法一: 创建软连接~~
+软链接容易出现权限问题
 
     ```shell
-    # 但是软链接容易出现权限问题
 
     # 删除（如果存在的话）并重新创建符号链接
     sudo ln -sf /mnt/c/Users/<你的Win用户名>/.ssh ~/.ssh
@@ -66,8 +66,8 @@ ssh -T git@github.com
     chmod 600 ~/.ssh/config   # 如有 config 文件
     ```
 
-2. 方法二: 复制`.ssh`目录到`wsl`中
-
+~~2. 方法二: 复制`.ssh`目录到`wsl`中~~
+`vscode` 提交会提示`git`未配置`user.name`和`user.email`
     ```shell
     # 1. 删除原来的软链接
     rm ~/.ssh
@@ -81,3 +81,4 @@ ssh -T git@github.com
     chmod 600 ~/.ssh/config   # 如果有 config 文件
     ```
 
+方法三: 在`wsl`重新配置`user.name`和`user.email`
