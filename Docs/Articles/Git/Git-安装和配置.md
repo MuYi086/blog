@@ -66,7 +66,7 @@ ssh -T git@github.com
     chmod 600 ~/.ssh/config   # 如有 config 文件
     ```
 
-~~2. 方法二: 复制`.ssh`目录到`wsl`中~~
+2. 方法二: 复制`.ssh`目录到`wsl`中
 `vscode` 提交会提示`git`未配置`user.name`和`user.email`
     ```shell
     # 1. 删除原来的软链接
@@ -75,10 +75,10 @@ ssh -T git@github.com
     # 2. 重新复制整个 .ssh 文件夹到 WSL
     cp -r /mnt/c/Users/<你的Win用户名>/.ssh ~/
 
-    # 3. 修正权限
+    # 3. 在`wsl`重新配置`user.name`和`user.email`
+
+    # 4. 修正权限
     chmod 700 ~/.ssh
     chmod 600 ~/.ssh/id_*
     chmod 600 ~/.ssh/config   # 如果有 config 文件
     ```
-
-方法三: 在`wsl`重新配置`user.name`和`user.email`
