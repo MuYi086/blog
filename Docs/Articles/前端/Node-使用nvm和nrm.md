@@ -186,6 +186,8 @@ node --version
 npm install -g nrm
 # 安装老版本保证use方法生效
 npm install -g @adams549659584/nrm
+# 卸载
+npm uninstall -g nrm
 ```
 
 ## windows上无法识别nrm命令
