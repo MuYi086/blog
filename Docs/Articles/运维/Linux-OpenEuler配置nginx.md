@@ -201,5 +201,23 @@ sudo nginx -t && sudo nginx -s reload
 ```
 :::
 
+## 异常处理
+小主机启动时 `nginx` 启动时检查 `ping` 域名，可能会出现找不到 `host` 的情况
+
+```shell
+# 2026/07/24 15:31:14 [emerg] 816#0: host not found in upstream "kuaie01.huabing.online" in /etc/nginx/nginx.conf:104
+```
+
+解决如下:
+
+```shell
+# 编辑 crontab 文件
+sudo crontab -e
+# 增加任务
+@reboot /bin/sleep 30 && /usr/bin/systemctl restart nginx
+# 重启系统
+sudo reboot
+```
+
 ## 参考
 1. [nginx](https://nginx.org/en/)
