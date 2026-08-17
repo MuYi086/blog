@@ -31,13 +31,21 @@ ps -ef | grep docker
 
 ## 查看端口占用
 ```shell
+# linux
 sudo netstat -lnp | grep id
+
+# windows
+netstat -ano | grep id
 ```
 
 ## 杀死进程
 ```shell
 # 使用kill命令杀死进程
+# linux
 kill -s 9 id
+
+# windows /PID 指定进程 ID  /F 强制终止
+taskkill /PID 6576 /F
 
 # 安装killport，使用脚本杀死进程
 curl -sL https://bit.ly/killport | sh
