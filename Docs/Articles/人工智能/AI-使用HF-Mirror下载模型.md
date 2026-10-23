@@ -25,6 +25,8 @@ $env:HF_ENDPOINT = "https://hf-mirror.com" # Windows Powershell
 huggingface-cli download --resume-download gpt2 --local-dir gpt2
 # huggingface-cli已经废弃，需要改用hf
 hf download gpt2 --local-dir ~/hf-mirror/gpt2
+# 下载单个文件
+hf download scragnog/MOSS-Music-8B-Instruct-GGUF moss-lm-q8_0.gguf --local-dir ~/hf-mirror/
 
 # 4.下载数据集
 huggingface-cli download --repo-type dataset --resume-download wikitext --local-dir wikitext
