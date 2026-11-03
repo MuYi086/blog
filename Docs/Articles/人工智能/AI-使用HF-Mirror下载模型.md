@@ -50,6 +50,16 @@ $env:HF_ENDPOINT = "https://hf-mirror.com" # Windows Powershell
 
 # 4.下载数据集
 ./hfd.sh wikitext --dataset
+
+# 5 --include 指定下载特定文件
+# Qwen2.5-Coder下载q2_k量化版本的模型
+./hfd.sh Qwen/Qwen2.5-Coder-32B-Instruct-GGUF --include qwen2.5-coder-32b-instruct-q2_k.gguf
+# gpt2下载onnx路径下的所有json文件
+./hfd.sh gpt2 --include onnx/*.json
+
+# 6 --exclude 排除特定文件的下载
+# gpt2仓库，不下载.bin格式的模型以及onnx模型
+./hfd.sh gpt2 --exclude *.bin onnx/*
 ```
 
 ## 方法四：使用环境变量（非侵入式）
