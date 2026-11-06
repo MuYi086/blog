@@ -39,6 +39,7 @@ huggingface-cli download --repo-type dataset --resume-download wikitext --local-
 ```shell
 # 1.下载hfd
 wget https://hf-mirror.com/hfd/hfd.sh
+# 如果是powershell，则先进入wsl,然后执行以下代码
 chmod a+x hfd.sh
 
 # 2.设置环境变量
