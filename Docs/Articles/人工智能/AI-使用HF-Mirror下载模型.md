@@ -25,6 +25,8 @@ $env:HF_ENDPOINT = "https://hf-mirror.com" # Windows Powershell
 huggingface-cli download --resume-download gpt2 --local-dir gpt2
 # huggingface-cli已经废弃，需要改用hf
 hf download gpt2 --local-dir ~/hf-mirror/gpt2
+# 下载单个文件
+hf download scragnog/MOSS-Music-8B-Instruct-GGUF moss-lm-q8_0.gguf --local-dir ~/hf-mirror/
 
 # 4.下载数据集
 huggingface-cli download --repo-type dataset --resume-download wikitext --local-dir wikitext
@@ -37,6 +39,7 @@ huggingface-cli download --repo-type dataset --resume-download wikitext --local-
 ```shell
 # 1.下载hfd
 wget https://hf-mirror.com/hfd/hfd.sh
+# 如果是powershell，则先进入wsl,然后执行以下代码
 chmod a+x hfd.sh
 
 # 2.设置环境变量
@@ -48,6 +51,16 @@ $env:HF_ENDPOINT = "https://hf-mirror.com" # Windows Powershell
 
 # 4.下载数据集
 ./hfd.sh wikitext --dataset
+
+# 5 --include 指定下载特定文件
+# Qwen2.5-Coder下载q2_k量化版本的模型
+./hfd.sh Qwen/Qwen2.5-Coder-32B-Instruct-GGUF --include qwen2.5-coder-32b-instruct-q2_k.gguf
+# gpt2下载onnx路径下的所有json文件
+./hfd.sh gpt2 --include onnx/*.json
+
+# 6 --exclude 排除特定文件的下载
+# gpt2仓库，不下载.bin格式的模型以及onnx模型
+./hfd.sh gpt2 --exclude *.bin onnx/*
 ```
 
 ## 方法四：使用环境变量（非侵入式）

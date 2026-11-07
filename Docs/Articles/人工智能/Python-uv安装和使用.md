@@ -78,6 +78,18 @@ uvx httpie https://httpbin.org/get
 uv tool install ruff
 uv tool upgrade ruff
 uv tool uninstall ruff
+
+# 查看全局安装的软件列表
+uv tool list
+
+# 将uv工具目录添加到你的 shell 配置文件中（如 ~/.bashrc）。
+uv tool update-shell
+# 重新加载 shell 配置，或重启终端
+source ~/.bashrc
+
+# 举例全局安装jupyterlab和使用
+uv tool install jupyterlab
+jupyter-lab
 ```
 
 ## 环境一致性

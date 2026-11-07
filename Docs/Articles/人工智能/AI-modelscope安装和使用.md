@@ -37,6 +37,9 @@ modelscope download --model OpenBMB/VoxCPM2
 # 下载整个模型到指定目录
 modelscope download --model OpenBMB/VoxCPM2 --local_dir ~/modelscope
 
+# 下载单个文件到指定目录
+modelscope download --model IndexTeam/Index-Echo-S2ST-9B-GGUF Index-Echo-S2ST-9B.Q8_0.gguf --local_dir ~/hf-mirror/IndexTeam/Index-Echo-S2ST-9B-GGUF
+
 # 写入 `~/.bashrc`
 export MODELSCOPE_CACHE='您希望的下载路径'
 source ~/.bashrc
