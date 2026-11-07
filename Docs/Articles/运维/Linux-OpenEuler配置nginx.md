@@ -219,5 +219,13 @@ sudo crontab -e
 sudo reboot
 ```
 
+## 注意
+系统可能没有安装 `unzip`，这样使用 `deploy` 发布的 `zip` 包就会导致解压失败，需要手动安装
+```shell
+sudo dnf install -y unzip
+
+unzip -v
+```
+
 ## 参考
 1. [nginx](https://nginx.org/en/)
